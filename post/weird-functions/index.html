@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+<meta name="description" content="diamond_153 的博客" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>积累几个C++14及以前好用但冷门的函数们 | Diamond_153&#39;s Blog</title>
+<link rel="shortcut icon" href="https://diamond153.github.io/favicon.ico?v=1693393222830">
+<link rel="stylesheet" href="https://diamond153.github.io/styles/main.css">
+
+
+  <link rel="canonical" href="https://diamond153.github.io/post/weird-functions/" />
+  <meta name="socialText" content="" />
+  <meta name="description" content="numeric
+
+
+accumulate
+
+传入两个迭代器，一个数值：beg,end,val，可传入第四个参数作为加法。
+将 [beg,end) 的数据全部加上 val 并返回累加值（与 val 同类型）。
+
+
+
+partial_sum
+
+..." />
+  <meta name="referrer" content="always" />
+  
+  <link rel="stylesheet" href="https://diamond153.github.io/media/css/katex.min.css">
+  <script defer src="https://diamond153.github.io/media/scripts/katex.min.js"></script>
+  
+  
+  <link rel="stylesheet" href="https://diamond153.github.io/media/css/prism.css">
+  
+    
+  
+</head>
+
+<body class="is-preload">
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+<header id="header">
+  <div class="inner">
+    <!-- Logo -->
+    <a href="https://diamond153.github.io" class="logo">
+      <span class="symbol"
+        ><img
+          src="https://diamond153.github.io/images/avatar.png?v=1693393222830"
+          alt=""
+        />
+      </span>
+      <div class="site-title"> Diamond_153&#39;s Blog </div>
+    </a>
+
+    <!-- Nav -->
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+  <ul>
+    
+    
+      <li><a href="https://diamond153.github.io" class="menu">
+        Homepage
+      </a></li>
+      
+    
+    
+      <li><a href="https://diamond153.github.io/archives" class="menu">
+        Archives
+      </a></li>
+      
+    
+    
+      <li><a href="https://diamond153.github.io/tags" class="menu">
+        Tags
+      </a></li>
+      
+    
+  </ul>
+</nav>
+
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+        <div class="post-pagetitle">
+          <h1>
+            积累几个C++14及以前好用但冷门的函数们
+          </h1>
+        </div>
+        <div class="post-info">
+          <time class="post-time">
+            2023-08-29
+          </time>
+          <span class="read-times">
+            2 min read
+          </span>
+          
+          <a href="https://diamond153.github.io/tag/language/" class="post-tags">
+            # 语言
+          </a>
+          
+        </div>
+        
+        <div class="post-content-wrapper">
+          <div class="post-content">
+            <h2 id="numeric">numeric</h2>
+<ol>
+<li>
+<p><code>accumulate</code></p>
+<ul>
+<li>传入两个迭代器，一个数值：<code>beg,end,val</code>，可传入第四个参数作为加法。</li>
+<li>将 <code>[beg,end)</code> 的数据全部加上 <code>val</code> 并返回累加值（与 <code>val</code> 同类型）。</li>
+</ul>
+</li>
+<li>
+<p><code>partial_sum</code></p>
+<ul>
+<li>传入三个迭代器：<code>beg,end,beg2</code>，可传入第四个参数作为加法。</li>
+<li>将 <code>[beg,end)</code> 的数据做前缀和从 <code>beg2</code> 开始存储。</li>
+</ul>
+</li>
+<li>
+<p><code>adjacent_difference</code></p>
+<ul>
+<li>与 <code>partial_sum</code> 同理，<code>adjacent_difference</code> 用来求差分。</li>
+</ul>
+</li>
+</ol>
+<h2 id="algorithm">algorithm</h2>
+<ol>
+<li>
+<p><code>nth_element</code></p>
+<ul>
+<li>传入三个迭代器：<code>beg,nth,end</code>，可传入第四个参数作为小于。</li>
+<li>执行完后，<code>[beg,nth)</code> 的元素均小于 <code>nth</code> 地址的元素，<code>(nth,end)</code> 的元素均大于 <code>nth</code>地址的元素，<code>nth</code> 地址的元素是原数列第 <code>nth-beg</code> 大，复杂度 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>，比 <code>sort</code> 后求 <code>nth</code> 要快（注意执行完后原数列已经改变）。</li>
+</ul>
+</li>
+<li>
+<p><code>rotate</code></p>
+<ul>
+<li>传入三个迭代器：<code>beg,mid,end</code>。</li>
+<li>把 <code>[beg,mid)</code> 与 <code>[mid,end)</code> 互换，如当 <code>beg=a+0,mid=a+2,end=a+5</code> 时，<code>1 2 3 4 5</code> 变为 <code>3 4 5 1 2</code>。</li>
+</ul>
+</li>
+</ol>
+<h2 id="gnu的奇妙双下划线函数">GNU的奇妙双下划线函数</h2>
+<ol>
+<li><code>__lg(x)</code>
+<ul>
+<li>返回 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⌊</mo><msub><mi>log</mi><mo>⁡</mo><mn>2</mn></msub><mi>x</mi><mo>⌋</mo></mrow><annotation encoding="application/x-tex">\lfloor\log _2 x\rfloor</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">⌊</span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.20696799999999996em;"><span style="top:-2.4558600000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24414em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span><span class="mclose">⌋</span></span></span></span>，复杂度 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>。</li>
+</ul>
+</li>
+<li><code>__gcd(x,y)</code>
+<ul>
+<li>顾名思义，但注意返回值不一定为正。</li>
+</ul>
+</li>
+<li><code>__builtin_popcount(x)</code>
+<ul>
+<li>返回 <code>x</code> 在二进制下 <code>1</code> 的个数，复杂度未知，可能 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>，可能 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>log</mi><mo>⁡</mo><mi>log</mi><mo>⁡</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(\log \log x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span>。</li>
+</ul>
+</li>
+<li><code>__builtin_parity(x)</code>
+<ul>
+<li>返回 <code>x</code> 在二进制下 <code>1</code> 的奇偶，等价于 <code>__builtin_popcount(x)&amp;1</code>，但 <code>__builtin_parity(x)</code> 更快，复杂度 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>。</li>
+</ul>
+</li>
+<li><code>__builtin_sqrt(x)</code> 和 <code>__builtin_sqrtf(x)</code>
+<ul>
+<li>返回 <code>x</code> 的平方根（浮点数），比 <code>&lt;cmath&gt;</code> 的 <code>sqrt</code> 要快约十倍，且精度差的不多，上面两个函数 <code>__builtin_sqrt</code> 精度比 <code>__builtin_sqrtf</code> 精度高，可以用来快速求 <code>x</code> 平方根整数部分。</li>
+</ul>
+</li>
+</ol>
+<p>整理可能不太完全，感谢阅读！</p>
+
+          </div>
+          <div class="toc-container">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#numeric">numeric</a></li>
+<li><a href="#algorithm">algorithm</a></li>
+<li><a href="#gnu%E7%9A%84%E5%A5%87%E5%A6%99%E5%8F%8C%E4%B8%8B%E5%88%92%E7%BA%BF%E5%87%BD%E6%95%B0">GNU的奇妙双下划线函数</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+
+        <div class="page-count">
+          
+
+          
+        </div>
+      </div>
+
+      <div class="post-pagination inner">
+        
+        
+      </div>
+
+    </div>
+
+    <!-- back to top -->
+    <button oneclik="topFunction()" id="BackToTop">
+      TOP
+    </button>
+
+    <div class="post-comment inner">
+      <div class="post-comment">
+        
+
+
+
+
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer id="footer">
+  <div class="inner">
+    <section>
+      <h2>Follow</h2>
+      <ul class="icons">
+        
+          
+          <li>
+            <a href="https://github.com/diamond153" target="_blank">
+              <i class="icon brands style2 fab fa-github"></i>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li>
+            <a href="https://space.bilibili.com/513890994" target="_blank">
+              <i class="icon brands style2 fab fa-bilibili"></i>
+            </a>
+          </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </section>
+    <ul class="copyright">
+      <li>
+        <a href="https://diamond153.github.io/atom.xml" target="_blank">
+          RSS
+        </a> 
+      </li>
+      <li><a href="https://github.com/wherelse/gridea-theme-phantom">Theme Phantom</a></li>
+      <li>你看啥看</li>
+      
+    </ul>
+  </div>
+</footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://diamond153.github.io/media/scripts/jquery.min.js"></script>
+  <script src="https://diamond153.github.io/media/scripts/browser.min.js"></script>
+  <script src="https://diamond153.github.io/media/scripts/breakpoints.min.js"></script>
+  <script src="https://diamond153.github.io/media/scripts/util.js"></script>
+  <script src="https://diamond153.github.io/media/scripts/main.js"></script>
+  
+  <script src="https://diamond153.github.io/media/scripts/prism.js"></script>
+  <script>
+    Prism.highlightAll();
+  </script>
+  
+  <script>
+    post_scroll();
+    back_to_top();
+  </script>
+</body>
+
+</html>
