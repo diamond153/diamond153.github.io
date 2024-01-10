@@ -126,8 +126,12 @@
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
-      <div class="site-state-item site-state-tags">
+      <div class="site-state-item site-state-categories">
         <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -180,7 +184,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/01/10/adv-alg-det/" class="post-title-link" itemprop="url">高等代数 - 行列式</a>
+          <a href="/2024/01/10/adv-alg-det/" class="post-title-link" itemprop="url">行列式</a>
         </h2>
 
         <div class="post-meta-container">
@@ -192,7 +196,20 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2024-01-10 19:07:09 / Modified: 20:22:42" itemprop="dateCreated datePublished" datetime="2024-01-10T19:07:09+08:00">2024-01-10</time>
+      <time title="Created: 2024-01-10 19:07:09 / Modified: 22:54:19" itemprop="dateCreated datePublished" datetime="2024-01-10T19:07:09+08:00">2024-01-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Math/" itemprop="url" rel="index"><span itemprop="name">Math</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Math/Advanced-Algebra/" itemprop="url" rel="index"><span itemprop="name">Advanced Algebra</span></a>
+        </span>
     </span>
 
   
@@ -205,12 +222,13 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h2><p>我们已经知道如何解 $2$、$3$ 元线性方程组，而高阶的线性方程组计算起来可能会比较复杂且缺少系统化. 此时应该引入行列式，它可以解决关于线性方程组的相关问题以及更多.</p>
-<h3 id="行列式的定义"><a href="#行列式的定义" class="headerlink" title="行列式的定义"></a>行列式的定义</h3><h4 id="定义-1-1-1"><a href="#定义-1-1-1" class="headerlink" title="定义 1.1.1"></a>定义 1.1.1</h4><p>一个用两条竖线围起来的由 $n$ 行 $n$ 列的元素组成的方阵为 $n$ 阶的行列式：<br>$$<br>|\mathbf A|&#x3D;\begin{vmatrix}<br>a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\\<br>a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\\<br>\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\<br>a_{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}<br>\end{vmatrix}<br>$$</p>
+          <h2 id="行列式"><a href="#行列式" class="headerlink" title="行列式"></a>行列式</h2><p>我们已经知道如何解 $2$、$3$ 元线性方程组，而高阶的线性方程组计算起来可能会比较复杂且缺少系统化. 此时应该引入行列式，它可以解决关于线性方程组的相关问题以及更多.</p>
+<h3 id="行列式的定义"><a href="#行列式的定义" class="headerlink" title="行列式的定义"></a>行列式的定义</h3><h4 id="定义-1-1-1"><a href="#定义-1-1-1" class="headerlink" title="定义 1.1.1"></a>定义 1.1.1</h4><p>一个用两条竖线围起来的由 $n$ 行 $n$ 列的元素组成的方阵为 $n$ 阶的行列式，它代表一个值：<br>$$<br>\det \mathbf A&#x3D;|\mathbf A|&#x3D;\begin{vmatrix}<br>a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\\<br>a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\\<br>\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\<br>a_{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}<br>\end{vmatrix}<br>$$</p>
 <h4 id="定义-1-1-2"><a href="#定义-1-1-2" class="headerlink" title="定义 1.1.2"></a>定义 1.1.2</h4><p>定义 $a_{ij}$ 的余子式 $M_{ij}$ 为 $\mathbf A$ 划去 $a_{ij}$ 所在的行和列组成的另一个 $n-1$ 阶行列式：<br>$$<br>M_{ij}&#x3D;\begin{vmatrix}<br>a_{11}&amp;\cdots&amp;a_{1,j-1}&amp;a_{1,j+1}&amp;\cdots&amp;a_{1n}\\<br>\vdots&amp;&amp;\vdots&amp;\vdots&amp;&amp;\vdots\\<br>a_{i-1,1}&amp;\cdots&amp;a_{i-1,j-1}&amp;a_{i-1,j+1}&amp;\cdots&amp;a_{i-1,n}\\<br>a_{i+1,1}&amp;\cdots&amp;a_{i+1,j-1}&amp;a_{i+1,j+1}&amp;\cdots&amp;a_{i+1,n}\\<br>\vdots&amp;&amp;\vdots&amp;\vdots&amp;&amp;\vdots\\<br>a_{n1}&amp;\cdots&amp;a_{n,j-1}&amp;a_{n,j+1}&amp;\cdots&amp;a_{nn}\\<br>\end{vmatrix}<br>$$</p>
 <h4 id="定义-1-1-3"><a href="#定义-1-1-3" class="headerlink" title="定义 1.1.3"></a>定义 1.1.3</h4><p>定义 $a_{ij}$ 的代数余子式 $A_{ij}$ 为 $M_{ij}$ 的 $(-1)^{i+j}$ 倍：<br>$$<br>A_{ij}&#x3D;(-1)^{i+j}M_{ij}<br>$$</p>
-<h4 id="定义-1-1-4"><a href="#定义-1-1-4" class="headerlink" title="定义 1.1.4"></a>定义 1.1.4</h4><p>定义用 $A$ 或 $M$ 表示 $|\mathbf A|$ 的值的方式为：<br>$$<br>|\mathbf A|&#x3D;\begin{cases}<br>a_{11}&amp; n&#x3D;1\\<br>\sum\limits_{k&#x3D;1}^nA_{ik}&#x3D;\sum\limits_{k&#x3D;1}^nA_{ki},i&#x3D;1,2,\cdots,n&amp;n&gt;1<br>\end{cases}<br>$$<br>将 $A_{ij}$ 写为 $(-1)^{i+j}M_{ij}$ 即可得到用 $M$ 表示 $|\mathbf A|$ 的值的方式，由此，我们得到了递归求 $|\mathbf A|$ 的方式.</p>
+<h4 id="定义-1-1-4"><a href="#定义-1-1-4" class="headerlink" title="定义 1.1.4"></a>定义 1.1.4</h4><p>定义用 $A$ 或 $M$ 表示 $|\mathbf A|$ 的值的方式为：<br>$$<br>|\mathbf A|&#x3D;\begin{cases}<br>a_{11}&amp; n&#x3D;1\\<br>\sum\limits_{k&#x3D;1}^nA_{1k}&amp;n&gt;1<br>\end{cases}<br>$$<br>这时将 $A_{ij}$ 写为 $(-1)^{i+j}M_{ij}$ 即可得到用 $M$ 表示 $|\mathbf A|$ 的值的方式，由此，我们得到了递归求 $|\mathbf A|$ 的方式.</p>
 <p>所以若 $n&#x3D;2$，则：<br>$$<br>|\mathbf A|&#x3D;\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}&#x3D;ad-bc<br>$$<br>若 $n&#x3D;3$，则：<br>$$<br>|\mathbf A|&#x3D;\begin{vmatrix}<br>a_1&amp;b_1&amp;c_1\\a_2&amp;b_2&amp;c_2\\a_3&amp;b_3&amp;c_3<br>\end{vmatrix}&#x3D;a_1b_2c_3+b_1c_2a_3+c_1a_2b_3-a_3b_2c_1-b_3c_2a_1-c_3a_2b_1<br>$$</p>
+<h4 id="定义-1-1-5"><a href="#定义-1-1-5" class="headerlink" title="定义 1.1.5"></a>定义 1.1.5</h4><p>若 $|\mathbf A|$ 使用定义 $1.1.1$ 的形式定义，则定义 $|\mathbf A|$ 的转置：<br>$$<br>|\mathbf A^\mathrm T|&#x3D;\begin{vmatrix}<br>a_{11}&amp;a_{21}&amp;\cdots&amp;a_{n1}\\<br>a_{12}&amp;a_{22}&amp;\cdots&amp;a_{n2}\\<br>\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\<br>a_{1n}&amp;a_{2n}&amp;\cdots&amp;a_{nn}<br>\end{vmatrix}<br>$$</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
     </div>
