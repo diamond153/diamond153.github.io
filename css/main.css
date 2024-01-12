@@ -1,5 +1,5 @@
 :root {
-  --body-bg-color: #f1f1ff;
+  --body-bg-color: #f5f5fa;
   --content-bg-color: #fff;
   --card-bg-color: #f5f5f5;
   --text-color: #555;
@@ -11,7 +11,7 @@
   --table-row-odd-bg-color: #f9f9f9;
   --table-row-hover-bg-color: #f5f5f5;
   --menu-item-bg-color: #f5f5f5;
-  --theme-color: #1c1141;
+  --theme-color: #7255c5;
   --btn-default-bg: #fff;
   --btn-default-color: #555;
   --btn-default-border-color: #555;
@@ -1139,7 +1139,7 @@ pre code {
   transform: rotateZ(360deg);
 }
 .site-author-name {
-  color: #8160b4;
+  color: #8866e7;
   font-weight: 600;
   margin: 0;
 }
@@ -1391,28 +1391,6 @@ pre code {
 .post-toc .nav .active-current > a:hover {
   color: #8866e7;
 }
-.site-state {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  line-height: 1.4;
-}
-.site-state-item {
-  padding: 0 15px;
-}
-.site-state-item a {
-  border-bottom: 0;
-  display: block;
-}
-.site-state-item-count {
-  display: block;
-  font-size: 1em;
-  font-weight: 600;
-}
-.site-state-item-name {
-  color: #999;
-  font-size: 0.8125em;
-}
 .footer {
   color: #999;
   font-size: 0.875em;
@@ -1538,11 +1516,6 @@ pre code {
 .post-button {
   margin-top: 40px;
   text-align: center;
-}
-.use-motion .post-block,
-.use-motion .pagination,
-.use-motion .comments {
-  visibility: hidden;
 }
 .use-motion .post-header {
   visibility: hidden;
