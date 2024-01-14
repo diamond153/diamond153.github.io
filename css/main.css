@@ -11,7 +11,7 @@
   --table-row-odd-bg-color: #f9f9f9;
   --table-row-hover-bg-color: #f5f5f5;
   --menu-item-bg-color: #f5f5f5;
-  --theme-color: #7255c5;
+  --theme-color: #4c20a5;
   --btn-default-bg: #fff;
   --btn-default-color: #555;
   --btn-default-border-color: #555;
@@ -1129,7 +1129,7 @@ pre code {
   display: inline-block;
 }
 .site-author-image {
-  border: 1px solid #eee;
+  border: 1px solid #8866e7;
   max-width: 120px;
   padding: 2px;
   border-radius: 50%;
@@ -1488,7 +1488,7 @@ pre code {
 }
 .reading-progress-bar {
   --progress: 0;
-  background: #7d55cf;
+  background: #8866e5;
   height: 3px;
   position: fixed;
   z-index: 50;
