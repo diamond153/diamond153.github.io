@@ -33,6 +33,10 @@
 .darkmode--activated iframe {
   color-scheme: light;
 }
+.darkmode--activated .spoiler .spoiler-title {
+  background: #424242;
+  color: #e5e5e5;
+}
 :root {
   --body-bg-color: #f5f5fa;
   --content-bg-color: #fff;
