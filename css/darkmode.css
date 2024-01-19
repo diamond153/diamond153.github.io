@@ -33,3 +33,10 @@
 .darkmode--activated iframe {
   color-scheme: light;
 }
+.darkmode--activated .spoiler .spoiler-title {
+  background: #424242;
+  color: #e5e5e5;
+}
+.darkmode--activated .spoiler {
+  border: 2px solid #494949;
+}
