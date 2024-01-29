@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#4c20a5"><meta name="generator" content="Hexo 7.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#4c20a5">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":";","save":"manual"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":null,"post_header":"fadeInDownBig","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"bounceInLeft"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Cauchy-Binet 公式及其运用">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cauchy-Binet 公式及其运用">
+<meta property="og:url" content="http://example.com/posts/Math/Advanced-Algebra/Linear-Algebra/cauchy-binet/index.html">
+<meta property="og:site_name" content="My Blog">
+<meta property="og:description" content="Cauchy-Binet 公式及其运用">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-01-28T18:11:57.000Z">
+<meta property="article:modified_time" content="2024-01-29T12:14:59.549Z">
+<meta property="article:author" content="diamond_153">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/posts/Math/Advanced-Algebra/Linear-Algebra/cauchy-binet/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/posts/Math/Advanced-Algebra/Linear-Algebra/cauchy-binet/index.html","path":"posts/Math/Advanced-Algebra/Linear-Algebra/cauchy-binet/index.html","title":"Cauchy-Binet 公式及其运用"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Cauchy-Binet 公式及其运用 | My Blog
+</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style></style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">My Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Diamond_153's Blog. Welcome</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-menu"><a href="/posts/" rel="section"><i class="fa fa-th fa-fw"></i>Menu</a></li><li class="menu-item menu-item-trends"><a href="/trends/" rel="section"><i class="fa fa-calendar fa-fw"></i>Trends</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#text-Cauchy-Binet-%E5%85%AC%E5%BC%8F"><span class="nav-text">$\text{Cauchy-Binet}$ 公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%81%E6%98%8E"><span class="nav-text">证明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%94%E7%94%A8"><span class="nav-text">应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#text-Lagrange-%E6%81%92%E7%AD%89%E5%BC%8F"><span class="nav-text">$\text{Lagrange}$ 恒等式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%81%E6%98%8E-1"><span class="nav-text">证明 1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%81%E6%98%8E-2"><span class="nav-text">证明 2</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#text-Cauchy-Schwarz-%E4%B8%8D%E7%AD%89%E5%BC%8F-1"><span class="nav-text">$\text{Cauchy-Schwarz}$ 不等式 1</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%81%E6%98%8E-1"><span class="nav-text">证明</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#text-Cauchy-Schwarz-%E4%B8%8D%E7%AD%89%E5%BC%8F-2"><span class="nav-text">$\text{Cauchy-Schwarz}$ 不等式 2</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%81%E6%98%8E-2"><span class="nav-text">证明</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="diamond_153"
+      src="/images/icon.png">
+  <p class="site-author-name" itemprop="name">diamond_153</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/diamond153" title="Github → https:&#x2F;&#x2F;github.com&#x2F;diamond153" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>Github</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Cauchy-Binet 公式及其运用
+</h1>
+
+<div class="post-meta-container">
+    <div class="post-description">Cauchy-Binet 公式及其运用</div>
+  <ul class="breadcrumb">
+            <li><a href="/posts/">MENU</a></li>
+            <li><a href="/posts/Math/">MATH</a></li>
+            <li><a href="/posts/Math/Advanced-Algebra/">ADVANCED-ALGEBRA</a></li>
+            <li><a href="/posts/Math/Advanced-Algebra/Linear-Algebra/">LINEAR-ALGEBRA</a></li>
+          <li>CAUCHY-BINET</li>
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <h2 id="text-Cauchy-Binet-公式"><a href="#text-Cauchy-Binet-公式" class="headerlink" title="$\text{Cauchy-Binet}$ 公式"></a>$\text{Cauchy-Binet}$ 公式</h2><p>如果 $\boldsymbol A&#x3D;(a_{ij})_{m\times n},\boldsymbol B&#x3D;(b_{ij})_{n\times m}$，则：<br>$$<br>|\boldsymbol{AB}|&#x3D;\begin{cases}<br>0 &amp; m&gt;n\\ \sum\limits_{1\le i_1&lt;i_2&lt;\cdots&lt;i_m\le n}<br>\boldsymbol A\begin{pmatrix}1&amp;2&amp;\cdots&amp;m\\ i_1&amp;i_2&amp;\cdots&amp;i_m\end{pmatrix}<br>\boldsymbol B\begin{pmatrix}i_1&amp;i_2&amp;\cdots&amp;i_m\\ 1&amp;2&amp;\cdots&amp;m\end{pmatrix} &amp; m\le n<br>\end{cases}<br>$$</p>
+<p>其中 $\boldsymbol A\begin{pmatrix}i_1&amp;i_2&amp;\cdots&amp;i_m\\ j_1&amp;j_2&amp;\cdots&amp;j_m\end{pmatrix}$ 是留下 $\boldsymbol A$ 的 $m$ 行 $m$ 列（分别为第 $i_k$ 行与第 $j_k$ 列）的交点留下的行列式，$\boldsymbol B$ 同理.</p>
+<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>现证第一种情况. 由于 $\mathrm{rank}(\boldsymbol{AB})\le \mathrm{rank}(\boldsymbol{A})\le n&lt;m$，所以 $\boldsymbol{AB}$ 不是满秩矩阵，故 $|\boldsymbol{AB}|&#x3D;0$.</p>
+<p>再证第二种情况.</p>
+<p>$$<br>\begin{align}<br>|\boldsymbol{AB}|&amp;&#x3D;\left|\left(\sum\limits_{k&#x3D;1}^na_{ik}b_{kj}\right)_{m\times m}\right|<br>&#x3D;\left|\left(\sum\limits_{k_j&#x3D;1}^na_{ik_j}b_{k_jj}\right)_{m\times m}\right|\\<br>&amp;&#x3D;\sum\limits_{k_1&#x3D;1}^n\sum\limits_{k_2&#x3D;1}^n\cdots\sum\limits_{k_m&#x3D;1}^n<br>\left|(a_{ik_j}b_{k_jj})_{m\times m}\right|\\<br>&amp;&#x3D;\sum\limits_{k_1&#x3D;1}^n\sum\limits_{k_2&#x3D;1}^n\cdots\sum\limits_{k_m&#x3D;1}^n<br>\left|(a_{ik_j})_{m\times m}\right|\prod\limits_{i&#x3D;1}^mb_{k_ii}<br>\end{align}<br>$$</p>
+<p>如果在求和的一项中 $\exists i\ne j,k_i&#x3D;k_j$，则行列式的值为 $0$，所以去掉这些项并排序，则上式：</p>
+<p>$$<br>\begin{align}<br>&amp;&#x3D;\sum\limits_{1\le k_1&lt;k_2&lt;\cdots&lt;k_m\le n}\sum\limits_{(p_1,p_2,\cdots,p_m)\in S_m}\left|(a_{ik_{p_j}})_{m\times m}\right|\prod\limits_{i&#x3D;1}^mb_{k_{p_i}i}\\<br>&amp;&#x3D;\sum\limits_{1\le k_1&lt;k_2&lt;\cdots&lt;k_m\le n}\sum\limits_{(p_1,p_2,\cdots,p_m)\in S_m}(-1)^{N(p_1,p_2,\cdots,p_m)}\left|(a_{ik_j})_{m\times m}\right|\prod\limits_{i&#x3D;1}^mb_{k_{p_i}i}\\<br>&amp;&#x3D;\sum\limits_{1\le k_1&lt;k_2&lt;\cdots&lt;k_m\le n}\left|(a_{ik_j})_{m\times m}\right|\sum\limits_{(p_1,p_2,\cdots,p_m)\in S_m}(-1)^{N(p_1,p_2,\cdots,p_m)}\prod\limits_{i&#x3D;1}^mb_{k_{p_i}i}<br>\end{align}<br>$$</p>
+<p>外部求和中乘积的第一项为 $\boldsymbol A\begin{pmatrix}1&amp;2&amp;\cdots&amp;m\\ i_1&amp;i_2&amp;\cdots&amp;i_m\end{pmatrix}$，第二项为 $\boldsymbol B\begin{pmatrix}i_1&amp;i_2&amp;\cdots&amp;i_m\\ 1&amp;2&amp;\cdots&amp;m\end{pmatrix}$ 的组合定义，故定理得证.</p>
+<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h3 id="text-Lagrange-恒等式"><a href="#text-Lagrange-恒等式" class="headerlink" title="$\text{Lagrange}$ 恒等式"></a>$\text{Lagrange}$ 恒等式</h3><p>$$<br>\left(\sum\limits_{k&#x3D;1}^na_k^2\right)\left(\sum\limits_{k&#x3D;1}^nb_k^2\right)-\left(\sum\limits_{k&#x3D;1}^na_kb_k\right)^2<br>&#x3D;\sum\limits_{1\le i&lt;j\le n}(a_ib_j-a_jb_i)^2<br>$$</p>
+<h4 id="证明-1"><a href="#证明-1" class="headerlink" title="证明 1"></a>证明 1</h4><p>左式等于一个二阶行列式：</p>
+<p>$$<br>\begin{vmatrix}<br>\sum\limits_{k&#x3D;1}^na_k^2 &amp; \sum\limits_{k&#x3D;1}^na_kb_k\\<br>\sum\limits_{k&#x3D;1}^na_kb_k &amp; \sum\limits_{k&#x3D;1}^nb_k^2<br>\end{vmatrix}<br>&#x3D;\left|\begin{pmatrix}\boldsymbol a^\mathrm T\\ \boldsymbol b^\mathrm T\end{pmatrix}\begin{pmatrix}\boldsymbol a&amp;\boldsymbol b\end{pmatrix}\right|<br>$$</p>
+<p>其中 $\boldsymbol a,\boldsymbol b$ 分别为由 $a$ 与 $b$ 顺序组成的列向量，故由 $\text{Cauchy-Binet}$ 公式知上式等于：</p>
+<p>$$<br>\sum\limits_{1\le i&lt;j\le n}\begin{vmatrix}a_i &amp; a_j\\ b_i &amp; b_j\end{vmatrix}\begin{vmatrix}a_i &amp; b_i\\ a_j &amp; b_j\end{vmatrix}&#x3D;\sum\limits_{1\le i&lt;j\le n}(a_ib_j-a_jb_i)^2<br>$$</p>
+<p>恒等式得证.</p>
+<h4 id="证明-2"><a href="#证明-2" class="headerlink" title="证明 2"></a>证明 2</h4><p>注意到左式等于：</p>
+<p>$$<br>\left(\sum\limits_{i&#x3D;1}^na_i^2\right)\left(\sum\limits_{j&#x3D;1}^nb_j^2\right)-\left(\sum\limits_{i&#x3D;1}^na_ib_i\right)\left(\sum\limits_{j&#x3D;1}^na_jb_j\right)\<br>&#x3D;\sum\limits_{i&#x3D;1}^n\sum\limits_{j&#x3D;1}^n(a_i^2b_j^2-a_ia_jb_ib_j)<br>$$</p>
+<p>在求和的每一项中，如果 $i&#x3D;j$，则该项为 $0$，则上式等于：</p>
+<p>$$<br>\begin{align}<br>&amp;\sum\limits_{1\le i&lt;j\le n}\left((a_i^2b_i^2-a_ia_jb_ib_j)+(a_j^2b_j^2-a_ja_ib_jb_i)\right)\\<br>&#x3D;&amp;\sum\limits_{1\le i&lt;j\le n}\left((a_ib_i)^2-2(a_ia_j)(b_ib_j)+(a_jb_j)^2\right)<br>\end{align}<br>$$</p>
+<p>即为右式，得证.</p>
+<h3 id="text-Cauchy-Schwarz-不等式-1"><a href="#text-Cauchy-Schwarz-不等式-1" class="headerlink" title="$\text{Cauchy-Schwarz}$ 不等式 1"></a>$\text{Cauchy-Schwarz}$ 不等式 1</h3><p>$$<br>\left(\sum\limits_{k&#x3D;1}^na_i^2\right)\left(\sum\limits_{k&#x3D;1}^nb_i^2\right)\ge\left(\sum\limits_{k&#x3D;1}^na_ib_i\right)^2<br>$$</p>
+<p>取等当且仅当 $\boldsymbol a,\boldsymbol b$ 线性相关.</p>
+<h4 id="证明-1"><a href="#证明-1" class="headerlink" title="证明"></a>证明</h4><p>$\text{Lagrange}$ 恒等式中，右式恒大于 $0$，移项即得不等式，取等条件显然.</p>
+<h3 id="text-Cauchy-Schwarz-不等式-2"><a href="#text-Cauchy-Schwarz-不等式-2" class="headerlink" title="$\text{Cauchy-Schwarz}$ 不等式 2"></a>$\text{Cauchy-Schwarz}$ 不等式 2</h3><p>$$<br>\left(\sum\limits_{k&#x3D;1}^na_i^2\right)\left(\sum\limits_{k&#x3D;1}^nb_i^2\right)\ge\sum\limits_{1\le i&lt;j\le n}(a_ib_j-a_jb_i)^2<br>$$</p>
+<p>取等当且仅当 $\boldsymbol a,\boldsymbol b$ 正交.</p>
+<h4 id="证明-2"><a href="#证明-2" class="headerlink" title="证明"></a>证明</h4><p>$\text{Lagrange}$ 恒等式中，左式第二项恒大于 $0$，移项即得不等式，取等条件显然.</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-code"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">diamond_153</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '32px',
+  right: 'unset',
+  left: '32px',
+  time: '0s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#8866ff',
+  buttonColorLight: '#8866ff',
+  saveInCookies: true,
+  label: '',
+  autoMatchOsTheme: false
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+
+</body>
+</html>

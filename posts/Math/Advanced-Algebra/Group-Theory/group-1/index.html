@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#4c20a5"><meta name="generator" content="Hexo 7.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#4c20a5">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":";","save":"manual"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":null,"post_header":"fadeInDownBig","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"bounceInLeft"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="群论的基本定理">
+<meta property="og:type" content="website">
+<meta property="og:title" content="群论-1">
+<meta property="og:url" content="http://example.com/posts/Math/Advanced-Algebra/Group-Theory/group-1/index.html">
+<meta property="og:site_name" content="My Blog">
+<meta property="og:description" content="群论的基本定理">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-01-28T18:08:13.000Z">
+<meta property="article:modified_time" content="2024-01-29T12:14:39.089Z">
+<meta property="article:author" content="diamond_153">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/posts/Math/Advanced-Algebra/Group-Theory/group-1/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/posts/Math/Advanced-Algebra/Group-Theory/group-1/index.html","path":"posts/Math/Advanced-Algebra/Group-Theory/group-1/index.html","title":"群论-1"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>群论-1 | My Blog
+</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style></style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">My Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Diamond_153's Blog. Welcome</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-menu"><a href="/posts/" rel="section"><i class="fa fa-th fa-fw"></i>Menu</a></li><li class="menu-item menu-item-trends"><a href="/trends/" rel="section"><i class="fa fa-calendar fa-fw"></i>Trends</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text">群的定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BE%A4%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-text">群的基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E4%B8%8E%E6%80%A7%E8%B4%A8"><span class="nav-text">运算与性质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B1%E8%BD%AD%E4%B8%8E%E9%98%B6"><span class="nav-text">共轭与阶</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%90%E7%BE%A4%E4%B8%8E%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4"><span class="nav-text">子群与正规子群</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8C%E6%80%81%E3%80%81%E5%90%8C%E6%9E%84%E5%92%8C%E8%87%AA%E5%90%8C%E6%9E%84"><span class="nav-text">同态、同构和自同构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%99%AA%E9%9B%86%E4%B8%8E%E5%95%86%E7%BE%A4"><span class="nav-text">陪集与商群</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BE%A4%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86"><span class="nav-text">群的基本定理</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="diamond_153"
+      src="/images/icon.png">
+  <p class="site-author-name" itemprop="name">diamond_153</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/diamond153" title="Github → https:&#x2F;&#x2F;github.com&#x2F;diamond153" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>Github</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">群论-1
+</h1>
+
+<div class="post-meta-container">
+    <div class="post-description">群论的基本定理</div>
+  <ul class="breadcrumb">
+            <li><a href="/posts/">MENU</a></li>
+            <li><a href="/posts/Math/">MATH</a></li>
+            <li><a href="/posts/Math/Advanced-Algebra/">ADVANCED-ALGEBRA</a></li>
+            <li><a href="/posts/Math/Advanced-Algebra/Group-Theory/">GROUP-THEORY</a></li>
+          <li>GROUP-1</li>
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <h2 id="群的定义"><a href="#群的定义" class="headerlink" title="群的定义"></a>群的定义</h2><p>群由一个集合 $G$ 与一个二元运算 $\cdot$ 构成，群有两个定义，其中加粗部分为第二个定义没有的部分. 如果满足其中的一个定于则称 $\langle G,\cdot\rangle$ 为一个群：</p>
+<ol>
+<li>封闭性（closure）：$\forall a,b\in G,a\cdot b\in G$. 也就是不管怎么运算，结果总在 $G$ 中.</li>
+<li>结合律（associativity）：$\forall a,b,c\in G,(a\cdot b)\cdot c&#x3D;a\cdot(b\cdot c)$. 所以记 $a\cdot(b\cdot c)$ 与 $(a\cdot b)\cdot c$ 为 $a\cdot b\cdot c$. 但注意，交换律不一定成立.</li>
+<li>单位元（identity element）：存在<strong>唯一的</strong>元素 $e\in G$，使得 $\forall a\in G,e\cdot a&#x3D;\boldsymbol{a\cdot e}&#x3D;a$.</li>
+<li>逆元（inverse element）：$\forall a\in G$，存在<strong>唯一的</strong> $b\in G$，使得 $b\cdot a&#x3D;\boldsymbol{a\cdot b}&#x3D;e$，记 $b$ 为 $a^{-1}$.</li>
+</ol>
+<p>我们将证明这两个定义等价. 如果加粗部分成立，则去掉加粗部分显然成立. 如果去掉加粗部分成立，我们将分为四个命题依次证明.</p>
+<blockquote>
+<p>如果 $\forall a\in G,\exists b\in G,b\cdot a&#x3D;e$，则 $a\cdot b&#x3D;e$.</p>
+</blockquote>
+<p>设 $b$ 对应的逆元是 $a’$（也就是 $a’\cdot b&#x3D;e$），则：</p>
+<p>$$<br>a\cdot b&#x3D;e\cdot(a\cdot b)&#x3D;a’\cdot(b\cdot a)\cdot b&#x3D;a’\cdot b&#x3D;e<br>$$</p>
+<blockquote>
+<p>如果 $\exists e\in G,\forall a\in G,e\cdot a&#x3D;a$，则 $a\cdot e&#x3D;a$.</p>
+</blockquote>
+<p>$$<br>a\cdot e&#x3D;a\cdot(a^{-1}\cdot a)&#x3D;(a\cdot a^{-1})\cdot a&#x3D;e\cdot a&#x3D;a<br>$$</p>
+<blockquote>
+<p>如果 $\exists e\in G,\forall a\in G,e\cdot a&#x3D;a\cdot e&#x3D;a$，则 $e$ 唯一.</p>
+</blockquote>
+<p>假设 $e$ 不唯一，则存在 $e’$ 也满足条件，则：</p>
+<p>$$<br>e’&#x3D;e\cdot e’&#x3D;e<br>$$</p>
+<blockquote>
+<p>如果 $\forall a\in G,\exists b\in G,a\cdot b&#x3D;b\cdot a&#x3D;e$，则 $b$ 唯一.</p>
+</blockquote>
+<p>假设 $b$ 不唯一，则存在 $b’$ 也满足条件，则：</p>
+<p>$$<br>b’&#x3D;e\cdot b’&#x3D;(b\cdot a)\cdot b’&#x3D;b\cdot(a\cdot b’)&#x3D;b\cdot e&#x3D;b<br>$$</p>
+<p>现在我们已经构建好了一个群 $\langle G,\cdot\rangle$. 比如 $\langle\mathbb Z,+\rangle$ 就是一个群，单位元为 $0$，$a$ 的逆元为 $-a$；但是 $\langle\mathbb R,\cdot\rangle$ 就不是一个群，因为 $0$ 没有逆元.</p>
+<h2 id="群的基本概念"><a href="#群的基本概念" class="headerlink" title="群的基本概念"></a>群的基本概念</h2><h3 id="运算与性质"><a href="#运算与性质" class="headerlink" title="运算与性质"></a>运算与性质</h3><p>在 $\langle G,\cdot\rangle$ 中，由于结合律，所以运算顺序不影响运算结果，我们把 $a\cdot (b\cdot c)$ 和 $(a\cdot b)\cdot c$ 写为 $a\cdot b\cdot c$，$\underbrace{a\cdot a\cdot\cdots\cdot a}_{n\text{ 个}}$ 写为 $a^n$，规定 $a^0&#x3D;e$.</p>
+<p>由于一个数 $a$ 的逆元有且仅有一个，则将该数记为 $a^{-1}$，还可以将 $(a^{-1})^n$ 记为 $a^{-n}$. 关于逆元有如下性质：</p>
+<ol>
+<li>$e^{-1}&#x3D;e$.</li>
+<li>如果 $a\cdot b&#x3D;e$，则 $b&#x3D;a^{-1},a&#x3D;b^{-1},b\cdot a&#x3D;e$.</li>
+<li>$a^n\cdot a^m&#x3D;a^{n+m}$，其中 $n,m\in\mathbb Z$.</li>
+<li>$(a_1\cdot a_2\cdot\cdots\cdot a_n)^{-1}&#x3D;a_n^{-1}\cdot a_{n-1}^{-1}\cdot\cdots\cdot a_1^{-1}$.</li>
+</ol>
+<h3 id="共轭与阶"><a href="#共轭与阶" class="headerlink" title="共轭与阶"></a>共轭与阶</h3><p>如果在群 $\langle G,\cdot\rangle$ 中，$a,b\in G$ 满足 $\exists g\in G,a&#x3D;g^{-1}\cdot b\cdot g$，则称 $a$ 与 $b$ 共轭，记作 $a\sim b$. 共轭是一种等价关系，容易证明共轭满足下面三个性质：</p>
+<ol>
+<li>自反率（reflexive）：$\forall a\in G,a\sim a$.</li>
+<li>对称率（symmetric）：$\forall a,b\in G,a\sim b\Rightarrow b\sim a$.</li>
+<li>传递率（transitive）：$\forall a,b,c\in G,a\sim b,b\sim c\Rightarrow a\sim c$.</li>
+</ol>
+<p>群 $\langle G,\cdot\rangle$ 的阶是 $G$ 中的元素个数，记作 $|G|$，其中无限群有无限阶. $a\in G$ 的阶指使得 $a^m&#x3D;e$ 的最小正整数 $m$，记作 $|a|$ 或 $\mathrm{ord}(a)$. 若不存在，则 $a$ 有无限阶.</p>
+<h3 id="子群与正规子群"><a href="#子群与正规子群" class="headerlink" title="子群与正规子群"></a>子群与正规子群</h3><p>在群 $\langle G,\cdot\rangle$ 中，如果 $H\subseteq G$ 且 $\langle H,\cdot\rangle$ 是群，则称 $H$ 是 $G$ 的子群. 如果 $\forall h\in H,g\in G$ 都有 $g^{-1}\cdot h\cdot g\in H$，则称 $H$ 为 $G$ 的正规子群，记作 $H\lhd G$.</p>
+<h3 id="同态、同构和自同构"><a href="#同态、同构和自同构" class="headerlink" title="同态、同构和自同构"></a>同态、同构和自同构</h3><p>对于两个群 $\langle G,\cdot\rangle$ 和 $\langle H,\cdot\rangle$，如果 $\exists f:G\to H$，使得 $\forall a,b\in G,f(a\cdot b)&#x3D;f(a)\cdot f(b)$，则 $f$ 为从 $G$ 到 $H$ 的群同态；如果 $f$ 还是双射，则称 $f$ 是从 $G$ 到 $H$ 的群同构，$G$ 与 $H$ 同构，记作 $G\cong H$.</p>
+<p>如果 $f:G\to H$ 是从 $G$ 到 $H$ 的同态，则定义 $f$ 的像：</p>
+<p>$$<br>\mathrm{Im}\ f&#x3D;\{h\mid h&#x3D;f(g),g\in G\}<br>$$</p>
+<p>同时定义 $f$ 的核：</p>
+<p>$$<br>\ker f&#x3D;\{g\in G\mid f(g)&#x3D;e_H\}<br>$$</p>
+<p>其中，$e_H$ 是群 $\langle H,\cdot\rangle$ 的单位元.</p>
+<h3 id="陪集与商群"><a href="#陪集与商群" class="headerlink" title="陪集与商群"></a>陪集与商群</h3><p>在群 $\langle G,\cdot\rangle$ 与其子群 $\langle H,\cdot\rangle$ 中，定义：</p>
+<p>$$<br>\forall g\in G,\begin{cases}<br>gH&#x3D;\{g\cdot h\mid h\in H\}\ Hg&#x3D;\{h\cdot g\mid h\in H\}<br>\end{cases}<br>$$</p>
+<p>其中，$gH$ 被称为左陪集，$Hg$ 被成为右陪集. 在此基础上定义商群与 $H$ 在 $G$ 中的指数：</p>
+<p>$$<br>G&#x2F;H&#x3D;\{gH\mid g\in G\},[G:H]&#x3D;|G&#x2F;H|<br>$$</p>
+<p>商群是所有左陪集构成的集合，$H$ 在 $G$ 中的指数是商群元素的个数，我们将在后面证明左陪集与右陪集是等价的.</p>
+<h2 id="群的基本定理"><a href="#群的基本定理" class="headerlink" title="群的基本定理"></a>群的基本定理</h2><blockquote>
+<p>如果 $a\sim b$，那么 $|a|&#x3D;|b|$.</p>
+</blockquote>
+<p>即 $\exists g\in G$ 使得 $b&#x3D;g^{-1}\cdot a\cdot g$. 如果 $b^n&#x3D;g^{-1}\cdot a^n\cdot g&#x3D;e$，则 $a^n&#x3D;g\cdot e\cdot g^{-1}&#x3D;e$，满足该条件的最小正整数 $n$ 既为 $a$ 的阶，又为 $b$ 的阶，故 $|a|&#x3D;|b|$.</p>
+<blockquote>
+<p>有限群的任意元素都有有限阶.</p>
+</blockquote>
+<p>设 $n&#x3D;|G|$，则根据抽屉原理 $a,a^2,\cdots.a^{n+1}$ 中必有两个相等，设这两个元素为 $a^x$ 和 $a^y$，其中 $x&gt;y$，则 $a^x\cdot (a^y)^{-1}&#x3D;a^{x-y}&#x3D;e$，所以 $|a|\le x-y$.</p>
+<blockquote>
+<p>$a^m&#x3D;e$ 当且仅当 $\mathrm{ord}(a)\mid m$.</p>
+</blockquote>
+<p>如果 $a^m&#x3D;e$，设 $m&#x3D;|a|p+r$，其中 $p,r\in \mathbb N,r&lt;|a|$，则 $a^m&#x3D;(a^{|a|})^p\cdot a^r&#x3D;a^r&#x3D;e$，又 $r&lt;|a|$，则 $r&#x3D;0$，$m$ 可以被 $|a|$ 整除. 另一方向显然.</p>
+<blockquote>
+<p>$\langle H,\cdot\rangle$ 是 $\langle G,\cdot\rangle$ 的子群当且仅当 $H\subseteq G$，$\forall a,b\in H,a\cdot b\in H$ 且 $\forall a\in H,a^{-1}\in H$.</p>
+</blockquote>
+<p>上面两个条件是封闭律和逆元，又运算本来就满足结合律，在第一个条件中取 $b&#x3D;a^{-1}$ 即得单位元也在 $H$ 中. 群的四个性质均满足，所以 $\langle H,\cdot\rangle$ 是群，又 $H\subseteq G$，所以 $H$ 是 $G$ 的子群，反之亦然.</p>
+<blockquote>
+<p>$\langle H,\cdot\rangle$ 是 $\langle G,\cdot\rangle$ 的子群当且仅当 $H\subseteq G$ 且 $\forall a,b\in H,a\cdot b^{-1}\in H$ 或 $a^{-1}\cdot b\in H$.</p>
+</blockquote>
+<p>接下来给出该方法的证明. 如果 $\langle H,\cdot\rangle$ 已经是 $\langle G,\cdot\rangle$ 的子群了，则该方法给出的条件显然满足. 如果该方法给出的第一个条件成立，则 $\langle H,\cdot\rangle$ 满足第一个方法的条件一. 又 $\forall a\in H,a\cdot a^{-1}&#x3D;e\in H$，则 $H$ 中包含 $G$ 中的单位元 $e$. 因为 $\forall a\in H,e\cdot a^{-1}\in H$，所以 $\langle H,\cdot\rangle$ 满足第一个方法的条件二. 最后 $\forall a,b\in H,a\cdot (b^{-1})^{-1}&#x3D;a\cdot b\in H$，故 $\langle H,\cdot\rangle$ 满足第一个方法的条件三，所以 $\langle H,\cdot\rangle$ 是 $\langle G,\cdot\rangle$ 的子群. 如果该方法给出的第二个条件成立，则仿照上面的证明也可以得出题设.</p>
+<blockquote>
+<p>$a\in bH$ 当且仅当 $aH&#x3D;bH$；$a\in Hb$ 当且仅当 $Ha&#x3D;Hb$.</p>
+</blockquote>
+<p>如果 $aH&#x3D;bH$，则 $a&#x3D;a\cdot e\in aH&#x3D;bH$，这样就证明了一个方向. 如果 $a\in bH$，则 $\exists h\in H$ 使得 $a&#x3D;b\cdot h$；又 $\forall x\in aH,\exists y\in H$ 使得 $x&#x3D;a\cdot y&#x3D;b\cdot(h\cdot y)$. 由于 $h,y\in H$，所以 $h\cdot y\in H$，则 $x\in bH$，也就是所有 $aH$ 的元素都在 $bH$ 中. 由于 $a\in aH$，所以同理可证所有 $bH$ 的元素都在 $aH$ 中，那么 $aH&#x3D;bH$. 另一个性质证明类似.</p>
+<blockquote>
+<p>不同的左陪集交为空集.</p>
+</blockquote>
+<p>也就是如果 $aH\ne bH$ 那么 $aH\cap bH&#x3D;\emptyset$. 由上面的性质可得 $aH\ne bH$ 等价于 $a\notin bH$，即证如果 $a\notin bH$ 那么 $\nexists x\in aH,x\in bH$. 假设 $\exists x$ 满足上面的条件，那么 $\exists h_1,h_2\in H$ 使得 $x&#x3D;a\cdot h_1&#x3D;b\cdot h_2$，同时右乘 $h_1^{-1}$ 可得 $a&#x3D;b\cdot(h_2\cdot h_1^{-1})$. 由于 $h_2,h_1^{-1}\in H$，所以 $h_2\cdot h_1^{-1}\in H$，故 $a\in bH$，矛盾！</p>
+<blockquote>
+<p>所有的陪集的元素个数与 $H$ 的元素个数相同.</p>
+</blockquote>
+<p>$aH$ 中所有元素 $a\cdot h,h\in H$ 都互不相等，所以 $a\cdot h$ 与 $h$ 存在双射关系，故 $aH\sim H$，右陪集同理.</p>
+<blockquote>
+<p>$a^{-1}\cdot b\in H$ 当且仅当 $aH&#x3D;bH$.</p>
+</blockquote>
+<p>如果 $a^{-1}\cdot b\in H$，设 $a^{-1}\cdot b&#x3D;h$，则 $b&#x3D;a\cdot h\in aH$，由第一个性质得到 $aH&#x3D;bH$. 如果 $aH&#x3D;bH$，则由第一个性质得到 $b\in aH$，也就是 $\exists h\in H$ 满足 $b&#x3D;a\cdot h$，故 $a^{-1}\cdot b&#x3D;h\in H$.</p>
+<blockquote>
+<p>不同的左陪集个数与不同的右陪集个数相等</p>
+</blockquote>
+<p>我们将证明 $\{aH\mid a\in G\}\sim\{Ha^{-1}\mid a\in G\}$. 先证明如果 $aH&#x3D;bH$，那么 $Ha^{-1}&#x3D;Hb^{-1}$. 由第一个性质得到 $b\in aH$，则 $\exists h\in H$ 使得 $b&#x3D;a\cdot h$，也就是 $a^{-1}&#x3D;h\cdot b^{-1}\in Hb^{-1}$，由第一个性质得到 $Ha^{-1}&#x3D;Hb^{-1}$. 类似上面的证明可得到如果 $aH\ne bH$ 那么 $Ha^{-1}\ne Hb^{-1}$. 所以 $aH$ 与 $Ha^{-1}$ 存在双射关系，这样就证明了 $\{aH\mid a\in G\}\sim\{Ha^{-1}\mid a\in G\}$. 又因为 $a\mapsto a^{-1}$ 为 $G\to G$ 的一个双射，所以 $\{Ha^{-1}\mid a\in G\}&#x3D;\{Ha\mid a\in G\}$，故性质得证.</p>
+<blockquote>
+<p>$\text{Lagrange}$ 定理：$|G|&#x3D;|H|[G:H]$.</p>
+</blockquote>
+<p>由于所有不同的左陪集互不相交，设 $S&#x3D;\{x\mid x\in aH,a\in G\}$. 显然 $S\subseteq G$，又 $a\in aH$，故 $G&#x3D;\{a\mid a\in G\}\subseteq S$，所以 $S&#x3D;G$. 故所有的左陪集，等价于所有不同的左陪集（$[G:H]$ 个）取遍 $G$ 的所有元素且没有两个不同的左陪集取到一个元素的情况. 故 $|G|&#x3D;\sum\limits_{s\in\{aH\mid a\in G\}}|s|&#x3D;|H||\{aH\mid a\in G\}|&#x3D;|H|[G:H]$.</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-code"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">diamond_153</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '32px',
+  right: 'unset',
+  left: '32px',
+  time: '0s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#8866ff',
+  buttonColorLight: '#8866ff',
+  saveInCookies: true,
+  label: '',
+  autoMatchOsTheme: false
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+
+</body>
+</html>
