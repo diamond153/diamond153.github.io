@@ -1242,6 +1242,7 @@ pre code {
   visibility: hidden;
 }
 .book-mark-link {
+  color: var(--theme-color);
   border-bottom: 0;
   position: fixed;
   top: -10px;
@@ -1259,7 +1260,7 @@ pre code {
   }
 }
 .book-mark-link::before {
-  color: ;
+  color: var(--theme-color);
   font-size: 32px;
   line-height: 1;
   content: '\f02e';

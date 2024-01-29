@@ -19,28 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":";","save":"manual"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":null,"post_header":"fadeInDownBig","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"bounceInLeft"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="将行列式的递归定义推广到组合定义">
+    <meta name="description" content="Cauchy-Binet 公式及其运用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="行列式的组合定义">
-<meta property="og:url" content="http://example.com/2024/01/12/math-advalg-detc/index.html">
+<meta property="og:title" content="Cauchy-Binet 公式及其运用">
+<meta property="og:url" content="http://example.com/2024/01/29/math-advalg-cb/index.html">
 <meta property="og:site_name" content="My Blog">
-<meta property="og:description" content="将行列式的递归定义推广到组合定义">
+<meta property="og:description" content="Cauchy-Binet 公式及其运用">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-01-12T10:46:41.000Z">
-<meta property="article:modified_time" content="2024-01-28T18:29:54.056Z">
+<meta property="article:published_time" content="2024-01-28T18:11:57.000Z">
+<meta property="article:modified_time" content="2024-01-29T00:42:03.463Z">
 <meta property="article:author" content="diamond_153">
 <meta property="article:tag" content="Math">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2024/01/12/math-advalg-detc/">
+<link rel="canonical" href="http://example.com/2024/01/29/math-advalg-cb/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/01/12/math-advalg-detc/","path":"2024/01/12/math-advalg-detc/","title":"行列式的组合定义"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/01/29/math-advalg-cb/","path":"2024/01/29/math-advalg-cb/","title":"Cauchy-Binet 公式及其运用"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>行列式的组合定义 | My Blog</title>
+<title>Cauchy-Binet 公式及其运用 | My Blog</title>
   
 
 
@@ -100,7 +100,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -113,6 +113,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#text-Cauchy-Binet-%E5%85%AC%E5%BC%8F"><span class="nav-text">$\text{Cauchy-Binet}$ 公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%81%E6%98%8E"><span class="nav-text">证明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%94%E7%94%A8"><span class="nav-text">应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#text-Lagrange-%E6%81%92%E7%AD%89%E5%BC%8F"><span class="nav-text">$\text{Lagrange}$ 恒等式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%81%E6%98%8E-1"><span class="nav-text">证明 1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%81%E6%98%8E-2"><span class="nav-text">证明 2</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#text-Cauchy-Schwarz-%E4%B8%8D%E7%AD%89%E5%BC%8F-1"><span class="nav-text">$\text{Cauchy-Schwarz}$ 不等式 1</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%81%E6%98%8E-1"><span class="nav-text">证明</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#text-Cauchy-Schwarz-%E4%B8%8D%E7%AD%89%E5%BC%8F-2"><span class="nav-text">$\text{Cauchy-Schwarz}$ 不等式 2</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%81%E6%98%8E-2"><span class="nav-text">证明</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -154,7 +155,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/12/math-advalg-detc/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/29/math-advalg-cb/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/icon.png">
@@ -167,12 +168,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="行列式的组合定义 | My Blog">
-      <meta itemprop="description" content="将行列式的递归定义推广到组合定义">
+      <meta itemprop="name" content="Cauchy-Binet 公式及其运用 | My Blog">
+      <meta itemprop="description" content="Cauchy-Binet 公式及其运用">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          行列式的组合定义
+          Cauchy-Binet 公式及其运用
         </h1>
 
         <div class="post-meta-container">
@@ -183,7 +184,7 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2024-01-12 18:46:41" itemprop="dateCreated datePublished" datetime="2024-01-12T18:46:41+08:00">2024-01-12</time>
+      <time title="Created: 2024-01-29 02:11:57" itemprop="dateCreated datePublished" datetime="2024-01-29T02:11:57+08:00">2024-01-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -206,19 +207,39 @@
   
 </div>
 
-            <div class="post-description">将行列式的递归定义推广到组合定义</div>
+            <div class="post-description">Cauchy-Binet 公式及其运用</div>
         </div>
       </header>
 
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>一个 $n$ 阶行列式有如下的递归定义：<br>$$<br>|\boldsymbol A|&#x3D;\begin{cases}a_{11}&amp;n&#x3D;1\\<br>\sum\limits_{k&#x3D;1}^na_{k1}A_{k1}&#x3D;\sum\limits_{k&#x3D;1}^n(-1)^{k+1}a_{k1}M_{k1}&amp;n&gt;1\end{cases}<br>$$<br>其中，$A_{ij},M_{ij}$ 分别是 $|\boldsymbol A|$ 中 $a_{ij}$ 的代数余子式与余子式，是 $n-1$ 阶的行列式. 如果将上一次展开产生的余子式继续展开，就可以得到 $|\boldsymbol A|$ 的值.</p>
-<p>如果已经将 $|\boldsymbol A|$展开了一次，则产生的行列式都为 $|\boldsymbol A|$ 划去第一列与某一行产生的行列式；同理，如果已经展开了第二次，则产生的行列式都为 $|\boldsymbol A|$ 划去前两列与某两行产生的行列式. 我们可以通过观察将此结论推广：如果已经展开了 $x&lt;n$ 次，则剩下的行列式都为 $|\boldsymbol A|$ 划去前 $x$ 列与某 $x$ 行产生的行列式，一共有 $n(n-1)\cdots(n-x+1)&#x3D;\cfrac{n!}{(n-x)!}$ 个，若展开后用乘法分配律将这些项分开，也就会对应这么多展开后的项，每一项的形式为：<br>$$<br>c\cdot|\boldsymbol X|<br>$$<br>其中，$c$ 是一个系数，$|\boldsymbol X|$ 是一个行列式.</p>
-<p>令展开次数 $x&#x3D;n-1$，考察这 $n!$ 项中的其中一个. 这一项一定是在前一次展开中的某一项的行列式展开的结果，以此类推直到原行列式. 设第 $i$ 次展开对应划去了 $|\boldsymbol A|$ 的第 $i$ 列与第 $p_i$ 行产生的行列式，其中 $p_i$ 互不相等，这一项中存在的行列式为一阶行列式，设这个行列式对应了 $a_{p_n,n}$. 接下来计算此项的值.</p>
-<p>设一个有序数组 $v_i&#x3D;(e_{i1},e_{i2},\cdots,e_{i,n-i})$ 表示进行完第 $i$ 次展开时这一项分别对应 $|\boldsymbol A|$ 中剩下的行的编号（严格递增），如 $v_1&#x3D;(1,2,\cdots,p_1-1,p_1+1,\cdots,n)$，特别地，$v_0&#x3D;(1,2,\cdots,n)$. 设 $v_{i-1}$ 中比 $p_i$ 小的有 $q_i$ 个，那么由递归定义得进行完第 $i$ 次展开后该项的系数为前一次展开产生的系数乘以 $(-1)^{q_i}a_{p_i,i}$.</p>
-<p>又由于 $v_i$ 为 $v_{i-1}$ 去掉 $p_i$ 形成的有序数组，所以 $v_{i-1}$ 只包含 $p_i,p_{i+1},\cdots,p_{n-1}$ 以及 $p_n$. 因为 $p_1$ 到 $p_n$ 中比 $p_i$ 小的数总共有 $p_i-1$ 个，将 $q_i$ 转化一下就是 $p_i-1$ 减去 $p_1,p_2,\cdots,p_{i-1}$ 中比 $p_i$ 小的数的总数，也就是 $p_i-1-(i-1)&#x3D;p_i-i$ 再加上 $p_1$ 到 $p_{i-1}$ 中比 $p_i$ 大的数的总数，所以设 $r_i$ 为 $p_i$ 前所有比 $p_i$ 大的数的总数，特别地，$r_1&#x3D;0$.</p>
-<p>因为 $p_i$ 取遍了 $1$ 到 $n$ 中的整数，故 $\sum\limits_{k&#x3D;1}^np_k&#x3D;\sum\limits_{k&#x3D;1}^nk$. 所以<br>$$<br>\sum\limits_{k&#x3D;1}^{n-1}q_k&#x3D;\sum\limits_{k&#x3D;1}^n(p_k-k)-(p_n-n)+\sum\limits_{k&#x3D;1}^{n-1}r_k&#x3D;\sum\limits_{k&#x3D;1}^{n-1}r_k+(n-p_n)<br>$$<br>因为 $p_n$ 前的值取遍了除 $p_n$ 外的 $1$ 到 $n$ 中的整数，所以 $r_n&#x3D;n-p_n$. 所以 $\sum\limits_{k&#x3D;1}^{n-1}q_k&#x3D;\sum\limits_{k&#x3D;1}^nr_k$. 最后我们就得到了这一项的值！<br>$$<br>\begin{eqnarray}<br>&amp;\left(\prod\limits_{k&#x3D;1}^{n-1}(-1)^{q_k}a_{p_k,k}\right)a_{p_n,n}&#x3D;(-1)^{\sum\limits_{k&#x3D;1}^{n-1}q_k}\prod_{k&#x3D;1}^na_{p_k,k}\\<br>&amp;\large&#x3D;(-1)^{\sum\limits_{k&#x3D;1}^nr_k}\prod\limits_{k&#x3D;1}^na_{p_k,k}<br>\end{eqnarray}<br>$$<br>最后，由于 $|\boldsymbol A|$ 进行 $n-1$ 次展开后会得到 $n!$ 项，而这 $n!$ 项我们都知道，所以容易得出 $|\boldsymbol A|$ 的值：<br>$$<br>|\boldsymbol A|&#x3D;\sum\limits_{(p_1,p_2,\cdots,p_n)\in S_n}<br>(-1)^{\sum\limits_{k&#x3D;1}^nr_k}\prod\limits_{k&#x3D;1}^na_{p_k,k}<br>$$<br>其中 $S_n$ 为 $n$ 阶置换群. 我们定义 $\sum\limits_{k&#x3D;1}^nr_k$ 为 $(p_1,p_2,\cdots,p_n)$ 的逆序对个数 $N(p_1,p_2,\cdots,p_n)$，就可以得到行列式的组合定义：<br>$$<br>\Large |\boldsymbol A|&#x3D;\sum\limits_{(p_1,p_2,\cdots,p_n)\in S_n}<br>(-1)^{N(p_1,p_2,\cdots,p_n)}\prod\limits_{k&#x3D;1}^na_{p_k,k}<br>$$</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="text-Cauchy-Binet-公式"><a href="#text-Cauchy-Binet-公式" class="headerlink" title="$\text{Cauchy-Binet}$ 公式"></a>$\text{Cauchy-Binet}$ 公式</h2><p>如果 $\boldsymbol A&#x3D;(a_{ij})_{m\times n},\boldsymbol B&#x3D;(b_{ij})_{n\times m}$，则：</p>
+<p>$$<br>|\boldsymbol{AB}|&#x3D;\begin{cases}<br>0 &amp; m&gt;n\\ \sum\limits_{1\le i_1&lt;i_2&lt;\cdots&lt;i_m\le n}<br>\boldsymbol A\begin{pmatrix}1&amp;2&amp;\cdots&amp;m\\ i_1&amp;i_2&amp;\cdots&amp;i_m\end{pmatrix}<br>\boldsymbol B\begin{pmatrix}i_1&amp;i_2&amp;\cdots&amp;i_m\\ 1&amp;2&amp;\cdots&amp;m\end{pmatrix} &amp; m\le n<br>\end{cases}<br>$$</p>
+<p>其中 $\boldsymbol A\begin{pmatrix}i_1&amp;i_2&amp;\cdots&amp;i_m\\ j_1&amp;j_2&amp;\cdots&amp;j_m\end{pmatrix}$ 是留下 $\boldsymbol A$ 的 $m$ 行 $m$ 列（分别为第 $i_k$ 行与第 $j_k$ 列）的交点留下的行列式，$\boldsymbol B$ 同理.</p>
+<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p>现证第一种情况. 由于 $\mathrm{rank}(\boldsymbol{AB})\le \mathrm{rank}(\boldsymbol{A})\le n&lt;m$，所以 $\boldsymbol{AB}$ 不是满秩矩阵，故 $|\boldsymbol{AB}|&#x3D;0$.</p>
+<p>再证第二种情况.</p>
+<p>$$<br>\begin{align}<br>|\boldsymbol{AB}|&amp;&#x3D;\left|\left(\sum\limits_{k&#x3D;1}^na_{ik}b_{kj}\right)_{m\times m}\right|<br>&#x3D;\left|\left(\sum\limits_{k_j&#x3D;1}^na_{ik_j}b_{k_jj}\right)_{m\times m}\right|\\<br>&amp;&#x3D;\sum\limits_{k_1&#x3D;1}^n\sum\limits_{k_2&#x3D;1}^n\cdots\sum\limits_{k_m&#x3D;1}^n<br>\left|(a_{ik_j}b_{k_jj})_{m\times m}\right|\\<br>&amp;&#x3D;\sum\limits_{k_1&#x3D;1}^n\sum\limits_{k_2&#x3D;1}^n\cdots\sum\limits_{k_m&#x3D;1}^n<br>\left|(a_{ik_j})_{m\times m}\right|\prod\limits_{i&#x3D;1}^mb_{k_ii}<br>\end{align}<br>$$</p>
+<p>如果在求和的一项中 $\exists i\ne j,k_i&#x3D;k_j$，则行列式的值为 $0$，所以去掉这些项并排序，则上式：</p>
+<p>$$<br>\begin{align}<br>&amp;&#x3D;\sum\limits_{1\le k_1&lt;k_2&lt;\cdots&lt;k_m\le n}\sum\limits_{(p_1,p_2,\cdots,p_m)\in S_m}\left|(a_{ik_{p_j}})_{m\times m}\right|\prod\limits_{i&#x3D;1}^mb_{k_{p_i}i}\\<br>&amp;&#x3D;\sum\limits_{1\le k_1&lt;k_2&lt;\cdots&lt;k_m\le n}\sum\limits_{(p_1,p_2,\cdots,p_m)\in S_m}(-1)^{N(p_1,p_2,\cdots,p_m)}\left|(a_{ik_j})_{m\times m}\right|\prod\limits_{i&#x3D;1}^mb_{k_{p_i}i}\\<br>&amp;&#x3D;\sum\limits_{1\le k_1&lt;k_2&lt;\cdots&lt;k_m\le n}\left|(a_{ik_j})_{m\times m}\right|\sum\limits_{(p_1,p_2,\cdots,p_m)\in S_m}(-1)^{N(p_1,p_2,\cdots,p_m)}\prod\limits_{i&#x3D;1}^mb_{k_{p_i}i}<br>\end{align}<br>$$</p>
+<p>外部求和中乘积的第一项为 $\boldsymbol A\begin{pmatrix}1&amp;2&amp;\cdots&amp;m\\ i_1&amp;i_2&amp;\cdots&amp;i_m\end{pmatrix}$，第二项为 $\boldsymbol B\begin{pmatrix}i_1&amp;i_2&amp;\cdots&amp;i_m\\ 1&amp;2&amp;\cdots&amp;m\end{pmatrix}$ 的组合定义，故定理得证.</p>
+<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h3 id="text-Lagrange-恒等式"><a href="#text-Lagrange-恒等式" class="headerlink" title="$\text{Lagrange}$ 恒等式"></a>$\text{Lagrange}$ 恒等式</h3><p>$$<br>\left(\sum\limits_{k&#x3D;1}^na_k^2\right)\left(\sum\limits_{k&#x3D;1}^nb_k^2\right)-\left(\sum\limits_{k&#x3D;1}^na_kb_k\right)^2<br>&#x3D;\sum\limits_{1\le i&lt;j\le n}(a_ib_j-a_jb_i)^2<br>$$</p>
+<h4 id="证明-1"><a href="#证明-1" class="headerlink" title="证明 1"></a>证明 1</h4><p>左式等于一个二阶行列式：</p>
+<p>$$<br>\begin{vmatrix}<br>\sum\limits_{k&#x3D;1}^na_k^2 &amp; \sum\limits_{k&#x3D;1}^na_kb_k\\<br>\sum\limits_{k&#x3D;1}^na_kb_k &amp; \sum\limits_{k&#x3D;1}^nb_k^2<br>\end{vmatrix}<br>&#x3D;\left|\begin{pmatrix}\boldsymbol a^\mathrm T\\ \boldsymbol b^\mathrm T\end{pmatrix}\begin{pmatrix}\boldsymbol a&amp;\boldsymbol b\end{pmatrix}\right|<br>$$</p>
+<p>其中 $\boldsymbol a,\boldsymbol b$ 分别为由 $a$ 与 $b$ 顺序组成的列向量，故由 $\text{Cauchy-Binet}$ 公式知上式等于：</p>
+<p>$$<br>\sum\limits_{1\le i&lt;j\le n}\begin{vmatrix}a_i &amp; a_j\\ b_i &amp; b_j\end{vmatrix}\begin{vmatrix}a_i &amp; b_i\\ a_j &amp; b_j\end{vmatrix}&#x3D;\sum\limits_{1\le i&lt;j\le n}(a_ib_j-a_jb_i)^2<br>$$</p>
+<p>恒等式得证.</p>
+<h4 id="证明-2"><a href="#证明-2" class="headerlink" title="证明 2"></a>证明 2</h4><p>注意到左式等于：</p>
+<p>$$<br>\left(\sum\limits_{i&#x3D;1}^na_i^2\right)\left(\sum\limits_{j&#x3D;1}^nb_j^2\right)-\left(\sum\limits_{i&#x3D;1}^na_ib_i\right)\left(\sum\limits_{j&#x3D;1}^na_jb_j\right)\<br>&#x3D;\sum\limits_{i&#x3D;1}^n\sum\limits_{j&#x3D;1}^n(a_i^2b_j^2-a_ia_jb_ib_j)<br>$$</p>
+<p>在求和的每一项中，如果 $i&#x3D;j$，则该项为 $0$，则上式等于：</p>
+<p>$$<br>\begin{align}<br>&amp;\sum\limits_{1\le i&lt;j\le n}\left((a_i^2b_i^2-a_ia_jb_ib_j)+(a_j^2b_j^2-a_ja_ib_jb_i)\right)\\<br>&#x3D;&amp;\sum\limits_{1\le i&lt;j\le n}\left((a_ib_i)^2-2(a_ia_j)(b_ib_j)+(a_jb_j)^2\right)<br>\end{align}<br>$$</p>
+<p>即为右式，得证.</p>
+<h3 id="text-Cauchy-Schwarz-不等式-1"><a href="#text-Cauchy-Schwarz-不等式-1" class="headerlink" title="$\text{Cauchy-Schwarz}$ 不等式 1"></a>$\text{Cauchy-Schwarz}$ 不等式 1</h3><p>$$<br>\left(\sum\limits_{k&#x3D;1}^na_i^2\right)\left(\sum\limits_{k&#x3D;1}^nb_i^2\right)\ge\left(\sum\limits_{k&#x3D;1}^na_ib_i\right)^2<br>$$</p>
+<p>取等当且仅当 $\boldsymbol a,\boldsymbol b$ 线性相关.</p>
+<h4 id="证明-1"><a href="#证明-1" class="headerlink" title="证明"></a>证明</h4><p>$\text{Lagrange}$ 恒等式中，右式恒大于 $0$，移项即得不等式，取等条件显然.</p>
+<h3 id="text-Cauchy-Schwarz-不等式-2"><a href="#text-Cauchy-Schwarz-不等式-2" class="headerlink" title="$\text{Cauchy-Schwarz}$ 不等式 2"></a>$\text{Cauchy-Schwarz}$ 不等式 2</h3><p>$$<br>\left(\sum\limits_{k&#x3D;1}^na_i^2\right)\left(\sum\limits_{k&#x3D;1}^nb_i^2\right)\ge\sum\limits_{1\le i&lt;j\le n}(a_ib_j-a_jb_i)^2<br>$$</p>
+<p>取等当且仅当 $\boldsymbol a,\boldsymbol b$ 正交.</p>
+<h4 id="证明-2"><a href="#证明-2" class="headerlink" title="证明"></a>证明</h4><p>$\text{Lagrange}$ 恒等式中，左式第二项恒大于 $0$，移项即得不等式，取等条件显然.</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
@@ -235,14 +256,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2024/01/10/math-advalg-det/" rel="prev" title="行列式的基础性质">
-                  <i class="fa fa-angle-left"></i> 行列式的基础性质
+                <a href="/2024/01/29/math-advalg-group-1/" rel="prev" title="群论-1">
+                  <i class="fa fa-angle-left"></i> 群论-1
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2024/01/29/math-advalg-intro/" rel="next" title="群、环、域和线性空间">
-                  群、环、域和线性空间 <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
