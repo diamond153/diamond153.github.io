@@ -3,7 +3,8 @@
   --content-bg-color: #333;
   --card-bg-color: #555;
   --text-color: #ccc;
-  --blockquote-color: #bbb;
+  --blockquote-color: #ccc;
+  --blockquote-border-color: #626262;
   --link-color: #ccc;
   --link-hover-color: #af80ff;
   --brand-color: #ddd;
@@ -11,7 +12,7 @@
   --table-row-odd-bg-color: #282828;
   --table-row-hover-bg-color: #363636;
   --menu-item-bg-color: #555;
-  --theme-color: #8c40cc;
+  --theme-color: #7a66ee;
   --btn-default-bg: #222;
   --btn-default-color: #ccc;
   --btn-default-border-color: #555;
@@ -45,7 +46,8 @@
   --content-bg-color: #fff;
   --card-bg-color: #f5f5f5;
   --text-color: #555;
-  --blockquote-color: #666;
+  --blockquote-color: #555;
+  --blockquote-border-color: #ddd;
   --link-color: #555;
   --link-hover-color: #4f22cb;
   --brand-color: #fff;
@@ -293,7 +295,7 @@ hr {
   margin: 40px 0;
 }
 blockquote {
-  border-left: 4px solid #ddd;
+  border-left: 4px solid var(--blockquote-border-color);
   color: var(--blockquote-color);
   margin: 0;
   padding: 0 15px;

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#4c20a5"><meta name="generator" content="Hexo 7.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#4c20a5">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"flat"},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":";","save":"manual"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":null,"post_header":"fadeInDownBig","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"bounceInLeft"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="线性空间的基本性质">
+<meta property="og:type" content="website">
+<meta property="og:title" content="线性空间-1">
+<meta property="og:url" content="http://example.com/posts/Math/Advanced-Algebra/Linear-Algebra/linear-space-1/index.html">
+<meta property="og:site_name" content="My Blog">
+<meta property="og:description" content="线性空间的基本性质">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-01-31T03:07:09.000Z">
+<meta property="article:modified_time" content="2024-02-09T13:48:06.567Z">
+<meta property="article:author" content="diamond_153">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/posts/Math/Advanced-Algebra/Linear-Algebra/linear-space-1/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://example.com/posts/Math/Advanced-Algebra/Linear-Algebra/linear-space-1/index.html","path":"posts/Math/Advanced-Algebra/Linear-Algebra/linear-space-1/index.html","title":"线性空间-1"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>线性空间-1 | My Blog
+</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style></style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">My Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Diamond_153's Blog. Welcome</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-menu"><a href="/posts/" rel="section"><i class="fa fa-th fa-fw"></i>Menu</a></li><li class="menu-item menu-item-trends"><a href="/trends/" rel="section"><i class="fa fa-calendar fa-fw"></i>Trends</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%91%E9%87%8F%E7%BB%84"><span class="nav-text">向量组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E7%A8%8B%E7%BB%84%E4%B8%8E%E5%90%91%E9%87%8F%E7%BB%84%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-text">方程组与向量组的关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%91%E9%87%8F%E7%BB%84%E7%9A%84%E5%BC%A0%E9%9B%86%E3%80%81%E5%AD%90%E7%A9%BA%E9%97%B4"><span class="nav-text">向量组的张集、子空间</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="diamond_153"
+      src="/images/icon.png">
+  <p class="site-author-name" itemprop="name">diamond_153</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/diamond153" title="Github → https:&#x2F;&#x2F;github.com&#x2F;diamond153" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>Github</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">线性空间-1
+</h1>
+
+<div class="post-meta-container">
+    <div class="post-description">线性空间的基本性质</div>
+  <ul class="breadcrumb">
+            <li><a href="/posts/">MENU</a></li>
+            <li><a href="/posts/Math/">MATH</a></li>
+            <li><a href="/posts/Math/Advanced-Algebra/">ADVANCED-ALGEBRA</a></li>
+            <li><a href="/posts/Math/Advanced-Algebra/Linear-Algebra/">LINEAR-ALGEBRA</a></li>
+          <li>LINEAR-SPACE-1</li>
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <p>我们已经知道了<a href="/posts/Math/Advanced-Algebra/intro/#%E7%BA%BF%E6%80%A7%E7%A9%BA%E9%97%B4%E7%9A%84%E5%AE%9A%E4%B9%89">线性空间的定义</a>，接下来的讨论都是建立在线性空间 $\langle V,+,\cdot,\mathbb K\rangle$ 上的.</p>
+<h2 id="向量组"><a href="#向量组" class="headerlink" title="向量组"></a>向量组</h2><p><strong>[定义]</strong> 对于一个向量集合 $S$ 的一个有限子集 $\{\boldsymbol a_1,\boldsymbol a_2,\cdots,\boldsymbol a_m\}$ 与一组数 $k_1,k_2,\cdots,k_m\in\mathbb K$，我们称 $S$ 是一个向量族，$\boldsymbol a_1,\boldsymbol a_2,\cdots,\boldsymbol a_m$ 为一个向量组，$k_1\boldsymbol a_1+k_2\boldsymbol a_2+\cdots+k_m\boldsymbol a_m&#x3D;\sum\limits_{i&#x3D;1}^mk_i\boldsymbol a_i$ 为该向量组的一个线性组合. 如果 $\boldsymbol b$ 等于该向量组的一个线性组合，则称 $\boldsymbol b$ 可以被该向量组线性表示.</p>
+<p><strong>[定义]</strong> 一般情况下，如果向量组的一个线性组合为 $\boldsymbol 0$，则所有的 $k_i$ 均为 $0$，这时我们称该向量组线性无关；但存在一种特例，就是 $k_i$ 不全为 $0$ 的一个线性组合也为 $\boldsymbol 0$，这是我们称该向量组线性相关.</p>
+<blockquote>
+<p>如果 $V&#x3D;\mathbb R^n$，$\boldsymbol e_i&#x3D;(\underbrace{0,0,\cdots,0}_{i-1},1,0,0\cdots,0)^\mathrm T\in V$，则 $\boldsymbol e_1,\boldsymbol e_2,\cdots,\boldsymbol e_n$ 线性无关. 称该向量组为 $V$ 的标准列向量.</p>
+</blockquote>
+<p>$$<br>\sum\limits_{i&#x3D;1}^nk_i\boldsymbol e_i&#x3D;\begin{pmatrix}k_1\\ k_2\\ \vdots\\ k_n\end{pmatrix}<br>&#x3D;\begin{pmatrix}0\\ 0\\ \vdots\\ 0\end{pmatrix}<br>$$</p>
+<p>则 $k_i$ 全为 $0$.</p>
+<blockquote>
+<p>如果向量组 $\boldsymbol a_1,\boldsymbol a_2,\cdots,\boldsymbol a_m\in V$ 线性相关，当且仅当存在至少一个 $\boldsymbol a_i$ 可以被其他向量线性表示.</p>
+</blockquote>
+<p>如果 $a_i$ 可以被其他向量线性表示，那么该向量组显然线性相关；如果该向量组线性相关，则存在一个 $k_i\in\mathbb K$ 不全为 $0$ 的线性组合 $\sum\limits_{i&#x3D;1}^mk_i\boldsymbol a_i&#x3D;\boldsymbol 0$. 设 $k_j\ne 0$，则移项得：</p>
+<p>$$<br>\boldsymbol a_j&#x3D;\frac{1}{k_j}\sum\limits_{i\ne j}k_i\boldsymbol a_i<br>$$</p>
+<h3 id="方程组与向量组的关系"><a href="#方程组与向量组的关系" class="headerlink" title="方程组与向量组的关系"></a>方程组与向量组的关系</h3><p>对于一个方程组：</p>
+<p>$$<br>\begin{cases}<br>a_{11}x_1&amp;+&amp;a_{12}x_2&amp;+&amp;\cdots&amp;+&amp;a_{1n}x_n&amp;&#x3D;&amp;b_1\\\\<br>a_{21}x_1&amp;+&amp;a_{22}x_2&amp;+&amp;\cdots&amp;+&amp;a_{2n}x_n&amp;&#x3D;&amp;b_2\\\\<br>&amp;&amp;&amp;&amp;\vdots\\\\<br>a_{n1}x_1&amp;+&amp;a_{n2}x_2&amp;+&amp;\cdots&amp;+&amp;a_{nn}x_n&amp;&#x3D;&amp;b_n<br>\end{cases}<br>$$</p>
+<p>我们设 $\boldsymbol\alpha_i&#x3D;(a_{1i},a_{2i},\cdots,a_{ni})^\mathrm T,\boldsymbol\beta&#x3D;(b_1,b_2,\cdots,b_n)^\mathrm T$，则此方程组可以表达为：</p>
+<p>$$<br>x_1\boldsymbol\alpha_1+x_2\boldsymbol\alpha_2+\cdots+x_n\boldsymbol\alpha_n&#x3D;\boldsymbol\beta<br>$$</p>
+<p>也就是说，方程组有解当且仅当 $\boldsymbol\beta$ 可以被 $\boldsymbol\alpha$ 线性表示.</p>
+<h2 id="向量组的张集、子空间"><a href="#向量组的张集、子空间" class="headerlink" title="向量组的张集、子空间"></a>向量组的张集、子空间</h2><p><strong>[定义]</strong> 如果在一个向量族 $S$ 中存在一个向量组 $\boldsymbol a_1,\boldsymbol a_2,\cdots,\boldsymbol a_r$ 满足：</p>
+<ul>
+<li>$\boldsymbol a_1,\boldsymbol a_2,\cdots,\boldsymbol a_r$ 线性无关.</li>
+<li>$S$ 中任意一个向量都能用 $\boldsymbol a_1,\boldsymbol a_2,\cdots,\boldsymbol a_r$ 线性表示.</li>
+</ul>
+<p>则称该向量组 $S$ 的一个极大线性无关组，简称极大无关组. 极大无关组不一定唯一，容易举出反例.</p>
+<blockquote>
+<p>如果向量组 $S$ 存在至少一个非 $\boldsymbol 0$ 向量，则 $S$ 存在极大无关组.</p>
+</blockquote>
+<p>假设 $S&#x3D;\{\boldsymbol z_1,\boldsymbol z_2,\cdots,\boldsymbol z_p,\boldsymbol a_1,\boldsymbol a_2,\cdots,\boldsymbol a_m\}$，其中 $\boldsymbol z_i&#x3D;\boldsymbol 0$，所以如果 $m\ne 0$，则 $p$ 的大小显然不影响极大无关组的存在性.</p>
+<p>现在对 $S$ 中元素个数进行归纳. 假设 $|S_k|&#x3D;p+k$ 包含所有的 $\boldsymbol z$ 与前 $k$ 个 $\boldsymbol a$. $k&#x3D;1$ 时命题显然成立；假设对于 $k&#x3D;k_0\ge 1$ 命题成立，则 $S_{k_0}$ 存在极大无关组 $\boldsymbol\alpha_1,\boldsymbol\alpha_2,\cdots,\boldsymbol\alpha_r$. 如果 $\boldsymbol a_{k_0+1}$ 不能被 $S_{k_0}$ 的极大无关组线性表示，则 $S_{k_0+1}$ 的极大无关组为 $S_{k_0}$ 的极大无关组并上 $\boldsymbol a_{k_0+1}$，否则即为 $S_{k_0}$ 的极大无关组. 所以 $S&#x3D;S_m$ 的极大无关组存在.</p>
+<p><strong>[定义]</strong> 如果向量空间 $V$ 的非空子集 $W$ 满足：</p>
+<ul>
+<li>$\forall\boldsymbol a\in W,k\in\mathbb K$，有 $k\boldsymbol a\in W$.</li>
+<li>$\forall\boldsymbol a,\boldsymbol b\in W$，有 $\boldsymbol a+\boldsymbol b\in W$.</li>
+</ul>
+<p>则称 $W$ 是 $V$ 的子空间.</p>
+<p><strong>[定义]</strong> 定义向量组 $\boldsymbol a_1,\boldsymbol a_2,\cdots,\boldsymbol a_m$ 的张成为该向量组的所有线性组合构成的集合：</p>
+<p>$$<br>\mathrm{Span}(\boldsymbol a_1,\boldsymbol a_2,\cdots,\boldsymbol a_m)<br>&#x3D;\{\sum\limits_{i&#x3D;1}^mk_i\boldsymbol a_i\mid k_1,k_2,\cdots,k_m\in\mathbb K\}<br>$$</p>
+<blockquote>
+<p>一组向量的张成一定是 $V$ 的子空间；$V$ 的非零子空间一定是一组向量的张成.</p>
+</blockquote>
+<p>容易验证.</p>
+<blockquote>
+<p>向量组 $\boldsymbol a_1,\boldsymbol a_2,\cdots,\boldsymbol a_m$ 的张成等于该向量组的一个极大无关组的张成.</p>
+</blockquote>
+<p>设该向量组的一个极大无关组为 $\boldsymbol\alpha_1,\boldsymbol\alpha_2,\cdots,\boldsymbol\alpha_r$，$V_1&#x3D;\mathrm{Span}\ a$，$V_2&#x3D;\mathrm{Span}\ \alpha$.</p>
+<p>先证 $V_2\subseteq V_1$，也就是 $V_2$ 中的任意一个元素都在 $V_1$ 中. 设 $V_2$ 的一个元素为 $\sum\limits_{i&#x3D;1}^rk_i\boldsymbol\alpha_i$，如果 $\boldsymbol\alpha_i$ 对应了向量组的 $\boldsymbol a_{p_i}$，则取 $l_{p_i}&#x3D;k_i$，其余均为 $0$，则 $\sum\limits_{i&#x3D;1}^ml_i\boldsymbol a_i&#x3D;\sum\limits_{i&#x3D;1}^rk_i\boldsymbol\alpha_i$.</p>
+<p>再证 $V_1\subseteq V_2$，也就是 $V_1$ 中的任意一个元素都在 $V_2$ 中. 由极大无关组的定义知每个 $\boldsymbol a_i$ 都能被 $\boldsymbol\alpha$ 线性表示，则对于 $\boldsymbol a$ 的任意一个线性组合 $\sum\limits_{i&#x3D;1}^mk_i\boldsymbol a_i$，将和式中不在极大无关组的所有 $\boldsymbol a_i$ 都写成 $\boldsymbol\alpha$ 的线性组合，这样就将 $\boldsymbol a$ 的任意一个线性组合用 $\boldsymbol\alpha$ 的一个线性组合表示了.</p>
+<p>最后，由 $V_1\subseteq V_2$ 与 $V_2\subseteq V_1$ 推得 $V_1&#x3D;V_2$.</p>
+<blockquote>
+<p>如果两个线性无关向量组 $S_1,S_2$ 的张成相等，则 $|S_1|&#x3D;|S_2|$（向量个数相等）.</p>
+</blockquote>
+<p>设 $S_1&#x3D;\{\boldsymbol v_1,\boldsymbol v_2,\cdots,\boldsymbol v_m\},S_2&#x3D;\{\boldsymbol w_1,\boldsymbol w_2,\cdots,\boldsymbol w_r\}$.</p>
+<p>用反证法. 假设 $r&lt;m$. 由于每个 $\boldsymbol v_i$ 都能被 $\boldsymbol w$ 线性表示，即 $\boldsymbol v_i&#x3D;\sum\limits_{j&#x3D;1}^rk_{ji}\boldsymbol w_j$. 所以：</p>
+<p>$$<br>\sum\limits_{i&#x3D;1}^ml_i\boldsymbol v_i&#x3D;\sum\limits_{j&#x3D;1}^r<br>\left(\sum\limits_{i&#x3D;1}^ml_ik_{ji}\right)\boldsymbol w_j<br>&#x3D;\sum\limits_{j&#x3D;1}^rc_j\boldsymbol w_j<br>$$</p>
+<p>如果上式等于 $\boldsymbol 0$，则由 $S_2$ 线性无关知 $c_j$ 均为 $0$，即：</p>
+<p>$$<br>\begin{pmatrix}<br>k_{11}&amp;k_{12}&amp;\cdots&amp;k_{1m}\\ k_{21}&amp;k_{22}&amp;\cdots&amp;k_{2m}\\<br>\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\ k_{r1}&amp;k_{r2}&amp;\cdots&amp;k_{rm}<br>\end{pmatrix}<br>\begin{pmatrix}l_1\\ l_2\\ \vdots\\ l_m\end{pmatrix}&#x3D;\boldsymbol 0<br>$$</p>
+<p>由于 $\boldsymbol l&#x3D;\boldsymbol 0$ 是一个解，故该方程组相容；由 $\text{Gauss-Jordan}$ 消元法，消去一个元至少需要 $1$ 行，也就是最多可以消去 $r$ 个元. 由于 $r&lt;m$，所以无法做到完全消元，也就是存在多组解. 所以存在满足 $l_i$ 不全为 $0$ 的解，此时 $\sum\limits_{i&#x3D;1}^ml_i\boldsymbol v_i&#x3D;\sum\limits_{j&#x3D;1}^rc_j\boldsymbol w_j&#x3D;\boldsymbol 0$，与 $S_1$ 线性无关矛盾！所以 $r\ge m$. 同理可以证明 $m\ge r$，所以 $m&#x3D;r$.</p>
+<blockquote>
+<p>向量组 $S$ 的两个极大无关组 $|S_1|,|S_2|$ 中的向量个数相同.</p>
+</blockquote>
+<p>由前面证过的定理知 $\mathrm{Span}\ S&#x3D;\mathrm{Span}\ S_1&#x3D;\mathrm{Span}\ S_2$，又由前一个定理知 $|S_1|&#x3D;|S_2|$.</p>
+<p><strong>[定义]</strong> 如果 $\boldsymbol e_1,\boldsymbol e_2,\cdots,\boldsymbol e_m$ 线性无关，$\mathrm{Span}(\boldsymbol e_1,\boldsymbol e_2,\cdots,\boldsymbol e_m)&#x3D;V_0$，则称该向量组是 $V_0$ 的一组基，$\dim V_0&#x3D;m$.</p>
+<blockquote>
+<p>如果 $\boldsymbol v_1,\boldsymbol v_2,\cdots,\boldsymbol v_r\in V$ 线性无关，$\boldsymbol e_1,\boldsymbol e_2,\cdots,\boldsymbol e_m$ 是 $V$ 的一组基，则可在 $\boldsymbol e$ 中选 $m-r$ 个向量与 $\boldsymbol v$ 共同构成 $V$ 的一组基.</p>
+</blockquote>
+<p>不做证明.</p>
+<p><strong>[定义]</strong> 定义两个线性空间 $V_1,V_2$ 的和为两个空间中任意两个向量的和组成的集合：</p>
+<p>$$<br>V_1+V_2&#x3D;\{\boldsymbol\alpha+\boldsymbol\beta\mid<br>\boldsymbol\alpha\in V_1,\boldsymbol\beta\in V_2\}<br>$$</p>
+<p>同时定义：</p>
+<p>$$<br>V_1+V_2+\cdots+V_m&#x3D;(V_1+V_2+\cdots+V_{m-1})+V_m<br>&#x3D;\{\sum\limits_{k&#x3D;1}^m\boldsymbol\alpha_k\mid\forall\boldsymbol\alpha_k\in V_k\}<br>$$</p>
+<blockquote>
+<p>$V_1+V_2$ 与 $V_1\cap V_2$ 都是 $V$ 的子空间</p>
+</blockquote>
+<p>容易验证.</p>
+<blockquote>
+<p>对于 $V$ 的两个子空间 $V_1,V_2$，$\dim(V_1+V_2)&#x3D;\dim V_1+\dim V_2-\dim(V_1\cap V_2)$.</p>
+</blockquote>
+<p>设 $V_1\cap V_2$ 的一组基为 $\{\boldsymbol e_1,\boldsymbol e_2,\cdots,\boldsymbol e_m\}$，则可以取 $V_1$ 中的 $r$ 个向量 $\boldsymbol v_1,\boldsymbol v_2,\cdots,\boldsymbol v_r$ 构成 $V_1$ 的一组基，还可以取 $V_2$ 中的 $s$ 个向量 $\boldsymbol w_1,\boldsymbol w_2,\cdots,\boldsymbol w_s$ 构成 $V_2$ 的一组基. 显然 $\mathrm{Span}\ (\boldsymbol e,\boldsymbol v,\boldsymbol w)&#x3D;V_1+V_2$</p>
+<p>先证 $\boldsymbol e,\boldsymbol v,\boldsymbol w$ 线性无关. 使用反证法：假设线性有关，则存在不全为 $0$ 的 $x,y,z$，使得：</p>
+<p>$$<br>\sum\limits_{k&#x3D;1}^mx_k\boldsymbol e_k+\sum\limits_{k&#x3D;1}^ry_k\boldsymbol v_k+\sum\limits_{k&#x3D;1}^sz_k\boldsymbol w_k&#x3D;\boldsymbol 0<br>$$</p>
+<p>移项得到：</p>
+<p>$$<br>\sum\limits_{k&#x3D;1}^mx_k\boldsymbol e_k+\sum\limits_{k&#x3D;1}^ry_k\boldsymbol v_k&#x3D;-\sum\limits_{k&#x3D;1}^sz_k\boldsymbol w_k<br>$$</p>
+<p>左边是 $V_1$ 的基的一个线性组合，右边是 $V_2$ 的基的一个线性组合，故这个向量属于 $V_1\cap V_2$. 由于 $\boldsymbol v\in V_1-V_2,\boldsymbol w\in V_2-V_1$，且 $\boldsymbol v,w$ 线性无关，故 $y,z$ 全为 $0$. 原式变为：</p>
+<p>$$<br>\sum\limits_{k&#x3D;1}^mx_k\boldsymbol e_k&#x3D;\boldsymbol 0<br>$$</p>
+<p>由于 $\boldsymbol e$ 线性无关，故 $x$ 全为 $0$，矛盾. 所以：</p>
+<p>$$<br>\dim\mathrm{Span}(\boldsymbol e,\boldsymbol v,\boldsymbol w)&#x3D;\dim(V_1+V_2)&#x3D;\dim\boldsymbol e+\dim\boldsymbol v+\dim\boldsymbol w&#x3D;\dim V_1+\dim V_2-\dim(V_1\cap V_2)<br>$$</p>
+<p><strong>[定义]</strong> 如果 $\forall V_i,V_i\cap(\sum\limits_{k\ne i}V_k)&#x3D;\{\boldsymbol 0\}$，则称 $V_1+V_2+\cdots+V_m$ 为直接和，简称直和，记作：</p>
+<p>$$<br>V_1\oplus V_2\oplus\cdots\oplus V_m<br>$$</p>
+<blockquote>
+<p>下面的命题全部等价：</p>
+<ol>
+<li>$V_0&#x3D;V_1\oplus V_2\oplus\cdots\oplus V_m$ 是直和.</li>
+<li>$\forall 2\le i\le m,V_i\cap(V_1+V_2+\cdots+V_{i-1})&#x3D;\{\boldsymbol 0\}$.</li>
+<li>$\dim(V_1+V_2+\cdots+V_m)&#x3D;\dim V_1+\dim V_2+\cdots+\dim V_m$.</li>
+<li>$V_1,V_2,\cdots,V_m$ 的基的并是 $V_0$ 的基.</li>
+<li>$\forall\boldsymbol\alpha\in V_0,\boldsymbol v_i,\boldsymbol w_i\in V_i$，如果 $\boldsymbol\alpha&#x3D;\sum\limits_{k&#x3D;1}^m\boldsymbol v_i&#x3D;\sum\limits_{k&#x3D;1}^m\boldsymbol w_i$，则 $\forall i,\boldsymbol v_i&#x3D;\boldsymbol w_i$.</li>
+</ol>
+</blockquote>
+<p>先证明 $1,2,3$ 等价，再使用 $1,2,3$ 证明 $1,4,5$ 等价，不做详细展开.</p>
+<p>下一篇文章：<a href="/posts/Math/Advanced-Algebra/Linear-Algebra/linear-space-2/">线性空间-2 <i class="fa fa-arrow-up-right-from-square fa-fw"></i></a></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-code"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">diamond_153</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '32px',
+  right: 'unset',
+  left: '32px',
+  time: '0s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#8866ff',
+  buttonColorLight: '#8866ff',
+  saveInCookies: true,
+  label: '',
+  autoMatchOsTheme: false
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+
+</body>
+</html>

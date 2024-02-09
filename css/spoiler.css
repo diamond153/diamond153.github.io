@@ -1,7 +1,7 @@
 .spoiler {
     margin: 5px 0;
     padding: 0 15px;
-    border: 2px solid #ccbfff;
+    border: 1px solid #ccbfff;
     position: relative;
     clear: both;
     border-radius: 5px;
@@ -23,11 +23,11 @@
 }
 
 .spoiler.collapsed .spoiler-title:before {
-    content: "[+] ";
+    content: "";
 }
 
 .spoiler.expanded .spoiler-title:before {
-    content: "[-] ";
+    content: "";
 }
 
 .spoiler .spoiler-content {

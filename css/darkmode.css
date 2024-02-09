@@ -4,6 +4,7 @@
   --card-bg-color: $card-bg-color-dark;
   --text-color: $text-color-dark;
   --blockquote-color: $blockquote-color-dark;
+  --blockquote-border-color: #626262;
   --link-color: $link-color-dark;
   --link-hover-color: $link-hover-color-dark;
   --brand-color: $brand-color-dark;
