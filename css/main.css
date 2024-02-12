@@ -265,7 +265,7 @@ h6 {
   font-size: 0.875em;
 }
 p {
-  margin: 0 0 20px;
+  margin: 0 0 16px;
 }
 a {
   border-bottom: 1px solid #999;
@@ -1806,6 +1806,15 @@ pre code {
   .post-body {
     text-align: justify;
   }
+}
+.post-body p {
+  text-align: left;
+}
+.post-body code {
+  font-size: 0.9375em;
+}
+.post-body pre {
+  font-size: 1.0625em;
 }
 .post-body h1 .header-anchor,
 .post-body h2 .header-anchor,
