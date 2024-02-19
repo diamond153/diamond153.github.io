@@ -26,10 +26,13 @@
 <meta property="og:site_name" content="My Blog">
 <meta property="og:description" content="群论的基本定理">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/posts/Math/Advanced-Algebra/Group-Theory/group-1/images/1.gif">
+<meta property="og:image" content="http://example.com/posts/Math/Advanced-Algebra/Group-Theory/group-1/images/2.gif">
 <meta property="article:published_time" content="2024-01-28T18:08:13.000Z">
-<meta property="article:modified_time" content="2024-02-12T07:58:06.394Z">
+<meta property="article:modified_time" content="2024-02-19T02:09:50.855Z">
 <meta property="article:author" content="diamond_153">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/posts/Math/Advanced-Algebra/Group-Theory/group-1/images/1.gif">
 
 
 <link rel="canonical" href="http://example.com/posts/Math/Advanced-Algebra/Group-Theory/group-1/">
@@ -113,7 +116,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text">群的定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BE%A4%E7%9A%84%E8%BF%90%E7%AE%97%E4%B8%8E%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8"><span class="nav-text">群的运算与基本性质</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%A0%E7%A7%8D%E5%9F%BA%E6%9C%AC%E7%9A%84%E7%BE%A4"><span class="nav-text">几种基本的群</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF%E7%BE%A4"><span class="nav-text">循环群</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E9%9D%A2%E4%BD%93%E7%BE%A4"><span class="nav-text">二面体群</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%AE%E6%8D%A2%E7%BE%A4"><span class="nav-text">置换群</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B1%E8%BD%AD%E4%B8%8E%E9%98%B6"><span class="nav-text">共轭与阶</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%90%E7%BE%A4%E4%B8%8E%E9%99%AA%E9%9B%86"><span class="nav-text">子群与陪集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8C%E6%80%81%E3%80%81%E5%90%8C%E6%9E%84%E5%92%8C%E8%87%AA%E5%90%8C%E6%9E%84"><span class="nav-text">同态、同构和自同构</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text">群的定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BE%A4%E7%9A%84%E8%BF%90%E7%AE%97%E4%B8%8E%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8"><span class="nav-text">群的运算与基本性质</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%A0%E7%A7%8D%E5%9F%BA%E6%9C%AC%E7%9A%84%E7%BE%A4"><span class="nav-text">几种基本的群</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF%E7%BE%A4"><span class="nav-text">循环群</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E9%9D%A2%E4%BD%93%E7%BE%A4"><span class="nav-text">二面体群</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%AE%E6%8D%A2%E7%BE%A4"><span class="nav-text">置换群</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B1%E8%BD%AD%E4%B8%8E%E9%98%B6"><span class="nav-text">共轭与阶</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%90%E7%BE%A4%E4%B8%8E%E9%99%AA%E9%9B%86"><span class="nav-text">子群与陪集</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -171,7 +174,7 @@
       
       
       <div class="post-body">
-          <h2 id="群的定义"><a href="#群的定义" class="headerlink" title="群的定义"></a>群的定义</h2><p>群由一个集合 $G$ 与一个二元运算 $\cdot$ 构成，群有两个定义，其中加粗部分为第二个定义没有的部分. 如果满足其中的一个定于则称 $\langle G,\cdot\rangle$ 为一个群：</p>
+          <h2 id="群的定义"><a href="#群的定义" class="headerlink" title="群的定义"></a>群的定义</h2><p>群由一个集合 $G$ 与一个二元运算 $\cdot$ 构成，群有两个定义，其中加粗部分为第二个定义没有的部分. 如果满足其中的一个定义则称 $\langle G,\cdot\rangle$ 为一个群：</p>
 <ol>
 <li>封闭性（closure）：$\forall a,b\in G,a\cdot b\in G$. 也就是不管怎么运算，结果总在 $G$ 中.</li>
 <li>结合律（associativity）：$\forall a,b,c\in G,(a\cdot b)\cdot c&#x3D;a\cdot(b\cdot c)$. 所以记 $a\cdot(b\cdot c)$ 与 $(a\cdot b)\cdot c$ 为 $a\cdot b\cdot c$. 但注意，交换律不一定成立.</li>
@@ -199,7 +202,7 @@
 <p>假设 $b$ 不唯一，则存在 $b’$ 也满足条件，则：</p>
 <p>$$<br>b’&#x3D;e\cdot b’&#x3D;(b\cdot a)\cdot b’&#x3D;b\cdot(a\cdot b’)&#x3D;b\cdot e&#x3D;b<br>$$</p>
 <p>现在我们已经构建好了一个群 $\langle G,\cdot\rangle$. 比如 $\langle\mathbb Z,+\rangle$ 就是一个群，单位元为 $0$，$a$ 的逆元为 $-a$；但是 $\langle\mathbb R,\cdot\rangle$ 就不是一个群，因为 $0$ 没有逆元.</p>
-<h3 id="群的运算与基本性质"><a href="#群的运算与基本性质" class="headerlink" title="群的运算与基本性质"></a>群的运算与基本性质</h3><p>在 $\langle G,\cdot\rangle$ 中，由于结合律，所以运算顺序不影响运算结果，我们把 $a\cdot (b\cdot c)$ 和 $(a\cdot b)\cdot c$ 写为 $a\cdot b\cdot c$，$\underbrace{a\cdot a\cdot\cdots\cdot a}_{n}$ 写为 $a^n$，规定 $a^0&#x3D;e$.</p>
+<h3 id="群的运算与基本性质"><a href="#群的运算与基本性质" class="headerlink" title="群的运算与基本性质"></a>群的运算与基本性质</h3><p>在 $\langle G,\cdot\rangle$ 中，我们将 $\underbrace{a\cdot a\cdot\cdots\cdot a}_{n}$ 写为 $a^n$，规定 $a^0&#x3D;e$.</p>
 <p>由于一个数 $a$ 的逆元有且仅有一个，则将该数记为 $a^{-1}$，还可以将 $(a^{-1})^n$ 记为 $a^{-n}$. 关于逆元有如下性质：</p>
 <ol>
 <li>$e^{-1}&#x3D;e$.</li>
@@ -209,41 +212,33 @@
 <h2 id="几种基本的群"><a href="#几种基本的群" class="headerlink" title="几种基本的群"></a>几种基本的群</h2><p>群多种多样，这里介绍几种基本的群.</p>
 <h3 id="循环群"><a href="#循环群" class="headerlink" title="循环群"></a>循环群</h3><p><strong>[定义]</strong> 定义 $n$ 阶循环群 $\mathsf C_n&#x3D;\{e,r,r^2,\cdots,r^{n-1}\}$，其中 $r^{kn}&#x3D;e$，$k$ 为整数.</p>
 <p>循环群可以理解为一个正 $n$ 边形，$r$ 代表绕中心顺时针旋转 $2\pi&#x2F;n$，所以 $r^a$ 代表绕中心旋转 $a\cdot 2\pi&#x2F;n$. 由于旋转 $2\pi$ 会回到原位，所以 $r^n&#x3D;e$，进而 $r^a\cdot r^b&#x3D;r^{a+b\bmod n}$.</p>
-<p>下面的例子代表了 $\mathsf C_4$ 中元素的作用：</p>
-<p>$$<br>\begin{array}{ccc}<br>\begin{array}{|cc|}<br>\hline {\color{CornFlowerBlue}1}&amp;2\\ 4&amp;3\\ \hline<br>\end{array}<br>&amp;\overset{r}{\rightarrow}&amp;\begin{array}{|cc|}<br>\hline 4&amp;{\color{CornFlowerBlue}1}\\ 3&amp;2\\ \hline<br>\end{array}\\ {\small r}\uparrow\ &amp;&amp;\ \downarrow {\small r}\\<br>\begin{array}{|cc|}<br>\hline 2&amp;3\\ {\color{CornFlowerBlue}1}&amp;4\\ \hline<br>\end{array}<br>&amp;\underset{r}{\leftarrow}&amp;\begin{array}{|cc|}<br>\hline 3&amp;4\\ 2&amp;{\color{CornFlowerBlue}1}\\ \hline<br>\end{array}<br>\end{array}<br>$$</p>
+<p>下面的动图展示了 $\mathsf C_4$ 中元素 $r$ 的作用，$1,2,3,4$ 为正方形的顶点：</p>
+<p><img src="/posts/Math/Advanced-Algebra/Group-Theory/group-1/images/1.gif"></p>
 <p>循环群也可以记作 $\mathbb Z_n$，因为它与 $\bmod n$ 的整数加法群同构，$e$ 对应 $0$，$r^a$ 对应 $a$.</p>
 <p>由上，我们可以列出循环群 $\mathsf C_3$ 的“乘法表”（行 $\cdot$ 列）：</p>
 <p>$$<br>\begin{array}{c|ccc}<br>&amp; e &amp; a &amp; a^2\\ \hline<br>e &amp; e &amp; a &amp; a^2\\<br>a &amp; a &amp; a^2 &amp; e\\<br>a^2 &amp; a^2 &amp; e &amp; a<br>\end{array}<br>$$</p>
-<h3 id="二面体群"><a href="#二面体群" class="headerlink" title="二面体群"></a>二面体群</h3><p>在循环群的基础上，增加翻转操作（$f$），即按照一条固定轴进行轴对称，例如将一张纸翻到背面. 例如正方形的沿固定轴（虚线）轴对称：</p>
-<p>$$<br>\begin{array}{ccc}<br>\begin{array}{|cc|}<br>\hline {\color{CornFlowerBlue}1}&amp;2\\ 4&amp;3\\ \hline<br>\end{array}<br>&amp;\overset{r}{\rightarrow}&amp;<br>\begin{array}{|cc|}<br>\hline 4&amp;{\color{CornFlowerBlue}1}\\ \hdashline 3&amp;2\\ \hline<br>\end{array}\\ {\small f}\uparrow\ &amp;&amp;\ \downarrow {\small f}\\<br>\begin{array}{|cc|}<br>\hline 4&amp;3\\ \hdashline {\color{CornFlowerBlue}1}&amp;2\\ \hline<br>\end{array}<br>&amp;\underset{r}{\leftarrow}&amp;\begin{array}{|cc|}<br>\hline 3&amp;2\\ 4&amp;{\color{CornFlowerBlue}1}\\ \hline<br>\end{array}<br>\end{array}<br>$$</p>
+<h3 id="二面体群"><a href="#二面体群" class="headerlink" title="二面体群"></a>二面体群</h3><p>在循环群的基础上，增加翻转操作（$f$），即按照一条固定轴进行轴对称，例如将一张纸翻到背面. 例如正方形的沿固定轴（这里是 $y$ 轴）轴对称：</p>
+<p><img src="/posts/Math/Advanced-Algebra/Group-Theory/group-1/images/2.gif"></p>
 <p>将 $f\cdot r^a$ 简记为 $fr^a$（翻转后<strong>顺时针</strong>旋转），可以在现实中简单验证以下的结论：</p>
 <ul>
 <li>$f\cdot f&#x3D;e$，两次翻转回到原位.</li>
-<li>$(r^a\cdot f)\cdot r^a&#x3D;f$，正面旋转与反面旋转抵消.</li>
+<li>$fr^a\cdot f&#x3D;r^{n-a}$，正面旋转与反面旋转作用相反.</li>
 </ul>
 <p>可以说明它有结合律，所以我们定义 $\mathsf D_n&#x3D;\{e,r,\cdots,r^{n-1},f,fr,\cdots,fr^{n-1}\}$. 我们可以列出 $\mathsf D_3$ 的“乘法表”（行 $\cdot$ 列）：</p>
 <p>$$<br>\begin{array}{c|cccccc}<br>&amp;e&amp;r&amp;r^2&amp;f&amp;fr&amp;fr^2\\ \hline<br>e&amp;e&amp;r&amp;r^2&amp;f&amp;fr&amp;fr^2\\<br>r&amp;r&amp;r^2&amp;e&amp;fr&amp;fr^2&amp;f\\<br>r^2&amp;r^2&amp;e&amp;r&amp;fr^2&amp;f&amp;fr\\<br>f&amp;f&amp;fr^2&amp;fr&amp;e&amp;r^2&amp;r\\<br>fr&amp;fr&amp;f&amp;fr^2&amp;r&amp;e&amp;r^2\\<br>fr^2&amp;fr^2&amp;fr&amp;f&amp;r^2&amp;r&amp;e\\<br>\end{array}<br>$$</p>
-<h3 id="置换群"><a href="#置换群" class="headerlink" title="置换群"></a>置换群</h3><p><strong>[定义]</strong> 定义置换为一个有序数组的重新排列，将一个有序数组 $(1,\cdots,n)$ 变换为 $(p_1,\cdots,p_n)$ 的置换记作：</p>
-<p>$$<br>p&#x3D;\begin{pmatrix}1&amp;2&amp;\cdots&amp;n\\ p_1&amp;p_2&amp;\cdots&amp;p_n\end{pmatrix}<br>$$</p>
-<p>由于变换的对象不一定是 $(1,\cdots,n)$，则定义两个置换的作用为先将 $(1,\cdots,n)$ 变换为 $(p_1,\cdots,p_n)$，再将这个数组按从 $(1,\cdots,n)$ 变换到 $(q_1,\cdots,q_n)$ 的方式变换这个数组：</p>
-<p>$$<br>p\cdot q&#x3D;\begin{pmatrix}1&amp;2&amp;\cdots&amp;n\\ p_1&amp;p_2&amp;\cdots&amp;p_n\end{pmatrix}<br>\cdot \begin{pmatrix}1&amp;2&amp;\cdots&amp;n\\ q_1&amp;q_2&amp;\cdots&amp;q_n\end{pmatrix}<br>&#x3D;\begin{pmatrix}1&amp;2&amp;\cdots&amp;n\\ p_{q_1}&amp;p_{q_2}&amp;\cdots&amp;p_{q_n}\end{pmatrix}<br>$$</p>
-<p>容易验证置换有结合律与逆元，所以定义置换群 $\mathsf S_n$ 为所有 $n$ 阶置换的集合.</p>
-<p>同时定义一种特殊的置换，即循环置换 $(i_1,i_2,\cdots,i_m)$：</p>
-<p>$$<br>(i_1,i_2,\cdots,i_m)&#x3D;\begin{pmatrix}i_1&amp;i_2&amp;\cdots&amp;i_{m-1}&amp;i_m\\<br>i_2&amp;i_3&amp;\cdots&amp;i_m&amp;i_1\end{pmatrix}<br>$$</p>
-<p>这里不把 $1$ 到 $n$ 列全的原因是一些数不参与循环置换. 如在 $\mathsf S_5$ 中：</p>
-<p>$$<br>(1,4,2)&#x3D;\begin{pmatrix}1&amp;2&amp;3&amp;4&amp;5\\ 4&amp;1&amp;3&amp;2&amp;5\end{pmatrix}<br>$$</p>
-<p>将 $1,4,2$ 单独按顺序列出即知这满足循环置换的定义，而且 $3,5$ 待在原位没有参与置换.</p>
-<blockquote>
-<p>$|\mathsf S_n|&#x3D;n!$.</p>
-</blockquote>
-<p>$n$ 阶排列一共有 $A_n^n&#x3D;n!$ 种.</p>
-<h2 id="共轭与阶"><a href="#共轭与阶" class="headerlink" title="共轭与阶"></a>共轭与阶</h2><p><strong>[定义]</strong> 群 $\langle G,\cdot\rangle$ 的阶是 $G$ 中的元素个数，记作 $|G|$，其中无限群有无限阶. $a\in G$ 的阶指使得 $a^m&#x3D;e$ 的最小正整数 $m$，记作 $|a|$ 或 $\mathrm{ord}(a)$. 若不存在，则 $a$ 有无限阶.</p>
+<h3 id="置换群"><a href="#置换群" class="headerlink" title="置换群"></a>置换群</h3><p><strong>[定义]</strong> 设 $\mathbb Z_n^+&#x3D;\{1,2,\cdots,n\}$，定义 $n$ 阶置换 $\sigma$ 是一个从 $\mathbb Z_n^+$ 到 $\mathbb Z_n^+$ 的双射，记作：</p>
+<p>$$<br>\sigma&#x3D;\begin{pmatrix}1&amp;2&amp;\cdots&amp;n\\<br>\sigma(1)&amp;\sigma(2)&amp;\cdots&amp;\sigma(n)\end{pmatrix}<br>$$</p>
+<p>其中，如果对于 $a_1,a_2,\cdots,a_m\in\mathbb Z_n^+$ 有 $\forall 1\le i&lt;m$ 满足 $\sigma(a_i)&#x3D;a_{i+1}$ 且 $\sigma(a_m)&#x3D;a_1$，则记 $\sigma&#x3D;(a_1a_2\cdots a_m)$.</p>
+<p><strong>[定义]</strong> 定义 $n$ 阶置换 $\sigma,\tau$ 的乘积：</p>
+<p>$$<br>\sigma\cdot\tau&#x3D;\begin{pmatrix}1&amp;2&amp;\cdots&amp;n\\<br>\tau(\sigma(1))&amp;\tau(\sigma(2))&amp;\cdots&amp;\tau(\sigma(n))\end{pmatrix}<br>$$</p>
+<p>容易验证所有的 $n$ 阶置换构成一个群，记作 $\mathsf S_n$. 如果把从 $X$ 到 $X$ 的所有双射构成的集合记作 $\mathsf{Sym}\ X$，仿照上面的乘法定义，容易验证 $\mathsf{Sym}\ X$ 也是一个群.</p>
+<h2 id="共轭与阶"><a href="#共轭与阶" class="headerlink" title="共轭与阶"></a>共轭与阶</h2><p><strong>[定义]</strong> 群 $\langle G,\cdot\rangle$ 的阶是 $G$ 中的元素个数，记作 $|G|$，其中无限群有无限阶. $a\in G$ 的阶指使得 $a^m&#x3D;e$ 的最小正整数 $m$，记作 $|a|$ 或 $\mathrm{ord}\ a$. 若不存在，则 $a$ 有无限阶.</p>
 <blockquote>
 <p>有限群的任意元素都有有限阶.</p>
 </blockquote>
 <p>设 $n&#x3D;|G|$，则根据抽屉原理 $a,a^2,\cdots.a^{n+1}$ 中必有两个相等，设这两个元素为 $a^x$ 和 $a^y$，其中 $x&gt;y$，则 $a^x\cdot (a^y)^{-1}&#x3D;a^{x-y}&#x3D;e$，所以 $|a|\le x-y$.</p>
 <blockquote>
-<p>$a^m&#x3D;e$ 当且仅当 $\mathrm{ord}(a)\mid m$.</p>
+<p>$a^m&#x3D;e$ 当且仅当 $\mathrm{ord}\ a\mid m$.</p>
 </blockquote>
 <p>如果 $a^m&#x3D;e$，设 $m&#x3D;|a|p+r$，其中 $p,r\in \mathbb N,r&lt;|a|$，则 $a^m&#x3D;(a^{|a|})^p\cdot a^r&#x3D;a^r&#x3D;e$，又 $r&lt;|a|$，则 $r&#x3D;0$，$m$ 可以被 $|a|$ 整除. 另一方向显然.</p>
 <p><strong>[定义]</strong> 如果在群 $\langle G,\cdot\rangle$ 中，$a,b\in G$ 满足 $\exists g\in G,a&#x3D;g^{-1}\cdot b\cdot g$，则称 $a$ 与 $b$ 共轭，记作 $a\sim b$. 共轭是一种等价关系，容易证明共轭满足下面三个性质：</p>
@@ -258,11 +253,11 @@
 <p>即 $\exists g\in G$ 使得 $b&#x3D;g^{-1}\cdot a\cdot g$. 如果 $b^n&#x3D;g^{-1}\cdot a^n\cdot g&#x3D;e$，则 $a^n&#x3D;g\cdot e\cdot g^{-1}&#x3D;e$，满足该条件的最小正整数 $n$ 既为 $a$ 的阶，又为 $b$ 的阶，故 $|a|&#x3D;|b|$.</p>
 <h2 id="子群与陪集"><a href="#子群与陪集" class="headerlink" title="子群与陪集"></a>子群与陪集</h2><p><strong>[定义]</strong> 在群 $\langle G,\cdot\rangle$ 中，如果 $H\subseteq G$ 且 $\langle H,\cdot\rangle$ 是群，则称 $H$ 是 $G$ 的子群，记作 $H\le G$. 如果 $\forall h\in H,g\in G$ 都有 $g^{-1}\cdot h\cdot g\in H$，则称 $H$ 为 $G$ 的正规子群，记作 $H\trianglelefteq G$.</p>
 <blockquote>
-<p>$\langle H,\cdot\rangle$ 是 $\langle G,\cdot\rangle$ 的子群当且仅当 $H\subseteq G$，$\forall a,b\in H,a\cdot b\in H$ 且 $\forall a\in H,a^{-1}\in H$.</p>
+<p>$H\le G$ 当且仅当 $H\subseteq G$，$\forall a,b\in H,a\cdot b\in H$ 且 $\forall a\in H,a^{-1}\in H$.</p>
 </blockquote>
 <p>容易验证 $H$ 满足群的四条定义.</p>
 <blockquote>
-<p>$\langle H,\cdot\rangle$ 是 $\langle G,\cdot\rangle$ 的子群当且仅当 $H\subseteq G$ 且 $\forall a,b\in H,a\cdot b^{-1}\in H$（或 $a^{-1}\cdot b\in H$）.</p>
+<p>$H\le G$ 当且仅当 $H\subseteq G$ 且 $\forall a,b\in H,a\cdot b^{-1}\in H$（或 $a^{-1}\cdot b\in H$）.</p>
 </blockquote>
 <p>如果 $\langle H,\cdot\rangle$ 已经是 $\langle G,\cdot\rangle$ 的子群了，则显然成立. 否则，取 $b&#x3D;a$ 可得 $e\in H$；取 $a&#x3D;e$ 可得 $H$ 包含每个元素的逆元；取 $b&#x3D;c^{-1},c\in H$ 可得 $H$ 有封闭性.</p>
 <p><strong>[定义]</strong> 在群 $\langle G,\cdot\rangle$ 与其子群 $\langle H,\cdot\rangle$ 中，定义：</p>
@@ -294,14 +289,6 @@
 <p><strong>[定义]</strong> 定义与 $H$ 在 $G$ 中的指数为不同左陪集（右陪集）的个数：</p>
 <p>$$<br>[G:H]&#x3D;\frac{|G|}{|H|}<br>$$</p>
 <p>指数的重要性质 $|G|&#x3D;|H|[G:H]$ 称为 $\text{Lagrange}$ 定理.</p>
-<h2 id="同态、同构和自同构"><a href="#同态、同构和自同构" class="headerlink" title="同态、同构和自同构"></a>同态、同构和自同构</h2><p><strong>[定义]</strong> 对于两个群 $\langle G,\cdot\rangle$ 和 $\langle H,\cdot\rangle$，如果 $\exists f:G\to H$，使得 $\forall a,b\in G,f(a\cdot b)&#x3D;f(a)\cdot f(b)$，则 $f$ 为从 $G$ 到 $H$ 的群同态；如果 $f$ 还是双射，则称 $f$ 是从 $G$ 到 $H$ 的群同构，$G$ 与 $H$ 同构，记作 $G\cong H$.</p>
-<p>如果 $f:G\to H$ 是从 $G$ 到 $H$ 的同态，则定义 $f$ 的像：</p>
-<p>$$<br>\mathrm{Im}\ f&#x3D;\{h\mid h&#x3D;f(g),g\in G\}<br>$$</p>
-<p>同时定义 $f$ 的核：</p>
-<p>$$<br>\ker f&#x3D;\{g\in G\mid f(g)&#x3D;e_H\}<br>$$</p>
-<p>其中，$e_H$ 是群 $\langle H,\cdot\rangle$ 的单位元.</p>
-<p>例子：$\mathsf D_3\cong \mathsf S_3$，所需的双射：</p>
-<p>$$<br>\varphi:\begin{matrix}<br>r\mapsto (1,2,3)\\<br>f\mapsto (1,3)<br>\end{matrix}<br>$$</p>
 <p>下一篇文章：<a href="/posts/Math/Advanced-Algebra/Group-Theory/group-2/">群论-2</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       </div>

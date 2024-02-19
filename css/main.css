@@ -89,7 +89,7 @@ hr {
 }
 pre {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 1.0625em; /* 2 */
 }
 a {
   background: transparent;
@@ -107,7 +107,7 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 0.9375em; /* 2 */
 }
 small {
   font-size: 80%;
@@ -1807,7 +1807,8 @@ pre code {
     text-align: justify;
   }
 }
-.post-body p {
+.post-body p,
+.post-body li {
   text-align: left;
 }
 .post-body code {
