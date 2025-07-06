@@ -1,19 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>我的群论讲义 on Diamond_153&#39;s Blog</title>
+    <title>我的群论讲义 on Diamond_153 的个人博客</title>
     <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/</link>
-    <description>Recent content in 我的群论讲义 on Diamond_153&#39;s Blog</description>
+    <description>Recent content in 我的群论讲义 on Diamond_153 的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 06 Jul 2025 09:00:00 +0800</lastBuildDate><atom:link href="https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Sun, 06 Jul 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>正规子群和同态定理</title>
+      <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4%E5%92%8C%E5%90%8C%E6%80%81%E5%AE%9A%E7%90%86/</link>
+      <pubDate>Sun, 06 Jul 2025 21:00:00 +0800</pubDate>
+      
+      <guid>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4%E5%92%8C%E5%90%8C%E6%80%81%E5%AE%9A%E7%90%86/</guid>
+      <description>&lt;p&gt;咕咕咕，未完待续~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>子群和 Lagrange 定理</title>
+      <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/</link>
+      <pubDate>Sun, 06 Jul 2025 17:00:00 +0800</pubDate>
+      
+      <guid>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/</guid>
+      <description>&lt;h3 id=&#34;子群的定义&#34;&gt;子群的定义&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Definition [子群的定义]&lt;/strong&gt;. 若 $(G,\cdot)$ 是一个群，$H$ 是 $G$ 的子集且 $(H,\cdot)$ 也是一个群，则称 $H$  是 $G$ 的子群，记作 $H\le G$. 特别地，若 $H$ 还是 $G$ 的真子集，则称 $H$ 是 $G$ 的真子群，记作 $H&amp;lt;G$.&lt;/p&gt;
+&lt;p&gt;如果 $e$ 是 $G$ 的单位元，则 $(\{e\},\cdot)$ 也是 $G$ 的子群，称为 $G$ 的平凡子群.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Proposition [逆元和单位统一]&lt;/strong&gt;. 如果 $(H,\cdot)$ 是 $(G,\cdot)$ 的子群，则 $H$ 中的单位元和 $G$ 中的单位元是相同的；对任意元素 $a\in H$，$a$ 在 $H$ 中的逆元和 $a$ 在 $G$ 中的逆元也是相同的.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Proof&lt;/em&gt;. 令 $e$ 是 $G$ 中单位元，则对任意 $g\in G$ 都有 $eg=g=ge$，特别对 $g\in H$ 也成立该式，由单位元唯一知 $H$ 中单位元也是 $e$. 同理，对于任意 $a\in H$，令 $b$ 是 $a$ 在 $H$ 中的逆元，则 $ab=e=ba$，由逆元的唯一性也可以知道 $a$ 在 $G$ 中的逆元也是 $b$. $\Box$&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>群的定义和基本性质</title>
       <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/</link>
       <pubDate>Sun, 06 Jul 2025 09:00:00 +0800</pubDate>
       
       <guid>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/</guid>
       <description>&lt;h3 id=&#34;群的定义&#34;&gt;群的定义&lt;/h3&gt;
-&lt;p&gt;如果一个集合 $G$ 和二元运算 $\cdot:G\times G\to G$ 满足：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition [群的定义]&lt;/strong&gt;. 如果一个集合 $G$ 和二元运算 $\cdot:G\times G\to G$ 满足：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;$(a\cdot b)\cdot c=a\cdot(b\cdot c)$，即结合律；&lt;/li&gt;
 &lt;li&gt;存在唯一的 $e\in G$ 满足对任意 $a\in G$ 都有 $e\cdot a=a\cdot e=a$，即存在单位元；&lt;/li&gt;
@@ -21,8 +44,7 @@
 &lt;/ol&gt;
 &lt;p&gt;那么就称 $(G,\cdot)$ 是一个群. 有的时候我们把运算符省略，将 $a\cdot b$ 记为 $ab$，直接称 $G$ 是一个群.&lt;/p&gt;
 &lt;p&gt;如果在一个群 $(G,\cdot)$ 中还有第 4 条性质 $a\cdot b=b\cdot a$ 对任意 $a,b\in G$ 成立，则称 $G$ 是交换群或者 Abel 群.&lt;/p&gt;
-&lt;p&gt;如果这个结构只满足 1 则称 $(G,\cdot)$ 是半群，满足 1, 2 则称 $(G,\cdot)$ 是幺半群.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Remark&lt;/strong&gt;. 注意 “$G$ 上的二元运算” 蕴含了封闭律，即对于任意 $a,b\in G$ 都有 $a\cdot b\in G$. 群定义中的几条要求可以理解为数系运算的抽象. 比如整数集 $\mathbb Z$ 上的加法 $+$ 就满足定义中的三条性质以及附加的一条性质，所以当群运算符为加法时，我们习惯将 $a^{-1}$ 记为 $-a$.&lt;/p&gt;</description>
+&lt;p&gt;如果这个结构只满足 1 则称 $(G,\cdot)$ 是半群，满足 1, 2 则称 $(G,\cdot)$ 是幺半群.&lt;/p&gt;</description>
     </item>
     
     

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>子群和 Lagrange 定理</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.a6db791fae687dbc3765b269eea1a66b10530cc92919d185aa7f0c44dcd98cdb.css" integrity="sha256-ptt5H65ofbw3ZbJp7qGmaxBTDMkpGdGFqn8MRNzZjNs=" />
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hu_c91f00547ea1a84d.png" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Diamond_153 的个人博客"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="/images/author/diamond153.jpg">
+<meta property="og:url" content="https://hugo-toha.github.io/">
+
+    
+<meta name="description" content="第二次讲义" />
+
+
+
+    
+
+    
+        
+            
+            
+                
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4LBG7NDFZ"></script>
+      <script>
+        var doNotTrack = false;
+        if ( null ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-H4LBG7NDFZ');
+        }
+      </script>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+
+            
+
+            
+        
+    
+
+
+
+
+
+    <script integrity="sha256-DO4ugzEwhTW1Id1UIWn0gUJWaebCYOypeTit6LW4QB4=">
+     let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
+if (theme === 'system') {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+  } else {
+    theme = 'light'
+  }
+}
+document.documentElement.setAttribute('data-theme', theme)
+
+    </script>
+    
+  </head>
+
+  <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      
+        <img src="/images/site/main-logo_hu_c91f00547ea1a84d.png" id="logo" alt="Logo">
+      Diamond_153 的个人博客</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">主页</a>
+        </li>
+        
+          
+          
+            
+            
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">我的文章</a>
+          </li>
+        
+        
+        
+        
+        
+          
+
+
+
+  
+  
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+  
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu_c91f00547ea1a84d.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/inverted-logo_hu_c91f00547ea1a84d.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="搜索" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">我的文章</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/"> 群论讲义</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/" title="群的定义和基本性质">群的定义和基本性质</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/" title="子群和 Lagrange 定理">子群和 Lagrange 定理</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4%E5%92%8C%E5%90%8C%E6%80%81%E5%AE%9A%E7%90%86/" title="正规子群和同态定理">正规子群和同态定理</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/img2.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/diamond153_hu_a3fb78be2b903ba8.jpg' alt="Author Image">
+          <h5 class="author-name">Diamond_153</h5>
+          <p class="text-muted">Sunday, July 6, 2025 | 3 分钟</p>
+        </div>
+        
+
+        <div class="title">
+          <h1>子群和 Lagrange 定理</h1>
+        </div>
+
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <h3 id="子群的定义">子群的定义</h3>
+<p><strong>Definition [子群的定义]</strong>. 若 $(G,\cdot)$ 是一个群，$H$ 是 $G$ 的子集且 $(H,\cdot)$ 也是一个群，则称 $H$  是 $G$ 的子群，记作 $H\le G$. 特别地，若 $H$ 还是 $G$ 的真子集，则称 $H$ 是 $G$ 的真子群，记作 $H&lt;G$.</p>
+<p>如果 $e$ 是 $G$ 的单位元，则 $(\{e\},\cdot)$ 也是 $G$ 的子群，称为 $G$ 的平凡子群.</p>
+<p><strong>Proposition [逆元和单位统一]</strong>. 如果 $(H,\cdot)$ 是 $(G,\cdot)$ 的子群，则 $H$ 中的单位元和 $G$ 中的单位元是相同的；对任意元素 $a\in H$，$a$ 在 $H$ 中的逆元和 $a$ 在 $G$ 中的逆元也是相同的.</p>
+<blockquote>
+<p><em>Proof</em>. 令 $e$ 是 $G$ 中单位元，则对任意 $g\in G$ 都有 $eg=g=ge$，特别对 $g\in H$ 也成立该式，由单位元唯一知 $H$ 中单位元也是 $e$. 同理，对于任意 $a\in H$，令 $b$ 是 $a$ 在 $H$ 中的逆元，则 $ab=e=ba$，由逆元的唯一性也可以知道 $a$ 在 $G$ 中的逆元也是 $b$. $\Box$</p></blockquote>
+<p><strong>Example [子群的例子]</strong>.</p>
+<ul>
+<li>考虑整数加法群 $(\mathbb Z,+)$，那么所有 $k$ 的倍数 $k\mathbb Z=\{ka\mid a\in\mathbb Z\}$ 是 $\mathbb Z$ 的子集，又因为 $(k\mathbb Z,+)$ 也构成一个群，所以 $k\mathbb Z\le\mathbb Z$.</li>
+<li>所有非零有理数 $\mathbb Q^\times=\mathbb Q\setminus\{0\}$ 在乘法运算下构成一个群，从而是 $\mathbb R^\times$ 的子群.</li>
+<li>所有行列式为 $1$ 的 $n$ 阶实矩阵在乘法运算下构成一个群，记其为 $\mathsf{SL}_n(\mathbb R)$，则 $\mathsf{SL}_n(\mathbb R)&lt;\mathsf{GL}_n(\mathbb R)$.</li>
+<li>对于两个数 $k$ 和 $n$，若 $k\mid n$，则 $\mathbb Z_n$ 中所有被 $k$ 整除的数在模 $n$ 加法运算下也构成一个群，所以它是 $\mathbb Z_n$ 的子群.</li>
+</ul>
+<p><strong>Remark</strong>. 注意 $\mathbb Q^\times$ 不是 $\mathbb Q$ 的子群，因为它们一个是加法群，一个是乘法群，运算并不一样.</p>
+<p>下面给出一个定理，读者可以尝试用其验证上面几个例子所说的事情.</p>
+<p><strong>Proposition [子群判别定理]</strong>. 如果 $G$ 是一个群，$H$ 是 $G$ 的非空子集，那么 $H$ 是 $G$ 的子群当且仅当对任意 $a,b\in H$，都有 $ab^{-1}\in H$.</p>
+<blockquote>
+<p><em>Proof</em>.
+我们逐个验证定义中的条件. 因为 $G$ 本来就是群，所以将 $G$ 上的运算限制在 $H$ 上仍然满足结合律；任取 $a\in H$，我们有 $aa^{-1}=e\in H$，所以 $H$ 中有单位元；又因为 $ea^{-1}=a^{-1}\in H$，所以每个元素的逆元都在 $H$ 中；最后 $a(b^{-1})^{-1}=ab\in H$，所以 $H$ 对运算封闭，即 $\cdot$ 是 $H$ 上的二元运算. $\Box$</p></blockquote>
+<h3 id="陪集">陪集</h3>
+<p>为了得到子群的一些性质，我们引入下面的定义.</p>
+<p><strong>Definition [陪集的定义]</strong>. 对于子群 $H\le G$ 和任意 $a\in G$，记 $aH=\{ah\mid h\in H\}$ 与 $Ha=\{ha\mid h\in H\}$，我们称 $aH$ 是 $H$ 的左陪集，$Ha$ 是 $H$ 的右陪集，类似可以定义左右陪集 $aHb=\{ahb\mid h\in H\}$.</p>
+<p>特别如果 $H$ 有限，则它的所有左陪集和右陪集大小都与它自己相等.（这是容易证明的）</p>
+<p><strong>Example [一些例子]</strong>.</p>
+<ul>
+<li>对于正整数 $k$ 和 $n$，考虑模 $n$ 余 $k$ 的同余类 ${k+an\mid a\in\mathbb Z}$，它是 $n\mathbb Z$ 在 $\mathbb Z$ 中的左陪集，因为 $\{k+an\mid a\in\mathbb Z\}=k+n\mathbb Z$.</li>
+<li>对于正 $n$ 边形的对称群 $\mathsf D_n$，考虑其所有的旋转构成的子群 $\mathsf C_n$，任取 $\mathsf D_n$ 中的一个对称操作 $f$，则 $f\mathsf C_n$ 是 $\mathsf C_n$ 的一个左陪集，它是 $\mathsf D_n$ 中所有的对称操作.</li>
+</ul>
+<p>注意力惊人的大家应该发现了：上面两个例子中，所有模 $n$ 的同余类将整数集划分为了 $n$ 个部分；$\mathsf C_n$ 和 $f\mathsf C_n$ 正好不重不漏地覆盖了 $\mathsf D_n$ 中的每一个元素. 那对于一般情况是否有类似的规律呢？下面所述的 Lagrange 定理描述了这一现象.</p>
+<p><strong>Theorem [Lagrange 定理]</strong>. 若 $H$ 是 $G$ 的子群，则 $H$ 的所有不同的左陪集（右陪集）给出了 $G$ 的一个划分，我们将划分类的个数记作 $[G:H]$.</p>
+<blockquote>
+<p><em>Proof</em>.
+这里只对于左陪集证明该命题，右陪集的情况类似可证.</p>
+<p>由于 $a=ae\in aH$，故 $H$ 所有的左陪集可以覆盖 $G$，只需说明任意两个不同的左陪集都完全不相交.</p>
+<p>使用反证法. 如果 $aH\ne bH$ 但是它们有相交的部分，取 $g\in aH\cap bH$，则存在 $h_1,h_2\in H$ 使得 $g=ah_1=bh_2$.</p>
+<p>注意到 $aH={ah\mid h\in H}={b(h_2h_1^{-1}h)\mid h\in H}$，而 $h_2h_1^{-1}h\in H$，故 $aH\subseteq bH$，同理可证 $bH\subseteq aH$，从而 $aH=bH$. 矛盾！$\Box$</p></blockquote>
+<p>而且我们还可以从上面的证明中得到：</p>
+<p><strong>Proposition [左陪集两两不交]</strong>. 如果 $H$ 是 $G$ 的子群，$a,b\in G$，则左陪集 $aH$ 和 $bH$ 要么相等，要么完全不相交.</p>
+<p>对于有限群，$\mathsf{Lagrange}$ 定理还可以有如下强大的推论：</p>
+<p><strong>Corollary [子群的阶数]</strong>. 如果 $G$ 是有限群，$H$ 是 $G$ 的子群，则 $H$ 所有左陪集将 $G$ 划分为了大小相同（都为 $|H|$）的多个部分，故划分个数 $[G:H]=|G|/|H|$. 特别地，$G$ 所有子群的阶数都整除 $G$ 的阶数.</p>
+<h3 id="元素的阶数">元素的阶数</h3>
+<p><strong>Definition [群内元素的阶]</strong>. 如果 $G$ 是一个群，$a\in G$，那么定义 $a$ 的阶数 $\mathsf{ord}\ a$ 是最小的正整数 $p$，使得 $a^p=e$. 如果不存在则定义 $\mathsf{ord}\ a=\infty$. 如果 $\mathsf{ord}\ a$ 有限则称 $a$ 是挠元，否则称 $a$ 是无挠的. 特别地，当 $G$ 是交换群时，所有的挠元构成 $G$ 的子群，记作 $\mathsf{Tor}(G)$.</p>
+<p><strong>Remark</strong>. $a^n=e$ 可以看作是对 $a$ 的一种限制，所以阶数有限的元素称为挠元.</p>
+<p><strong>Proposition [阶的简单性质]</strong>. 如果 $G$ 是一个群，$a\in G$ 的阶有限，那么：</p>
+<ol>
+<li>对于整数 $p$，$a^p=e$ 当且仅当 $p$ 整除 $\mathsf{ord}\ a$.</li>
+<li>对于整数 $k$，$a^k$ 的阶与 $a$ 的阶有如下关系：$\mathsf{ord}\ a=\gcd(k,\mathsf{ord}\ a)\cdot\mathsf{ord}\ a^k$.</li>
+</ol>
+<blockquote>
+<p><em>Proof</em>. 证明是容易的.</p></blockquote>
+<p>下面是一个经典的命题，可以利用 Lagrange 定理证明：</p>
+<p><strong>Proposition</strong>. 若 $G$ 是有限群且 $|G|=n$，则对于任意 $a\in G$，都有 $a^n=e$.</p>
+<blockquote>
+<p><em>Proof</em>. 令 $p=\mathsf{ord}\ a$，则我们需要证明 $p\mid n$. 令 $G$ 的子集 $H={e,a,a^2,\cdots,a^{p-1}}$，则容易验证 $H\leq G$. 从而由 Lagrange 定理知 $p=|H|$ 整除 $n=|G|$. 证毕. $\Box$</p></blockquote>
+<p>以及初等数论中的 Euler 定理，现在也可以利用群论知识证明.</p>
+<p><strong>Theorem [Euler]</strong>. 如果 $n\ge 2$ 是正整数，$a$ 与 $n$ 互素，则 $a^{\varphi(n)}\equiv 1\pmod n$，其中 $\varphi$ 是 Euler-$\varphi$ 函数.</p>
+<blockquote>
+<p><em>Proof</em>. 对 $(\mathbb Z/n\mathbb Z)^\times$ 中的元素使用上面的命题即可. $\Box$</p></blockquote>
+<h3 id="两个经典的反例">两个经典的反例</h3>
+<p><strong>Conjecture</strong>. 对于任意群 $G$，如果 $a,b\in G$ 都是挠元，那么 $ab$ 也是挠元吗？</p>
+<blockquote>
+<p><em>Answer</em>. 不一定. 考虑 $\mathsf{SL}_2(\mathbb Z)$ 为所有二阶行列式为 $1$ 的整数矩阵构成的集合，它在乘法运算下构成一个群. 考虑其中的元素：
+$$A=\begin{pmatrix}0&amp;-1\\1&amp;0\end{pmatrix},B=\begin{pmatrix}0&amp;1\\-1&amp;-1\end{pmatrix}$$
+则 $\mathsf{ord}\ A=4$ 且 $\mathsf{ord}\ B=3$. 但是 $AB$ 是特征值为 $1$ 的 Jordan 块，并不是挠元. $\Box$</p></blockquote>
+<p><strong>Conjecture</strong>. 对于任意无限群 $G$，其中必存在无挠元吗？</p>
+<blockquote>
+<p><em>Answer</em>. 不一定. 对于正整数 $n$，定义 $\mathsf C_n$ 是所有 $n$ 次单位根在乘法下构成的群，取：
+$$G=\bigcup_{n=1}^\infty\mathsf C_n$$
+则 $G$ 也构成一个群（因为 $n$ 次单位根乘以 $m$ 次单位根一定是 $nm$ 次单位根），但是 $G$ 中元素的阶都是有限的，所以不存在无挠元.</p></blockquote>
+<p><strong>Remark</strong>. 对于上一题中所取的群 $G$ 和素数 $p$，我们定义：
+$$
+G_p=\{g\in G\mid\exists n\in\mathbb N,\text{ s.t. }\mathsf{ord}\ g=p^n\}=\bigcup_{n=0}^\infty\mathsf C_{p^n}
+$$
+则 $G_p$ 是 $G$ 的无限子群，而且 $G_p$ 没有无限的真子群. 上面的 $G_p$ 被称为 Prüfer 群.</p>
+<h3 id="留给读者的练习">留给读者的练习</h3>
+<p><strong>Problem 1</strong>. 任意双射 $f\in\mathsf S_n$ 都可以对应 $1,2,\cdots,n$ 的一个排列，即 $f(1),f(2),\cdots,f(n)$. 我们记它的逆序对个数为 $N(f)$，并定义 $f$ 的<strong>符号</strong>是 $\mathsf{sgn}\ f=(-1)^{N(f)}$，证明：$\mathsf S_n$ 中所有符号为 $1$ 的元素构成了 $\mathsf S_n$ 的子群. 我们称其为交错群，记作 $\mathsf A_n$.</p>
+<p><strong>Problem 2</strong>. 若 $A$ 是二阶整数矩阵，且 $\det A$ 不是 $3$ 的倍数，令 $B=A^{48}=(b_{ij})_{2\times 2}$. 证明：$b_{11}$ 和 $b_{22}$ 都模 $3$ 余 $1$，且 $b_{12}$ 和 $b_{21}$ 都是 $3$ 的倍数.</p>
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+        
+        
+        
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/" title="群的定义和基本性质" class="btn filled-button">
+        <div><i class="fas fa-chevron-circle-left"></i> 上一篇</div>
+        <div class="next-prev-text">群的定义和基本性质</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4%E5%92%8C%E5%90%8C%E6%80%81%E5%AE%9A%E7%90%86/" title="正规子群和同态定理" class="btn filled-button">
+          <div>下一篇 <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">正规子群和同态定理</div>
+        </a>
+      </div>
+    
+</div>
+
+      <br/>
+      <hr />
+
+      
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center ps-3">目录</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#子群的定义">子群的定义</a></li>
+        <li><a href="#陪集">陪集</a></li>
+        <li><a href="#元素的阶数">元素的阶数</a></li>
+        <li><a href="#两个经典的反例">两个经典的反例</a></li>
+        <li><a href="#留给读者的练习">留给读者的练习</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>我的联系方式:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:amethyst153@outlook.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>amethyst153@outlook.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://user.qzone.qq.com/2874864660%25!%28EXTRA%20int&#61;2874864660%29 target="_blank" rel="noopener">
+                  <span><i class="fa-brands fa-qq"></i></span> <span>2874864660</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+  </footer>
+
+
+    <script src="/application.d1216ca58064489464b08e6a49184384428fa3dc08cd687a219112617de2699d.js" integrity="sha256-0SFspYBkSJRksI5qSRhDhEKPo9wIzWh6IZESYX3iaZ0=" defer></script>
+
+
+    
+     
+
+    
+    
+
+</body>
+</html>
