@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>我的群论讲义 on Diamond_153&#39;s Blog</title>
+    <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/</link>
+    <description>Recent content in 我的群论讲义 on Diamond_153&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 06 Jul 2025 09:00:00 +0800</lastBuildDate><atom:link href="https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>群的定义和基本性质</title>
+      <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/</link>
+      <pubDate>Sun, 06 Jul 2025 09:00:00 +0800</pubDate>
+      
+      <guid>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/</guid>
+      <description>&lt;h3 id=&#34;群的定义&#34;&gt;群的定义&lt;/h3&gt;
+&lt;p&gt;如果一个集合 $G$ 和二元运算 $\cdot:G\times G\to G$ 满足：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$(a\cdot b)\cdot c=a\cdot(b\cdot c)$，即结合律；&lt;/li&gt;
+&lt;li&gt;存在唯一的 $e\in G$ 满足对任意 $a\in G$ 都有 $e\cdot a=a\cdot e=a$，即存在单位元；&lt;/li&gt;
+&lt;li&gt;对于任意的 $a\in G$，存在唯一的 $b\in G$ 满足 $a\cdot b=b\cdot a=e$，即存在逆元，我们记 $b=a^{-1}$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;那么就称 $(G,\cdot)$ 是一个群. 有的时候我们把运算符省略，将 $a\cdot b$ 记为 $ab$，直接称 $G$ 是一个群.&lt;/p&gt;
+&lt;p&gt;如果在一个群 $(G,\cdot)$ 中还有第 4 条性质 $a\cdot b=b\cdot a$ 对任意 $a,b\in G$ 成立，则称 $G$ 是交换群或者 Abel 群.&lt;/p&gt;
+&lt;p&gt;如果这个结构只满足 1 则称 $(G,\cdot)$ 是半群，满足 1, 2 则称 $(G,\cdot)$ 是幺半群.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remark&lt;/strong&gt;. 注意 “$G$ 上的二元运算” 蕴含了封闭律，即对于任意 $a,b\in G$ 都有 $a\cdot b\in G$. 群定义中的几条要求可以理解为数系运算的抽象. 比如整数集 $\mathbb Z$ 上的加法 $+$ 就满足定义中的三条性质以及附加的一条性质，所以当群运算符为加法时，我们习惯将 $a^{-1}$ 记为 $-a$.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

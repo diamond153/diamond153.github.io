@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>群的定义和基本性质</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.5d3c6bb8f00609f3d410397b5cb8fd8dbc981517d9a4631fdebc0a4e2f1d7c42.css" integrity="sha256-XTxruPAGCfPUEDl7XLj9jbyYFRfZpGMf3rwKTi8dfEI=" />
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hu_c91f00547ea1a84d.png" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Diamond_153&#39;s Blog"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="/images/author/diamond153.jpg">
+<meta property="og:url" content="https://hugo-toha.github.io/">
+
+    
+<meta name="description" content="第一次讲义" />
+
+
+
+    
+
+    
+        
+            
+            
+                
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4LBG7NDFZ"></script>
+      <script>
+        var doNotTrack = false;
+        if ( null ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-H4LBG7NDFZ');
+        }
+      </script>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+
+            
+
+            
+        
+    
+
+
+
+
+
+    <script integrity="sha256-DO4ugzEwhTW1Id1UIWn0gUJWaebCYOypeTit6LW4QB4=">
+     let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
+if (theme === 'system') {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+  } else {
+    theme = 'light'
+  }
+}
+document.documentElement.setAttribute('data-theme', theme)
+
+    </script>
+    
+  </head>
+
+  <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      
+        <img src="/images/site/main-logo_hu_c91f00547ea1a84d.png" id="logo" alt="Logo">
+      Diamond_153&#39;s Blog</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">主页</a>
+        </li>
+        
+          
+          
+            
+            
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">我的文章</a>
+          </li>
+        
+        
+        
+        
+        
+          
+
+
+
+  
+  
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+  
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu_c91f00547ea1a84d.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/inverted-logo_hu_c91f00547ea1a84d.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="搜索" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">我的文章</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/"> 群论讲义</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/" title="群的定义和基本性质">群的定义和基本性质</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/default-hero.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/diamond153_hu_a3fb78be2b903ba8.jpg' alt="Author Image">
+          <h5 class="author-name">Diamond_153</h5>
+          <p class="text-muted">Sunday, July 6, 2025 | 2 分钟</p>
+        </div>
+        
+
+        <div class="title">
+          <h1>群的定义和基本性质</h1>
+        </div>
+
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <h3 id="群的定义">群的定义</h3>
+<p>如果一个集合 $G$ 和二元运算 $\cdot:G\times G\to G$ 满足：</p>
+<ol>
+<li>$(a\cdot b)\cdot c=a\cdot(b\cdot c)$，即结合律；</li>
+<li>存在唯一的 $e\in G$ 满足对任意 $a\in G$ 都有 $e\cdot a=a\cdot e=a$，即存在单位元；</li>
+<li>对于任意的 $a\in G$，存在唯一的 $b\in G$ 满足 $a\cdot b=b\cdot a=e$，即存在逆元，我们记 $b=a^{-1}$.</li>
+</ol>
+<p>那么就称 $(G,\cdot)$ 是一个群. 有的时候我们把运算符省略，将 $a\cdot b$ 记为 $ab$，直接称 $G$ 是一个群.</p>
+<p>如果在一个群 $(G,\cdot)$ 中还有第 4 条性质 $a\cdot b=b\cdot a$ 对任意 $a,b\in G$ 成立，则称 $G$ 是交换群或者 Abel 群.</p>
+<p>如果这个结构只满足 1 则称 $(G,\cdot)$ 是半群，满足 1, 2 则称 $(G,\cdot)$ 是幺半群.</p>
+<p><strong>Remark</strong>. 注意 “$G$ 上的二元运算” 蕴含了封闭律，即对于任意 $a,b\in G$ 都有 $a\cdot b\in G$. 群定义中的几条要求可以理解为数系运算的抽象. 比如整数集 $\mathbb Z$ 上的加法 $+$ 就满足定义中的三条性质以及附加的一条性质，所以当群运算符为加法时，我们习惯将 $a^{-1}$ 记为 $-a$.</p>
+<h3 id="一些例子">一些例子</h3>
+<p>下面给出了一些群的例子：</p>
+<ul>
+<li>所有的整数 $\mathbb Z$ 在加法运算下构成一个群，即 $(\mathbb Z,+)$ 是群.</li>
+<li>所有非零实数 $\mathbb R^{\times}=\mathbb R\setminus\{0\}$ 在乘法运算下也构成一个群，即 $(\mathbb R^{\times},\cdot)$ 是群.</li>
+<li>对于有限集 $X$，其到自身的所有<strong>双射</strong>在复合运算 $\circ$ 下构成一个群，我们将其称为 $X$ 的对称群，记作 $\mathsf{Sym}\ X$. 特别地，当 $X=\{1,2,\cdots,n\}$ 时我们记其对称群为 $\mathsf S_n$.</li>
+<li>对于模数 $n$，考虑其所有同余类，它们在加法下构成了一个群，记作 $\mathbb Z/n\mathbb Z$.</li>
+<li>对于模数 $n$，再考虑其所有与 $n$ 互素的数对应的同余类，它们在乘法下构成了一个群，记作 $(\mathbb Z/n\mathbb Z)^{\times}$.</li>
+<li>对于一个几何物体，所有能使其与原先重合的空间变换构成了一个群，称为这个几何体的对称群. 比如正三角形有 $3$ 种不同的旋转和 $3$  种不同的对称，共六种空间变换可以使其与原先重合. 记正 $n$ 边形的对称群为 $\mathsf D_n$，它共有 $2n$ 个元素.</li>
+<li>所有 $n$ 阶可逆实矩阵在乘法运算下构成一个群，记作 $\mathsf{GL}_n(\mathbb R)$.</li>
+<li>如果 $(G,\cdot)$ 和 $(H,\circ)$ 是两个群，在 $\mathsf{Descartes}$ 积 $G\times H$ 上定义运算 $(g_1,h_1)*(g_2,h_2)=(g_1\cdot g_2,h_1\circ h_2)$，则 $G\times H$ 在运算 $*$ 下构成了一个群，这个群称为 $G$ 与 $H$ 的直积群.</li>
+</ul>
+<p>还有不是群的例子：</p>
+<ul>
+<li>所有的自然数 $\mathbb N$ 在加法运算下不构成一个群，因为不存在 $a\in\mathbb N$ 使 $1+a=0$，也就是有元素没有逆元，其实 $(\mathbb N,+)$ 构成幺半群.</li>
+<li>所有的实数在乘法运算下不构成一个群，因为不存在 $a\in\mathbb R$ 使 $0\cdot a=1$.</li>
+<li>考虑集合 $T_n=\{1,2,\cdots,n\}$，那么 $T_n$ 到自己所有的映射在复合运算下不构成一个群，因为映射不一定可逆.</li>
+<li>对于模数 $n\ge 2$ 考虑其完全剩余系，它们在模 $n$ 乘法下不构成一个群，因为 $0$ 没有逆元.</li>
+<li>所有 $n$ 阶实矩阵在乘法运算下不构成一个群，因为零矩阵不可逆.</li>
+</ul>
+<h3 id="群的基本性质">群的基本性质</h3>
+<p><strong>Proposition</strong>.</p>
+<ul>
+<li>如果 $G$ 是一个半群，那么对于 $g_1,\cdots,g_m\in G$，乘积 $g_1g_2\cdots g_m$ 任意的添括号方式都不影响结果.</li>
+<li>如果 $G$ 是一个群，那么 $ab=ac$ 可以推出 $b=c$.</li>
+<li>如果 $G$ 是一个群，那么对于其中的元素 $g_1,\cdots,g_m$ 有 $(g_1g_2\cdots g_m)^{-1}=g_m^{-1}g_{m-1}^{-1}\cdots g_1^{-1}$.</li>
+</ul>
+<p>对于一个群 $G$，定义 $a\in G$ 的 $n\in\mathbb N_+$ 次方为 $a^n=\underbrace{aa\cdots a}_{n\text{ times}}$，并补充定义 $a^0=e$ 与 $a^{-n}=(a^n)^{-1}$. 那么有：</p>
+<p><strong>Proposition</strong>. 对于任意 $n,m\in\mathbb Z$，我们有 $a^na^m=a^{n+m}$ 与 $a^{nm}=(a^n)^m$.</p>
+<blockquote>
+<p><em>Proof</em>. 证明都是容易的. $\Box$</p></blockquote>
+<h3 id="群的等价定义">群的等价定义</h3>
+<p><strong>Proposition [群的单边定义]</strong>. 如果半群 $G$ 满足：</p>
+<ul>
+<li>$G$ 中存在元素 $e$，使得 $ea=a$ 对任意 $a$ 成立.（满足这个性质的 $e$ 不一定唯一）</li>
+<li>存在某个满足上面性质的 $e$，使得对任意元素 $a\in G$，存在 $a^{-1}$ 使得 $a^{-1}a=e$.（这里的 $a^{-1}$ 也不一定唯一）</li>
+</ul>
+<p>那么 $G$ 是群.</p>
+<blockquote>
+<p><em>Proof</em>. 我们分四步证明.</p>
+<p>第一步. 先证明 $aa^{-1}$ 满足第一条性质. 对于 $a^{-1}$ 的任意可能性，由第二条性质，任取 $b\in G$ 满足 $ba^{-1}$ 满足第一条性质，则对任意 $c\in G$ 有 $aa^{-1}c=(ba^{-1})(aa^{-1}c)=b(a^{-1}a)a^{-1}c=(ba^{-1})c=c$.</p>
+<p>第二步. 再证明对于第二条性质中的某个 $e$，有 $ae=a$ 对任意 $a$ 成立. 令 $e=a^{-1}a$，则由上一步可知 $ae=a(a^{-1}a)=(aa^{-1})a=a$.</p>
+<p>第三步. 然后证明满足第一条性质的 $e$ 唯一. 取定第二条性质中的某个 $e$，如果 $e&rsquo;$ 也满足第一条性质，由上一步可知 $e&rsquo;=e&rsquo;e=e$.</p>
+<p>第四步. 最后证明满足第二条性质的 $a^{-1}$ 唯一. 对于任意元素 $a$，如果 $b,c$ 都满足第二条性质，那么 $b=be=b(ac)=(ba)c=c$. $\Box$</p></blockquote>
+<p><strong>Problem [2022 年 9 月一试第 6 题]</strong>. 如果有限半群 $G$ 满足：</p>
+<ul>
+<li>如果 $a,b,c\in G$ 且 $ac=bc$，则 $a=b$；</li>
+<li>如果 $a,b,c\in G$ 且 $ab=ac$，则 $b=c$.</li>
+</ul>
+<p>证明 $G$ 是群.</p>
+<blockquote>
+<p><em>Solution</em>.
+令 $G=\{a_1,\cdots,a_n\}$，则由上述两个性质可以得到对任意 $a_i\in G$ 都有</p>
+<p>$$\{a_ia_1,\cdots,a_ia_n\}=G=\{a_1a_i,\cdots,a_na_i\}$$</p>
+<p>取定 $a_i$，则存在 $e$ 使得 $ea_i=a_i$. 又对任意 $a_k\in G$ 存在 $a_j\in G$ 使得 $a_k=a_ia_j$，故 $ea_k=ea_ia_j=(ea_i)a_j=a_k$. 所以存在 $e$ 满足上题条件 1. 又对任意 $a\in G$ 存在 $b$ 使得 $e=ba$，由上题证毕. $\Box$</p></blockquote>
+<h3 id="留给读者的练习">留给读者的练习</h3>
+<p><strong>Problem 1</strong>. 已知对于群 $G$ 中的每个元素 $a$ 都有 $a^2=e$. 证明：$G$ 是 Abel 群.</p>
+<p><strong>Problem 2</strong>. 已知 $a_1,a_2,b_1,b_2$ 都是群 $G$ 中的元素，满足 $a_1b_1=b_1a_1=a_2b_2=b_2a_2$，且 $a_1^3=a_2^3=b_1^5=b_2^5=e$. 证明：$a_1=a_2$ 且 $b_1=b_2$.</p>
+<p><strong>Problem 3</strong>. 如果半群 $G$ 满足：对任意的 $a,b\in G$，存在 $x,y\in G$ 使得 $ax=b$ 且 $ya=b$，证明 $G$ 是群.</p>
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+        
+        
+        
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+    
+    
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+  
+</div>
+
+      <hr />
+
+      
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center ps-3">目录</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#群的定义">群的定义</a></li>
+        <li><a href="#一些例子">一些例子</a></li>
+        <li><a href="#群的基本性质">群的基本性质</a></li>
+        <li><a href="#群的等价定义">群的等价定义</a></li>
+        <li><a href="#留给读者的练习">留给读者的练习</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>我的联系方式:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:amethyst153@outlook.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>amethyst153@outlook.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://user.qzone.qq.com/2874864660%25!%28EXTRA%20int&#61;2874864660%29 target="_blank" rel="noopener">
+                  <span><i class="fa-brands fa-qq"></i></span> <span>2874864660</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+  </footer>
+
+
+    <script src="/application.d1216ca58064489464b08e6a49184384428fa3dc08cd687a219112617de2699d.js" integrity="sha256-0SFspYBkSJRksI5qSRhDhEKPo9wIzWh6IZESYX3iaZ0=" defer></script>
+
+
+    
+     
+
+    
+    
+
+</body>
+</html>
