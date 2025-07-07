@@ -438,7 +438,7 @@ $$wu^{-1}=x_1^{\epsilon_1}\cdots x_n^{\epsilon_n}y_m^{-\zeta_m}\cdots y_1^{-\zet
 <li>考虑 $\mathsf S_3$，则 ${\mathsf{id},f}$ 是 $\mathsf S_3$ 的子群但不是正规的. 其中 $f$ 将 $1$ 和 $2$ 对换.</li>
 <li>对于 $G$ 的正规子群 $H$，定义映射 $v:G\to G/H$，$v(g)=gH$，则 $v$ 是一个同态，称为商映射.</li>
 </ul>
-<p>$\mathsf{Proposition.}$ 正规子群的等价定义 如果 $H\leq G$，那么 $H$ 是 $G$ 的正规子群当且仅当 $gHg^{-1}=H$ 对任意 $g$ 成立，当且仅当对任意 $x,y\in G$，如果 $xy\in H$ 那么 $yx\in H$.</p>
+<p><strong>Proposition [正规子群的等价定义]</strong>. 如果 $H\leq G$，那么 $H$ 是 $G$ 的正规子群当且仅当 $gHg^{-1}=H$ 对任意 $g$ 成立，当且仅当对任意 $x,y\in G$，如果 $xy\in H$ 那么 $yx\in H$.</p>
 <blockquote>
 <p><em>Proof</em>.
 如果 $gHg^{-1}=H$ 对任意 $g$ 成立，则 $H$ 显然是 $G$ 的正规子群. 反过来，如果 $H$ 是 $G$ 的正规子群，则对于任意 $g\in G$，由定义知 $gHg^{-1}\subseteq H$，而且对任意 $h\in H$，我们有 $g^{-1}hg\in H$，从而 $h=g(g^{-1}hg)g^{-1}\in gHg^{-1}$，最后就会有 $H=gHg^{-1}$. 第二个当且仅当留给读者. $\Box$</p></blockquote>
@@ -460,7 +460,7 @@ $$
 <p>首先需要证明 $\ker f$ 是一个群. 对任意 $k,l\in\ker f$，我们有 $f(kl^{-1})=f(k)f(l)^{-1}=e$，所以 $kl^{-1}\in\ker f$，接着使用子群判别定理即可. 然后我们证明 $\ker f$ 是正规子群. 对于任意 $k\in\ker f$ 和 $g\in G$，我们有 $f(gkg^{-1})=f(g)f(k)f(g^{-1})=f(g)f(g^{-1})=e&rsquo;$. 所以 $gkg^{-1}\in H$，也就是 $\ker f\trianglelefteq G$.</p>
 <p>对于任意 $x,y\in\mathrm{im}\ f$，令 $x=f(a)$ 和 $y=f(b)$，那么 $xy^{-1}=f(a)f(b)^{-1}=f(ab^{-1})\in\mathrm{im}\ f$，由子群判别定理知 $\mathrm{im}\ f\leq H$.</p>
 <p>最后，定义 $\tilde f:G/\ker f\to\mathrm{im}\ f$ 为 $a\ker f\mapsto f(a)$. 首先这个映射的是良好定义的，即如果 $a\ker f=b\ker f$ 那么 $f(a)=f(b)$，这是显然的，因为 $a^{-1}b\in\ker f$. 然后它是一个同态，因为 $\tilde f(a\ker f)\tilde f(b\ker f)=f(a)f(b)=f(ab)=\tilde f((ab)\ker f)$. 最后它是一个双射. 因为如果 $\tilde f(a\ker f)=e&rsquo;$，则 $f(a)=e&rsquo;$，即 $a\in\ker f$，也就是 $a\ker f=\ker f$. 综上，$G/\ker f\simeq\mathrm{im}\ f$. $\Box$</p></blockquote>
-<p>所以我们还可以得到：一个同态是单的当且仅当其核等于 $\{e\}$. 为了方便，我们以后把平凡子群 $\{e\}$ 记作 $\{1\}$.</p>
+<p>所以我们还可以得到：一个同态是单的当且仅当其核等于 $\{e\}$. 为了方便，我们以后把平凡子群 $\{e\}$ 记作 $1$.</p>
 <h3 id="第二同构定理">第二同构定理</h3>
 <p><strong>Theorem [容斥原理]</strong>. 如果 $S$ 和 $T$ 是有限群 $G$ 的子群，定义 $ST={st\mid s\in S,t\in T}$，则 $|ST||S\cap T|=|S||T|$. 注意 $ST$ 不一定是一个群.</p>
 <blockquote>
