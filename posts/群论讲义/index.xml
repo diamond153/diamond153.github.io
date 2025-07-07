@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>我的群论讲义 on Diamond_153 的个人博客</title>
-    <link>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/</link>
+    <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/</link>
     <description>Recent content in 我的群论讲义 on Diamond_153 的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 07 Jul 2025 21:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Mon, 07 Jul 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>共轭与 Sylow 定理</title>
-      <link>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/</link>
+      <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/</link>
       <pubDate>Mon, 07 Jul 2025 21:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/</guid>
+      <guid>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/</guid>
       <description>&lt;h3 id=&#34;群对自己的共轭作用&#34;&gt;群对自己的共轭作用&lt;/h3&gt;
 &lt;p&gt;上一篇文章中，我们提到了 $G$ 对自己的共轭作用 $g\circ x=gxg^{-1}$. 接下来我们将使用一些工具细致讨论这个作用的性质.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Definition [共轭类和中心化子]&lt;/strong&gt;. 在共轭作用中，我们把这个作用的轨道 $\mathcal O(g)$ 叫做共轭类，把所有的共轭类记作 $\mathsf{Conj}\ G$. 对于一个元素 $a\in G$，把它的稳定化子 $G_a=\{g\mid a^g=a\}$ 称为中心化子，记作 $\mathsf C_G(a)$. 等价地，$\mathsf C_G(a)$ 是所有与 $a$ 可交换的元素构成的集合.&lt;/p&gt;
@@ -26,10 +26,10 @@ $$
     
     <item>
       <title>群作用基础</title>
-      <link>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/</link>
+      <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Mon, 07 Jul 2025 10:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/</guid>
+      <guid>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/</guid>
       <description>&lt;h3 id=&#34;群作用的定义&#34;&gt;群作用的定义&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Definition [群对集合的作用]&lt;/strong&gt;. 对于群 $G$ 和集合 $X$，类似线性空间的数乘，定义 $G$ 与 $X$ 之间元素的运算 $\circ:G\times X\to X$，如果这个运算满足：&lt;/p&gt;
 &lt;ol&gt;
@@ -50,10 +50,10 @@ $$
     
     <item>
       <title>同态和正规子群</title>
-      <link>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/</link>
+      <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/</link>
       <pubDate>Sun, 06 Jul 2025 21:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/</guid>
+      <guid>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/</guid>
       <description>&lt;h3 id=&#34;群同态的定义&#34;&gt;群同态的定义&lt;/h3&gt;
 &lt;p&gt;同态是抽象代数中一个重要的概念，其思想为&lt;strong&gt;保持运算&lt;/strong&gt;的映射. 在群中就表现为下面的形式：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Definition [同态的定义]&lt;/strong&gt;. 如果 $(G,\cdot)$ 和 $(H,*)$ 是两个群，那么映射 $f:G\to H$ 被称为同态，如果 $f(a\cdot b)=f(a)*f(b)$ 对任意的 $a,b\in G$ 成立.&lt;/p&gt;
@@ -75,10 +75,10 @@ $$
     
     <item>
       <title>子群和 Lagrange 定理</title>
-      <link>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/</link>
+      <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/</link>
       <pubDate>Sun, 06 Jul 2025 17:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/</guid>
+      <guid>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/</guid>
       <description>&lt;h3 id=&#34;子群的定义&#34;&gt;子群的定义&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Definition [子群的定义]&lt;/strong&gt;. 若 $(G,\cdot)$ 是一个群，$H$ 是 $G$ 的子集且 $(H,\cdot)$ 也是一个群，则称 $H$  是 $G$ 的子群，记作 $H\le G$. 特别地，若 $H$ 还是 $G$ 的真子集，则称 $H$ 是 $G$ 的真子群，记作 $H&amp;lt;G$.&lt;/p&gt;
 &lt;p&gt;如果 $e$ 是 $G$ 的单位元，则 $(\{e\},\cdot)$ 也是 $G$ 的子群，称为 $G$ 的平凡子群.&lt;/p&gt;
@@ -89,10 +89,10 @@ $$
     
     <item>
       <title>群的定义和基本性质</title>
-      <link>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/</link>
+      <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/</link>
       <pubDate>Sun, 06 Jul 2025 09:00:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/</guid>
+      <guid>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/</guid>
       <description>&lt;h3 id=&#34;群的定义&#34;&gt;群的定义&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Definition [群的定义]&lt;/strong&gt;. 如果一个集合 $G$ 和二元运算 $\cdot:G\times G\to G$ 满足：&lt;/p&gt;
 &lt;ol&gt;
