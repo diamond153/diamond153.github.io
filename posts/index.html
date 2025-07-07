@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <title>Posts</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<link rel="stylesheet" href="/application.d1a4305d382cffe8bb05dd154e493fa23ebe480310b7162a3b6dd09b49e1c0bc.css" integrity="sha256-0aQwXTgs/&#43;i7Bd0VTkk/oj6&#43;SAMQtxYqO23Qm0nhwLw=" />
+<link rel="stylesheet" href="/application.a6db791fae687dbc3765b269eea1a66b10530cc92919d185aa7f0c44dcd98cdb.css" integrity="sha256-ptt5H65ofbw3ZbJp7qGmaxBTDMkpGdGFqn8MRNzZjNs=" />
 
 
 
@@ -24,7 +24,7 @@
   <link rel="icon" type="image/png" href="/images/site/favicon_hu_c91f00547ea1a84d.png" />
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="Diamond_153 的个人博客">
+<link rel="alternate" type="application/rss+xml" href="https://hugo-toha.github.io/posts/index.xml" title="Diamond_153 的个人博客">
 
 
 
@@ -37,7 +37,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:description" content=""/>
 <meta property="og:image" content="/images/author/diamond153.jpg">
-<meta property="og:url" content="http://localhost:1313/">
+<meta property="og:url" content="https://hugo-toha.github.io/">
 
      
 
@@ -320,6 +320,15 @@ document.documentElement.setAttribute('data-theme', theme)
     <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/" title="群作用基础">群作用基础</a></li>
   
 
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/" title="共轭与 Sylow 定理">共轭与 Sylow 定理</a></li>
+  
+
 
       </ul>
     </li>
@@ -347,18 +356,14 @@ document.documentElement.setAttribute('data-theme', theme)
           <div class="post-card">
   <div class="card">
     <div class="card-head">
-      <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/" class="post-card-link">
-        <img class="card-img-top" src='/images/img4.png' alt="Hero Image">
+      <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/" class="post-card-link">
+        <img class="card-img-top" src='/images/img5.jpg' alt="Hero Image">
       </a>
     </div>
     <div class="card-body">
-      <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/" class="post-card-link">
-        <h5 class="card-title">群作用基础</h5>
-        <p class="card-text post-summary">群作用的定义 Definition [群对集合的作用]. 对于群 $G$ 和集合 $X$，类似线性空间的数乘，定义 $G$ 与 $X$ 之间元素的运算 $\circ:G\times X\to X$，如果这个运算满足：
-对任意 $x\in X$ 都有 $e\circ x=x$，其中 $e$ 是 $G$ 的单位元. 对任意 $g,h\in G$ 和 $x\in X$ 都有 $g\circ(h\circ x)=(gh)\circ x$. 则称 $G$ 作用在 $X$ 上.
-Example [一些例子].
-对于群 $G$ 和任意集合 $X$，定义 $g\circ x=x$ 对任意 $g\in G$ 和 $x\in X$ 成立，则这是一个作用. 令集合 $X=G$，定义作用 $g\circ x=gx$，其中右式为群中自带的乘法，则这是一个作用，称为左正则作用. 类似上一个例子考虑 $g\circ x=xg^{-1}$，则这也是一个作用，称为右正则作用. 令集合 $X=G$，定义作用 $g\circ x=gxg^{-1}$，这是一个作用，被称为共轭作用. 以后我们在运算为乘法的群将 $gxg^{-1}$ 写作 $x^g$，在运算为加法的群中将 $g+x-g$ 写作 $gx$. 对于群 $G$，定义 $G$ 的自同构群 $\mathsf{Aut}\ G$ 为所有 $G$ 的自同构，即 $G\to G$ 的同构映射构成的群（类比非异线性变换），则 $\mathsf{Aut}\ G$ 对 $G$ 有作用：$\sigma\circ g=\sigma(g)$. 如果 $G$ 在 $X$ 上有一个作用，对任意的 $g\in G$ 定义映射 $\psi_g:X\to X$ 为 $\psi_g(x)=g\circ x$，则我们有：
-</p>
+      <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/" class="post-card-link">
+        <h5 class="card-title">共轭与 Sylow 定理</h5>
+        <p class="card-text post-summary">第五次讲义</p>
       </a>
       
         <div class="tags">
@@ -372,9 +377,44 @@ Example [一些例子].
     <div class="card-footer">
       <span class="float-start">
           Monday, July 7, 2025
-           | 4 分钟 </span>
-      <a
-      href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/"
+          
+      </span>
+      <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/"
+      class="float-end btn btn-outline-info btn-sm">阅读</a>
+    </div>
+  </div>
+</div>
+
+        
+      
+        
+          <div class="post-card">
+  <div class="card">
+    <div class="card-head">
+      <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/" class="post-card-link">
+        <img class="card-img-top" src='/images/img4.png' alt="Hero Image">
+      </a>
+    </div>
+    <div class="card-body">
+      <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/" class="post-card-link">
+        <h5 class="card-title">群作用基础</h5>
+        <p class="card-text post-summary">第四次讲义</p>
+      </a>
+      
+        <div class="tags">
+  <ul style="padding-left: 0;">
+    
+  </ul>
+</div>
+
+      
+    </div>
+    <div class="card-footer">
+      <span class="float-start">
+          Monday, July 7, 2025
+          
+      </span>
+      <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/"
       class="float-end btn btn-outline-info btn-sm">阅读</a>
     </div>
   </div>
@@ -393,13 +433,7 @@ Example [一些例子].
     <div class="card-body">
       <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/" class="post-card-link">
         <h5 class="card-title">同态和正规子群</h5>
-        <p class="card-text post-summary">群同态的定义 同态是抽象代数中一个重要的概念，其思想为保持运算的映射. 在群中就表现为下面的形式：
-Definition [同态的定义]. 如果 $(G,\cdot)$ 和 $(H,*)$ 是两个群，那么映射 $f:G\to H$ 被称为同态，如果 $f(a\cdot b)=f(a)*f(b)$ 对任意的 $a,b\in G$ 成立.
-Examples [一些例子].
-对于线性空间 $V$ 和 $W$，它们在加法运算下构成一个群. 这个时候它们之间的线性映射就是这两个群的同态. 考虑 $n$ 阶实矩阵的行列式 $\det:\mathsf{GL}_n(\mathbb R)\to\mathbb R^\times$，则由行列式的性质知 $\det$ 是一个同态. 特别地，如果 $f$ 是一个双射，那么称 $f$ 是 $G$ 到 $H$ 的同构，如果存在这样的 $f$ 就称 $G$ 和 $H$ 是同构的，记作 $G\simeq H$. 同构的群性质几乎是一样的，它们甚至可以看作是同一个群.
-Proposition [同态的简单性质]. 如果 $f:G\to H$ 是同态，则：
-$f(e)=e&rsquo;$，其中 $e&rsquo;$ 是 $H$ 的单位元. 对于任意 $a\in G$ 有 $f(a^{-1})=f(a)^{-1}$. 对于任意 $a\in G$ 和 $n\in\mathbb Z$ 有 $f(a^n)=f(a)^n$. Proof.
-</p>
+        <p class="card-text post-summary">第三次讲义</p>
       </a>
       
         <div class="tags">
@@ -413,9 +447,9 @@ $f(e)=e&rsquo;$，其中 $e&rsquo;$ 是 $H$ 的单位元. 对于任意 $a\in G$ 
     <div class="card-footer">
       <span class="float-start">
           Sunday, July 6, 2025
-           | 4 分钟 </span>
-      <a
-      href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/"
+          
+      </span>
+      <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/"
       class="float-end btn btn-outline-info btn-sm">阅读</a>
     </div>
   </div>
@@ -434,11 +468,7 @@ $f(e)=e&rsquo;$，其中 $e&rsquo;$ 是 $H$ 的单位元. 对于任意 $a\in G$ 
     <div class="card-body">
       <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/" class="post-card-link">
         <h5 class="card-title">子群和 Lagrange 定理</h5>
-        <p class="card-text post-summary">子群的定义 Definition [子群的定义]. 若 $(G,\cdot)$ 是一个群，$H$ 是 $G$ 的子集且 $(H,\cdot)$ 也是一个群，则称 $H$ 是 $G$ 的子群，记作 $H\le G$. 特别地，若 $H$ 还是 $G$ 的真子集，则称 $H$ 是 $G$ 的真子群，记作 $H&lt;G$.
-如果 $e$ 是 $G$ 的单位元，则 $(\{e\},\cdot)$ 也是 $G$ 的子群，称为 $G$ 的平凡子群.
-Proposition [逆元和单位统一]. 如果 $(H,\cdot)$ 是 $(G,\cdot)$ 的子群，则 $H$ 中的单位元和 $G$ 中的单位元是相同的；对任意元素 $a\in H$，$a$ 在 $H$ 中的逆元和 $a$ 在 $G$ 中的逆元也是相同的.
-Proof. 令 $e$ 是 $G$ 中单位元，则对任意 $g\in G$ 都有 $eg=g=ge$，特别对 $g\in H$ 也成立该式，由单位元唯一知 $H$ 中单位元也是 $e$. 同理，对于任意 $a\in H$，令 $b$ 是 $a$ 在 $H$ 中的逆元，则 $ab=e=ba$，由逆元的唯一性也可以知道 $a$ 在 $G$ 中的逆元也是 $b$. $\Box$
-</p>
+        <p class="card-text post-summary">第二次讲义</p>
       </a>
       
         <div class="tags">
@@ -452,9 +482,9 @@ Proof. 令 $e$ 是 $G$ 中单位元，则对任意 $g\in G$ 都有 $eg=g=ge$，�
     <div class="card-footer">
       <span class="float-start">
           Sunday, July 6, 2025
-           | 4 分钟 </span>
-      <a
-      href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/"
+          
+      </span>
+      <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/"
       class="float-end btn btn-outline-info btn-sm">阅读</a>
     </div>
   </div>
@@ -473,11 +503,7 @@ Proof. 令 $e$ 是 $G$ 中单位元，则对任意 $g\in G$ 都有 $eg=g=ge$，�
     <div class="card-body">
       <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/" class="post-card-link">
         <h5 class="card-title">群的定义和基本性质</h5>
-        <p class="card-text post-summary">群的定义 Definition [群的定义]. 如果一个集合 $G$ 和二元运算 $\cdot:G\times G\to G$ 满足：
-$(a\cdot b)\cdot c=a\cdot(b\cdot c)$，即结合律； 存在唯一的 $e\in G$ 满足对任意 $a\in G$ 都有 $e\cdot a=a\cdot e=a$，即存在单位元； 对于任意的 $a\in G$，存在唯一的 $b\in G$ 满足 $a\cdot b=b\cdot a=e$，即存在逆元，我们记 $b=a^{-1}$. 那么就称 $(G,\cdot)$ 是一个群. 有的时候我们把运算符省略，将 $a\cdot b$ 记为 $ab$，直接称 $G$ 是一个群.
-如果在一个群 $(G,\cdot)$ 中还有第 4 条性质 $a\cdot b=b\cdot a$ 对任意 $a,b\in G$ 成立，则称 $G$ 是交换群或者 Abel 群.
-如果这个结构只满足 1 则称 $(G,\cdot)$ 是半群，满足 1, 2 则称 $(G,\cdot)$ 是幺半群.
-</p>
+        <p class="card-text post-summary">第一次讲义</p>
       </a>
       
         <div class="tags">
@@ -491,9 +517,9 @@ $(a\cdot b)\cdot c=a\cdot(b\cdot c)$，即结合律； 存在唯一的 $e\in G$ 
     <div class="card-footer">
       <span class="float-start">
           Sunday, July 6, 2025
-           | 3 分钟 </span>
-      <a
-      href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/"
+          
+      </span>
+      <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/"
       class="float-end btn btn-outline-info btn-sm">阅读</a>
     </div>
   </div>
@@ -601,7 +627,7 @@ $(a\cdot b)\cdot c=a\cdot(b\cdot c)$，即结合律； 存在唯一的 $e\in G$ 
   </footer>
 
 
-    <script src="/application.8c9faedff49e428117f9768880b8a01bb2e7e38ff0bce5ed5fdd9da85aaed1de.js" integrity="sha256-jJ&#43;u3/SeQoEX&#43;XaIgLigG7Ln44/wvOXtX92dqFqu0d4=" defer></script>
+    <script src="/application.d1216ca58064489464b08e6a49184384428fa3dc08cd687a219112617de2699d.js" integrity="sha256-0SFspYBkSJRksI5qSRhDhEKPo9wIzWh6IZESYX3iaZ0=" defer></script>
 
 
     

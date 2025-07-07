@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <title>群作用基础</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<link rel="stylesheet" href="/application.d1a4305d382cffe8bb05dd154e493fa23ebe480310b7162a3b6dd09b49e1c0bc.css" integrity="sha256-0aQwXTgs/&#43;i7Bd0VTkk/oj6&#43;SAMQtxYqO23Qm0nhwLw=" />
+<link rel="stylesheet" href="/application.a6db791fae687dbc3765b269eea1a66b10530cc92919d185aa7f0c44dcd98cdb.css" integrity="sha256-ptt5H65ofbw3ZbJp7qGmaxBTDMkpGdGFqn8MRNzZjNs=" />
 
 
 
@@ -36,7 +36,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:description" content=""/>
 <meta property="og:image" content="/images/author/diamond153.jpg">
-<meta property="og:url" content="http://localhost:1313/">
+<meta property="og:url" content="https://hugo-toha.github.io/">
 
     
 <meta name="description" content="第四次讲义" />
@@ -325,6 +325,15 @@ document.documentElement.setAttribute('data-theme', theme)
     <li><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/" title="群作用基础">群作用基础</a></li>
   
 
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/" title="共轭与 Sylow 定理">共轭与 Sylow 定理</a></li>
+  
+
 
       </ul>
     </li>
@@ -354,7 +363,7 @@ document.documentElement.setAttribute('data-theme', theme)
         <div class="author-profile ms-auto align-self-lg-center">
           <img class="rounded-circle" src='/images/author/diamond153_hu_a3fb78be2b903ba8.jpg' alt="Author Image">
           <h5 class="author-name">Diamond_153</h5>
-          <p class="text-muted">Monday, July 7, 2025 | 4 分钟</p>
+          <p class="text-muted">Monday, July 7, 2025</p>
         </div>
         
 
@@ -386,15 +395,17 @@ document.documentElement.setAttribute('data-theme', theme)
 <li>令集合 $X=G$，定义作用 $g\circ x=gx$，其中右式为群中自带的乘法，则这是一个作用，称为左正则作用.</li>
 <li>类似上一个例子考虑 $g\circ x=xg^{-1}$，则这也是一个作用，称为右正则作用.</li>
 <li>令集合 $X=G$，定义作用 $g\circ x=gxg^{-1}$，这是一个作用，被称为共轭作用. 以后我们在运算为乘法的群将 $gxg^{-1}$ 写作 $x^g$，在运算为加法的群中将 $g+x-g$ 写作 $gx$.</li>
-<li>对于群 $G$，定义 $G$ 的自同构群 $\mathsf{Aut}\ G$ 为所有 $G$ 的自同构，即 $G\to G$ 的同构映射构成的群（类比非异线性变换），则 $\mathsf{Aut}\ G$ 对 $G$ 有作用：$\sigma\circ g=\sigma(g)$.</li>
+<li>对于群 $G$，定义 $G$ 的自同构群 $\mathsf{Aut}\ G$ 为所有 $G$ 的自同构，即 $G\to G$ 的同构映射构成的群（从而是 $\mathsf{Sym}\ G$ 的子群），则 $\mathsf{Aut}\ G$ 对 $G$ 有作用：$\sigma\circ g=\sigma(g)$.</li>
 </ul>
 <p>如果 $G$ 在 $X$ 上有一个作用，对任意的 $g\in G$ 定义映射 $\psi_g:X\to X$ 为 $\psi_g(x)=g\circ x$，则我们有：</p>
-<p><strong>Proposition</strong>. $\psi_g\in\mathsf{Sym}\ X$，且 $\psi_*:g\mapsto\psi_g$ 是一个 $G\to\mathsf{Sym}\ X$ 的同态. 这个同态被称为置换表示.</p>
+<p><strong>Proposition [置换表示]</strong>. $\psi_g\in\mathsf{Sym}\ X$，且 $\psi_*:g\mapsto\psi_g$ 是一个 $G\to\mathsf{Sym}\ X$ 的同态. 这个同态被称为置换表示.</p>
 <blockquote>
 <p><em>Proof</em>. 先证明 $\psi_g$ 又是单射又是满射. 一方面如果 $\psi_g(x)=\psi_g(y)$，那么：
 $$x=(g^{-1}g)\circ x=g^{-1}\circ(g\circ x)=g^{-1}\circ(g\circ y)=(g^{-1}g)\circ y=y$$
 另一方面，对于任意 $x\in X$，令 $y=g^{-1}\circ x$，则 $\psi_g(y)=g\circ(g^{-1}\circ x)=(gg^{-1})\circ x=x$.</p>
 <p>最后证明 $\psi_*$ 是一个同态，即对任意 $g,h\in G$ 都有 $\psi_g\circ\psi_h=\psi_{gh}$. 这是显然的，因为对任意 $x\in X$ 都有 $g\circ(h\circ x)=(gh)\circ x$. $\Box$</p></blockquote>
+<p>所有我们可以通过同态基本定理得到：</p>
+<p><strong>Corollary [置换表示的核]</strong>. 置换表示的核 $\ker\psi_*$ 是所有满足 $g\circ x=x$ 对任意 $x$ 成立的 $g$ 构成的集合，从而是 $G$ 的正规子群（这个以后会经常用到！）</p>
 <p>特别地，取 $G$ 对自己的左作用，则 $\psi_*$ 此时是单同态，这给出了 $G\to\mathsf{Sym}\ G$ 的一个嵌入，该结论被称为 Cayley 定理 (即上一篇文章习题所述). 我们以后把 $\psi_*$ 是单同态的作用称为忠实作用.</p>
 <h3 id="轨道和稳定子">轨道和稳定子</h3>
 <p><strong>Definition [轨道和稳定子]</strong>. 如果 $G$ 作用在 $X$ 上，那么对于 $X$ 中的任意元素 $x$，定义 $x$ 的轨道和稳定子：
@@ -414,10 +425,9 @@ $$
 <p><em>Proof</em>. 我们先证明 $G_x$ 是 $G$ 的子群. 对于任意 $g,h\in G_x$，我们有 $(gh^{-1})\circ x=g\circ(h^{-1}\circ(hx))=g\circ x=x$，所以由子群判别定理 $G_x\le G$. 对于第二个命题，我们只需要证明存在 $G_x$ 的所有左陪集到 $\mathcal O(x)$ 的双射即可. 考虑映射 $aG_x\mapsto a\circ x$，我们接下来证明其满足条件.</p>
 <p>首先它是良好定义的，因为如果 $aG_x=bG_x$，那么存在 $g\in G_x$ 使得 $a=bg$，也就是 $a\circ x=b\circ(g\circ x)=b\circ x$. 其次它是一个单射，因为如果 $a\circ x=b\circ x$，那么两边使用 $a^{-1}$ 作用可以得到 $x=(a^{-1}b)\circ x$，从而 $a^{-1}b\in G_x$，也就是 $aG_x=bG_x$. 最后它显然是一个满射，至此命题得证. $\Box$</p></blockquote>
 <p><strong>Example [空间体的旋转群]</strong>.</p>
-<blockquote>
 <p>想象一个正方体，问有多少种不同的空间旋转，使这个正方体不变？比如绕纵轴旋转 $\pi/2$ 就可以保持这个正方体不变，但是 $\pi/4$ 就不行.</p>
 <p>考虑所有使得这个正方体不变的旋转操作的集合 $G$，它在复合运算下构成一个群（这就是正方体的旋转群），而且其对这个正方体有一个作用. 对于这个正方体的一个面 $A$，其轨道为 $\mathcal O(A)$，即它可以转到的所有所有其它面 ($A$ 可以被转到每个其它面，所以 $|\mathcal O(A)|=6$)；其稳定子为 $G_A$，也就是所有使这个面不变的旋转操作 (只有 $4$ 个，不变、旋转 $\pm\pi/2$ 和旋转 $\pi$).</p>
-<p>所以根据轨道-稳定子定理，$|G|=|\mathcal O(A)||G_A|=6\times 4=24$. 这个问题的答案也就是 $24$. 我们也可以对正 $4$ 面体，$12$ 面体等进行同样的操作得到类似的结论.</p></blockquote>
+<p>所以根据轨道-稳定子定理，$|G|=|\mathcal O(A)||G_A|=6\times 4=24$. 这个问题的答案也就是 $24$. 我们也可以对正 $4$ 面体，$12$ 面体等进行同样的操作得到类似的结论.</p>
 <h3 id="cauchy-定理">Cauchy 定理</h3>
 <p>我们知道：如果有限群 $G$ 中有 $n$ 阶元 $a$，则 $|\langle a\rangle|=n$，所以由 Lagrange 定理 $n$ 整除 $|G|$. 那反过来，如果 $n$ 是 $|G|$ 的因子，$G$ 中的 $n$ 阶元又会呈什么性态呢？下面的 Cauchy 定理描述了 $n$ 为素数时的特殊情况.</p>
 <p><strong>Theorem [Cauchy 定理]</strong>. 如果有限群 $G$ 和素数 $p$ 满足 $p\mid |G|$，则存在 $a\in G$ 使得 $\mathsf{ord}\ a=p$.</p>
@@ -430,39 +440,8 @@ $$X=\{(g_1,g_2,\cdots,g_p)\mid g_k\in G\text{ and }g_1g_2\cdots g_p=1\}$$
 <p>如上所述，共有 $k$ 个长度为 $1$ 的轨道，所以有 $k\ge 2$ 个元素满足 $g^k=1$，其中必有不等于 $e$ 的. 这个时候阶就为 $p$ 了 $\Box$</p></blockquote>
 <p>从上面的证明还可以得到，满足 $x^p=e$ 的元素个数是 $p$ 的倍数. 实际上，我们有如下命题：</p>
 <p><strong>Theorem [Frobenius 定理]</strong>. 如果正整数 $n$ 是 $|G|$ 的因子，则 $G$ 中满足 $x^n=e$ 的元素个数是 $n$ 的倍数.</p>
-<h3 id="共轭作用">共轭作用</h3>
-<p>在例子中，我们提到了 $G$ 对自己的共轭作用. 接下来我们使用上面的工具细致讨论一下这个作用的性质.</p>
-<p><strong>Definition [共轭类和中心化子]</strong>. 在共轭作用中，我们把这个作用的轨道 $\mathcal O(g)$ 叫做共轭类，把所有的共轭类记作 $\mathsf{Conj}\ G$. 对于一个元素 $a\in G$，把它的稳定化子 $G_a=\{g\mid a^g=a\}$ 称为中心化子，记作 $\mathsf C_G(a)$. 等价地，$\mathsf C_G(a)$ 是所有与 $a$ 可交换的元素构成的集合.</p>
-<p>所以根据轨道-稳定子定理，如果 $a$ 所在的共轭类为 $C\in\mathsf{Conj}\ G$，则 $|C|=[G:\mathsf C_G(a)]$. 又因为 $\mathsf{Conj}\ G$ 是 $G$ 的一个划分，所以当 $G$ 是有限群时，$\sum_{C\in\mathsf{Conj}\ G}|C|=|G|$. 再把 $|C|$ 用轨道-稳定子定理替换，我们就得到了：</p>
-<p><strong>Theorem [类方程]</strong>. 如果 $G$ 是有限群，令 $\mathsf{Conj}\ G={C_1,\cdots,C_h}$，$g_1\in C_1,\cdots,g_h\in C_h$ 是任意一组元素（这样的一组元素被称作代表元），则有：
-$$
-|G|=\sum_{i=1}^h[G:\mathsf C_G(g_i)]
-$$
-而且求和中的每一项元素都是 $G$ 的因子.</p>
-<p><strong>Lemma [Landau 引理]</strong>. 对于有理数 $0&lt;q\in\mathbb Q$ 和正整数 $n$，只有有限组正整数 $(i_1,\cdots,i_n)$ 使得 $q=1/i_1+\cdots+1/i_n$.</p>
-<blockquote>
-<p><em>Proof</em>. 不妨设 $i_k$ 是其中一个最小的数，则容易得到 $i_k\le n/q$. 对于 $k$ 和 $i_k$ 的所有可能性，归纳得到剩下的 $n-1$ 个数只有有限种取法，证毕. $\Box$</p></blockquote>
-<p>我们可以通过 Landau 引理得出下面的结论：</p>
-<p><strong>Theorem [固定共轭类个数的有限群有限]</strong>. 对任意正整数 $n$，存在 $N$，满足：如果有限群 $G$ 恰好有 $n$ 个共轭类，那么 $|G|\le n$.</p>
-<blockquote>
-<p><em>Proof</em>. 根据类方程，有 $1=1/|\mathsf C_G(g_1)|+\cdots+1/|\mathsf C_G(g_n)|$. 但是注意到 $\{e\}$ 是一个单独的共轭类，所以存在 $g_k=e$，也就是 $\mathsf C_G(g_k)=|G|$. 但是由 Landau 引理，所有出现过的 $|\mathsf C_G(g_i)|$ 可以被一个数 $N$ 限制住，也就可以得到 $|G|\le N$. $\Box$</p></blockquote>
-<p>最后介绍一个关于 $p$ 群的结论，先给出两个定义：</p>
-<p><strong>Definition [中心的定义]</strong>. 对于群 $G$，定义其中心 $\mathsf Z(G)$ 为与整个群都可交换的元素构成的集合，即
-$$
-\mathsf Z(G)=\{a\in G\mid\mathsf C_G(a)=G\}=\{a\in G\mid\forall b\in G,ab=ba\}
-$$
-一个群的中心显然是这个群的正规子群，即 $\mathsf Z(G)\trianglelefteq G$.</p>
-<p><strong>Definition [$p$ 群]</strong> 如果 $G$ 是群，$p$ 是素数，则称 $G$ 是 $p$ 群，如果 $G$ 中元素的阶都有限且是 $p$ 的幂次.</p>
-<p><strong>Theorem [有限 $p$ 群的等价定义]</strong> 如果 $G$ 是有限群，则 $G$ 是 $p$ 群当且仅当 $|G|$ 是 $p$ 的幂次.</p>
-<blockquote>
-<p><em>Proof</em>. 如果 $|G|$ 是 $p$ 的幂次，则其中元素的阶都整除 $|G|$，从而也是 $p$ 的幂次；如果 $|G|$ 不是 $p$ 的幂次，则其存在不等于 $p$ 的素因子 $q$. 由 Cauchy 定理 $G$ 中存在 $q$ 阶元，矛盾！ $\Box$</p></blockquote>
-<p>一个惊人的结果是 $p$ 群的中心一定包含除 $e$ 以外的其它元素！下面简单证明一下.</p>
-<p><strong>Theorem [有限 $p$ 群中心非平凡]</strong>. 如果 $G$ 是非平凡有限 $p$ 群，则 $\mathsf Z(G)\ne 1$.</p>
-<blockquote>
-<p><em>Proof</em>. 对于 $\mathsf Z(G)$ 中的元素，它们所在共轭类的大小显然都是 $1$，所以令 $C_1,\cdots,C_m$ 是中心的所有元素分别构成的集合，$C_{m+1},\cdots,C_h$ 是剩下的共轭类，$g_{m+1},\cdots,g_h$ 是一组代表元，则改写后的类方程为：
-$$|G|=|\mathsf Z(G)|+\sum_{i=m+1}^h[G:\mathsf C_G(g_i)]$$
-而且求和中的每个数都不等于 $1$ 且整除 $|G|$，所以是 $p$ 的某个幂次. 等式两边模 $p$，就可以得到 $|\mathsf Z(G)|\equiv 0\pmod p$，使用 $\mathsf Z(G)\ne 1$. $\Box$</p></blockquote>
-<p>下面介绍 Burnside 定理，它将划分的轨道个数和所谓“不动点”的平均数联系起来了：</p>
+<h3 id="burnside-定理">Burnside 定理</h3>
+<p>下面介绍 Burnside 定理，它联系了划分的轨道个数和所谓“不动点”的平均数：</p>
 <p><strong>Theorem [Burnside 定理]</strong>. 如果有有限群 $G$ 对 $X$ 的作用，对于 $g\in G$，定义 $g$ 的不动点：
 $$
 \mathsf{Fix}\ g=X^g=\{x\in X\mid g\circ x=x\}
@@ -477,6 +456,16 @@ $$|A|=\sum_{g\in G}|X^g|=\sum_{x\in X}|G_x|$$
 所以我们现在只需要证明：
 $$r=\dfrac{1}{|G|}\sum_{x\in X}|G_x|=\sum_{x\in X}\dfrac{1}{|\mathcal O(x)|}=\sum_i\sum_{x\in\mathcal O_i}\dfrac{1}{|\mathcal O(x)|}$$
 其中倒数第二个等号使用了轨道-稳定子定理，最后一个等号用到了轨道划分. 对于每一个轨道 $\mathcal O_i$，它对右式中求和的贡献是 $|\mathcal O_i|/|\mathcal O_i|=1$. 由于所有轨道 $\{\mathcal O_i\}$ 可以划分 $X$，所以求和就为轨道个数 $r$. $\Box$</p></blockquote>
+<p><strong>Example [一类计数问题]</strong>.</p>
+<p>这里以一个问题为例：将一个六边形的顶点染成红、绿、蓝三种颜色，如果两个染色方案可以通过旋转六边形得到则说它们等价. 问可以有多少种不等价的方案？</p>
+<p>首先令 $X$ 为所有可能的染色方案构成的集合（不考虑本质相同），群 $G=\mathsf C_6$ 为这个六边形所有的旋转，则 $G$ 可以作用在 $X$ 上. 注意到一个方案的轨道是所有与它等价的方案，所以只需要求出不同轨道的个数 $r$ 就可以了. 考虑 Burnside 定理，我们知道 $r$ 等于 $G$ 中所有元素不动点的平均数，下面可以对 $G$ 中的元素分类讨论：</p>
+<ul>
+<li>对于 $G$ 中单位元，$X$ 中所有元素都是其不动点，所以其大小为 $3^6=729$.</li>
+<li>对于 $G$ 中顺时针和逆时针旋转 $\pi/3$ 的操作，所有顶点颜色都相同的方案才可以成为其不动点，大小为 $3$.</li>
+<li>对于 $G$ 中顺时针和逆时针旋转 $2\pi/3$ 的操作，两个内嵌三角形顶点的颜色对应相同才可以，大小为 $9$.</li>
+<li>对于 $G$ 中旋转 $\pi$ 的操作，需要对边顶点的颜色对应相同，所以大小为 $27$.</li>
+</ul>
+<p>综上，答案为 $r=(729+2\times 3+2\times 9+27)/6=130$.</p>
 
         </div>
 
@@ -519,6 +508,9 @@ $$r=\dfrac{1}{|G|}\sum_{x\in X}|G_x|=\sum_{x\in X}\dfrac{1}{|\mathcal O(x)|}=\su
   
   
 
+  
+  
+
 
 <div class="row next-prev-navigator">
   
@@ -530,6 +522,17 @@ $$r=\dfrac{1}{|G|}\sum_{x\in X}|G_x|=\sum_{x\in X}\dfrac{1}{|\mathcal O(x)|}=\su
     </div>
   
   
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/" title="共轭与 Sylow 定理" class="btn filled-button">
+          <div>下一篇 <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">共轭与 Sylow 定理</div>
+        </a>
+      </div>
+    
 </div>
 
       <br/>
@@ -566,7 +569,7 @@ $$r=\dfrac{1}{|G|}\sum_{x\in X}|G_x|=\sum_{x\in X}\dfrac{1}{|\mathcal O(x)|}=\su
         <li><a href="#群作用的定义">群作用的定义</a></li>
         <li><a href="#轨道和稳定子">轨道和稳定子</a></li>
         <li><a href="#cauchy-定理">Cauchy 定理</a></li>
-        <li><a href="#共轭作用">共轭作用</a></li>
+        <li><a href="#burnside-定理">Burnside 定理</a></li>
       </ul>
     </li>
   </ul>
@@ -666,7 +669,7 @@ $$r=\dfrac{1}{|G|}\sum_{x\in X}|G_x|=\sum_{x\in X}\dfrac{1}{|\mathcal O(x)|}=\su
   </footer>
 
 
-    <script src="/application.8c9faedff49e428117f9768880b8a01bb2e7e38ff0bce5ed5fdd9da85aaed1de.js" integrity="sha256-jJ&#43;u3/SeQoEX&#43;XaIgLigG7Ln44/wvOXtX92dqFqu0d4=" defer></script>
+    <script src="/application.d1216ca58064489464b08e6a49184384428fa3dc08cd687a219112617de2699d.js" integrity="sha256-0SFspYBkSJRksI5qSRhDhEKPo9wIzWh6IZESYX3iaZ0=" defer></script>
 
 
     
