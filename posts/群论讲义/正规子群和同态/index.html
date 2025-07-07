@@ -313,7 +313,7 @@ document.documentElement.setAttribute('data-theme', theme)
   
   
     
-    <li><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4%E5%92%8C%E5%90%8C%E6%80%81%E5%AE%9A%E7%90%86/" title="正规子群和同态">正规子群和同态</a></li>
+    <li><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4%E5%92%8C%E5%90%8C%E6%80%81/" title="正规子群和同态">正规子群和同态</a></li>
   
 
 
@@ -366,27 +366,20 @@ document.documentElement.setAttribute('data-theme', theme)
         <div class="post-content" id="post-content">
           <h3 id="群同态的定义">群同态的定义</h3>
 <p>同态是抽象代数中一个重要的概念，其思想为<strong>保持运算</strong>的映射. 在群中就表现为下面的形式：</p>
-<blockquote>
-<p>[!Tip] $\mathsf{Definition.}$ 同态的定义
-如果 $(G,\cdot)$ 和 $(H,*)$ 是两个群，那么映射 $f:G\to H$ 被称为同态，如果 $f(a\cdot b)=f(a)*f(b)$ 对任意的 $a,b\in G$ 成立.</p></blockquote>
-<blockquote>
-<p>[!Example] $\mathsf{Example.}$</p>
+<p><strong>Definition [同态的定义]</strong>. 如果 $(G,\cdot)$ 和 $(H,*)$ 是两个群，那么映射 $f:G\to H$ 被称为同态，如果 $f(a\cdot b)=f(a)*f(b)$ 对任意的 $a,b\in G$ 成立.</p>
 <ul>
 <li>对于线性空间 $V$ 和 $W$，它们在加法运算下构成一个群. 这个时候它们之间的线性映射就是这两个群的同态.</li>
 <li>考虑 $n$ 阶实矩阵的行列式 $\det:\mathsf{GL}_n(\mathbb R)\to\mathbb R^\times$，则由行列式的性质知 $\det$ 是一个同态.</li>
-</ul></blockquote>
+</ul>
 <p>特别地，如果 $f$ 是一个双射，那么称 $f$ 是 $G$ 到 $H$ 的同构，如果存在这样的 $f$ 就称 $G$ 和 $H$ 是同构的，记作 $G\simeq H$. 同构的群性质几乎是一样的，它们甚至可以看作是同一个群.</p>
-<blockquote>
-<p>[!Summary] $\mathsf{Proposition.}$ 同态的简单性质
-如果 $f:G\to H$ 是同态，则：</p>
+<p><strong>Proposition [同态的简单性质]</strong>. 如果 $f:G\to H$ 是同态，则：</p>
 <ul>
 <li>$f(e)=e&rsquo;$，其中 $e&rsquo;$ 是 $H$ 的单位元.</li>
 <li>对于任意 $a\in G$ 有 $f(a^{-1})=f(a)^{-1}$.</li>
 <li>对于任意 $a\in G$ 和 $n\in\mathbb Z$ 有 $f(a^n)=f(a)^n$.</li>
-</ul></blockquote>
+</ul>
 <blockquote>
-<p>[!Success] $\mathsf{Proof.}$
-证明不难. $\Box$</p></blockquote>
+<p><em>Proof</em>. 证明不难. $\Box$</p></blockquote>
 <h3 id="生成子群">生成子群</h3>
 <blockquote>
 <p>[!Tip] $\mathsf{Definition.}$ 生成子群的定义

@@ -2,25 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Diamond_153 的个人博客</title>
-    <link>https://hugo-toha.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Diamond_153 的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 06 Jul 2025 21:00:00 +0800</lastBuildDate><atom:link href="https://hugo-toha.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-      <title>正规子群和同态定理</title>
-      <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4%E5%92%8C%E5%90%8C%E6%80%81%E5%AE%9A%E7%90%86/</link>
+    <lastBuildDate>Mon, 07 Jul 2025 10:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>群作用基础</title>
+      <link>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 07 Jul 2025 10:00:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/</guid>
+      <description>&lt;h3 id=&#34;群作用的定义&#34;&gt;群作用的定义&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Definition [群对集合的作用]&lt;/strong&gt;. 对于群 $G$ 和集合 $X$，类似线性空间的数乘，定义 $G$ 与 $X$ 之间元素的运算 $\circ:G\times X\to X$，如果这个运算满足：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;对任意 $x\in X$ 都有 $e\circ x=x$，其中 $e$ 是 $G$ 的单位元.&lt;/li&gt;
+&lt;li&gt;对任意 $g,h\in G$ 和 $x\in X$ 都有 $g\circ(h\circ x)=(gh)\circ x$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;则称 $G$ 作用在 $X$ 上.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example [一些例子]&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对于群 $G$ 和任意集合 $X$，定义 $g\circ x=x$ 对任意 $g\in G$ 和 $x\in X$ 成立，则这是一个作用.&lt;/li&gt;
+&lt;li&gt;令集合 $X=G$，定义作用 $g\circ x=gx$，其中右式为群中自带的乘法，则这是一个作用，称为左正则作用.&lt;/li&gt;
+&lt;li&gt;类似上一个例子考虑 $g\circ x=xg^{-1}$，则这也是一个作用，称为右正则作用.&lt;/li&gt;
+&lt;li&gt;令集合 $X=G$，定义作用 $g\circ x=gxg^{-1}$，这是一个作用，被称为共轭作用. 以后我们在运算为乘法的群将 $gxg^{-1}$ 写作 $x^g$，在运算为加法的群中将 $g+x-g$ 写作 $gx$.&lt;/li&gt;
+&lt;li&gt;对于群 $G$，定义 $G$ 的自同构群 $\mathsf{Aut}\ G$ 为所有 $G$ 的自同构，即 $G\to G$ 的同构映射构成的群（类比非异线性变换），则 $\mathsf{Aut}\ G$ 对 $G$ 有作用：$\sigma\circ g=\sigma(g)$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果 $G$ 在 $X$ 上有一个作用，对任意的 $g\in G$ 定义映射 $\psi_g:X\to X$ 为 $\psi_g(x)=g\circ x$，则我们有：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>同态和正规子群</title>
+      <link>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/</link>
       <pubDate>Sun, 06 Jul 2025 21:00:00 +0800</pubDate>
       
-      <guid>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4%E5%92%8C%E5%90%8C%E6%80%81%E5%AE%9A%E7%90%86/</guid>
-      <description>&lt;p&gt;咕咕咕，未完待续~&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/</guid>
+      <description>&lt;h3 id=&#34;群同态的定义&#34;&gt;群同态的定义&lt;/h3&gt;
+&lt;p&gt;同态是抽象代数中一个重要的概念，其思想为&lt;strong&gt;保持运算&lt;/strong&gt;的映射. 在群中就表现为下面的形式：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition [同态的定义]&lt;/strong&gt;. 如果 $(G,\cdot)$ 和 $(H,*)$ 是两个群，那么映射 $f:G\to H$ 被称为同态，如果 $f(a\cdot b)=f(a)*f(b)$ 对任意的 $a,b\in G$ 成立.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples [一些例子]&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对于线性空间 $V$ 和 $W$，它们在加法运算下构成一个群. 这个时候它们之间的线性映射就是这两个群的同态.&lt;/li&gt;
+&lt;li&gt;考虑 $n$ 阶实矩阵的行列式 $\det:\mathsf{GL}_n(\mathbb R)\to\mathbb R^\times$，则由行列式的性质知 $\det$ 是一个同态.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;特别地，如果 $f$ 是一个双射，那么称 $f$ 是 $G$ 到 $H$ 的同构，如果存在这样的 $f$ 就称 $G$ 和 $H$ 是同构的，记作 $G\simeq H$. 同构的群性质几乎是一样的，它们甚至可以看作是同一个群.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Proposition [同态的简单性质]&lt;/strong&gt;. 如果 $f:G\to H$ 是同态，则：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$f(e)=e&amp;rsquo;$，其中 $e&amp;rsquo;$ 是 $H$ 的单位元.&lt;/li&gt;
+&lt;li&gt;对于任意 $a\in G$ 有 $f(a^{-1})=f(a)^{-1}$.&lt;/li&gt;
+&lt;li&gt;对于任意 $a\in G$ 和 $n\in\mathbb Z$ 有 $f(a^n)=f(a)^n$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Proof&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>子群和 Lagrange 定理</title>
-      <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/</link>
+      <link>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/</link>
       <pubDate>Sun, 06 Jul 2025 17:00:00 +0800</pubDate>
       
-      <guid>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/</guid>
+      <guid>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/</guid>
       <description>&lt;h3 id=&#34;子群的定义&#34;&gt;子群的定义&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Definition [子群的定义]&lt;/strong&gt;. 若 $(G,\cdot)$ 是一个群，$H$ 是 $G$ 的子集且 $(H,\cdot)$ 也是一个群，则称 $H$  是 $G$ 的子群，记作 $H\le G$. 特别地，若 $H$ 还是 $G$ 的真子集，则称 $H$ 是 $G$ 的真子群，记作 $H&amp;lt;G$.&lt;/p&gt;
 &lt;p&gt;如果 $e$ 是 $G$ 的单位元，则 $(\{e\},\cdot)$ 也是 $G$ 的子群，称为 $G$ 的平凡子群.&lt;/p&gt;
@@ -31,10 +71,10 @@
     
     <item>
       <title>群的定义和基本性质</title>
-      <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/</link>
+      <link>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/</link>
       <pubDate>Sun, 06 Jul 2025 09:00:00 +0800</pubDate>
       
-      <guid>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/</guid>
+      <guid>http://localhost:1313/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/</guid>
       <description>&lt;h3 id=&#34;群的定义&#34;&gt;群的定义&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Definition [群的定义]&lt;/strong&gt;. 如果一个集合 $G$ 和二元运算 $\cdot:G\times G\to G$ 满足：&lt;/p&gt;
 &lt;ol&gt;
@@ -75,10 +115,10 @@
     
     <item>
       <title>笔记</title>
-      <link>https://hugo-toha.github.io/notes/notes/</link>
+      <link>http://localhost:1313/notes/notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hugo-toha.github.io/notes/notes/</guid>
+      <guid>http://localhost:1313/notes/notes/</guid>
       <description>&lt;p&gt;干什么！&lt;/p&gt;</description>
     </item>
     

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>正规子群和同态</title>
+    <title>同态和正规子群</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -313,7 +313,16 @@ document.documentElement.setAttribute('data-theme', theme)
   
   
     
-    <li><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4%E5%92%8C%E5%90%8C%E6%80%81%E5%AE%9A%E7%90%86/" title="正规子群和同态">正规子群和同态</a></li>
+    <li><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/" title="同态和正规子群">同态和正规子群</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/" title="群作用基础">群作用基础</a></li>
   
 
 
@@ -345,12 +354,12 @@ document.documentElement.setAttribute('data-theme', theme)
         <div class="author-profile ms-auto align-self-lg-center">
           <img class="rounded-circle" src='/images/author/diamond153_hu_a3fb78be2b903ba8.jpg' alt="Author Image">
           <h5 class="author-name">Diamond_153</h5>
-          <p class="text-muted">Sunday, July 6, 2025 | 2 分钟</p>
+          <p class="text-muted">Sunday, July 6, 2025 | 4 分钟</p>
         </div>
         
 
         <div class="title">
-          <h1>正规子群和同态</h1>
+          <h1>同态和正规子群</h1>
         </div>
 
         
@@ -366,85 +375,118 @@ document.documentElement.setAttribute('data-theme', theme)
         <div class="post-content" id="post-content">
           <h3 id="群同态的定义">群同态的定义</h3>
 <p>同态是抽象代数中一个重要的概念，其思想为<strong>保持运算</strong>的映射. 在群中就表现为下面的形式：</p>
-<blockquote>
-<p>[!Tip] $\mathsf{Definition.}$ 同态的定义
-如果 $(G,\cdot)$ 和 $(H,*)$ 是两个群，那么映射 $f:G\to H$ 被称为同态，如果 $f(a\cdot b)=f(a)*f(b)$ 对任意的 $a,b\in G$ 成立.</p></blockquote>
-<blockquote>
-<p>[!Example] $\mathsf{Example.}$</p>
+<p><strong>Definition [同态的定义]</strong>. 如果 $(G,\cdot)$ 和 $(H,*)$ 是两个群，那么映射 $f:G\to H$ 被称为同态，如果 $f(a\cdot b)=f(a)*f(b)$ 对任意的 $a,b\in G$ 成立.</p>
+<p><strong>Examples [一些例子]</strong>.</p>
 <ul>
 <li>对于线性空间 $V$ 和 $W$，它们在加法运算下构成一个群. 这个时候它们之间的线性映射就是这两个群的同态.</li>
 <li>考虑 $n$ 阶实矩阵的行列式 $\det:\mathsf{GL}_n(\mathbb R)\to\mathbb R^\times$，则由行列式的性质知 $\det$ 是一个同态.</li>
-</ul></blockquote>
+</ul>
 <p>特别地，如果 $f$ 是一个双射，那么称 $f$ 是 $G$ 到 $H$ 的同构，如果存在这样的 $f$ 就称 $G$ 和 $H$ 是同构的，记作 $G\simeq H$. 同构的群性质几乎是一样的，它们甚至可以看作是同一个群.</p>
-<blockquote>
-<p>[!Summary] $\mathsf{Proposition.}$ 同态的简单性质
-如果 $f:G\to H$ 是同态，则：</p>
+<p><strong>Proposition [同态的简单性质]</strong>. 如果 $f:G\to H$ 是同态，则：</p>
 <ul>
 <li>$f(e)=e&rsquo;$，其中 $e&rsquo;$ 是 $H$ 的单位元.</li>
 <li>对于任意 $a\in G$ 有 $f(a^{-1})=f(a)^{-1}$.</li>
 <li>对于任意 $a\in G$ 和 $n\in\mathbb Z$ 有 $f(a^n)=f(a)^n$.</li>
+</ul>
+<blockquote>
+<p><em>Proof</em>.</p>
+<ul>
+<li>我们有 $e&rsquo;f(e)=f(e)=f(e^2)=f(e)f(e)$，所以由消去律知 $f(e)=e&rsquo;$.</li>
+<li>由于 $f(a^{-1})f(a)=f(a^{-1}a)=f(e)=e&rsquo;=f(a)^{-1}f(a)$，由消去律知 $f(a^{-1})=f(a)^{-1}$.</li>
+<li>归纳即可. $\Box$</li>
 </ul></blockquote>
-<blockquote>
-<p>[!Success] $\mathsf{Proof.}$
-证明不难. $\Box$</p></blockquote>
 <h3 id="生成子群">生成子群</h3>
-<blockquote>
-<p>[!Tip] $\mathsf{Definition.}$ 生成子群的定义
-对于群 $G$ 的子集 $X\subseteq G$，考虑到一族子群的交也是子群，定义 $X$ 的生成子群 $\langle X\rangle$ 是所有包含 $X$ 的子群的交. 特别地，当 $X=\varnothing$ 时 $\langle X\rangle={e}$.</p></blockquote>
-<blockquote>
-<p>[!Example] $\mathsf{Example.}$</p>
+<p><strong>Definition [生成子群的定义]</strong>. 对于群 $G$ 的子集 $X\subseteq G$，考虑到一族子群的交也是子群，定义 $X$ 的生成子群 $\langle X\rangle$ 是所有包含 $X$ 的子群的交. 特别地，当 $X=\varnothing$ 时 $\langle X\rangle=\{e\}$.</p>
+<p><strong>Examples [一些例子]</strong>.</p>
 <ul>
 <li>定义 $\mathsf S_n$ 的子集 $X={f\in\mathsf S_n\mid\exists i\neq j,f(i)=j,f(j)=i\text{, and }f(k)=k,\forall k\neq i,j}$，即所有对换，则我们有 $\langle X\rangle=\mathsf S_n$.</li>
 <li>对于任意 $n\in\mathbb N_+$，都有 $\mathbb Z/n\mathbb Z=\langle\bar 1\rangle$.</li>
-</ul></blockquote>
+</ul>
+<p><strong>Definition [词的定义]</strong>. 如果 $X$ 是群 $G$ 的非空子集，则定义形如
+$$
+w=x_1^{\epsilon_1}x_2^{\epsilon_2}\cdots x_n^{\epsilon_n}\in G\quad x_k\in X,\epsilon_k=\pm 1,\forall k=1,\cdots,n
+$$
+的元素为 $X$ 上的词.</p>
+<p><strong>Theorem [生成子群的等价形式]</strong>. 如果 $X$ 是群 $G$ 的非空子集，则 $\langle X\rangle$ 等于 $X$ 上所有的词构成的集合 $W$.</p>
 <blockquote>
-<p>[!Tip] $\mathsf{Definition.}$ 词的定义
-如果 $X$ 是群 $G$ 的非空子集，则定义形如
-$$w=x_1^{\epsilon_1}x_2^{\epsilon_2}\cdots x_n^{\epsilon_n}\in G\quad x_k\in X,\epsilon_k=\pm 1,\forall k=1,\cdots,n$$
-的元素为 $X$ 上的词.</p></blockquote>
-<blockquote>
-<p>[!Summary] $\mathsf{Theorem.}$ 生成子群的等价形式
-如果 $X$ 是群 $G$ 的非空子集，则 $\langle X\rangle$ 等于 $X$ 上所有的词构成的集合 $W$.</p></blockquote>
-<blockquote>
-<p>[!Success] $\mathsf{Proof.}$
-对于 $X$ 上的词 $w=x_1^{\epsilon_1}\cdots x_n^{\epsilon_n}$ 和 $u=y_1^{\zeta_1}\cdots y_m^{\zeta_m}$，我们有：
+<p><em>Proof</em>. 对于 $X$ 上的词 $w=x_1^{\epsilon_1}\cdots x_n^{\epsilon_n}$ 和 $u=y_1^{\zeta_1}\cdots y_m^{\zeta_m}$，我们有：
 $$wu^{-1}=x_1^{\epsilon_1}\cdots x_n^{\epsilon_n}y_m^{-\zeta_m}\cdots y_1^{-\zeta_1}$$
 这也是一个 $X$ 上的词，所以由子群判别定理 $W\le G$ 且 $X\subseteq W$，由定义 $\langle X\rangle\subseteq W$. 反过来，由于子群对乘法和逆元的封闭性，包含 $X$ 的子群一定包含 $X$ 上的所有词，所以 $W\subseteq\langle X\rangle$，也就是 $\langle X\rangle=W$. $\Box$</p></blockquote>
-<h3 id="正规子群和商群的定义">正规子群和商群的定义</h3>
-<p>现在考虑 $G$ 的子群 $H$，由 $\mathsf{Lagrange}$ 定理，其左陪集可以把 $G$ 划分. 那么对于两个左陪集 $aH$ 和 $bH$ 中的元素 $a_1,a_2\in aH$ 和 $b_1,b_2\in bH$，可不可以得到 $a_1b_1$ 和 $a_2b_2$ 属于同一个左陪集呢？答案是不一定，但是下面的结论给出了它的一个等价形式：</p>
+<h3 id="正规子群和商群">正规子群和商群</h3>
+<p>现在考虑 $G$ 的子群 $H$，由 Lagrange 定理，其左陪集可以把 $G$ 划分. 那么对于两个左陪集 $aH$ 和 $bH$ 中的元素 $a_1,a_2\in aH$ 和 $b_1,b_2\in bH$，可不可以得到 $a_1b_1$ 和 $a_2b_2$ 属于同一个左陪集呢？答案是不一定，但是下面的结论给出了它的一个等价形式：</p>
+<p><strong>Proposition</strong>. 上面的命题成立当且仅当 $H$ 满足如下条件：对任意 $h\in H$ 和 $a\in G$，都有 $a^{-1}ha\in H$.</p>
 <blockquote>
-<p>[!Summary] $\mathsf{Proposition.}$
-上面的命题成立当且仅当 $H$ 满足如下条件：对任意 $h\in H$ 和 $a\in G$，都有 $a^{-1}ha\in H$.</p></blockquote>
-<blockquote>
-<p>[!Success] $\mathsf{Proof.}$
+<p><em>Proof</em>.
 左推右：考虑 $e,h\in H$ 和 $a\in aH$，则由假设可以得到 $a$ 和 $ha$ 属于同一个左陪集，而这个左陪集只能是 $aH$. 由 $ha\in aH$，不妨设令 $ha=ah&rsquo;$，其中 $h&rsquo;\in H$，则 $a^{-1}ha=h&rsquo;\in H$.</p>
 <p>右推左：令 $a_1=ah_1,a_2=ah_2$ 和 $b_1=bh_1&rsquo;,b_2=bh_2&rsquo;$，则 $a_1b_1=ah_1bh_1&rsquo;=ab(b^{-1}h_1b)h_1&rsquo;$，同理 $a_2b_2=ab(b^{-1}h_2b)h_2&rsquo;$. 由假设，$b^{-1}h_1b\in H$，因 $H$ 的封闭性有 $(b^{-1}h_1b)h_1&rsquo;\in H$. 所以 $a_1b_1\in(ab)H$，同理 $a_2b_2\in(ab)H$. 证毕. $\Box$</p></blockquote>
 <p>我们称满足上面命题中条件的子群为正规子群，记作 $H\trianglelefteq G$.</p>
 <p>对于 $G$ 的正规子群 $H$，由上面的讨论，我们可以在 $G$ 的左陪集上定义一个良好的乘法：$(aH)(bH)=(ab)H$. 这个时候 $G$ 所有的左陪集在这个乘法下构成一个群，定义其为商群 $G/H$.</p>
-<blockquote>
-<p>[!Example] $\mathsf{Example.}$</p>
+<p><strong>Examples [例子]</strong>.</p>
 <ul>
 <li>我们以前提到过 $\mathbb Z/n\mathbb Z$，这就是它的来源！</li>
 <li>$\mathsf{SL}_n(\mathbb R)$ 是 $\mathsf{GL}_n(\mathbb R)$ 的正规子群，商群同构于 $\mathbb R$.</li>
 <li>$\mathsf A_n$ 是 $\mathsf S_n$ 的正规子群，商群同构于 ${\pm 1}$ 在乘法下构成的群.</li>
 <li>考虑 $\mathsf S_3$，则 ${\mathsf{id},f}$ 是 $\mathsf S_3$ 的子群但不是正规的. 其中 $f$ 将 $1$ 和 $2$ 对换.</li>
 <li>对于 $G$ 的正规子群 $H$，定义映射 $v:G\to G/H$，$v(g)=gH$，则 $v$ 是一个同态，称为商映射.</li>
-</ul></blockquote>
+</ul>
+<p>$\mathsf{Proposition.}$ 正规子群的等价定义 如果 $H\leq G$，那么 $H$ 是 $G$ 的正规子群当且仅当 $gHg^{-1}=H$ 对任意 $g$ 成立，当且仅当对任意 $x,y\in G$，如果 $xy\in H$ 那么 $yx\in H$.</p>
 <blockquote>
-<p>[!Summary] $\mathsf{Proposition.}$ 正规子群的等价定义
-如果 $H\leq G$，那么 $H$ 是 $G$ 的正规子群当且仅当 $gHg^{-1}=H$ 对任意 $g$ 成立，当且仅当对任意 $x,y\in G$，如果 $xy\in H$ 那么 $yx\in H$.</p></blockquote>
-<blockquote>
-<p>[!Success] $\mathsf{Proof.}$
+<p><em>Proof</em>.
 如果 $gHg^{-1}=H$ 对任意 $g$ 成立，则 $H$ 显然是 $G$ 的正规子群. 反过来，如果 $H$ 是 $G$ 的正规子群，则对于任意 $g\in G$，由定义知 $gHg^{-1}\subseteq H$，而且对任意 $h\in H$，我们有 $g^{-1}hg\in H$，从而 $h=g(g^{-1}hg)g^{-1}\in gHg^{-1}$，最后就会有 $H=gHg^{-1}$. 第二个当且仅当留给读者. $\Box$</p></blockquote>
-<blockquote>
-<p>[!Summary] $\mathsf{Proposition.}$ 正规子群的基本性质</p>
+<p><strong>Proposition [正规子群的基本性质]</strong>.</p>
 <ul>
 <li>如果 $K\leq H\leq G$ 是子群链，而且 $K\trianglelefteq G$，则 $K\trianglelefteq H$.</li>
 <li>一族正规子群的交也是正规子群.</li>
-</ul></blockquote>
+</ul>
+<blockquote>
+<p><em>Proof</em>. 证明不难. $\Box$</p></blockquote>
+<h3 id="同态基本定理">同态基本定理</h3>
+<p><strong>Theorem [同态基本定理/第一同构定理]</strong>. 如果 $f:G\to H$ 是同态，定义以下两个集合（分别称为 $f$ 的核和 $f$ 的像）：
+$$
+\begin{align*}\ker f&amp;=\{a\in G\mid f(a)=e&rsquo;\}\\ \mathrm{im}\ f&amp;=\{f(a)\mid a\in G\}\end{align*}
+$$
+那么我们有 $\ker f\trianglelefteq G$，$\mathrm{im}\ f\le H$ 且 $G/\ker f\simeq\mathrm{im}\ f$.</p>
+<blockquote>
+<p><em>Proof</em>. 我们依次证明上面的三个事实.</p>
+<p>首先需要证明 $\ker f$ 是一个群. 对任意 $k,l\in\ker f$，我们有 $f(kl^{-1})=f(k)f(l)^{-1}=e$，所以 $kl^{-1}\in\ker f$，接着使用子群判别定理即可. 然后我们证明 $\ker f$ 是正规子群. 对于任意 $k\in\ker f$ 和 $g\in G$，我们有 $f(gkg^{-1})=f(g)f(k)f(g^{-1})=f(g)f(g^{-1})=e&rsquo;$. 所以 $gkg^{-1}\in H$，也就是 $\ker f\trianglelefteq G$.</p>
+<p>对于任意 $x,y\in\mathrm{im}\ f$，令 $x=f(a)$ 和 $y=f(b)$，那么 $xy^{-1}=f(a)f(b)^{-1}=f(ab^{-1})\in\mathrm{im}\ f$，由子群判别定理知 $\mathrm{im}\ f\leq H$.</p>
+<p>最后，定义 $\tilde f:G/\ker f\to\mathrm{im}\ f$ 为 $a\ker f\mapsto f(a)$. 首先这个映射的是良好定义的，即如果 $a\ker f=b\ker f$ 那么 $f(a)=f(b)$，这是显然的，因为 $a^{-1}b\in\ker f$. 然后它是一个同态，因为 $\tilde f(a\ker f)\tilde f(b\ker f)=f(a)f(b)=f(ab)=\tilde f((ab)\ker f)$. 最后它是一个双射. 因为如果 $\tilde f(a\ker f)=e&rsquo;$，则 $f(a)=e&rsquo;$，即 $a\in\ker f$，也就是 $a\ker f=\ker f$. 综上，$G/\ker f\simeq\mathrm{im}\ f$. $\Box$</p></blockquote>
+<p>所以我们还可以得到：一个同态是单的当且仅当其核等于 $\{e\}$. 为了方便，我们以后把平凡子群 $\{e\}$ 记作 $\{1\}$.</p>
+<h3 id="第二和第三同构定理">第二和第三同构定理</h3>
+<p><strong>Theorem [容斥原理]</strong>. 如果 $S$ 和 $T$ 是有限群 $G$ 的子群，定义 $ST={st\mid s\in S,t\in T}$，则 $|ST||S\cap T|=|S||T|$. 注意 $ST$ 不一定是一个群.</p>
+<blockquote>
+<p><em>Proof</em>. 考虑 $\varphi:S\times T\to ST$ 为 $(s,t)\mapsto st$，我们断言对任意 $x\in ST$ 都有 $|\varphi^{-1}(x)|=|S\cap T|$，从而命题成立. 实际上如果令 $x=st$，则 $\varphi^{-1}(x)=\{(sg,g^{-1}t)\mid g\in S\cap T\}$. 首先右式包含于左式，然后对于 $(a,b)\in\varphi^{-1}(x)$，我们有 $ab=st$，从而 $s^{-1}a=tb^{-1}\in S\cap T$. 令 $g=s^{-1}a=tb^{-1}$ 就有 $(sg,g^{-1}t)=(a,b)$. $\Box$</p></blockquote>
+<p>但是当 $T$ 是正规子群时，情况变得特殊起来：</p>
+<p><strong>Proposition.</strong> 如果 $T$ 是 $G$ 的正规子群，$S$ 是 $G$ 的子群，那么 $ST$ 和 $TS$ 都是群. 所以由生成群的两个定义容易得到 $ST=TS=\langle S\cup T\rangle$.</p>
 <blockquote>
 <p>[!Success] $\mathsf{Proof.}$
-证明不难. $\Box$</p></blockquote>
+对于 $s_1t_1,s_2t_2\in ST$，我们有 $(s_1t_1)(s_2t_2)^{-1}=s_1s_2^{-1}s_2(t_1t_2^{-1})s_2^{-1}$. 由于 $T$ 是正规子群，所以 $s_2^{-1}(t_1t_2^{-1})s_2\in T$，也就是 $(s_1t_1)(s_2t_2)^{-1}\in ST$. 类似可以证明 $TS$ 也是群. $\Box$</p></blockquote>
+<p><strong>Remark</strong>. 感兴趣的读者可以尝试证明：若 $S,T$ 是 $G$ 的子群，则 $ST$ 是 $G$ 的子群当且仅当 $ST=TS$.</p>
+<p>下面的第二同构定理就可以看作是容斥原理的推广：</p>
+<p><strong>Theorem [第二同构定理]</strong>. 如果 $T$ 是 $G$ 的正规子群，$S$ 是 $G$ 的子群，那么 $T\cap S$ 是 $S$ 的正规子群，而且 $S/(T\cap S)\simeq ST/T$.</p>
+<blockquote>
+<p><em>Proof</em>. 令 $v:G\to G/T$ 是商映射，则其为同态，所以 $v$ 的限制 $v|_S:S\to G/T$ 也是一个同态. 不难验证 $\ker v|_S=S\cap T$ 且 $\mathrm{im}\ v|_S=ST/T$，所以由第一同构定理，$S/(T\cap S)\simeq ST/T$. $\Box$</p></blockquote>
+<p>本节的最后一个定理是第三同构定理，它是对陪集“合并”的一种描述：</p>
+<p><strong>Theorem [第三同构定理]</strong>. 如果 $K\le H\le G$ 而且 $K$ 和 $H$ 都是 $G$ 的正规子群，则 $H/K$ 是 $G/K$ 的正规子群，而且 $(G/K)/(H/K)\simeq G/H$.</p>
+<blockquote>
+<p><em>Proof</em>. 定义映射 $f:G/K\to G/H$ 为 $aK\mapsto aH$，这个映射是良好定义的，因为如果 $aK=bK$ 就有 $a^{-1}b\in K\subseteq H$，也就是 $aH=bH$，而且容易验证这个同态的核是 $H/K$. 把最后的事情交给第一同构定理，我们得到了 $(G/K)/(H/K)\simeq G/H$. $\Box$</p></blockquote>
+<h3 id="留给读者的习题">留给读者的习题</h3>
+<p><strong>Problem 1</strong>. 如果 $H$ 是 $G$ 的子群而且 $[G:H]=2$，证明 $H$ 是 $G$ 的正规子群.</p>
+<p><strong>Definition [导群的定义]</strong>. 如果 $G$ 是一个群，对于 $a,b\in G$ 定义换位子 $[a,b]=aba^{-1}b^{-1}$. 令 $X=\{[a,b]\mid a,b\in G\}$ 为所有的换位子，定义 $G$ 的导群或是换位子群 $G&rsquo;=[G,G]=\langle X\rangle$.</p>
+<p><strong>Problem 2</strong>.</p>
+<ol>
+<li>证明：$[a,b]^{-1}=[b,a]$ 且 $g[a,b]g^{-1}=[gag^{-1},gbg^{-1}]$.</li>
+<li>证明：$G&rsquo;$ 是 $G$ 的正规子群，且 $G/G&rsquo;$ 是交换群.</li>
+<li>证明：如果 $H$ 是 $G$ 的子群，则 $G/H$ 是交换群当且仅当 $G&rsquo;\subseteq H$.</li>
+</ol>
+<p><strong>Problem 3</strong>. 定义“长换位子”：$[a_1,a_2,\cdots,a_n]=a_1\cdots a_na_1^{-1}\cdots a_n^{-1}$. 证明：所有“长换位子”构成的集合等于 $G&rsquo;$.</p>
+<p><strong>Definition [嵌入的定义]</strong>. 如果 $G,H$ 是群，且 $G$ 有子群同构于 $H$，则说 $H$ 可以被嵌入 $G$. 所以 $H$ 可以被嵌入 $G$ 当且仅当存在 $H\to G$ 的单同态.</p>
+<p><strong>Problem 4</strong>.</p>
+<ol>
+<li>证明：$\mathsf S_n$ 可以被嵌入 $\mathsf A_{n+2}$.</li>
+<li>证明：任意群 $G$ 都可以被嵌入 $\mathsf{Sym}\ G$. (此为 Cayley 定理)</li>
+<li>证明：任意有限群 $G$ 都可以被嵌入某个 $\mathsf A_n$.</li>
+</ol>
 
         </div>
 
@@ -484,6 +526,9 @@ $$wu^{-1}=x_1^{\epsilon_1}\cdots x_n^{\epsilon_n}y_m^{-\zeta_m}\cdots y_1^{-\zet
   
   
 
+  
+  
+
 
 <div class="row next-prev-navigator">
   
@@ -495,6 +540,17 @@ $$wu^{-1}=x_1^{\epsilon_1}\cdots x_n^{\epsilon_n}y_m^{-\zeta_m}\cdots y_1^{-\zet
     </div>
   
   
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/" title="群作用基础" class="btn filled-button">
+          <div>下一篇 <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">群作用基础</div>
+        </a>
+      </div>
+    
 </div>
 
       <br/>
@@ -530,7 +586,10 @@ $$wu^{-1}=x_1^{\epsilon_1}\cdots x_n^{\epsilon_n}y_m^{-\zeta_m}\cdots y_1^{-\zet
       <ul>
         <li><a href="#群同态的定义">群同态的定义</a></li>
         <li><a href="#生成子群">生成子群</a></li>
-        <li><a href="#正规子群和商群的定义">正规子群和商群的定义</a></li>
+        <li><a href="#正规子群和商群">正规子群和商群</a></li>
+        <li><a href="#同态基本定理">同态基本定理</a></li>
+        <li><a href="#第二和第三同构定理">第二和第三同构定理</a></li>
+        <li><a href="#留给读者的习题">留给读者的习题</a></li>
       </ul>
     </li>
   </ul>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>404 Page not found</title>
+    <title>同态定理</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -38,7 +38,10 @@
 <meta property="og:image" content="/images/author/diamond153.jpg">
 <meta property="og:url" content="http://localhost:1313/">
 
-     
+    
+<meta name="description" content="第四次讲义" />
+
+
 
     
 
@@ -99,7 +102,7 @@ document.documentElement.setAttribute('data-theme', theme)
     
   </head>
 
-  <body class="type-page kind-404" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+  <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
     <div class="container-fluid bg-secondary wrapper">
       
       
@@ -257,10 +260,141 @@ document.documentElement.setAttribute('data-theme', theme)
 
 
       
-       
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="搜索" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">我的文章</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/"> 群论讲义</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/" title="群的定义和基本性质">群的定义和基本性质</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/" title="子群和 Lagrange 定理">子群和 Lagrange 定理</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/" title="同态和正规子群">同态和正规子群</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%AE%9A%E7%90%86/" title="同态定理">同态定理</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
       
       
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/img4.png);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/diamond153_hu_a3fb78be2b903ba8.jpg' alt="Author Image">
+          <h5 class="author-name">Diamond_153</h5>
+          <p class="text-muted">Monday, July 7, 2025 | 1 分钟</p>
+        </div>
+        
+
+        <div class="title">
+          <h1>同态定理</h1>
+        </div>
+
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <p>本节的最后一个定理是第三同构定理，它描述了陪集的“合并”：</p>
+<blockquote>
+<p>[!Summary] $\mathsf{Theorem.}$ 第三同构定理
+如果 $K\le H\le G$ 而且 $K$ 和 $H$ 都是 $G$ 的正规子群，则 $H/K$ 是 $G/K$ 的正规子群，而且 $(G/K)/(H/K)\simeq G/H$.</p></blockquote>
+<blockquote>
+<p>[!Success] $\mathsf{Proof.}$
+定义映射 $f:G/K\to G/H$ 为 $aK\mapsto aH$，这个映射是良好定义的，因为如果 $aK=bK$ 就有 $a^{-1}b\in K\subseteq H$，也就是 $aH=bH$，而且容易验证这个同态的核是 $H/K$. 最后的事情交给第一同构定理，我们得到了 $(G/K)/(H/K)\simeq G/H$. $\Box$</p></blockquote>
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+        
+        
+        
+
+
+      
+      <hr />
+        
+
 
 
 
@@ -271,19 +405,69 @@ document.documentElement.setAttribute('data-theme', theme)
 
 
 
-<div class="container">
-    <div class="notFound">
-        <img src="/images/404_hu_dc73d94ad49d9307.png" alt="Page Not Found">
-        <div class="message">
-            <h1>404</h1>
-            <h4>您查找的页面已私奔。</h4>
-        </div>
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/" title="同态和正规子群" class="btn filled-button">
+        <div><i class="fas fa-chevron-circle-left"></i> 上一篇</div>
+        <div class="next-prev-text">同态和正规子群</div>
+      </a>
     </div>
+  
+  
 </div>
+
+      <br/>
+      <hr />
+
+      
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
 
 
       
-       
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center ps-3">目录</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents"></nav>
+      </div>
+    </div>
+    
+  </section>
+
     </div>
 
     
