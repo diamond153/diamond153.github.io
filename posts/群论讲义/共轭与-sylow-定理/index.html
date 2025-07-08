@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <title>共轭与 Sylow 定理</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<link rel="stylesheet" href="/application.d3e7151b1cffb33b9d79ffdbc357b2c5423ad6fa937dfa609417ddf8cf1ed4c0.css" integrity="sha256-0&#43;cVGxz/szudef/bw1eyxUI61vqTffpglBfd&#43;M8e1MA=" />
+<link rel="stylesheet" href="/application.ffd65fa64653f9ca14dae5238d963f2631434b0c5f22ccfd2d94f787f4774421.css" integrity="sha256-/9ZfpkZT&#43;coU2uUjjZY/JjFDSwxfIsz9LZT3h/R3RCE=" />
 
 
 
@@ -36,7 +36,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:description" content=""/>
 <meta property="og:image" content="/images/author/diamond153.jpg">
-<meta property="og:url" content="http://localhost:1313/">
+<meta property="og:url" content="https://hugo-toha.github.io/">
 
     
 <meta name="description" content="第五次讲义" />
@@ -264,9 +264,7 @@ document.documentElement.setAttribute('data-theme', theme)
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
-        <form class="mx-auto" method="get" action="/search">
-          <input type="text" name="keyword" value="" placeholder="搜索" data-search="" id="search-box" />
-        </form>
+        
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
             <li id="list-heading"><a href="/posts/" data-filter="all">我的文章</a></li>
@@ -343,6 +341,15 @@ document.documentElement.setAttribute('data-theme', theme)
     <li><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/" title="共轭与 Sylow 定理">共轭与 Sylow 定理</a></li>
   
 
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%9B%B4%E7%A7%AF%E4%B8%8E%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90-abel-%E7%BE%A4%E5%88%86%E7%B1%BB%E5%AE%9A%E7%90%86/" title="直积与有限生成 Abel 群分类定理">直积与有限生成 Abel 群分类定理</a></li>
+  
+
 
       </ul>
     </li>
@@ -413,8 +420,8 @@ $$
 \mathsf Z(G)=\{a\in G\mid\mathsf C_G(a)=G\}=\{a\in G\mid\forall b\in G,ab=ba\}
 $$
 一个群的中心显然是这个群的正规子群，即 $\mathsf Z(G)\trianglelefteq G$.</p>
-<p><strong>Definition [$p$ 群]</strong> 如果 $G$ 是群，$p$ 是素数，则称 $G$ 是 $p$ 群，如果 $G$ 中元素的阶都有限且是 $p$ 的幂次.</p>
-<p><strong>Theorem [有限 $p$ 群的等价定义]</strong> 如果 $G$ 是有限群，则 $G$ 是 $p$ 群当且仅当 $|G|$ 是 $p$ 的幂次.</p>
+<p><strong>Definition [$p$ 群]</strong>. 如果 $G$ 是群，$p$ 是素数，则称 $G$ 是 $p$ 群，如果 $G$ 中元素的阶都有限且是 $p$ 的幂次.</p>
+<p><strong>Theorem [有限 $p$ 群的等价定义]</strong>. 如果 $G$ 是有限群，则 $G$ 是 $p$ 群当且仅当 $|G|$ 是 $p$ 的幂次.</p>
 <blockquote>
 <p><em>Proof</em>. 如果 $|G|$ 是 $p$ 的幂次，则其中元素的阶都整除 $|G|$，从而也是 $p$ 的幂次；如果 $|G|$ 不是 $p$ 的幂次，则其存在不等于 $p$ 的素因子 $q$. 由 Cauchy 定理 $G$ 中存在 $q$ 阶元，矛盾！ $\Box$</p></blockquote>
 <p>一个惊人的结果是 $p$ 群的中心一定包含除 $e$ 以外的其它元素！下面简单证明一下.</p>
@@ -436,14 +443,14 @@ $$|G|=|\mathsf Z(G)|+\sum_{i=m+1}^h[G:\mathsf C_G(g_i)]$$
 <blockquote>
 <p><em>Sketch of Proof</em>. 第一个命题是显然的；第二个命题即为正规子群的定义；第三个命题是轨道-稳定子定理在这个作用中的体现. $\Box$</p></blockquote>
 <p>对一个子群 $H\le G$，令 $H$ 在上述作用下的轨道为 $X$，即 $X=\{gHg^{-1}\mid g\in G\}$，则将这个作用限制得到 $G$ 也可以作用在 $X$ 上. 令其置换表示为 $\rho$，则 $\rho$ 是一个从 $G$ 到 $\mathsf{Sym}\ X$ 的同态. 当 $H$ 的指数 $k=[G:H]$ 有限时，$X$ 的大小 $|X|=[G:\mathsf N_G(H)]$ 也是有限的. 所以我们有同态基本定理：$[G:\ker\rho]\bigm||\mathsf{Sym}\ X|\bigm| k!$. 也就是说：</p>
-<p><strong>Proposition [通过子群得到的正规子群]</strong>. 如果 $H$ 是 $G$ 中指数为 $k$ 的子群，则 $G$ 中存在指数整除 $k!$ 的正规子群（就是上面的 $\ker\rho$）.</p>
+<p><strong>Proposition [通过子群得到的正规子群]</strong>. 如果 $H$ 是 $G$ 中指数为 $k$ 的子群，则 $G$ 中存在指数整除 $k!$ 的正规子群（就是上面的 $\ker\rho$）. 特别地，如果 $H$ 非正规，则作用非平凡，也就是那个正规子群是真子群.</p>
 <p>现在对于一个子群 $H\le G$，考虑 $\mathsf N_G(H)$ 对 $H$ 的共轭作用：$g\circ h=ghg^{-1}$（由于 $H\trianglelefteq\mathsf N_G(H)$，所以使用 $\mathsf N_G(H)$ 对 $H$ 共轭不会让它跑出去）. 考虑其置换表示 $\gamma_*$ 的核 $K$，也就是与 $H$ 中每个元素都可交换的元素构成的集合，它构成一个 $\mathsf N_G(H)$ 的正规子群. 为了标记这个东西，我们可以推广中心化子的定义：</p>
 <p><strong>Definition [子集的中心化子]</strong>. 如果 $S\subseteq G$，定义 $S$ 的中心化子为：
 $$
 \mathsf C_G(S)=\bigcap_{g\in S}\mathsf C_G(g)
 $$
 也就是与 $S$ 中每个元素都可交换的元素构成的子群.</p>
-<p><strong>Remark</strong>. 这个时候 $S$ 就不一定是 $\mathsf C_G(S)$ 的子集了！</p>
+<p><strong>Remark</strong>. 这个时候 $S$ 就不一定是 $\mathsf C_G(S)$ 的子集了！特别当 $S=G$ 时 $\mathsf C_G(S)=\mathsf Z(G)$，所以我们有时把 $G$ 的中心写作 $\mathsf C(G)$.</p>
 <p>所以遵循上面的记号，$K$ 会等于 $\mathsf C_G(H)$. 我们也不难作推论得到如下命题：</p>
 <p><strong>Lemma [N/C Lemma]</strong>. 对于任意的子群 $H\le G$，$\mathsf C_G(H)$ 是 $\mathsf N_G(H)$ 的正规子群，且商群 $\mathsf N_G(H)/\mathsf C_G(H)$ 可以嵌入 $\mathsf{Aut}(H)$.</p>
 <blockquote>
@@ -467,7 +474,42 @@ $$
 <p>这个定理有点厉害，但是你先别急，我们慢慢来证明.</p>
 <p>首先是第一个命题. 要证明 $G$ 中存在 $p^a$ 阶子群，我们先不妨设 $G$ 的所有阶数为 $p$ 幂次的子群中，阶数最大的那个群是 $H$. 然后令 $|H|=p^b$，我们希望证明 $b=a$，换句话说，$p\nmid[G:H]$.</p>
 <p>我们现在并不清楚 $H$ 在 $G$ 中的性质，但是我们知道 $H$ 是 $N=\mathsf N_G(H)$ 的正规子群，而且 $[G:H]=[G:N][N:H]$. 所以我们可以把问题拆成两个部分：$p\nmid[N:H]$ 和 $p\nmid[G:N]$.</p>
-<p>咕咕咕~</p>
+<p><strong>第一个部分</strong>：如果 $p\mid[N:H]$，由 $H$ 在 $N$ 中的正规性，在 $N/H$ 中考虑 Cauchy 定理知其有 $p$ 阶子群（选一个 $p$ 阶元生成的子群就是 $p$ 阶的）. 此时根据对应定理，存在一个 $K$ 包含 $H$ 且 $[K:H]=p$，也就是 $K$ 是比 $H$ 大的阶数为 $p$ 的幂次的子群，矛盾！</p>
+<p><strong>第二个部分</strong>：令 $X=\{gHg^{-1}\mid g\in G\}$ 是 $H$ 所有的共轭子群，则 $|X|=[G:N]$，我们只需要证明 $|X|$ 模 $p$ 不为 $0$ 即可. 考虑 $H$ 对 $X$ 的共轭作用：$h\circ K=hKh^{-1}$，则有轨道划分：
+$$
+|X|=\sum_i|\mathcal O_i|
+$$
+由于 $H$ 阶数是 $p$ 的幂，所以 $|\mathcal O_i|\bigm||H|=p^b$ 要么是 $1$ 要么是 $p$ 的倍数. 所以我们可以把问题转化为长度为 $1$ 的轨道个数不被 $p$ 整除，其实可以证明长度为 $1$ 的轨道只有 $\{H\}$.</p>
+<p>如果 $\{gHg^{-1}\}\subseteq X$ 是一个长度为 $1$ 的轨道，则对任意 $h\in H$，都有 $hgHg^{-1}h^{-1}=gHg^{-1}$，也就是 $g^{-1}hg\in N$. 所以 $g^{-1}Hg\leq N$. 由于 $H\trianglelefteq N$ 且 $g^{-1}Hg\leq N$，所以在 $N$ 中使用第二同构定理得到：
+$$
+(g^{-1}Hg)H/H\simeq(g^{-1}Hg)/(g^{-1}Hg\cap H)
+$$
+左边是 $N/H$ 的子群，已经证明过了 $p\nmid[N:H]$，所以左式的阶数不是 $p$ 的倍数；右边是 $g^{-1}Hg$ 的商群，由于 $|g^{-1}Hg|=p^b$，所以右式是 $p$ 的幂次.</p>
+<p>用过左右相等我们可以得到 $1=[g^{-1}Hg:g^{-1}Hg\cap H]$，换句话说 $H\subseteq g^{-1}Hg$，也就是 $gHg^{-1}\subseteq H$，对比阶数得到 $gHg^{-1}=H$. 那也就证明了长度为 $1$ 的轨道只有 $\{H\}$，还得到了 $|X|\equiv 1\pmod p$. 至此 Sylow 第一定理得证.</p>
+<p>有了 Sylow 第一定理，证明后面两个定理也是顺手的事. 沿用之前的记号，如果我们有另一个 Sylow-$p$ 子群 $K$，则 $K$ 可以通过共轭作用在 $H$ 的所有共轭 $X$ 上. 与之前类似推导得到每一个轨道长度都是 $1$ 或者 $p$ 的倍数，又因为我们已经得到过 $|X|\equiv 1\pmod p$，所以必定有长度为 $1$ 的轨道.</p>
+<p>不妨设某个长度为 $1$ 的轨道为 $\{gHg^{-1}\}$，则与上面同样操作得到 $g^{-1}Kg\leq N$，也是同样使用第二同构定理得到
+$$
+(g^{-1}Kg)H/H\simeq(g^{-1}Kg)/(g^{-1}Kg\cap H)
+$$
+左边不是 $p$ 的倍数，右边是 $p$ 的幂，所以两边都是 $1$，也可以和前面同样地得到 $g^{-1}Kg=H$，也就是 $K=gHg^{-1}$. 这说明了所有 Sylow-$p$ 子群都与 $H$ 共轭，从而所有 Sylow-$p$ 子群都互相共轭，Sylow 第二定理得证.</p>
+<p>由前两个定理的推导，我们可以得到 $\mathsf{Syl}_p(G)=X$，所以会有 $|\mathsf{Syl}_p(G)|\equiv 1\pmod p$. 结合 $|X|=[G:N]\bigm|[G:H]=m$ 就证明了 Sylow 第三定理. $\Box$</p>
+<p>Sylow 定理有一个显然的推论：</p>
+<p><strong>Corollary [Sylow-$p$ 子群唯一等价于正规]</strong>. 一个群只有一个 Sylow-$p$ 子群当且仅当其正规.</p>
+<blockquote>
+<p><em>Proof</em>. 所有的 Sylow-$p$ 子群都是某个 Sylow-$p$ 子群的共轭，所以如果 Sylow-$p$ 子群唯一则其所有共轭都是自己，也就是正规；如果其正规则它的共轭只有它自己，也就是它正规. $\Box$</p></blockquote>
+<p>综合运用 Sylow 定理和其它知识可以判断某个群的单性：</p>
+<p><strong>Definition [单群的定义]</strong>. 如果一个群 $G$ 除了 $1$ 和 $G$ 以外没有其它正规子群，则称 $G$ 是单群.</p>
+<p>对于任意素数 $p$，循环群 $\mathbb Z/n\mathbb Z$ 都是单群. 但是对于非交换单群的讨论可能会很复杂，下面是一个例子.</p>
+<p><strong>Example [$48$ 阶群非单]</strong>. $48$ 阶群一定不是单群.</p>
+<blockquote>
+<p><em>Proof</em>. 如果 $G$ 是一个 $48$ 阶单群，令 $H$ 是它的一个 Sylow-$2$ 子群，则 $H$ 是 $16$ 阶的，指数为 $3$. 如果 $H$ 正规则与 $G$ 的单性矛盾，否则可以得到一个指数整除 $3!=6$ 的真正规子群，矛盾！ $\Box$</p></blockquote>
+<p><strong>Example [$56$ 阶群非单]</strong>. $56$ 阶群一定不是单群.</p>
+<blockquote>
+<p><em>Proof</em>. 假设有 $56$ 阶单群 $G$，考虑 $G$ 的 Sylow-$7$ 子群个数 $a$，则由 Sylow 第三定理知 $a\equiv 1\pmod 7$ 而且 $a\mid 8$，也就是说 $a=1$ 或 $8$. 如果 $a=1$ 则其 Sylow-$7$ 子群正规，与 $G$ 的单性矛盾，所以 $a=8$.</p>
+<p>由于两个不同 $7$ 阶子群的交只能为 $1$，所以所有 Sylow-$7$ 子群的并集大小为 $8\times(7-1)+1=49$，还剩下 $7$ 个元素没有被覆盖到. 考虑 $G$ 的某个 Sylow-$2$ 子群，其元素阶数只能是 $2$ 的幂，从而只能为剩下的 $7$ 个元素和 $e$ 构成的 $8$ 阶群. 注意到这个时候其 Sylow-$2$ 子群唯一，与 $G$ 的单性矛盾！ $\Box$</p></blockquote>
+<h3 id="留给读者的练习">留给读者的练习</h3>
+<p><strong>Problem 1</strong>. 如果有限群 $G$ 的子群 $H$ 指数为 $|G|$ 的最小素因子 $p$，证明 $H\trianglelefteq G$. 提示：考虑 $G$ 对 $H$ 所有共轭的作用.</p>
+<p><strong>Problem 2</strong>. 证明 $40$ 阶群和 $54$ 阶群非单.</p>
 
         </div>
 
@@ -516,6 +558,9 @@ $$
   
   
 
+  
+  
+
 
 <div class="row next-prev-navigator">
   
@@ -527,6 +572,17 @@ $$
     </div>
   
   
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%9B%B4%E7%A7%AF%E4%B8%8E%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90-abel-%E7%BE%A4%E5%88%86%E7%B1%BB%E5%AE%9A%E7%90%86/" title="直积与有限生成 Abel 群分类定理" class="btn filled-button">
+          <div>下一篇 <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">直积与有限生成 Abel 群分类定理</div>
+        </a>
+      </div>
+    
 </div>
 
       <br/>
@@ -545,7 +601,7 @@ $$
     appId: "q0dUvrOifR4xCVw4rUVcV5bA-MdYXbMMI",
     appKey: "bGYOqxmZXHRfGI6AyAlaQBeS",
     avatar: "retro",
-    placeholder: "说说你的看法？这里支持 Markdown 语法和匿名评论哦！",
+    placeholder: "说说你的看法？这里支持匿名评论！",
     visitor: "",
     lang: "zh-cn",
     recordIP: "true",
@@ -586,6 +642,7 @@ $$
         <li><a href="#群对自己的共轭作用">群对自己的共轭作用</a></li>
         <li><a href="#群对子群的共轭作用">群对子群的共轭作用</a></li>
         <li><a href="#sylow-定理">Sylow 定理</a></li>
+        <li><a href="#留给读者的练习">留给读者的练习</a></li>
       </ul>
     </li>
   </ul>
@@ -685,7 +742,7 @@ $$
   </footer>
 
 
-    <script src="/application.5261e6f4779fcbdbafa19d1f66615b349059bc5abe3587b47bf829608498c694.js" integrity="sha256-UmHm9Hefy9uvoZ0fZmFbNJBZvFq&#43;NYe0e/gpYISYxpQ=" defer></script>
+    <script src="/application.7d1dfe92d8f2bbfcf113b1a58b1076e351518b968299a7e1d57cc58347da2422.js" integrity="sha256-fR3&#43;ktjyu/zxE7GlixB241FRi5aCmafh1XzFg0faJCI=" defer></script>
 
 
     
