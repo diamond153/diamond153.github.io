@@ -6,7 +6,34 @@
     <description>Recent content in Posts on Diamond_153 的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 08 Jul 2025 18:30:00 +0800</lastBuildDate><atom:link href="https://hugo-toha.github.io/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Wed, 09 Jul 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://hugo-toha.github.io/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>灌水区</title>
+      <link>https://hugo-toha.github.io/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E7%81%8C%E6%B0%B4%E5%8C%BA/</link>
+      <pubDate>Wed, 09 Jul 2025 10:00:00 +0800</pubDate>
+      
+      <guid>https://hugo-toha.github.io/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E7%81%8C%E6%B0%B4%E5%8C%BA/</guid>
+      <description>&lt;p&gt;这里是灌水区！原先讨论区的评论都被转移到这里来了~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>建议区</title>
+      <link>https://hugo-toha.github.io/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E5%BB%BA%E8%AE%AE%E5%8C%BA/</link>
+      <pubDate>Wed, 09 Jul 2025 10:00:00 +0800</pubDate>
+      
+      <guid>https://hugo-toha.github.io/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E5%BB%BA%E8%AE%AE%E5%8C%BA/</guid>
+      <description>&lt;p&gt;这里是建议区，可以在此提供一些建议~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>学术区</title>
+      <link>https://hugo-toha.github.io/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E5%AD%A6%E6%9C%AF%E5%8C%BA/</link>
+      <pubDate>Wed, 09 Jul 2025 10:00:00 +0800</pubDate>
+      
+      <guid>https://hugo-toha.github.io/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E5%AD%A6%E6%9C%AF%E5%8C%BA/</guid>
+      <description>&lt;p&gt;这里是学术区，用于专门讨论学术问题~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>直积与有限生成 Abel 群分类定理</title>
       <link>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%9B%B4%E7%A7%AF%E4%B8%8E%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90-abel-%E7%BE%A4%E5%88%86%E7%B1%BB%E5%AE%9A%E7%90%86/</link>
       <pubDate>Tue, 08 Jul 2025 18:30:00 +0800</pubDate>
@@ -24,16 +51,6 @@
 &lt;li&gt;……&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;咕咕咕~&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>讨论区</title>
-      <link>https://hugo-toha.github.io/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/</link>
-      <pubDate>Tue, 08 Jul 2025 00:00:00 +0800</pubDate>
-      
-      <guid>https://hugo-toha.github.io/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/</guid>
-      <description>&lt;p&gt;这里是讨论区，尽情发表你的看法吧！&lt;/p&gt;
-&lt;p&gt;评论区支持 Markdown 语法和 $\LaTeX$ 公式，现在其它文章也可以评论了~&lt;/p&gt;</description>
     </item>
     
     <item>
