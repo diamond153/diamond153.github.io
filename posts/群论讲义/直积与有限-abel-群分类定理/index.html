@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>直积与有限生成 Abel 群分类定理</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<link rel="stylesheet" href="/application.ffd65fa64653f9ca14dae5238d963f2631434b0c5f22ccfd2d94f787f4774421.css" integrity="sha256-/9ZfpkZT&#43;coU2uUjjZY/JjFDSwxfIsz9LZT3h/R3RCE=" />
+<link rel="stylesheet" href="/application.bbe4afd3bf98f8da05f863762df1d5c60629f0c1a9e352fe690a2019c53cf295.css" integrity="sha256-u&#43;Sv07&#43;Y&#43;NoF&#43;GN2LfHVxgYp8MGp41L&#43;aQogGcU88pU=" />
 
 
 
@@ -36,7 +36,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:description" content=""/>
 <meta property="og:image" content="/images/author/diamond153.jpg">
-<meta property="og:url" content="https://hugo-toha.github.io/">
+<meta property="og:url" content="http://localhost:1313/">
 
     
 <meta name="description" content="第六次讲义" />
@@ -381,7 +381,7 @@ document.documentElement.setAttribute('data-theme', theme)
   
   
     
-    <li><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%9B%B4%E7%A7%AF%E4%B8%8E%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90-abel-%E7%BE%A4%E5%88%86%E7%B1%BB%E5%AE%9A%E7%90%86/" title="直积与有限生成 Abel 群分类定理">直积与有限生成 Abel 群分类定理</a></li>
+    <li><a class="active list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%9B%B4%E7%A7%AF%E4%B8%8E%E6%9C%89%E9%99%90-abel-%E7%BE%A4%E5%88%86%E7%B1%BB%E5%AE%9A%E7%90%86/" title="直积与有限生成 Abel 群分类定理">直积与有限生成 Abel 群分类定理</a></li>
   
 
 
@@ -515,31 +515,7 @@ $$|G|=|G/H||H|=|K||H|=|K\cap H||KH|\le |G|$$
 <p><strong>Example [分类 144 阶 Abel 群]</strong>. $144$ 阶 Abel 群 $G$ 首先可以写成 $G_2$ 和 $G_3$ 的直积，然后我们来分别考虑它们的分解. 首先 $|G_2|=16$，所以 $G_2$ 共有 $5$ 种可能性：$\mathsf C_2^4,\mathsf C_4^2,\mathsf C_2\times\mathsf C_8,\mathsf C_2^2\times\mathsf C_4,\mathsf C_{16}$；然后 $|G_3|=9$，所以其共有 $2$ 种可能性：$\mathsf C_3^2,\mathsf C_9$. 总体有 $5\times 2=10$ 种同构类.</p>
 <p><strong>Definition [有限生成和最小生成元集]</strong>. 如果一个群 $G$ 可以被有限集 $X\subseteq G$ 生成，即 $G=\langle X\rangle$，则称 $G$ 是有限生成的. 如果 $G$ 有限生成，$X\subseteq G$ 生成 $G$ 且对任意可以生成 $G$ 的集合 $Y\subseteq G$ 都有 $|X|\le |Y|$，则称 $X$ 是 $G$ 的一个最小生成元集. 注意这样的集合不一定唯一.</p>
 <p>有限生成 Abel 群其实也有和有限 Abel 群类似的分解. 我们先来看一个引理：</p>
-<p><strong>Lemma [整数矩阵的扩充]</strong>. 如果 $A$ 和 $B$ 分别是 $r\times n$ 和 $n\times r$ 矩阵，其中 $r;e n$ 且 $AB=I_r$，则存在 $n\times n$ 整数矩阵 $A'$ 和 $B'$，使得 $A'$ 前 $r$ 行是 $A$，$B'$ 前 $r$ 列是 $B$ 且 $A'B'=I_n$.</p>
-<blockquote>
-<p><em>Proof</em>. 如果 $r=n$ 命题显然成立，我们对 $r$ 反向归纳. 假设命题对 $r+1$ 成立，令 $A$ 的行向量是 $a_1,\cdots,a_r$，$B$ 的列向量是 $b_1,\cdots,b_r$，则 $a_ib_j=\delta_{ij}$ 对任意 $i,j$ 成立. 我们取 $Ax=0$ 的一个非零有理数解 $x$（这样的解一定存在），并将其乘以一个有理数变成整数向量，且所有分量的最大公约数为 $1$. 把我们得到的向量设为 $b_{r+1}$，则由 Bézout 定理知存在整数行向量 $y$ 使得 $yb_{r+1}=1$，取 $a_{r+1}=y-\sum_{i=1}^r(yb_i)a_i$ 就有：
-$$a_ib_{r+1}=0,a_{r+1}b_i=0,a_{r+1}b_{r+1}=1\quad\forall i\le r$$
-于是我们将问题转化为了 $r+1$ 的情况. $\Box$</p></blockquote>
-<p><strong>Theorem [有限生成无挠 Abel 群是自由的]</strong>. 如果 $G$ 是有限生成 Abel 群，且 $G$ 无挠，则 $G\simeq\mathbb Z^r$，其中 $r$ 是其最小生成元集的大小.</p>
-<blockquote>
-<p><em>Proof</em>. 令 $G$ 的一个最小生成元集为 $X$，令 $r=|X|$ 和 $X=\{v_1,\cdots,v_r\}$，考虑 $\mathbb Z^r\to G$ 的映射：$\varphi(p_1,\cdots,p_r)=\prod_{i=1}^rv_i^{p_i}$，这显然是满同态，下面证明其为单射. 如果存在不全为 $0$ 的 $p$ 使得 $\prod_{i=1}^rv_i^{p_i}=e$，令 $g=\gcd(c_1,\cdots,c_r)$ 和 $a_i=c_i/g$，则 $(\prod_{i=1}^rv_i^{p_i})^g=e$，由 $G$ 无挠知 $\prod_{i=1}^rv_i^{p_i}=e$. 由引理，令 $P=(p_{ij})$ 和 $Q=(q_{ij})$ 是两 $r\times r$ 整数矩阵，且 $P_{1i}=p_i$，$PQ=I_r$，则 $QP=I_r$.</p>
-<p>我们取大小为 $n-1$ 的元素组 $Y=\{w_i=\prod_{j=1}^rv_j^{p_{ij}}\}_{i\ge 2}$，补充定义 $w_1=e$，则对任意 $i$ 都有：
-$$\prod_{j=1}^rw_j^{q_{ij}}=\prod_{j=1}^r\prod_{k=1}^rv_k^{q_{ij}p_{jk}}=\prod_{k=1}^rv_k^{\sum_{j=1}^rq_{ij}p_{jk}}=v_i$$
-所以 $X\subseteq\langle Y\rangle$，也就是 $G=\langle X\rangle\le\langle Y\rangle\le G$，与 $X$ 的最小性矛盾！$\Box$</p></blockquote>
-<p>我们以后称满足上面条件的群 $G$ 为<strong>有限生成自由 Abel 群</strong>，定义它的最小生成元集的大小是它的秩，记为 $\mathrm{rank}\ G$. 我们有一个显然的命题：</p>
-<p><strong>Proposition</strong>. 两个有限生成自由 Abel 群 $G,H$ 同构当且仅当 $\mathrm{rank}\ G=\mathrm{rank}\ H$.</p>
-<p>现在我们就可以准备导出有限生成 Abel 群的结构定理了.</p>
-<p><strong>Lemma</strong>. 如果 $G$ 是有限生成 Abel 群，则 $G/\mathsf{Tor}(G)$ 是有限生成自由 Abel 群.</p>
-<blockquote>
-<p><em>Proof</em>. $G/\mathsf{Tor}(G)$ 显然是有限生成的，只需要证明其无挠即可. 如果 $a\mathsf{Tor}(G)$ 是挠元，则存在 $k$ 使得 $a^k\in\mathsf{Tor}(G)$ 是挠元，所以 $a$ 本身属于 $\mathsf{Tor}(G)$，也就是 $a\mathsf{Tor}(G)=\mathsf{Tor}(G)$，所以 $\mathsf{Tor}(G/\mathsf{Tor}(G))=1$. $\Box$</p></blockquote>
-<p><strong>Theorem [有限生成 Abel 群分类定理]</strong>. 每个有限生成 Abel 群都同构于如下形式：$\mathbb Z^r\times\mathsf C_{q_1}\times\cdots\times\mathsf C_{q_m}$，其中 $q_1,\cdots,q_m$ 是素数幂，且这种分解是唯一的.</p>
-<blockquote>
-<p><em>Proof</em>. 令 $G/\mathsf{Tor}(G)$ 的一个最小生成元集为 $\{a_1\mathsf{Tor}(G),\cdots,a_r\mathsf{Tor}(G)\}$，则 $F=\langle a_1,\cdots,a_r\rangle$ 同构于 $G/\mathsf{Tor}(G)\simeq\mathbb Z^r$，且 $F\cap\mathsf{Tor}(G)=0$，$F\mathsf{Tor}(G)=G$，所以 $G\simeq F\times\mathsf{Tor}(G)$. 对 $\mathsf{Tor}(G)$ 使用有限 Abel 群分类定理，得到分解后半部分的存在唯一性，又由 $r=\mathrm{rank}(G/\mathsf{Tor}(G))$ 得到 $r$ 的唯一性. $\Box$</p></blockquote>
-<h3 id="留给读者的习题">留给读者的习题</h3>
-<p><strong>Problem 1</strong>. 证明：$\mathsf C_n\times\mathsf C_m\simeq\mathsf C_{nm}$ 当且仅当 $\gcd(n,m)=1$.</p>
-<p><strong>Problem 2</strong>. 对于有限 Abel 群 $G$，证明：存在唯一的正整数列 $1&lt;d_1\mid d_2\mid\cdots\mid d_m$ 使得 $G\simeq\mathsf C_{d_1}\times\cdots\times\mathsf C_{d_m}$.</p>
-<p><strong>Problem 3</strong>. 分类 $792$ 和 $1500$ 阶 Abel 群.</p>
-<p><strong>Problem 4</strong>. 证明有限生成自由 Abel 群 $G$ 的子群 $H$ 还是有限生成自由 Abel 群，且 $\mathrm{rank}\ H\le\mathrm{rank}\ G$.</p>
+<hr>
 
         </div>
 
@@ -669,7 +645,6 @@ $$\prod_{j=1}^rw_j^{q_{ij}}=\prod_{j=1}^r\prod_{k=1}^rv_k^{q_{ij}p_{jk}}=\prod_{
         <li><a href="#挠-abel-群的直积分解">挠 Abel 群的直积分解</a></li>
         <li><a href="#有限-abel-p-群的直积分解">有限 Abel $p$ 群的直积分解</a></li>
         <li><a href="#有限生成-abel-群的直积分解">有限生成 Abel 群的直积分解</a></li>
-        <li><a href="#留给读者的习题">留给读者的习题</a></li>
       </ul>
     </li>
   </ul>
@@ -769,7 +744,7 @@ $$\prod_{j=1}^rw_j^{q_{ij}}=\prod_{j=1}^r\prod_{k=1}^rv_k^{q_{ij}p_{jk}}=\prod_{
   </footer>
 
 
-    <script src="/application.7d1dfe92d8f2bbfcf113b1a58b1076e351518b968299a7e1d57cc58347da2422.js" integrity="sha256-fR3&#43;ktjyu/zxE7GlixB241FRi5aCmafh1XzFg0faJCI=" defer></script>
+    <script src="/application.e31c3c1ca32e35b6d946333f1ebe2744573d7f04ce33bb5e6aee3eebddb0b00e.js" integrity="sha256-4xw8HKMuNbbZRjM/Hr4nRFc9fwTOM7teau4&#43;692wsA4=" defer></script>
 
 
     

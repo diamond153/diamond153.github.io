@@ -12,18 +12,21 @@
       <pubDate>Tue, 08 Jul 2025 18:30:00 +0800</pubDate>
       
       <guid>https://hugo-toha.github.io/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%9B%B4%E7%A7%AF%E4%B8%8E%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90-abel-%E7%BE%A4%E5%88%86%E7%B1%BB%E5%AE%9A%E7%90%86/</guid>
-      <description>&lt;h3 id=&#34;群的直积&#34;&gt;群的直积&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;两个群的直积&#34;&gt;两个群的直积&lt;/h3&gt;
 &lt;p&gt;我们以前提到过群的直积：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Definition [群的直积]&lt;/strong&gt;. 如果 $H$ 和 $K$ 是两个群，在 Descartes 积 $H\times K$ 上定义运算 $(h_1,k_1)(h_2,k_2)=(h_1h_2,k_1k_2)$，则其构成一个群，称为 $H$ 和 $K$ 的直积群.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition [群的直积]&lt;/strong&gt;. 如果 $H$ 和 $K$ 是两个群，在 Descartes 积 $H\times K$ 上定义运算 $(h_1,k_1)(h_2,k_2)=(h_1h_2,k_1k_2)$，则其构成一个群，称为 $H$ 和 $K$ 的直积群，这个群的单位元是 $(e,e&#39;)$，元素 $(h,k)$ 的逆元是 $(h^{-1},k^{-1})$.&lt;/p&gt;
 &lt;p&gt;群的直积有如下显而易见的性质：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Proposition [直积的显然性质]&lt;/strong&gt;.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;$H^*=\{(h,1)\mid h\in H\}$ 和 $K^*=\{(1,k)\mid k\in K\}$ 都是 $H\times K$ 的正规子群，而且 $H\simeq H^*,K\simeq K^*$&lt;/li&gt;
-&lt;li&gt;$\mathsf Z(H)\times\mathsf Z(K)=\mathsf Z(H\times K)$.&lt;/li&gt;
-&lt;li&gt;$H\times K\simeq K\times H$.&lt;/li&gt;
+&lt;li&gt;$H^*=\{(h,e&#39;)\mid h\in H\}$ 和 $K^*=\{(e,k)\mid k\in K\}$ 都是 $H\times K$ 的正规子群，而且 $H\simeq H^*,K\simeq K^*$&lt;/li&gt;
+&lt;li&gt;$\mathsf Z(H)\times\mathsf Z(K)=\mathsf Z(H\times K)$，$H&#39;\times K&#39;=(H\times K)&#39;$，$H\times K\simeq K\times H$.&lt;/li&gt;
+&lt;li&gt;$H\times K$ 上有两个投影同态 $\pi_1:H\times K\to H,(h,k)\mapsto h$ 和 $\pi_2:H\times K\to K,(h,k)\mapsto k$，以及两个嵌入同态：$\tau_1:H\to H\times K,h\mapsto(h,e&#39;)$ 和 $\tau_2:K\to H\times K,k\mapsto(e,k)$.&lt;/li&gt;
+&lt;li&gt;$H^*$ 和 $K^*$ 可交换，即对任意 $a\in H^*$ 和 $b\in K^*$ 都有 $ab=ba$，且 $H^*\cap K^*=1$.&lt;/li&gt;
+&lt;li&gt;$H\times K=H^*K^*$，在 $H$ 和 $K$ 都有限时 $|H\times K|=|H||K|$.&lt;/li&gt;
+&lt;li&gt;如果 $H_1$ 是 $H$ 的子群，$K_1$ 是 $K$ 的子群，则 $H_1\times K_1$ 是 $H\times K$ 的子群.&lt;/li&gt;
 &lt;li&gt;……&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;咕咕咕~&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;Remark&lt;/strong&gt;. 但是 $H\times K$ 的子群不一定形如 $H_1\times K_1$！&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -40,7 +43,7 @@
 $$
 |G|=\sum_{i=1}^h[G:\mathsf C_G(g_i)]
 $$
-而且求和中的每一项元素都是 $G$ 的因子.&lt;/p&gt;
+而且求和中的每一项元素都是 $|G|$ 的因子.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Lemma [Landau 引理]&lt;/strong&gt;. 对于有理数 $0&amp;lt;q\in\mathbb Q$ 和正整数 $n$，只有有限组正整数 $(i_1,\cdots,i_n)$ 使得 $q=1/i_1+\cdots+1/i_n$.&lt;/p&gt;</description>
     </item>
     
@@ -85,7 +88,7 @@ $$
 &lt;p&gt;特别地，如果 $f$ 是一个双射，那么称 $f$ 是 $G$ 到 $H$ 的同构，如果存在这样的 $f$ 就称 $G$ 和 $H$ 是同构的，记作 $G\simeq H$. 同构的群性质几乎是一样的，它们甚至可以看作是同一个群.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Proposition [同态的简单性质]&lt;/strong&gt;. 如果 $f:G\to H$ 是同态，则：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;$f(e)=e&amp;rsquo;$，其中 $e&amp;rsquo;$ 是 $H$ 的单位元.&lt;/li&gt;
+&lt;li&gt;$f(e)=e&#39;$，其中 $e&#39;$ 是 $H$ 的单位元.&lt;/li&gt;
 &lt;li&gt;对于任意 $a\in G$ 有 $f(a^{-1})=f(a)^{-1}$.&lt;/li&gt;
 &lt;li&gt;对于任意 $a\in G$ 和 $n\in\mathbb Z$ 有 $f(a^n)=f(a)^n$.&lt;/li&gt;
 &lt;/ul&gt;

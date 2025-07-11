@@ -440,7 +440,7 @@ document.documentElement.setAttribute('data-theme', theme)
 $$
 |G|=\sum_{i=1}^h[G:\mathsf C_G(g_i)]
 $$
-而且求和中的每一项元素都是 $G$ 的因子.</p>
+而且求和中的每一项元素都是 $|G|$ 的因子.</p>
 <p><strong>Lemma [Landau 引理]</strong>. 对于有理数 $0&lt;q\in\mathbb Q$ 和正整数 $n$，只有有限组正整数 $(i_1,\cdots,i_n)$ 使得 $q=1/i_1+\cdots+1/i_n$.</p>
 <blockquote>
 <p><em>Proof</em>. 不妨设 $i_k$ 是其中一个最小的数，则容易得到 $i_k\le n/q$. 对于 $k$ 和 $i_k$ 的所有可能性，归纳得到剩下的 $n-1$ 个数只有有限种取法，证毕. $\Box$</p></blockquote>
@@ -519,7 +519,7 @@ $$
 (g^{-1}Hg)H/H\simeq(g^{-1}Hg)/(g^{-1}Hg\cap H)
 $$
 左边是 $N/H$ 的子群，已经证明过了 $p\nmid[N:H]$，所以左式的阶数不是 $p$ 的倍数；右边是 $g^{-1}Hg$ 的商群，由于 $|g^{-1}Hg|=p^b$，所以右式是 $p$ 的幂次.</p>
-<p>用过左右相等我们可以得到 $1=[g^{-1}Hg:g^{-1}Hg\cap H]$，换句话说 $H\subseteq g^{-1}Hg$，也就是 $gHg^{-1}\subseteq H$，对比阶数得到 $gHg^{-1}=H$. 那也就证明了长度为 $1$ 的轨道只有 $\{H\}$，还得到了 $|X|\equiv 1\pmod p$. 至此 Sylow 第一定理得证.</p>
+<p>用过左右相等我们可以得到 $1=[g^{-1}Hg:g^{-1}Hg\cap H]$，换句话说 $g^{-1}Hg\subseteq H$，也就是 $H\subseteq gHg^{-1}$，对比阶数得到 $gHg^{-1}=H$. 那也就证明了长度为 $1$ 的轨道只有 $\{H\}$，还得到了 $|X|\equiv 1\pmod p$. 至此 Sylow 第一定理得证.</p>
 <p>有了 Sylow 第一定理，证明后面两个定理也是顺手的事. 沿用之前的记号，如果我们有另一个 Sylow-$p$ 子群 $K$，则 $K$ 可以通过共轭作用在 $H$ 的所有共轭 $X$ 上. 与之前类似推导得到每一个轨道长度都是 $1$ 或者 $p$ 的倍数，又因为我们已经得到过 $|X|\equiv 1\pmod p$，所以必定有长度为 $1$ 的轨道.</p>
 <p>不妨设某个长度为 $1$ 的轨道为 $\{gHg^{-1}\}$，则与上面同样操作得到 $g^{-1}Kg\leq N$，也是同样使用第二同构定理得到
 $$
@@ -533,7 +533,7 @@ $$
 <p><em>Proof</em>. 所有的 Sylow-$p$ 子群都是某个 Sylow-$p$ 子群的共轭，所以如果 Sylow-$p$ 子群唯一则其所有共轭都是自己，也就是正规；如果其正规则它的共轭只有它自己，也就是它正规. $\Box$</p></blockquote>
 <p>综合运用 Sylow 定理和其它知识可以判断某个群的单性：</p>
 <p><strong>Definition [单群的定义]</strong>. 如果一个群 $G$ 除了 $1$ 和 $G$ 以外没有其它正规子群，则称 $G$ 是单群.</p>
-<p>对于任意素数 $p$，循环群 $\mathbb Z/n\mathbb Z$ 都是单群. 但是对于非交换单群的讨论可能会很复杂，下面是一个例子.</p>
+<p>对于任意素数 $p$，循环群 $\mathbb Z/p\mathbb Z$ 都是单群. 但是对于非交换单群的讨论可能会很复杂，下面是一个例子.</p>
 <p><strong>Example [$48$ 阶群非单]</strong>. $48$ 阶群一定不是单群.</p>
 <blockquote>
 <p><em>Proof</em>. 如果 $G$ 是一个 $48$ 阶单群，令 $H$ 是它的一个 Sylow-$2$ 子群，则 $H$ 是 $16$ 阶的，指数为 $3$. 如果 $H$ 正规则与 $G$ 的单性矛盾，否则可以得到一个指数整除 $3!=6$ 的真正规子群，矛盾！ $\Box$</p></blockquote>

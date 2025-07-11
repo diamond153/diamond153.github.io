@@ -443,15 +443,15 @@ document.documentElement.setAttribute('data-theme', theme)
 <p>特别地，如果 $f$ 是一个双射，那么称 $f$ 是 $G$ 到 $H$ 的同构，如果存在这样的 $f$ 就称 $G$ 和 $H$ 是同构的，记作 $G\simeq H$. 同构的群性质几乎是一样的，它们甚至可以看作是同一个群.</p>
 <p><strong>Proposition [同态的简单性质]</strong>. 如果 $f:G\to H$ 是同态，则：</p>
 <ul>
-<li>$f(e)=e&rsquo;$，其中 $e&rsquo;$ 是 $H$ 的单位元.</li>
+<li>$f(e)=e'$，其中 $e'$ 是 $H$ 的单位元.</li>
 <li>对于任意 $a\in G$ 有 $f(a^{-1})=f(a)^{-1}$.</li>
 <li>对于任意 $a\in G$ 和 $n\in\mathbb Z$ 有 $f(a^n)=f(a)^n$.</li>
 </ul>
 <blockquote>
 <p><em>Proof</em>.</p>
 <ul>
-<li>我们有 $e&rsquo;f(e)=f(e)=f(e^2)=f(e)f(e)$，所以由消去律知 $f(e)=e&rsquo;$.</li>
-<li>由于 $f(a^{-1})f(a)=f(a^{-1}a)=f(e)=e&rsquo;=f(a)^{-1}f(a)$，由消去律知 $f(a^{-1})=f(a)^{-1}$.</li>
+<li>我们有 $e'f(e)=f(e)=f(e^2)=f(e)f(e)$，所以由消去律知 $f(e)=e'$.</li>
+<li>由于 $f(a^{-1})f(a)=f(a^{-1}a)=f(e)=e'=f(a)^{-1}f(a)$，由消去律知 $f(a^{-1})=f(a)^{-1}$.</li>
 <li>归纳即可. $\Box$</li>
 </ul></blockquote>
 <h3 id="生成子群">生成子群</h3>
@@ -476,14 +476,14 @@ $$wu^{-1}=x_1^{\epsilon_1}\cdots x_n^{\epsilon_n}y_m^{-\zeta_m}\cdots y_1^{-\zet
 <p><strong>Proposition</strong>. 上面的命题成立当且仅当 $H$ 满足如下条件：对任意 $h\in H$ 和 $a\in G$，都有 $a^{-1}ha\in H$.</p>
 <blockquote>
 <p><em>Proof</em>.
-左推右：考虑 $e,h\in H$ 和 $a\in aH$，则由假设可以得到 $a$ 和 $ha$ 属于同一个左陪集，而这个左陪集只能是 $aH$. 由 $ha\in aH$，不妨设令 $ha=ah&rsquo;$，其中 $h&rsquo;\in H$，则 $a^{-1}ha=h&rsquo;\in H$.</p>
-<p>右推左：令 $a_1=ah_1,a_2=ah_2$ 和 $b_1=bh_1&rsquo;,b_2=bh_2&rsquo;$，则 $a_1b_1=ah_1bh_1&rsquo;=ab(b^{-1}h_1b)h_1&rsquo;$，同理 $a_2b_2=ab(b^{-1}h_2b)h_2&rsquo;$. 由假设，$b^{-1}h_1b\in H$，因 $H$ 的封闭性有 $(b^{-1}h_1b)h_1&rsquo;\in H$. 所以 $a_1b_1\in(ab)H$，同理 $a_2b_2\in(ab)H$. 证毕. $\Box$</p></blockquote>
+左推右：考虑 $e,h\in H$ 和 $a\in aH$，则由假设可以得到 $a$ 和 $ha$ 属于同一个左陪集，而这个左陪集只能是 $aH$. 由 $ha\in aH$，不妨设令 $ha=ah'$，其中 $h'\in H$，则 $a^{-1}ha=h'\in H$.</p>
+<p>右推左：令 $a_1=ah_1,a_2=ah_2$ 和 $b_1=bh_1',b_2=bh_2'$，则 $a_1b_1=ah_1bh_1'=ab(b^{-1}h_1b)h_1'$，同理 $a_2b_2=ab(b^{-1}h_2b)h_2'$. 由假设，$b^{-1}h_1b\in H$，因 $H$ 的封闭性有 $(b^{-1}h_1b)h_1'\in H$. 所以 $a_1b_1\in(ab)H$，同理 $a_2b_2\in(ab)H$. 证毕. $\Box$</p></blockquote>
 <p>我们称满足上面命题中条件的子群为正规子群，记作 $H\trianglelefteq G$.</p>
 <p>对于 $G$ 的正规子群 $H$，由上面的讨论，我们可以在 $G$ 的左陪集上定义一个良好的乘法：$(aH)(bH)=(ab)H$. 这个时候 $G$ 所有的左陪集在这个乘法下构成一个群，定义其为商群 $G/H$.</p>
 <p><strong>Examples [例子]</strong>.</p>
 <ul>
 <li>我们以前提到过 $\mathbb Z/n\mathbb Z$，这就是它的来源！</li>
-<li>$\mathsf{SL}_n(\mathbb R)$ 是 $\mathsf{GL}_n(\mathbb R)$ 的正规子群，商群同构于 $\mathbb R$.</li>
+<li>$\mathsf{SL}_n(\mathbb R)$ 是 $\mathsf{GL}_n(\mathbb R)$ 的正规子群，商群同构于 $\mathbb R^\times$.</li>
 <li>$\mathsf A_n$ 是 $\mathsf S_n$ 的正规子群，商群同构于 ${\pm 1}$ 在乘法下构成的群.</li>
 <li>考虑 $\mathsf S_3$，则 ${\mathsf{id},f}$ 是 $\mathsf S_3$ 的子群但不是正规的. 其中 $f$ 将 $1$ 和 $2$ 对换.</li>
 <li>对于 $G$ 的正规子群 $H$，定义映射 $v:G\to G/H$，$v(g)=gH$，则 $v$ 是一个同态，称为商映射.</li>
@@ -502,14 +502,14 @@ $$wu^{-1}=x_1^{\epsilon_1}\cdots x_n^{\epsilon_n}y_m^{-\zeta_m}\cdots y_1^{-\zet
 <h3 id="同态基本定理">同态基本定理</h3>
 <p><strong>Theorem [同态基本定理/第一同构定理]</strong>. 如果 $f:G\to H$ 是同态，定义以下两个集合（分别称为 $f$ 的核和 $f$ 的像）：
 $$
-\begin{align*}\ker f&amp;=\{a\in G\mid f(a)=e&rsquo;\}\\ \mathrm{im}\ f&amp;=\{f(a)\mid a\in G\}\end{align*}
+\begin{align*}\ker f&amp;=\{a\in G\mid f(a)=e'\}\\ \mathrm{im}\ f&amp;=\{f(a)\mid a\in G\}\end{align*}
 $$
 那么我们有 $\ker f\trianglelefteq G$，$\mathrm{im}\ f\le H$ 且 $G/\ker f\simeq\mathrm{im}\ f$.</p>
 <blockquote>
 <p><em>Proof</em>. 我们依次证明上面的三个事实.</p>
-<p>首先需要证明 $\ker f$ 是一个群. 对任意 $k,l\in\ker f$，我们有 $f(kl^{-1})=f(k)f(l)^{-1}=e$，所以 $kl^{-1}\in\ker f$，接着使用子群判别定理即可. 然后我们证明 $\ker f$ 是正规子群. 对于任意 $k\in\ker f$ 和 $g\in G$，我们有 $f(gkg^{-1})=f(g)f(k)f(g^{-1})=f(g)f(g^{-1})=e&rsquo;$. 所以 $gkg^{-1}\in H$，也就是 $\ker f\trianglelefteq G$.</p>
+<p>首先需要证明 $\ker f$ 是一个群. 对任意 $k,l\in\ker f$，我们有 $f(kl^{-1})=f(k)f(l)^{-1}=e$，所以 $kl^{-1}\in\ker f$，接着使用子群判别定理即可. 然后我们证明 $\ker f$ 是正规子群. 对于任意 $k\in\ker f$ 和 $g\in G$，我们有 $f(gkg^{-1})=f(g)f(k)f(g^{-1})=f(g)f(g^{-1})=e'$. 所以 $gkg^{-1}\in H$，也就是 $\ker f\trianglelefteq G$.</p>
 <p>对于任意 $x,y\in\mathrm{im}\ f$，令 $x=f(a)$ 和 $y=f(b)$，那么 $xy^{-1}=f(a)f(b)^{-1}=f(ab^{-1})\in\mathrm{im}\ f$，由子群判别定理知 $\mathrm{im}\ f\leq H$.</p>
-<p>最后，定义 $\tilde f:G/\ker f\to\mathrm{im}\ f$ 为 $a\ker f\mapsto f(a)$. 首先这个映射的是良好定义的，即如果 $a\ker f=b\ker f$ 那么 $f(a)=f(b)$，这是显然的，因为 $a^{-1}b\in\ker f$. 然后它是一个同态，因为 $\tilde f(a\ker f)\tilde f(b\ker f)=f(a)f(b)=f(ab)=\tilde f((ab)\ker f)$. 最后它是一个双射. 因为如果 $\tilde f(a\ker f)=e&rsquo;$，则 $f(a)=e&rsquo;$，即 $a\in\ker f$，也就是 $a\ker f=\ker f$. 综上，$G/\ker f\simeq\mathrm{im}\ f$. $\Box$</p></blockquote>
+<p>最后，定义 $\tilde f:G/\ker f\to\mathrm{im}\ f$ 为 $a\ker f\mapsto f(a)$. 首先这个映射的是良好定义的，即如果 $a\ker f=b\ker f$ 那么 $f(a)=f(b)$，这是显然的，因为 $a^{-1}b\in\ker f$. 然后它是一个同态，因为 $\tilde f(a\ker f)\tilde f(b\ker f)=f(a)f(b)=f(ab)=\tilde f((ab)\ker f)$. 最后它是一个双射. 因为如果 $\tilde f(a\ker f)=e'$，则 $f(a)=e'$，即 $a\in\ker f$，也就是 $a\ker f=\ker f$. 综上，$G/\ker f\simeq\mathrm{im}\ f$. $\Box$</p></blockquote>
 <p>所以我们还可以得到：一个同态是单的当且仅当其核等于 $\{e\}$. 为了方便，我们以后把平凡子群 $\{e\}$ 记作 $1$.</p>
 <h3 id="第二同构定理">第二同构定理</h3>
 <p><strong>Theorem [容斥原理]</strong>. 如果 $S$ 和 $T$ 是有限群 $G$ 的子群，定义 $ST={st\mid s\in S,t\in T}$，则 $|ST||S\cap T|=|S||T|$. 注意 $ST$ 不一定是一个群.</p>
@@ -541,14 +541,14 @@ $$
 <p><em>Proof</em>. 验证即可，留给读者. $\Box$</p></blockquote>
 <h3 id="留给读者的习题">留给读者的习题</h3>
 <p><strong>Problem 1</strong>. 如果 $H$ 是 $G$ 的子群而且 $[G:H]=2$，证明 $H$ 是 $G$ 的正规子群.</p>
-<p><strong>Definition [导群的定义]</strong>. 如果 $G$ 是一个群，对于 $a,b\in G$ 定义换位子 $[a,b]=aba^{-1}b^{-1}$. 令 $X=\{[a,b]\mid a,b\in G\}$ 为所有的换位子，定义 $G$ 的导群或是换位子群 $G&rsquo;=[G,G]=\langle X\rangle$.</p>
+<p><strong>Definition [导群的定义]</strong>. 如果 $G$ 是一个群，对于 $a,b\in G$ 定义换位子 $[a,b]=aba^{-1}b^{-1}$. 令 $X=\{[a,b]\mid a,b\in G\}$ 为所有的换位子，定义 $G$ 的导群或是换位子群 $G'=[G,G]=\langle X\rangle$.</p>
 <p><strong>Problem 2</strong>.</p>
 <ol>
 <li>证明：$[a,b]^{-1}=[b,a]$ 且 $g[a,b]g^{-1}=[gag^{-1},gbg^{-1}]$.</li>
-<li>证明：$G&rsquo;$ 是 $G$ 的正规子群，且 $G/G&rsquo;$ 是交换群.</li>
-<li>证明：如果 $H$ 是 $G$ 的子群，则 $G/H$ 是交换群当且仅当 $G&rsquo;\subseteq H$.</li>
+<li>证明：$G'$ 是 $G$ 的正规子群，且 $G/G'$ 是交换群.</li>
+<li>证明：如果 $H$ 是 $G$ 的正规子群，则 $G/H$ 是交换群当且仅当 $G'\subseteq H$.</li>
 </ol>
-<p><strong>Problem 3</strong>. 定义“长换位子”：$[a_1,a_2,\cdots,a_n]=a_1\cdots a_na_1^{-1}\cdots a_n^{-1}$. 证明：所有“长换位子”构成的集合等于 $G&rsquo;$.</p>
+<p><strong>Problem 3</strong>. 定义“长换位子”：$[a_1,a_2,\cdots,a_n]=a_1\cdots a_na_1^{-1}\cdots a_n^{-1}$. 证明：所有“长换位子”构成的集合等于 $G'$.</p>
 <p><strong>Definition [嵌入的定义]</strong>. 如果 $G,H$ 是群，且 $G$ 有子群同构于 $H$，则说 $H$ 可以被嵌入 $G$. 所以 $H$ 可以被嵌入 $G$ 当且仅当存在 $H\to G$ 的单同态.</p>
 <p><strong>Problem 4</strong>.</p>
 <ol>
