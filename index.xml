@@ -6,7 +6,35 @@
     <description>Recent content on Diamond_153 的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 09 Jul 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://hugo-toha.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Sat, 12 Jul 2025 17:00:00 +0800</lastBuildDate><atom:link href="https://hugo-toha.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Engel 定理和 Lie 定理</title>
+      <link>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/engel-%E5%AE%9A%E7%90%86%E5%92%8C-lie-%E5%AE%9A%E7%90%86/</link>
+      <pubDate>Sat, 12 Jul 2025 17:00:00 +0800</pubDate>
+      
+      <guid>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/engel-%E5%AE%9A%E7%90%86%E5%92%8C-lie-%E5%AE%9A%E7%90%86/</guid>
+      <description>&lt;p&gt;咕咕咕~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>n 阶群只有循环群的充要条件</title>
+      <link>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/n-%E9%98%B6%E7%BE%A4%E5%8F%AA%E6%9C%89%E5%BE%AA%E7%8E%AF%E7%BE%A4%E7%9A%84%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6/</link>
+      <pubDate>Sat, 12 Jul 2025 16:00:00 +0800</pubDate>
+      
+      <guid>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/n-%E9%98%B6%E7%BE%A4%E5%8F%AA%E6%9C%89%E5%BE%AA%E7%8E%AF%E7%BE%A4%E7%9A%84%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;断言&lt;/strong&gt;：$n$ 阶群必循环当且仅当 $\gcd(n,\varphi(n))=1$，其中 $\varphi$ 是 Euler 函数.&lt;/p&gt;
+&lt;p&gt;左推右是简单的，如果 $\gcd(n,\varphi(n))\neq 1$，不妨令 $p$ 是 $\gcd(n,\varphi(n))$ 的一个素因子, 则存在 $n$ 的素因子 $q$ 使得 $p\mid q-1$，构造半直积：
+$$
+(\mathsf C_q\rtimes_\theta\mathsf C_p)\times\mathsf C_{n/pq}
+$$
+其中 $\theta:\mathsf C_p\to\mathsf{Aut}(\mathsf C_q)\simeq\mathsf C_{q-1}$ 非平凡，那么就可以得到一个 $n$ 阶非交换群. 对于右推左，我们先来做几个准备工作.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition&lt;/strong&gt;. 称 $n$ 是循环数，如果 $\gcd(n,\varphi(n))=1$. 显然循环数没有平方因子，从而 $n$ 阶交换群必循环；且循环数的因子也是循环数，这是因为 $m\mid n$ 可以推出 $\varphi(m)\mid\varphi(n)$，所以此时 $\gcd(m,\varphi(m))\mid\gcd(n,\varphi(n))=1$.&lt;/p&gt;
+&lt;p&gt;我们不妨对 $n$ 来归纳，并假设 $G$ 是一个 $n$ 阶非循环群，从而非交换.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lemma&lt;/strong&gt;. $\mathsf Z(G)$ 是平凡的，且对 $G$ 的任意极大子群 $U$ 和其中元素 $1\ne a\in U$，都会有 $U=\mathsf C_G(a)$.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Proof&lt;/em&gt;. 若 $\mathsf Z(G)$ 非平凡，则 $G/\mathsf Z(G)$ 的阶数是 $&amp;lt;n$ 的循环数，由归纳假设知其为循环群，也就是 $G$ 交换，矛盾. 对于第二个命题，注意到由归纳假设，$U$ 一定是循环群，所以 $U$ 中元素都与 $a\in U$ 可交换，也就是 $U\subseteq\mathsf C_G(a)&amp;lt;G$，由 $U$ 的极大性即得结论. $\Box$&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>灌水区</title>
       <link>https://hugo-toha.github.io/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E7%81%8C%E6%B0%B4%E5%8C%BA/</link>
       <pubDate>Wed, 09 Jul 2025 10:00:00 +0800</pubDate>
