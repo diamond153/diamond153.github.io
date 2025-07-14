@@ -12,7 +12,17 @@
       <pubDate>Sat, 12 Jul 2025 17:00:00 +0800</pubDate>
       
       <guid>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/engel-%E5%AE%9A%E7%90%86%E5%92%8C-lie-%E5%AE%9A%E7%90%86/</guid>
-      <description>&lt;p&gt;咕咕咕~&lt;/p&gt;</description>
+      <description>&lt;p&gt;免责声明：本文的讨论基于特征为 $0$ 的代数闭域.&lt;/p&gt;
+&lt;h3 id=&#34;幂零-lie-代数&#34;&gt;幂零 Lie 代数&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Definition [子代数的对易子]&lt;/strong&gt;. 对于 Lie 代数 $\mathfrak g$ 的子代数 $\mathfrak h,\mathfrak k$，定义 $[\mathfrak h,\mathfrak k]$ 为所有 $[h,k]$，其中 $h\in\mathfrak h,k\in\mathfrak k$ 张成的线性空间.&lt;/p&gt;
+&lt;p&gt;注意到 $[\mathfrak g,\mathfrak g]$ 是 $\mathfrak g$ 的理想.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition [Lie 代数的中心、中心化子和正规化子]&lt;/strong&gt;. 对于 Lie 代数 $\mathfrak g$，定义其中心 $\mathsf C(\mathfrak g)=\{x\in\mathfrak g\mid\forall y\in\mathfrak g,[x,y]=0\}$，则其为 $\mathfrak g$ 的理想. 同时可以定义其中心化子和正规化子：
+$$
+\begin{align*}
+\mathsf C_{\mathfrak g}(\mathfrak h)&amp;amp;=\{x\in\mathfrak g\mid\forall y\in\mathfrak h,[x,y]=0\}\\ \mathsf N_{\mathfrak g}(\mathfrak h)&amp;amp;=\{x\in\mathfrak g\mid\forall y\in\mathfrak h,[x,y]\in\mathfrak h\}
+\end{align*}
+$$
+显然 $\mathfrak h$ 是 $\mathfrak g$ 的理想当且仅当 $\mathsf N_{\mathfrak g}(\mathfrak h)=\mathfrak g$.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,6 +42,15 @@ $$
 &lt;p&gt;&lt;strong&gt;Lemma&lt;/strong&gt;. $\mathsf Z(G)$ 是平凡的，且对 $G$ 的任意极大子群 $U$ 和其中元素 $1\ne a\in U$，都会有 $U=\mathsf C_G(a)$.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;Proof&lt;/em&gt;. 若 $\mathsf Z(G)$ 非平凡，则 $G/\mathsf Z(G)$ 的阶数是 $&amp;lt;n$ 的循环数，由归纳假设知其为循环群，也就是 $G$ 交换，矛盾. 对于第二个命题，注意到由归纳假设，$U$ 一定是循环群，所以 $U$ 中元素都与 $a\in U$ 可交换，也就是 $U\subseteq\mathsf C_G(a)&amp;lt;G$，由 $U$ 的极大性即得结论. $\Box$&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PID 上有限生成模的分类</title>
+      <link>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/</link>
+      <pubDate>Sat, 12 Jul 2025 16:00:00 +0800</pubDate>
+      
+      <guid>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/</guid>
+      <description>&lt;p&gt;咕咕咕~&lt;/p&gt;</description>
     </item>
     
     <item>
