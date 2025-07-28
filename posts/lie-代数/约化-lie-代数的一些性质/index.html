@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head>
-    <title>无穷个 Z 的直积不自由</title>
+    <title>约化 Lie 代数的一些性质</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -39,7 +39,7 @@
 <meta property="og:url" content="https://hugo-toha.github.io/">
 
     
-<meta name="description" content="无穷个 $\mathbb Z$ 的直积不自由" />
+<meta name="description" content="约化 Lie 代数的一些性质" />
 
 
 
@@ -274,15 +274,12 @@ document.documentElement.setAttribute('data-theme', theme)
   
   
   
-    
-    
-  
   
     
     <li>
-      <i data-feather="minus-circle"></i><a class="active list-link" href="/posts/%E6%9D%82%E8%B0%88/"> 杂谈</a>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/"> 杂谈</a>
       
-      <ul class="active">
+      <ul class="">
         
   
   
@@ -306,12 +303,9 @@ document.documentElement.setAttribute('data-theme', theme)
   
   
   
-    
-    
-  
   
     
-    <li><a class="active list-link" href="/posts/%E6%9D%82%E8%B0%88/%E6%97%A0%E7%A9%B7%E4%B8%AA-z-%E7%9A%84%E7%9B%B4%E7%A7%AF%E4%B8%8D%E8%87%AA%E7%94%B1/" title="无穷个 Z 的直积不自由">无穷个 Z 的直积不自由</a></li>
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/%E6%97%A0%E7%A9%B7%E4%B8%AA-z-%E7%9A%84%E7%9B%B4%E7%A7%AF%E4%B8%8D%E8%87%AA%E7%94%B1/" title="无穷个 Z 的直积不自由">无穷个 Z 的直积不自由</a></li>
   
 
 
@@ -323,12 +317,15 @@ document.documentElement.setAttribute('data-theme', theme)
   
   
   
+    
+    
+  
   
     
     <li>
-      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/lie-%E4%BB%A3%E6%95%B0/"> Lie 代数</a>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/posts/lie-%E4%BB%A3%E6%95%B0/"> Lie 代数</a>
       
-      <ul class="">
+      <ul class="active">
         
   
   
@@ -352,9 +349,12 @@ document.documentElement.setAttribute('data-theme', theme)
   
   
   
+    
+    
+  
   
     
-    <li><a class=" list-link" href="/posts/lie-%E4%BB%A3%E6%95%B0/%E7%BA%A6%E5%8C%96-lie-%E4%BB%A3%E6%95%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%A7%E8%B4%A8/" title="约化 Lie 代数的一些性质">约化 Lie 代数的一些性质</a></li>
+    <li><a class="active list-link" href="/posts/lie-%E4%BB%A3%E6%95%B0/%E7%BA%A6%E5%8C%96-lie-%E4%BB%A3%E6%95%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%A7%E8%B4%A8/" title="约化 Lie 代数的一些性质">约化 Lie 代数的一些性质</a></li>
   
 
 
@@ -490,7 +490,7 @@ document.documentElement.setAttribute('data-theme', theme)
   <div class="content">
     <div class="container p-0 read-area">
       
-      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/img10.png);'>
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/img12.png);'>
       </div>
 
       
@@ -499,12 +499,12 @@ document.documentElement.setAttribute('data-theme', theme)
         <div class="author-profile ms-auto align-self-lg-center">
           <img class="rounded-circle" src='/images/author/diamond153_hu_2568bc747f23ddf8.jpg' alt="Author Image">
           <h5 class="author-name">Diamond_153</h5>
-          <p class="text-muted">Wednesday, July 16, 2025</p>
+          <p class="text-muted">Monday, July 28, 2025</p>
         </div>
         
 
         <div class="title">
-          <h1>无穷个 Z 的直积不自由</h1>
+          <h1>约化 Lie 代数的一些性质</h1>
         </div>
 
         
@@ -514,23 +514,34 @@ document.documentElement.setAttribute('data-theme', theme)
   <ul style="padding-left: 0;">
     
     
-    <li class="rounded"><a href="/tags/%E7%BE%A4%E8%AE%BA/" class="btn btn-sm btn-info">群论</a></li>
+    <li class="rounded"><a href="/tags/lie-%E4%BB%A3%E6%95%B0/" class="btn btn-sm btn-info">Lie 代数</a></li>
     
   </ul>
 </div>
 
         
         <div class="post-content" id="post-content">
-          <p><strong>结论</strong>. $\prod_{i=0}^\infty\mathbb Z$ 不是自由 Abel 群.</p>
-<p>我们先证明一个引理：</p>
-<p><strong>Lemma</strong>. 如果 $\varphi:\prod_{i=0}^\infty\mathbb Z\to\mathbb Z$ 是同态且 $\varphi$ 在 $\bigoplus_{i=0}^\infty\mathbb Z$ 上的限制为 $0$，则 $\varphi=0$.</p>
+          <p>免责声明：本文的讨论基于特征为 $0$ 的代数闭域.</p>
+<p><strong>Definition [约化 Lie 代数]</strong>. 如果 Lie 代数 $\mathfrak g$ 满足 $\mathsf{Rad}\ \mathfrak g=\mathsf C(\mathfrak g)$，则称 $\mathfrak g$ 是约化的.</p>
+<p><strong>Proposition</strong>. 如果 $\mathfrak g$ 是约化 Lie 代数，则 $[\mathfrak g,\mathfrak g]$ 半单且 $\mathfrak g=\mathsf C(\mathfrak g)\oplus[\mathfrak g,\mathfrak g]$.</p>
 <blockquote>
-<p><em>Proof</em>. 对素数 $p$，考虑 $A_p$ 为所有形如 $(a_0,pa_1,p^2a_2,\cdots)$ 的元素构成的集合，则由 Bézout 定理对 $p\ne q$ 有 $A_p+A_q=\prod_{i=0}^\infty\mathbb Z\to\mathbb Z$. 所以只需要证明 $\varphi$ 在每一个 $A_p$ 上的限制都为 $0$ 即可.</p>
-<p>注意到 $A_p$ 中的元素可以做如下分解：
-$$\begin{align*}a&amp;=(a_0,pa_1,p^2a_2,\cdots)\\&amp;=(a_0,\cdots,p^{k-1}a_{k-1},0,\cdots)+(0,\cdots,0,p^ka_k,p^{k+1}a_{k+1},\cdots)\end{align*}$$
-前半部分属于 $\bigoplus_{i=0}^\infty\mathbb Z\to\mathbb Z$，所以整个式子代入 $\varphi$ 只留下了后半部分. 注意到其为 $p^k$ 的倍数，由 $k$ 的任意性知 $\varphi(a)=0$，从而原命题得证.</p></blockquote>
-<p>所以如果 $\prod_{i=0}^\infty\mathbb Z$ 是自由 Abel 群，则它基的势一定不可数，从而 $\mathsf{Hom}(\prod_{i=0}^\infty\mathbb Z,\mathbb Z)$ 也一定不可数. 但是 $\mathsf{Hom}(\prod_{i=0}^\infty\mathbb Z,\mathbb Z)=\bigoplus_{i=0}^\infty\mathbb Z$ 是可数的，矛盾！</p>
-<p>好短的文章啊……</p>
+<p><em>Proof</em>. 由于 $\mathrm{ad}\ \mathfrak g\simeq\mathfrak g/\mathsf C(\mathfrak g)=\mathfrak g/\mathsf{Rad}\ \mathfrak g$ 是半单 Lie 代数，而且 $\mathfrak g$ 可以看作 $\mathrm{ad}\ \mathfrak g$ 的表示，也就是其伴随表示，根据 Weyl 定理可知其完全可约.</p>
+<p>由于 $[\mathfrak g,\mathfrak g]$ 是 $\mathfrak g$ 的理想，所以其可以看作一个子表示，令其补表示为 $W$，则由定义知 $[\mathfrak g,W]\subseteq W$. 注意到 $[\mathfrak g,W]\subseteq[\mathfrak g,\mathfrak g]$，所以由 $[\mathfrak g,\mathfrak g]\cap W=0$ 知 $[\mathfrak g,W]=0$，从而 $W\subseteq\mathsf C(\mathfrak g)$，也就是 $\mathsf C(\mathfrak g)+[\mathfrak g,\mathfrak g]=\mathfrak g$.</p>
+<p>类似地，令 $U$ 是 $\mathsf C(\mathfrak g)\cap[\mathfrak g,\mathfrak g]$ 的补表示，注意到 $[\mathfrak g,\mathfrak g]=[\mathfrak g,[\mathfrak g,\mathfrak g]\cap\mathsf C(\mathfrak g)+U]$，前半部分在对易中消失了，所以 $[\mathfrak g,\mathfrak g]=[\mathfrak g,U]\subseteq U$. 这也就说明
+$$\begin{align*}\mathsf C(\mathfrak g)\cap[\mathfrak g,\mathfrak g]&amp;=[\mathfrak g,\mathfrak g]\cap\mathsf C(\mathfrak g)\cap[\mathfrak g,\mathfrak g]\\&amp;\subseteq U\cap\mathsf C(\mathfrak g)\cap[\mathfrak g,\mathfrak g]=0\end{align*}$$
+所以 $\mathfrak g=\mathsf C(\mathfrak g)\oplus[\mathfrak g,\mathfrak g]$，证毕. $\Box$</p></blockquote>
+<p>注意到在上面的证明中，后半部分只用到了 $\mathfrak g$ 伴随表示的完全可约性，所以我们有四个等价条件：</p>
+<p><strong>Theorem</strong>. 以下四个关于 Lie 代数 $\mathfrak g$ 的条件等价.</p>
+<ol>
+<li>$\mathfrak g$ 是约化 Lie 代数，也就是 $\mathsf{Rad}\ \mathfrak g=\mathsf C(\mathfrak g)$.</li>
+<li>$\mathfrak g$ 的伴随表示完全可约.</li>
+<li>$[\mathfrak g,\mathfrak g]$ 半单且 $\mathfrak g=\mathsf C(\mathfrak g)\oplus[\mathfrak g,\mathfrak g]$.</li>
+<li>$\mathfrak g$ 同构于一个交换 Lie 代数与一个半单 Lie 代数的直和.</li>
+</ol>
+<blockquote>
+<p><em>Proof</em>. 一推二和二推三已经证明，三推四是显然的，现在只需要证明四推一.</p>
+<p>令 $\mathfrak g=\mathfrak a\oplus\mathfrak s$ 是理想直和，则 $\mathfrak a=\mathsf C(\mathfrak g)$. 如果 $\mathsf{Rad}\ \mathfrak g\neq\mathsf C(\mathfrak g)$，那只能是左包含右. 由直和可知 $\mathsf{Rad}\ \mathfrak g\cap\mathfrak s\ne 0$，而这是 $\mathfrak s$ 的可解子理想，矛盾. $\Box$</p></blockquote>
+<p>很多地方说使用约化 Lie 代数可以证明 $\mathfrak{sl},\mathfrak{so},\mathfrak{sp}$ 都是半单的，但是我没想到怎么做……</p>
 
         </div>
 
@@ -565,17 +576,17 @@ $$\begin{align*}a&amp;=(a_0,pa_1,p^2a_2,\cdots)\\&amp;=(a_0,\cdots,p^{k-1}a_{k-1
   
 
   
+  
+
+  
+  
+
+  
+  
+
+  
     
     
-  
-  
-
-  
-  
-
-  
-  
-
   
   
 
@@ -610,9 +621,9 @@ $$\begin{align*}a&amp;=(a_0,pa_1,p^2a_2,\cdots)\\&amp;=(a_0,\cdots,p^{k-1}a_{k-1
 <div class="row next-prev-navigator">
   
     <div class="col-md-6 previous-article">
-      <a href="/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/" title="PID 上有限生成模的分类" class="btn filled-button">
+      <a href="/posts/lie-%E4%BB%A3%E6%95%B0/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/" title="半单 Lie 代数和 Killing 型" class="btn filled-button">
         <div><i class="fas fa-chevron-circle-left"></i> 上一篇</div>
-        <div class="next-prev-text">PID 上有限生成模的分类</div>
+        <div class="next-prev-text">半单 Lie 代数和 Killing 型</div>
       </a>
     </div>
   
@@ -622,9 +633,9 @@ $$\begin{align*}a&amp;=(a_0,pa_1,p^2a_2,\cdots)\\&amp;=(a_0,\cdots,p^{k-1}a_{k-1
         
       
       <div class="col-md-6 next-article">
-        <a href="/posts/lie-%E4%BB%A3%E6%95%B0/engel-%E5%AE%9A%E7%90%86%E5%92%8C-lie-%E5%AE%9A%E7%90%86/" title="Engel 定理和 Lie 定理" class="btn filled-button">
+        <a href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E7%81%8C%E6%B0%B4%E5%8C%BA/" title="灌水区" class="btn filled-button">
           <div>下一篇 <i class="fas fa-chevron-circle-right"></i></div>
-          <div class="next-prev-text">Engel 定理和 Lie 定理</div>
+          <div class="next-prev-text">灌水区</div>
         </a>
       </div>
     
