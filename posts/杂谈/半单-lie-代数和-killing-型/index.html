@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>半单 Lie 代数和 Killing 型</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.d46d1447d659d5cf74c6089333d64d89fb665e5e7090e52a31e35700179ffb5e.css" integrity="sha256-1G0UR9ZZ1c90xgiTM9ZNiftmXl5wkOUqMeNXABef&#43;14=" />
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hu_c91f00547ea1a84d.png" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Diamond_153 的个人博客"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="/images/author/diamond153.jpg">
+<meta property="og:url" content="https://hugo-toha.github.io/">
+
+    
+<meta name="description" content="半单 Lie 代数和 Killing 型" />
+
+
+
+    
+
+    
+        
+            
+            
+                
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4LBG7NDFZ"></script>
+      <script>
+        var doNotTrack = false;
+        if ( null ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-H4LBG7NDFZ');
+        }
+      </script>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+
+            
+
+            
+        
+    
+
+
+
+
+
+    <script integrity="sha256-DO4ugzEwhTW1Id1UIWn0gUJWaebCYOypeTit6LW4QB4=">
+     let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
+if (theme === 'system') {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+  } else {
+    theme = 'light'
+  }
+}
+document.documentElement.setAttribute('data-theme', theme)
+
+    </script>
+    
+  </head>
+
+  <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      
+        <img src="/images/site/main-logo_hu_c91f00547ea1a84d.png" id="logo" alt="Logo">
+      Diamond_153 的个人博客</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">主页</a>
+        </li>
+        
+          
+          
+            
+            
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">我的文章</a>
+          </li>
+        
+        
+        
+        
+        
+          
+
+
+
+  
+  
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+  
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu_c91f00547ea1a84d.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/inverted-logo_hu_c91f00547ea1a84d.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">我的文章</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/posts/%E6%9D%82%E8%B0%88/"> 杂谈</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/n-%E9%98%B6%E7%BE%A4%E5%8F%AA%E6%9C%89%E5%BE%AA%E7%8E%AF%E7%BE%A4%E7%9A%84%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6/" title="n 阶群只有循环群的充要条件">n 阶群只有循环群的充要条件</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/engel-%E5%AE%9A%E7%90%86%E5%92%8C-lie-%E5%AE%9A%E7%90%86/" title="Engel 定理和 Lie 定理">Engel 定理和 Lie 定理</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/" title="PID 上有限生成模的分类">PID 上有限生成模的分类</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/%E6%97%A0%E7%A9%B7%E4%B8%AA-z-%E7%9A%84%E7%9B%B4%E7%A7%AF%E4%B8%8D%E8%87%AA%E7%94%B1/" title="无穷个 Z 的直积不自由">无穷个 Z 的直积不自由</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/posts/%E6%9D%82%E8%B0%88/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/" title="半单 Lie 代数和 Killing 型">半单 Lie 代数和 Killing 型</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/"> 讨论区</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E7%81%8C%E6%B0%B4%E5%8C%BA/" title="灌水区">灌水区</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E5%BB%BA%E8%AE%AE%E5%8C%BA/" title="建议区">建议区</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E5%AD%A6%E6%9C%AF%E5%8C%BA/" title="学术区">学术区</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/"> 群论讲义</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/" title="群的定义和基本性质">群的定义和基本性质</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/" title="子群和 Lagrange 定理">子群和 Lagrange 定理</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/" title="同态和正规子群">同态和正规子群</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/" title="群作用基础">群作用基础</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/" title="共轭与 Sylow 定理">共轭与 Sylow 定理</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%9B%B4%E7%A7%AF%E4%B8%8E%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90-abel-%E7%BE%A4%E5%88%86%E7%B1%BB%E5%AE%9A%E7%90%86/" title="直积与有限生成 Abel 群分类定理">直积与有限生成 Abel 群分类定理</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/img11.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/diamond153_hu_2568bc747f23ddf8.jpg' alt="Author Image">
+          <h5 class="author-name">Diamond_153</h5>
+          <p class="text-muted">Thursday, July 17, 2025</p>
+        </div>
+        
+
+        <div class="title">
+          <h1>半单 Lie 代数和 Killing 型</h1>
+        </div>
+
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/lie-%E4%BB%A3%E6%95%B0/" class="btn btn-sm btn-info">Lie 代数</a></li>
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <p>免责声明：本文的讨论基于特征为 $0$ 的代数闭域.</p>
+<h3 id="半单-lie-代数">半单 Lie 代数</h3>
+<p><strong>Definition [半单 Lie 代数]</strong>. 称 Lie 代数 $\mathfrak g$ 是半单的，如果 $\mathfrak g$ 没有非零的交换理想.</p>
+<p>注意到每个可解 Lie 代数都包含一个非零的交换理想（如果 $\mathfrak g^{(k)}=0$ 但 $\mathfrak g^{(k-1)}\ne 0$，那 $\mathfrak g^{(k-1)}$ 就是的），而且：</p>
+<p><strong>Proposition</strong>. 如果 $\mathfrak h,\mathfrak k$ 是 $\mathfrak g$ 的可解理想，则 $\mathfrak h+\mathfrak k$ 也是 $\mathfrak g$ 的可解理想.</p>
+<blockquote>
+<p><em>Proof</em>. 设 $\mathfrak h^{(n)}=\mathfrak k^{(m)}=0$，注意到 $[\mathfrak h^{(i)}+\mathfrak k,\mathfrak h^{(i)}+\mathfrak k]\subseteq\mathfrak h^{(i+1)}+\mathfrak k$，所以归纳有 $(\mathfrak h+\mathfrak k)^{(i)}\subseteq\mathfrak h^{(i)}+\mathfrak k$ 成立，特别当 $i=n$ 时有 $(\mathfrak h+\mathfrak k)^{(n)}\subseteq\mathfrak k$，从而 $(\mathfrak h+\mathfrak k)^{(n+m)}=0$. $\Box$</p></blockquote>
+<p>所以 $\mathfrak g$ 中存在一个最大的可解理想，称为 $\mathfrak g$ 的根基 $\mathsf{Rad}\ \mathfrak g$. 所以显然会有：</p>
+<p><strong>Proposition</strong>. $\mathfrak g$ 是半单 Lie 代数当且仅当 $\mathsf{Rad}\ \mathfrak g=0$.</p>
+<h3 id="killing-型">Killing 型</h3>
+<p><strong>Definition [Killing 型]</strong>. 对于 Lie 代数 $\mathfrak g$，定义其 Killing 型为映射 $B:\mathfrak g\times\mathfrak g\to\mathbb F$，其中 $B(x,y)=\mathrm{tr}(\mathrm{ad}\ x\mathrm{ad}\ y)$.</p>
+<p><strong>Proposition [对称不变双线性]</strong>. 对任意 Lie 代数 $\mathfrak g$，其 Killing 型 $B$ 是对称双线性型，且 $B([x,y],z)=B(x,[y,z])$ 对任意 $x,y,z\in\mathfrak g$ 成立.</p>
+<blockquote>
+<p><em>Proof</em>. 由迹的性质和 $\mathrm{ad}$ 的线性性知 $B$ 是对称双线性的. 对于第二个命题，有：
+$$\begin{align*}B([x,y],z)&amp;=\mathrm{tr}([\mathrm{ad}\ x,\mathrm{ad}\ y]\mathrm{ad}\ z)\\&amp;=\mathrm{tr}(\mathrm{ad}\ x\mathrm{ad}\ y\mathrm{ad}\ z-\mathrm{ad}\ y\mathrm{ad}\ x\mathrm{ad}\ z)\\&amp;=\mathrm{tr}(\mathrm{ad}\ x\mathrm{ad}\ y\mathrm{ad}\ z-\mathrm{ad}\ x\mathrm{ad}\ z\mathrm{ad}\ y)\\&amp;=\mathrm{tr}(\mathrm{ad}\ x\mathrm{ad}\ [y,z])=B(x,[y,z])\end{align*}$$
+所以 $B$ 满足命题中所述性质. $\Box$</p></blockquote>
+<p>而且我们由 Engel 定理显然有：</p>
+<p><strong>Proposition</strong>. 如果 $\mathfrak g$ 是幂零 Lie 代数，则 $\mathfrak g$ 的 Killing 型是 $0$.</p>
+<p>我们知道对于一个线性空间 $V$ 上的对称双线性型 $B$，可以对 $V$ 的任意子空间 $W$ 定义“正交补” $W^\perp=\{v\in V\mid B(x,v)=0,\forall x\in W\}$. 下面我们会看到理想在 Killing 型下的正交补也是理想.</p>
+<p><strong>Proposition [理想的正交补还是理想]</strong>. 如果 $\mathfrak g$ 是 Lie 代数，$\mathfrak h$ 是 $\mathfrak g$ 的理想，则 $\mathfrak h^\perp=\{y\in\mathfrak g\mid B(x,y)=0,\forall x\in\mathfrak h\}$ 也是 $\mathfrak g$ 的理想.</p>
+<blockquote>
+<p><em>Proof</em>. 对任意 $x\in\mathfrak h,y\in\mathfrak h^\perp$ 和 $z\in\mathfrak g$，我们有 $B(x,[y,z])=B([x,y],z)=0$，所以 $[y,z]\in\mathfrak h^\perp$，由理想的定义证毕. $\Box$</p></blockquote>
+<p>同时 Killing 型在理想上的限制也具有良好的性质.</p>
+<p><strong>Proposition [Killing 型在理想的限制是理想的 Killing 型]</strong>. 如果 $\mathfrak g$ 是 Lie 代数，$\mathfrak h$ 是 $\mathfrak g$ 的理想，$B$ 和 $B'$ 分别是 $\mathfrak g$ 和 $\mathfrak h$ 的 Killing 型，则 $B$ 在 $\mathfrak h$ 上的限制等于 $B'$.</p>
+<blockquote>
+<p><em>Proof</em>. 取 $\mathfrak h$ 的一组基并扩充成 $\mathfrak g$ 的一组基，则任意 $x\in\mathfrak h$ 对应的导子 $\mathrm{ad}\ x$ 在这组基下的表示矩阵形如：
+$$\begin{pmatrix}A&amp;B\\0&amp;0\end{pmatrix}$$
+所以简单计算即得结论. $\Box$</p></blockquote>
+<h3 id="可解的-cartan-准则">可解的 Cartan 准则</h3>
+<p>我们先来证明一个引理.</p>
+<p><strong>Lemma [神秘引理]</strong>. 如果 $A\subseteq B\subseteq\mathfrak{gl}(V)$ 是两个子空间，且 $M=\{x\in\mathfrak{gl}(V)\mid[x,B]\subseteq A\}$. 如果 $x\in M$ 满足对任意 $y\in M$ 都有 $\mathrm{tr}(xy)=0$，则 $x$ 幂零.</p>
+<blockquote>
+<p><em>Proof</em>. 令 $\lambda_1,\cdots,\lambda_n$ 是 $x$ 所有特征值，$x=s+n$ 是其 Jordan-Chevalley 分解，则容易得到 $\mathrm{ad}\ x=\mathrm{ad}\ s+\mathrm{ad}\ n$ 是其导子的 Jordan-Chevalley 分解，同时我们不妨设 $s$ 在 $\mathfrak{gl}(V)$ 的某组基 $e_1,\cdots,e_n$ 下为对角矩阵 $\mathrm{diag}\{\lambda_1,\cdots,\lambda_n\}$.</p>
+<p>由 $\mathbb F$ 特征为 $0$ 知 $\mathbb F$ 由一个同构于 $\mathbb Q$ 的子域，且 $\mathbb F$ 可以看作 $\mathbb Q$ 上的线性空间. 令 $E$ 为所有 $\lambda$ 线性张成的子空间，我们想要证明 $E=0$，所以也只需要证明 $E$ 的对偶空间 $E^*=0$. 考虑任意的一个 $f\in E^*$，定义线性变换 $y\in\mathfrak{gl}(V)$ 满足其在基 $e$ 下的表示矩阵为 $\mathrm{diag}\{f(\lambda_1),\cdots,f(\lambda_n)\}$，下面先证明 $y\in M$.</p>
+<p>根据 $f$ 的线性性，如果 $\lambda_i-\lambda_j=\lambda_{i'}-\lambda_{j'}$ 就会有 $f(\lambda_i)-f(\lambda_j)=f(\lambda_{i'})-f(\lambda_{j'})$. 根据 Lagrange 插值定理，存在 $g\in\mathbb F[x]$ 使得 $g(\lambda_i-\lambda_j)=f(\lambda_i)-f(\lambda_j)$ 对任意的 $i,j$ 成立，此时 $g$ 的常数项也必定为 $0$.</p>
+<p>由线性代数的知识可以知道 $g(\mathrm{ad}\ s)=\mathrm{ad}\ y$，而且由 Jordan-Chevalley 分解的性质知 $\mathrm{ad}\ s$ 是 $\mathrm{ad}\ x$ 某个常数项为零的多项式，所以 $\mathrm{ad}\ y$ 是 $\mathrm{ad}\ x$ 一个常数项为零的多项式，故容易得到 $y\in M$.</p>
+<p>对 $y$ 使用引理中所给性质，得到 $\mathrm{tr}(xy)=\sum_{i=1}^n\lambda_i f(\lambda_i)=0$，两边再代入 $f$ 就可以得到 $\sum_{i=1}^n f(\lambda_i)^2=0$，注意到 $f(\lambda_i)\in\mathbb Q$，所以每个 $f(\lambda_i)$ 都是 $0$，从而 $f=0$，得证. $\Box$</p></blockquote>
+<p><strong>Note</strong>. 这个引理咋看咋天才……</p>
+<p>现在我们给出可解 Lie 代数的 Cartan 准则：</p>
+<p><strong>Theorem [可解 Lie 代数的 Cartan 准则]</strong>. $\mathfrak g$ 是可解 Lie 代数当且仅当对任意 $x,y,z\in\mathfrak g$ 都有 $B(x,[y,z])=0$.</p>
+<blockquote>
+<p><em>Proof</em>. 左推右：如果 $\mathfrak g$ 可解，则 $\mathrm{ad}\ \mathfrak g$ 作为同态像也是可解的. 由 Lie 定理，存在一组基使得 $\mathrm{ad}\ \mathfrak g$ 可以同时上三角，而且 $[\mathrm{ad}\ y,\mathrm{ad}\ z]$ 是严格上三角阵，所以 $B(x,[y,z])=0$.</p>
+<p>右推左：令 $A=[\mathrm{ad}\ \mathfrak g,\mathrm{ad}\ \mathfrak g],B=\mathrm{ad}\ \mathfrak g$ 和 $M=\{x\in\mathfrak{gl}(\mathfrak g)\mid[x,B]\subseteq A\}$，则对任意 $[\mathrm{ad}\ x,\mathrm{ad}\ y]\in A\subseteq M$ 和 $T\in M$，由定义我们有 $[\mathrm{ad}\ y,T]\in A$，所以可以通过条件得到：
+$$\mathrm{tr}([\mathrm{ad}\ x,\mathrm{ad}\ y]T)=\mathrm{tr}(\mathrm{ad}\ x[\mathrm{ad}\ y,T])=0$$
+由引理 $[\mathrm{ad}\ x,\mathrm{ad}\ y]$ 是幂零变换，从而 $A$ 中元素都是幂零的，故 $[\mathfrak g,\mathfrak g]$ 是 ad-幂零的. 由 Engel 定理，$[\mathfrak g,\mathfrak g]$ 幂零，所以 $\mathfrak g$ 可解. $\Box$</p></blockquote>
+<p><strong>Remark</strong>. 本人发现该命题可以强化，若只有 $z\in\mathfrak g^{(1)}$ 命题同样成立，只需在上面的证明中将 $A$ 改为 $(\mathrm{ad}\ \mathfrak g)^2$ 即可.</p>
+<p><strong>Proposition</strong>. 存在可解的 Lie 代数 Killing 型不为 $0$；存在不幂零的 Lie 代数 Killing 型为 $0$.</p>
+<blockquote>
+<p><em>Proof</em>. 考虑所有二阶上三角阵构成的 Lie 代数 $\mathfrak t(2)$，其显然可解，但 $B(E_{11},E_{22})=-1$；令 $\mathfrak r_3(\lambda)$ 为 $x,y,z$ 张成的三维 Lie 代数，满足 $[x,y]=y,[x,z]=\lambda z$ 而且 $[y,z]=0$，则其可解但不幂零，计算可得 $B(x,x)=1+\lambda^2$，而且 $B$ 代入 $x,y,z$ 的任意其它组合都为 $0$，所以取 $\lambda$ 为 $x^2+1=0$ 在 $\mathbb F$ 上的一个根即可. $\Box$</p></blockquote>
+<h3 id="半单的-cartan-准则">半单的 Cartan 准则</h3>
+<p><strong>Theorem [半单 Lie 代数的 Cartan 准则]</strong>. $\mathfrak g$ 是半单 Lie 代数当且仅当其 Killing 型 $B$ 非退化.</p>
+<blockquote>
+<p><em>Proof</em>. 左推右：考虑 $\mathfrak g^\perp=\{x\in\mathfrak g\mid B(x,y)=0,\forall y\in\mathfrak g\}$，则其为 $\mathfrak g$ 的理想，且 $B$ 在 $\mathfrak g^\perp$ 的限制为 $0$，从而 $\mathfrak g^\perp$ 可解. 由 $\mathfrak g$ 半单知其等于 $0$，故 $B$ 非退化.</p>
+<p>右推左：如果 $\mathfrak g$ 不半单，则其存在非零交换理想 $\mathfrak h$. 对任意 $x\in\mathfrak h$ 和 $y,z\in\mathfrak g$ 我们有 $[x,[y,z]]\in\mathfrak h$，故 $[x,[y,[x,[y,z]]]]$ 是两个 $\mathfrak h$ 中元素的对易子，也就等于 $0$. 从而 $\mathrm{ad}\ x\mathrm{ad}\ y$ 是二次幂零的，故 $B(x,y)=0$. 由 $y$ 的任意性知矛盾. $\Box$</p></blockquote>
+<p>利用这条性质，我们可以将一个半单 Lie 代数分解：</p>
+<p><strong>Definition [单 Lie 代数]</strong>. 如果非交换 Lie 代数 $\mathfrak g$ 不包含除了自己和 $0$ 以外的任意理想，则称 $\mathfrak g$ 是单 Lie 代数. 显然单 Lie 代数都是半单 Lie 代数.</p>
+<p><strong>Theorem [半单 Lie 代数的理想直和分解]</strong>. 如果 $\mathfrak g$ 是半单 Lie 代数，则在不记顺序的情况下存在唯一的 $\mathfrak g_1,\cdots,\mathfrak g_n$ 使得每个 $\mathfrak g_i$ 都是 $\mathfrak g$ 的单理想，且 $\mathfrak g=\mathfrak g_1\oplus\cdots\oplus\mathfrak g_n$.</p>
+<blockquote>
+<p><em>Proof</em>. 先对 $\mathfrak g$ 的维数归纳证明存在性. 如果 $\mathfrak g$ 没有非平凡理想，则 $\mathfrak g$ 已经是单 Lie 代数了，命题成立；否则取某一个非平凡理想 $\mathfrak h$，考虑其在 $\mathfrak g$ 的 Killing 型 $B$ 下的正交补 $\mathfrak h^\perp$，则由 $B$ 的非退化性知 $\mathfrak h\oplus\mathfrak h^\perp=\mathfrak g$. 由于这是一个理想直和，所以 $\mathfrak h$ 和 $\mathfrak h^\perp$ 交换，不难得到 $\mathfrak h$ 和 $\mathfrak h^\perp$ 的理想也是 $\mathfrak g$ 的理想，对 $\mathfrak h$ 和 $\mathfrak h^\perp$ 使用归纳假设即可.</p>
+<p>现在来证明唯一性，实际上只需要说明如果 $\mathfrak g=\mathfrak g_1\oplus\cdots\oplus\mathfrak g_n$ 是一个满足命题条件的分解，则对任意 $\mathfrak g$ 的单理想 $\mathfrak h$，存在 $i$ 使得 $\mathfrak h=\mathfrak g_i$ 就可以了. 注意到对于任意 $k$，$\mathfrak g_k\cap\mathfrak h$ 是 $\mathfrak h$ 的理想，而且有直和 $\mathfrak h=(\mathfrak g_1\cap\mathfrak h)\oplus\cdots\oplus(\mathfrak g_n\cap\mathfrak h)$，所以由 $\mathfrak h$ 的单性知有且仅有一个 $i$ 使得 $\mathfrak g_i\cap\mathfrak h=\mathfrak h$，也就是 $\mathfrak h\subseteq\mathfrak g_i$. 由于 $\mathfrak h$ 是 $\mathfrak g_i$ 的理想，所以由 $\mathfrak g_i$ 的单性知 $\mathfrak h=\mathfrak g_i$. $\Box$</p></blockquote>
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+        
+        
+        
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/%E6%9D%82%E8%B0%88/%E6%97%A0%E7%A9%B7%E4%B8%AA-z-%E7%9A%84%E7%9B%B4%E7%A7%AF%E4%B8%8D%E8%87%AA%E7%94%B1/" title="无穷个 Z 的直积不自由" class="btn filled-button">
+        <div><i class="fas fa-chevron-circle-left"></i> 上一篇</div>
+        <div class="next-prev-text">无穷个 Z 的直积不自由</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E7%81%8C%E6%B0%B4%E5%8C%BA/" title="灌水区" class="btn filled-button">
+          <div>下一篇 <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">灌水区</div>
+        </a>
+      </div>
+    
+</div>
+
+      <br/>
+      <hr />
+
+      
+      
+        
+    
+<div id="vcomments"></div>
+<script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script type="text/javascript">
+  new Valine({
+    el: "#vcomments",
+    appId: "q0dUvrOifR4xCVw4rUVcV5bA-MdYXbMMI",
+    appKey: "bGYOqxmZXHRfGI6AyAlaQBeS",
+    avatar: "retro",
+    placeholder: "说说你的看法？这里支持匿名评论！",
+    visitor: "",
+    lang: "zh-cn",
+    recordIP: "true",
+    enableQQ: "true",
+    serverURLs: "https://q0duvroi.api.lncldglobal.com"
+  });
+</script>
+
+
+
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center ps-3">目录</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#半单-lie-代数">半单 Lie 代数</a></li>
+        <li><a href="#killing-型">Killing 型</a></li>
+        <li><a href="#可解的-cartan-准则">可解的 Cartan 准则</a></li>
+        <li><a href="#半单的-cartan-准则">半单的 Cartan 准则</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>我的联系方式:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:amethyst153@outlook.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>amethyst153@outlook.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://user.qzone.qq.com/2874864660%25!%28EXTRA%20int&#61;2874864660%29 target="_blank" rel="noopener">
+                  <span><i class="fa-brands fa-qq"></i></span> <span>2874864660</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+  </footer>
+
+
+    <script src="/application.7d1dfe92d8f2bbfcf113b1a58b1076e351518b968299a7e1d57cc58347da2422.js" integrity="sha256-fR3&#43;ktjyu/zxE7GlixB241FRi5aCmafh1XzFg0faJCI=" defer></script>
+
+
+    
+     
+
+    
+    
+
+</body>
+</html>

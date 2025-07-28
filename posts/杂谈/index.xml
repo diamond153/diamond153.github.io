@@ -6,7 +6,62 @@
     <description>Recent content in 杂谈 on Diamond_153 的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 12 Jul 2025 17:00:00 +0800</lastBuildDate><atom:link href="https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Thu, 17 Jul 2025 16:00:00 +0800</lastBuildDate><atom:link href="https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>半单 Lie 代数和 Killing 型</title>
+      <link>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/</link>
+      <pubDate>Thu, 17 Jul 2025 16:00:00 +0800</pubDate>
+      
+      <guid>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/</guid>
+      <description>&lt;p&gt;免责声明：本文的讨论基于特征为 $0$ 的代数闭域.&lt;/p&gt;
+&lt;h3 id=&#34;半单-lie-代数&#34;&gt;半单 Lie 代数&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Definition [半单 Lie 代数]&lt;/strong&gt;. 称 Lie 代数 $\mathfrak g$ 是半单的，如果 $\mathfrak g$ 没有非零的交换理想.&lt;/p&gt;
+&lt;p&gt;注意到每个可解 Lie 代数都包含一个非零的交换理想（如果 $\mathfrak g^{(k)}=0$ 但 $\mathfrak g^{(k-1)}\ne 0$，那 $\mathfrak g^{(k-1)}$ 就是的），而且：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Proposition&lt;/strong&gt;. 如果 $\mathfrak h,\mathfrak k$ 是 $\mathfrak g$ 的可解理想，则 $\mathfrak h+\mathfrak k$ 也是 $\mathfrak g$ 的可解理想.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Proof&lt;/em&gt;. 设 $\mathfrak h^{(n)}=\mathfrak k^{(m)}=0$，注意到 $[\mathfrak h^{(i)}+\mathfrak k,\mathfrak h^{(i)}+\mathfrak k]\subseteq\mathfrak h^{(i+1)}+\mathfrak k$，所以归纳有 $(\mathfrak h+\mathfrak k)^{(i)}\subseteq\mathfrak h^{(i)}+\mathfrak k$ 成立，特别当 $i=n$ 时有 $(\mathfrak h+\mathfrak k)^{(n)}\subseteq\mathfrak k$，从而 $(\mathfrak h+\mathfrak k)^{(n+m)}=0$. $\Box$&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>无穷个 Z 的直积不自由</title>
+      <link>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/%E6%97%A0%E7%A9%B7%E4%B8%AA-z-%E7%9A%84%E7%9B%B4%E7%A7%AF%E4%B8%8D%E8%87%AA%E7%94%B1/</link>
+      <pubDate>Wed, 16 Jul 2025 11:30:00 +0800</pubDate>
+      
+      <guid>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/%E6%97%A0%E7%A9%B7%E4%B8%AA-z-%E7%9A%84%E7%9B%B4%E7%A7%AF%E4%B8%8D%E8%87%AA%E7%94%B1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;结论&lt;/strong&gt;. $\prod_{i=0}^\infty\mathbb Z$ 不是自由 Abel 群.&lt;/p&gt;
+&lt;p&gt;我们先证明一个引理：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lemma&lt;/strong&gt;. 如果 $\varphi:\prod_{i=0}^\infty\mathbb Z\to\mathbb Z$ 是同态且 $\varphi$ 在 $\bigoplus_{i=0}^\infty\mathbb Z$ 上的限制为 $0$，则 $\varphi=0$.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Proof&lt;/em&gt;. 对素数 $p$，考虑 $A_p$ 为所有形如 $(a_0,pa_1,p^2a_2,\cdots)$ 的元素构成的集合，则由 Bézout 定理对 $p\ne q$ 有 $A_p+A_q=\prod_{i=0}^\infty\mathbb Z\to\mathbb Z$. 所以只需要证明 $\varphi$ 在每一个 $A_p$ 上的限制都为 $0$ 即可.&lt;/p&gt;
+&lt;p&gt;注意到 $A_p$ 中的元素可以做如下分解：
+$$\begin{align*}a&amp;amp;=(a_0,pa_1,p^2a_2,\cdots)\\&amp;amp;=(a_0,\cdots,p^{k-1}a_{k-1},0,\cdots)+(0,\cdots,0,p^ka_k,p^{k+1}a_{k+1},\cdots)\end{align*}$$
+前半部分属于 $\bigoplus_{i=0}^\infty\mathbb Z\to\mathbb Z$，所以整个式子代入 $\varphi$ 只留下了后半部分. 注意到其为 $p^k$ 的倍数，由 $k$ 的任意性知 $\varphi(a)=0$，从而原命题得证.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;所以如果 $\prod_{i=0}^\infty\mathbb Z$ 是自由 Abel 群，则它基的势一定不可数，从而 $\mathsf{Hom}(\prod_{i=0}^\infty\mathbb Z,\mathbb Z)$ 也一定不可数. 但是 $\mathsf{Hom}(\prod_{i=0}^\infty\mathbb Z,\mathbb Z)=\bigoplus_{i=0}^\infty\mathbb Z$ 是可数的，矛盾！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PID 上有限生成模的分类</title>
+      <link>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/</link>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 +0800</pubDate>
+      
+      <guid>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/</guid>
+      <description>&lt;h3 id=&#34;基本定义&#34;&gt;基本定义&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Definition [主理想整环/PID]&lt;/strong&gt;. 对于一个环 $R$ 的理想 $I$，称其为主理想，如果 $I=(a)$ 对某个 $a\in R$. 称一个整环是主理想整环（principal ideal domain，简称 PID）如果其每个理想都是主理想.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;. 整数环 $\mathbb Z$，一个域 $F$ 和它上面的多项式环 $F[x]$ 等都是主理想整环.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Proposition [PID 都是 Noether 整环]&lt;/strong&gt;. 如果 $R$ 是 PID，则其是 Noether 的，也就是其不存在无穷长的理想严格升链 $I_1\subsetneq I_2\subsetneq\cdots$.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Proof&lt;/em&gt;. 如果有题中所述的严格无穷升链，令 $I=\bigcup_{n\ge 1}I_n$，则 $I$ 为 $R$ 的理想. 由主理想性质，令 $I=(x_0)$，则存在 $n$ 使得 $x_0\in I_n$，也就是说 $I\subseteq I_n$，从而 $I_{n+1}\subseteq I\subseteq I_n$，矛盾！ $\Box$&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Remark&lt;/strong&gt;. PID 不一定是 Artin 的，也就是可能存在无穷长的理想严格降链 $I_1\supsetneq I_2\supsetneq\cdots$，比如 $R=\mathbb Z$，$I_n=n!\mathbb Z$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition [分式域]&lt;/strong&gt;. 对整环 $R$，定义其分式域 $F$ 为 $(R\times R^\times)/\sim$，其中等价关系 $\sim$ 为 $(a,b)\sim (c,d)$ 当且仅当 $ad=bc$，容易验证这是一个等价关系，并定义运算：
+$$
+\begin{align*}
+[(a,b)]+[(c,d)]&amp;amp;=[(ad+bc,bd)]\\
+[(a,b)][(c,d)]&amp;amp;=[(ac,bd)]
+\end{align*}
+$$
+则这是良好定义的，且 $F$ 在该运算下成为域. 我们不妨记等价类 $[(a,b)]\in F$ 为 $a/b$.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Engel 定理和 Lie 定理</title>
       <link>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/engel-%E5%AE%9A%E7%90%86%E5%92%8C-lie-%E5%AE%9A%E7%90%86/</link>
       <pubDate>Sat, 12 Jul 2025 17:00:00 +0800</pubDate>
@@ -42,15 +97,6 @@ $$
 &lt;p&gt;&lt;strong&gt;Lemma&lt;/strong&gt;. $\mathsf Z(G)$ 是平凡的，且对 $G$ 的任意极大子群 $U$ 和其中元素 $1\ne a\in U$，都会有 $U=\mathsf C_G(a)$.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;Proof&lt;/em&gt;. 若 $\mathsf Z(G)$ 非平凡，则 $G/\mathsf Z(G)$ 的阶数是 $&amp;lt;n$ 的循环数，由归纳假设知其为循环群，也就是 $G$ 交换，矛盾. 对于第二个命题，注意到由归纳假设，$U$ 一定是循环群，所以 $U$ 中元素都与 $a\in U$ 可交换，也就是 $U\subseteq\mathsf C_G(a)&amp;lt;G$，由 $U$ 的极大性即得结论. $\Box$&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>PID 上有限生成模的分类</title>
-      <link>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/</link>
-      <pubDate>Sat, 12 Jul 2025 16:00:00 +0800</pubDate>
-      
-      <guid>https://hugo-toha.github.io/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/</guid>
-      <description>&lt;p&gt;咕咕咕~&lt;/p&gt;</description>
     </item>
     
     

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>无穷个 Z 的直积不自由</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.d46d1447d659d5cf74c6089333d64d89fb665e5e7090e52a31e35700179ffb5e.css" integrity="sha256-1G0UR9ZZ1c90xgiTM9ZNiftmXl5wkOUqMeNXABef&#43;14=" />
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hu_c91f00547ea1a84d.png" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Diamond_153 的个人博客"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="/images/author/diamond153.jpg">
+<meta property="og:url" content="https://hugo-toha.github.io/">
+
+    
+<meta name="description" content="无穷个 $\mathbb Z$ 的直积不自由" />
+
+
+
+    
+
+    
+        
+            
+            
+                
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4LBG7NDFZ"></script>
+      <script>
+        var doNotTrack = false;
+        if ( null ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-H4LBG7NDFZ');
+        }
+      </script>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+
+            
+
+            
+        
+    
+
+
+
+
+
+    <script integrity="sha256-DO4ugzEwhTW1Id1UIWn0gUJWaebCYOypeTit6LW4QB4=">
+     let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
+if (theme === 'system') {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+  } else {
+    theme = 'light'
+  }
+}
+document.documentElement.setAttribute('data-theme', theme)
+
+    </script>
+    
+  </head>
+
+  <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      
+        <img src="/images/site/main-logo_hu_c91f00547ea1a84d.png" id="logo" alt="Logo">
+      Diamond_153 的个人博客</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">主页</a>
+        </li>
+        
+          
+          
+            
+            
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">我的文章</a>
+          </li>
+        
+        
+        
+        
+        
+          
+
+
+
+  
+  
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+  
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu_c91f00547ea1a84d.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/inverted-logo_hu_c91f00547ea1a84d.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">我的文章</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/posts/%E6%9D%82%E8%B0%88/"> 杂谈</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/n-%E9%98%B6%E7%BE%A4%E5%8F%AA%E6%9C%89%E5%BE%AA%E7%8E%AF%E7%BE%A4%E7%9A%84%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6/" title="n 阶群只有循环群的充要条件">n 阶群只有循环群的充要条件</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/engel-%E5%AE%9A%E7%90%86%E5%92%8C-lie-%E5%AE%9A%E7%90%86/" title="Engel 定理和 Lie 定理">Engel 定理和 Lie 定理</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/" title="PID 上有限生成模的分类">PID 上有限生成模的分类</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/posts/%E6%9D%82%E8%B0%88/%E6%97%A0%E7%A9%B7%E4%B8%AA-z-%E7%9A%84%E7%9B%B4%E7%A7%AF%E4%B8%8D%E8%87%AA%E7%94%B1/" title="无穷个 Z 的直积不自由">无穷个 Z 的直积不自由</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/" title="半单 Lie 代数和 Killing 型">半单 Lie 代数和 Killing 型</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/"> 讨论区</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E7%81%8C%E6%B0%B4%E5%8C%BA/" title="灌水区">灌水区</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E5%BB%BA%E8%AE%AE%E5%8C%BA/" title="建议区">建议区</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E5%AD%A6%E6%9C%AF%E5%8C%BA/" title="学术区">学术区</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/"> 群论讲义</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/" title="群的定义和基本性质">群的定义和基本性质</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/" title="子群和 Lagrange 定理">子群和 Lagrange 定理</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/" title="同态和正规子群">同态和正规子群</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/" title="群作用基础">群作用基础</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/" title="共轭与 Sylow 定理">共轭与 Sylow 定理</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%9B%B4%E7%A7%AF%E4%B8%8E%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90-abel-%E7%BE%A4%E5%88%86%E7%B1%BB%E5%AE%9A%E7%90%86/" title="直积与有限生成 Abel 群分类定理">直积与有限生成 Abel 群分类定理</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/img10.png);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/diamond153_hu_2568bc747f23ddf8.jpg' alt="Author Image">
+          <h5 class="author-name">Diamond_153</h5>
+          <p class="text-muted">Wednesday, July 16, 2025</p>
+        </div>
+        
+
+        <div class="title">
+          <h1>无穷个 Z 的直积不自由</h1>
+        </div>
+
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/%E7%BE%A4%E8%AE%BA/" class="btn btn-sm btn-info">群论</a></li>
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <p><strong>结论</strong>. $\prod_{i=0}^\infty\mathbb Z$ 不是自由 Abel 群.</p>
+<p>我们先证明一个引理：</p>
+<p><strong>Lemma</strong>. 如果 $\varphi:\prod_{i=0}^\infty\mathbb Z\to\mathbb Z$ 是同态且 $\varphi$ 在 $\bigoplus_{i=0}^\infty\mathbb Z$ 上的限制为 $0$，则 $\varphi=0$.</p>
+<blockquote>
+<p><em>Proof</em>. 对素数 $p$，考虑 $A_p$ 为所有形如 $(a_0,pa_1,p^2a_2,\cdots)$ 的元素构成的集合，则由 Bézout 定理对 $p\ne q$ 有 $A_p+A_q=\prod_{i=0}^\infty\mathbb Z\to\mathbb Z$. 所以只需要证明 $\varphi$ 在每一个 $A_p$ 上的限制都为 $0$ 即可.</p>
+<p>注意到 $A_p$ 中的元素可以做如下分解：
+$$\begin{align*}a&amp;=(a_0,pa_1,p^2a_2,\cdots)\\&amp;=(a_0,\cdots,p^{k-1}a_{k-1},0,\cdots)+(0,\cdots,0,p^ka_k,p^{k+1}a_{k+1},\cdots)\end{align*}$$
+前半部分属于 $\bigoplus_{i=0}^\infty\mathbb Z\to\mathbb Z$，所以整个式子代入 $\varphi$ 只留下了后半部分. 注意到其为 $p^k$ 的倍数，由 $k$ 的任意性知 $\varphi(a)=0$，从而原命题得证.</p></blockquote>
+<p>所以如果 $\prod_{i=0}^\infty\mathbb Z$ 是自由 Abel 群，则它基的势一定不可数，从而 $\mathsf{Hom}(\prod_{i=0}^\infty\mathbb Z,\mathbb Z)$ 也一定不可数. 但是 $\mathsf{Hom}(\prod_{i=0}^\infty\mathbb Z,\mathbb Z)=\bigoplus_{i=0}^\infty\mathbb Z$ 是可数的，矛盾！</p>
+<p>好短的文章啊……</p>
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+        
+        
+        
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/" title="PID 上有限生成模的分类" class="btn filled-button">
+        <div><i class="fas fa-chevron-circle-left"></i> 上一篇</div>
+        <div class="next-prev-text">PID 上有限生成模的分类</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/%E6%9D%82%E8%B0%88/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/" title="半单 Lie 代数和 Killing 型" class="btn filled-button">
+          <div>下一篇 <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">半单 Lie 代数和 Killing 型</div>
+        </a>
+      </div>
+    
+</div>
+
+      <br/>
+      <hr />
+
+      
+      
+        
+    
+<div id="vcomments"></div>
+<script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script type="text/javascript">
+  new Valine({
+    el: "#vcomments",
+    appId: "q0dUvrOifR4xCVw4rUVcV5bA-MdYXbMMI",
+    appKey: "bGYOqxmZXHRfGI6AyAlaQBeS",
+    avatar: "retro",
+    placeholder: "说说你的看法？这里支持匿名评论！",
+    visitor: "",
+    lang: "zh-cn",
+    recordIP: "true",
+    enableQQ: "true",
+    serverURLs: "https://q0duvroi.api.lncldglobal.com"
+  });
+</script>
+
+
+
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center ps-3">目录</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents"></nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>我的联系方式:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:amethyst153@outlook.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>amethyst153@outlook.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://user.qzone.qq.com/2874864660%25!%28EXTRA%20int&#61;2874864660%29 target="_blank" rel="noopener">
+                  <span><i class="fa-brands fa-qq"></i></span> <span>2874864660</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+  </footer>
+
+
+    <script src="/application.7d1dfe92d8f2bbfcf113b1a58b1076e351518b968299a7e1d57cc58347da2422.js" integrity="sha256-fR3&#43;ktjyu/zxE7GlixB241FRi5aCmafh1XzFg0faJCI=" defer></script>
+
+
+    
+     
+
+    
+    
+
+</body>
+</html>

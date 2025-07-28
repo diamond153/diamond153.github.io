@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<link rel="stylesheet" href="/application.103b0138609a1d9c6549dc5dd2b8464b0c88abc2712639983a7ce525afeb8d7b.css" integrity="sha256-EDsBOGCaHZxlSdxd0rhGSwyIq8JxJjmYOnzlJa/rjXs=" />
+<link rel="stylesheet" href="/application.d46d1447d659d5cf74c6089333d64d89fb665e5e7090e52a31e35700179ffb5e.css" integrity="sha256-1G0UR9ZZ1c90xgiTM9ZNiftmXl5wkOUqMeNXABef&#43;14=" />
 
 
 
@@ -314,6 +314,24 @@ document.documentElement.setAttribute('data-theme', theme)
     <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/" title="PID 上有限生成模的分类">PID 上有限生成模的分类</a></li>
   
 
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/%E6%97%A0%E7%A9%B7%E4%B8%AA-z-%E7%9A%84%E7%9B%B4%E7%A7%AF%E4%B8%8D%E8%87%AA%E7%94%B1/" title="无穷个 Z 的直积不自由">无穷个 Z 的直积不自由</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/" title="半单 Lie 代数和 Killing 型">半单 Lie 代数和 Killing 型</a></li>
+  
+
 
       </ul>
     </li>
@@ -454,7 +472,7 @@ document.documentElement.setAttribute('data-theme', theme)
       <div class="page-content">
         
         <div class="author-profile ms-auto align-self-lg-center">
-          <img class="rounded-circle" src='/images/author/diamond153_hu_a3fb78be2b903ba8.jpg' alt="Author Image">
+          <img class="rounded-circle" src='/images/author/diamond153_hu_2568bc747f23ddf8.jpg' alt="Author Image">
           <h5 class="author-name">Diamond_153</h5>
           <p class="text-muted">Saturday, July 12, 2025</p>
         </div>
@@ -469,6 +487,9 @@ document.documentElement.setAttribute('data-theme', theme)
         
           <div class="tags">
   <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/lie-%E4%BB%A3%E6%95%B0/" class="btn btn-sm btn-info">Lie 代数</a></li>
     
   </ul>
 </div>
@@ -503,8 +524,6 @@ $$[\mathfrak g/\mathsf C_{k-1}(\mathfrak g),\mathfrak g^{s-k}/\mathsf C_{k-1}(\m
 <p><em>Proof</em>. 只需证明右推左. 我们可以对于 $k$ 的最小值归纳. 先归纳证明对正整数 $i$ 有 $\mathsf C_{i+1}(\mathfrak g)/\mathsf C(\mathfrak g)=\mathsf C_i(\mathfrak g/\mathsf C(\mathfrak g))$. $i=1$ 命题显然成立，如果 $i\ge 2$ 且命题对 $i-1$ 成立，注意到：
 $$\begin{align*}&amp;\phantom{=}\mathsf C_i(\mathfrak g/\mathsf C(\mathfrak g))/\mathsf C_{i-1}(\mathfrak g/\mathsf C(\mathfrak g))=\mathsf C((\mathfrak g/\mathsf C(\mathfrak g))/\mathsf C_{i-1}(\mathfrak g/\mathsf C(\mathfrak g)))\\&amp;=\mathsf C((\mathfrak g/\mathsf C(\mathfrak g))/(\mathsf C_i(\mathfrak g)/\mathsf C(\mathfrak g)))\simeq\mathsf C(\mathfrak g/\mathsf C_i(\mathfrak g))=\mathsf C_{i+1}(\mathfrak g)/\mathsf C_i(\mathfrak g)\\&amp;\simeq(\mathsf C_{i+1}(\mathfrak g)/\mathsf C(\mathfrak g))/(\mathsf C_i(\mathfrak g)/\mathsf C(\mathfrak g))=(\mathsf C_{i+1}(\mathfrak g)/\mathsf C(\mathfrak g))/\mathsf C_{i-1}(\mathfrak g/\mathsf C(\mathfrak g))\end{align*}$$
 而且其中出现的两个同构是互逆的（第三同构定理），刚才提到的子命题也就得证了. 此时令 $i=k-1$ 得到 $\mathfrak g/\mathsf C(\mathfrak g)=\mathsf C_{k-1}(\mathfrak g/\mathsf C(\mathfrak g))$，也就是 $\mathfrak g/\mathsf C(\mathfrak g)$ 满足 $k-1$ 时的条件，从而由归纳假设幂零，通过引理得到 $\mathfrak g$ 幂零. $\Box$</p></blockquote>
-<p><strong>Definition [ad-幂零]</strong>. 如果对任意 $x\in\mathfrak g$ 都有 $\mathrm{ad}\ x$ 幂零，则称 $\mathfrak g$ 是 ad-幂零的.</p>
-<p>由幂零 Lie 代数的第一定义（存在 $k$ 使得 $\mathfrak g^k=0$），幂零的 Lie 代数都是 ad-幂零的，因为 $(\mathrm{ad}\ x)^ky=[x,[x,\cdots[x,[x,y]]\cdots]]\in\mathfrak g^k=0$. 其实反过来也是成立的，我们先来看两个简单命题：</p>
 <p><strong>Proposition [幂零 Lie 代数的正规化子条件]</strong>. 如果 $\mathfrak h$ 是幂零 Lie 代数 $\mathfrak g$ 的真子代数，则 $\mathfrak h\subsetneq\mathsf N_{\mathfrak g}(\mathfrak h)$.</p>
 <blockquote>
 <p><em>Proof</em>. 取最小的 $i$ 使得 $\mathfrak g^i\subseteq\mathfrak h$，那么 $i\ge 1$ 且 $\mathfrak g^{i-1}\not\subseteq\mathfrak h$. 取 $x\in\mathfrak g^k\setminus\mathfrak h$, 则 $[x,\mathfrak h]\subseteq [x,\mathfrak g]=\mathfrak g^i\subseteq\mathfrak h$，即 $x\in\mathsf N_{\mathfrak g}(\mathfrak h)\setminus\mathfrak h$. $\Box$</p></blockquote>
@@ -521,7 +540,9 @@ $$\begin{align*}&amp;\phantom{=}\mathsf C_i(\mathfrak g/\mathsf C(\mathfrak g))/
 $$D(y+kz)=kx,\forall y\in\mathfrak h,k\in\mathbb F$$
 容易验证这是一个导子. 而且这不可能是一个内导子，否则设 $D=\mathrm{ad}\ w$，则 $w\in\mathsf C_{\mathfrak g}(\mathfrak h)$. 但是由 $w\in\mathfrak g^i$ 知 $(\mathrm{ad}\ w)z\in\mathfrak g^{i+1}$，这与 $D(z)=x\notin\mathfrak g^{i+1}$ 矛盾！ $\Box$</p></blockquote>
 <h3 id="engel-定理">Engel 定理</h3>
-<p>回到主线，我们先归纳地证明一个引理：</p>
+<p><strong>Definition [ad-幂零]</strong>. 如果对任意 $x\in\mathfrak g$ 都有 $\mathrm{ad}\ x$ 幂零，则称 $\mathfrak g$ 是 ad-幂零的.</p>
+<p>由幂零 Lie 代数的第一定义（存在 $k$ 使得 $\mathfrak g^k=0$），幂零的 Lie 代数都是 ad-幂零的，因为 $(\mathrm{ad}\ x)^ky=[x,[x,\cdots[x,[x,y]]\cdots]]\in\mathfrak g^k=0$. 其实反过来也是成立的，这就是 Engel 定理.</p>
+<p>我们先归纳地证明一个引理：</p>
 <p><strong>Lemma [由幂零变换构成的 Lie 代数存在公共特征向量]</strong>. 如果 $V$ 是非零线性空间，$\mathfrak g$ 是 $\mathfrak{gl}(V)$ 的子代数且 $\mathfrak g$ 中变换都是幂零的，则存在非零的 $v\in V$ 使得 $x(v)=0$ 对任意 $x\in\mathfrak g$ 成立.</p>
 <blockquote>
 <p><em>Proof</em>. 对 $\mathfrak g$ 的维数归纳，当 $\dim\mathfrak g=1$ 时命题显然成立，所以不妨设 $\dim\mathfrak g\ge 2$ 且命题对于维数 $&lt;\dim\mathfrak g$ 且满足条件的代数都成立，我们先证明对于满足引理中条件的代数也有正规化子条件.</p>
@@ -533,6 +554,7 @@ $$x(z(w))=z(x(w))-[z,x](w)=0$$
 <p><strong>Theorem [Engel 定理]</strong>. 一个 Lie 代数 $\mathfrak g$ 幂零当且仅当 $\mathfrak g$ ad-幂零.</p>
 <blockquote>
 <p><em>Proof</em>. 左推右已经证明过了. 对于右推左，我们可以先对 $\mathfrak g$ 的维数归纳，首先 $\dim\mathfrak g=1$ 时命题显然成立，当 $\dim\mathfrak g\ge 2$ 时考虑 $\mathfrak g$ 的导子代数 $\mathrm{ad}\ \mathfrak g\subseteq\mathfrak{gl}(\mathfrak g)$. 由于 $\mathfrak g$ 是 ad-幂零的，所以对 $\mathrm{ad}\ \mathfrak g$ 使用引理可知，存在特征向量 $x\in\mathfrak g$ 使得 $[y,x]=0$ 对任意 $y\in\mathfrak g$ 成立，也就是 $\mathsf C(\mathfrak g)\ne 0$. 注意到 $\mathfrak g/\mathsf C(\mathfrak g)$ 是 ad-幂零的，所以由归纳假设其幂零，从而 $\mathfrak g$ 幂零，证毕！ $\Box$</p></blockquote>
+<p><strong>Remark</strong>. 除此以外，我们还可以得到 $\mathrm{ad}\ \mathfrak g\subseteq\mathfrak{gl}(\mathfrak g)$ 可以同时相似严格上三角化.</p>
 <h3 id="可解-lie-代数和-lie-定理">可解 Lie 代数和 Lie 定理</h3>
 <p>对 Lie 代数 $\mathfrak g$，定义其理想 $[\mathfrak g,\mathfrak g]$ 为 $\mathfrak g$ 的导代数 $\mathfrak g^{(1)}$. 如果归纳定义 $\mathfrak g$ 的 $k$ 阶导 $\mathfrak g^{(k)}=[\mathfrak g^{(k-1)},\mathfrak g^{(k-1)}]$，则会产生一列 $\mathfrak g$ 的理想，称为 $\mathfrak g$ 的导出列.</p>
 <p><strong>Definition [可解 Lie 代数]</strong>. 如果存在 $k$ 使得 $\mathfrak g^{(k)}=0$，则称 $\mathfrak g$ 可解.</p>
@@ -542,7 +564,7 @@ $$x(z(w))=z(x(w))-[z,x](w)=0$$
 <p><strong>Proposition [非零可解 Lie 代数有余维数为 $1$ 的理想]</strong>. 如果 $\mathfrak g$ 是非零的可解 Lie 代数，则存在 $\mathfrak g$ 的理想 $\mathfrak h$ 使得 $\dim\mathfrak g/\mathfrak h=1$.</p>
 <blockquote>
 <p><em>Proof</em>. 考虑 $\mathfrak g$ 的理想 $\mathfrak g^{(1)}$，我们容易知道商代数 $\mathfrak g/\mathfrak g^{(1)}$ 为交换 Lie 代数，从而其每个子空间都是其理想. 任取 $\mathfrak g/\mathfrak g^{(1)}$ 余维数为 $1$ 的子空间，使用对应定理就可以得到一个满足条件的理想 $\mathfrak h$. $\Box$</p></blockquote>
-<p>现在有了一个余维数为 $1$ 的理想，不妨设 $\mathfrak g=\mathfrak h+\mathbb Fz$. 对 $\mathfrak h$ 使用归纳假设，令 $\lambda\in\mathfrak h^*$ 且空间 $E_\lambda=\{w\in V\mid x(w)=\lambda(x)w,\forall x\in\mathfrak g\}$ 非空，则对任意 $y\in\mathfrak h$ 和 $w\in E_\lambda$ 都有
+<p>现在有了一个余维数为 $1$ 的理想，不妨设 $\mathfrak g=\mathfrak h+\mathbb Fz$. 对 $\mathfrak h$ 使用归纳假设，令 $\lambda\in\mathfrak h^*$ 且空间 $E_\lambda=\{w\in V\mid x(w)=\lambda(x)w,\forall x\in\mathfrak h\}$ 非空，则对任意 $y\in\mathfrak h$ 和 $w\in E_\lambda$ 都有
 $$
 y(z(w))=z(y(w))-[z,y](w)=\lambda(y)z(w)-\lambda([z,y])(w)
 $$
@@ -601,6 +623,12 @@ $$
   
     
     
+  
+  
+
+  
+  
+
   
   
 

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<link rel="stylesheet" href="/application.103b0138609a1d9c6549dc5dd2b8464b0c88abc2712639983a7ce525afeb8d7b.css" integrity="sha256-EDsBOGCaHZxlSdxd0rhGSwyIq8JxJjmYOnzlJa/rjXs=" />
+<link rel="stylesheet" href="/application.d46d1447d659d5cf74c6089333d64d89fb665e5e7090e52a31e35700179ffb5e.css" integrity="sha256-1G0UR9ZZ1c90xgiTM9ZNiftmXl5wkOUqMeNXABef&#43;14=" />
 
 
 
@@ -314,6 +314,24 @@ document.documentElement.setAttribute('data-theme', theme)
     <li><a class="active list-link" href="/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/" title="PID 上有限生成模的分类">PID 上有限生成模的分类</a></li>
   
 
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/%E6%97%A0%E7%A9%B7%E4%B8%AA-z-%E7%9A%84%E7%9B%B4%E7%A7%AF%E4%B8%8D%E8%87%AA%E7%94%B1/" title="无穷个 Z 的直积不自由">无穷个 Z 的直积不自由</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/" title="半单 Lie 代数和 Killing 型">半单 Lie 代数和 Killing 型</a></li>
+  
+
 
       </ul>
     </li>
@@ -454,9 +472,9 @@ document.documentElement.setAttribute('data-theme', theme)
       <div class="page-content">
         
         <div class="author-profile ms-auto align-self-lg-center">
-          <img class="rounded-circle" src='/images/author/diamond153_hu_a3fb78be2b903ba8.jpg' alt="Author Image">
+          <img class="rounded-circle" src='/images/author/diamond153_hu_2568bc747f23ddf8.jpg' alt="Author Image">
           <h5 class="author-name">Diamond_153</h5>
-          <p class="text-muted">Saturday, July 12, 2025</p>
+          <p class="text-muted">Tuesday, July 15, 2025</p>
         </div>
         
 
@@ -470,12 +488,87 @@ document.documentElement.setAttribute('data-theme', theme)
           <div class="tags">
   <ul style="padding-left: 0;">
     
+    
+    <li class="rounded"><a href="/tags/%E4%BA%A4%E6%8D%A2%E4%BB%A3%E6%95%B0/" class="btn btn-sm btn-info">交换代数</a></li>
+    
   </ul>
 </div>
 
         
         <div class="post-content" id="post-content">
-          <p>咕咕咕~</p>
+          <h3 id="基本定义">基本定义</h3>
+<p><strong>Definition [主理想整环/PID]</strong>. 对于一个环 $R$ 的理想 $I$，称其为主理想，如果 $I=(a)$ 对某个 $a\in R$. 称一个整环是主理想整环（principal ideal domain，简称 PID）如果其每个理想都是主理想.</p>
+<p><strong>Example</strong>. 整数环 $\mathbb Z$，一个域 $F$ 和它上面的多项式环 $F[x]$ 等都是主理想整环.</p>
+<p><strong>Proposition [PID 都是 Noether 整环]</strong>. 如果 $R$ 是 PID，则其是 Noether 的，也就是其不存在无穷长的理想严格升链 $I_1\subsetneq I_2\subsetneq\cdots$.</p>
+<blockquote>
+<p><em>Proof</em>. 如果有题中所述的严格无穷升链，令 $I=\bigcup_{n\ge 1}I_n$，则 $I$ 为 $R$ 的理想. 由主理想性质，令 $I=(x_0)$，则存在 $n$ 使得 $x_0\in I_n$，也就是说 $I\subseteq I_n$，从而 $I_{n+1}\subseteq I\subseteq I_n$，矛盾！ $\Box$</p></blockquote>
+<p><strong>Remark</strong>. PID 不一定是 Artin 的，也就是可能存在无穷长的理想严格降链 $I_1\supsetneq I_2\supsetneq\cdots$，比如 $R=\mathbb Z$，$I_n=n!\mathbb Z$.</p>
+<p><strong>Definition [分式域]</strong>. 对整环 $R$，定义其分式域 $F$ 为 $(R\times R^\times)/\sim$，其中等价关系 $\sim$ 为 $(a,b)\sim (c,d)$ 当且仅当 $ad=bc$，容易验证这是一个等价关系，并定义运算：
+$$
+\begin{align*}
+[(a,b)]+[(c,d)]&amp;=[(ad+bc,bd)]\\
+[(a,b)][(c,d)]&amp;=[(ac,bd)]
+\end{align*}
+$$
+则这是良好定义的，且 $F$ 在该运算下成为域. 我们不妨记等价类 $[(a,b)]\in F$ 为 $a/b$.</p>
+<p>注意到 $a\mapsto(a,1)$ 是一个 $R\to F$ 的环嵌入，所以 $F$ 是一个包含 $R$ 的域.</p>
+<p>我们曾在<a href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%9B%B4%E7%A7%AF%E4%B8%8E%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90-abel-%E7%BE%A4%E5%88%86%E7%B1%BB%E5%AE%9A%E7%90%86/#%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90-abel-%E7%BE%A4%E7%9A%84%E7%9B%B4%E7%A7%AF%E5%88%86%E8%A7%A3">这里</a>提到过整数矩阵的扩充引理，实际上它对于 PID 也是成立的.</p>
+<p><strong>Proposition [PID 上矩阵的扩充]</strong>. 如果 $R$ 是 PID，$A$ 和 $B$ 是 $R$ 上的矩阵，阶数分别为 $r\times n$ 和 $n\times r$ 矩阵，其中 $r\le n$ 且 $AB=I_r$. 那么存在 $R$ 上的 $n\times n$ 矩阵 $A'$ 和 $B'$，使得 $A'$ 前 $r$ 行是 $A$，$B'$ 前 $r$ 列是 $B$ 且 $A'B'=I_n$.</p>
+<blockquote>
+<p><em>Proof</em>. 如果 $r=n$ 命题显然成立，我们对 $r$ 反向归纳. 假设命题对 $r+1$ 成立，令 $A$ 的行向量是 $a_1,\cdots,a_r$，$B$ 的列向量是 $b_1,\cdots,b_r$，则 $a_ib_j=\delta_{ij}$ 对任意 $i,j$ 成立.</p>
+<p>我们在 $R$ 的分式域 $F$ 上考虑线性方程组 $Ax=0$，其必定有非零解 $x=(p_i/q_i)_{1\le i\le n}$，其中 $p_i,q_i\in R$；将其乘以 $q_1q_2\cdots q_n$ 就可以得到该方程组在 $R$ 上的解 $x'$；令 $x'$ 的分量生成的理想为 $(g)$，则存在向量 $b_{r+1}$ 使得 $gb_{r+1}=x$，此时 $b_{r+1}$ 分量生成的理想就是 $R$，且 $Ab_{r+1}=0$.</p>
+<p>注意到存在 $R$ 上的行向量 $y$ 使得 $yb_{r+1}=1$，取 $a_{r+1}=y-\sum_{i=1}^r(yb_i)a_i$ 就有：
+$$a_ib_{r+1}=0,a_{r+1}b_i=0,a_{r+1}b_{r+1}=1\quad\forall i\le r$$
+我们就把问题变为了 $r+1$ 的情况. $\Box$</p></blockquote>
+<p><strong>Definition [自由模]</strong>. 如果 $R$ 是环，$M$ 是 $R$-模且存在子集 $X\subseteq M$ 使得任意非零的 $x\in M$ 都可以<strong>唯一</strong>表示为 $c_1x_1+\cdots+c_nx_n$ 的形式，其中 $c_1,\cdots,c_n\in R$ 都不为 $0$ 且 $x_1,\cdots,x_n\in X$，则说 $M$ 是自由模，$X$ 是 $M$ 的基. 如果 $X=\{x_1,\cdots,x_n\}$ 是有限集，则此时 $M=Rx_1\oplus\cdots\oplus Rx_n\simeq R^n$.</p>
+<p>对于环 $R$ 的理想 $I$ 和 $R$-模 $M$，令 $IM=\{\sum a_im_i\mid a_i\in I,m_i\in M\}$，其中的求和是有限的，则 $IM$ 是 $I$ 的子模. 直接验证可以得到：
+$$
+R^n/IR^n=(R/IR)^n
+$$
+对任意的正整数 $n$ 成立，取 $I$ 为 $R$ 的任意极大理想，就可以得到下面的命题：</p>
+<p><strong>Proposition</strong>. 如果 $R$ 是环，则 $R^n\simeq R^m$ 当且仅当 $n=m$.</p>
+<blockquote>
+<p><em>Proof</em>. 右推左显然. 如果 $R^n\simeq R^m$ 但是 $n\ne m$，则 $R^n/IR^n\simeq R^m/IR^m$，由上面的推导知 $(R/I)^n\simeq (R/I)^m$. 由于 $I$ 是 $R$ 的极大理想，所以 $F=R/I$ 是域，$F^n\simeq F^m$ 这个 $R$-模同构可以导出一个 $F$-线性空间同构，这与基存在定理矛盾. $\Box$</p></blockquote>
+<p>所以可以定义一个有限生成自由模 $M\simeq R^n$ 的秩 $\mathrm{rank}\ M$ 为 $n$，由上述讨论知 $n$ 良定义. 其实秩可以推广至一般的 $R$-模：</p>
+<p><strong>Definition [$R$-模的秩]</strong>. 如果 $R$ 是环，$M$ 是 $R$ 模，则称 $M$ 的秩 $\mathrm{rank}\ M$ 为最大的 $n$ 使得 $R^n$ 可以被嵌入 $M$. 由上，我们有 $\mathrm{rank}\ R^n=n$.</p>
+<p>上面证明的命题在整环上有更强的形式：</p>
+<p><strong>Proposition [整环上自由模的秩不小于其子模的秩]</strong>. 如果 $R$ 是整环，$M$ 是秩为 $n$ 的自由模，则对任意 $x_1,\cdots,x_{n+1}\in M$ 都存在不全为 $0$ 的 $c_1,\cdots,c_{n+1}\in R$ 使得 $c_1x_1+\cdots+c_{n+1}x_{n+1}=0$.</p>
+<blockquote>
+<p><em>Proof</em>. 考虑 $R$ 的分式域 $F$，我们可以将 $x_1,\cdots,x_{n+1}$ 自然地嵌入 $F^n$，它们在这个线性空间下一定是线性相关的，所以存在不全为 $0$ 的 $p_i/q_i\in F$ 使得 $(p_1/q_1)x_1+\cdots+(p_{n+1}/q_{n+1})x_{n+1}=0$，令 $q=q_1\cdots q_{n+1}$ 和 $c_i=qp_i/q_i\in R$ 则有 $c_1x_1+\cdots+c_{n+1}x_{n+1}=0$. $\Box$</p></blockquote>
+<p>其实我们还有：</p>
+<p><strong>Proposition</strong>. 对于整环 $R$ 和 $R$-模 $M$：</p>
+<ul>
+<li>对于 $M$ 的秩为 $n$ 且 $N$ 是 $M$ 中秩为 $n$ 的一个自由子模，则 $M/N$ 是挠模；</li>
+<li>如果 $N$ 是 $M$ 中秩为 $n$ 的一个自由子模，且 $M/N$ 是挠模，则 $M$ 的秩也是 $n$.</li>
+</ul>
+<blockquote>
+<p><em>Proof</em>.</p>
+<ul>
+<li>如果 $M/N$ 不是挠模，则存在 $a\in M$ 使得 $ra\notin N$ 对任意 $r\in R$ 成立. 特别地，$ra\ne 0$ 对任意 $r\in R$ 成立，也就是 $Ra$ 是 $M$ 的自由子模. 注意到 $Ra\oplus N\simeq R^{n+1}$ 是秩为 $n+1$ 的自由模，这与 $M$ 的秩为 $n$ 矛盾.</li>
+<li>由定义 $\mathrm{rank}\ M\ge n$. 对任意 $x_1,\cdots,x_{n+1}$，存在 $r_1,\cdots,r_{n+1}$ 使得 $r_ix_i\in N$ 对任意 $i$ 成立（因为 $M/N$ 是挠模）. 根据上一个命题存在 $c_1,\cdots,c_{n+1}$ 使得 $(c_1r_1)x_1+\cdots+(c_{n+1}r_{n+1})x_{n+1}=0$，也就是 $R^{n+1}$ 无法嵌入 $M$，所以 $M$ 的秩就是 $n$. $\Box$</li>
+</ul></blockquote>
+<p><strong>Corollary</strong>. 如果 $R$ 是整环，$M,N$ 分别是秩为 $m$ 和 $n$ 的 $R$-模，则 $M\oplus N$ 的秩为 $m+n$.</p>
+<blockquote>
+<p><em>Proof</em>. 令 $M_0$ 是 $M$ 秩为 $m$ 的自由子模，$N_0$ 是 $N$ 秩为 $n$ 的自由子模，则由上面的命题知 $M/M_0$ 和 $N/N_0$ 都是挠模，从而 $(M\oplus N)/(M_0\oplus N_0)\simeq(M/M_0)\oplus(N/N_0)$ 也是挠模. 注意到 $M_0\oplus N_0$ 是秩为 $m+n$ 的自由模，故由上个命题知 $M\oplus N$ 的秩为 $m+n$. $\Box$</p></blockquote>
+<h3 id="pid-上有限生成自由模的子模">PID 上有限生成自由模的子模</h3>
+<p><strong>Theorem [PID 上有限生成自由模的子模自由]</strong>. $R$ 是 PID，如果 $M$ 是秩为 $n$ 的自由模，$N$ 是 $M$ 的非零子模，则 $N$ 是自由模，而且存在 $M$ 的基 $X=\{x_1,\cdots,x_n\}$ 和 $a_1\mid a_2\mid\cdots\mid a_m\in R$ 使得 $\{a_1x_1,\cdots,a_mx_m\}$ 是 $N$ 的基.</p>
+<blockquote>
+<p><em>Proof</em>. 对 $M$ 的秩 $n$ 归纳证明. 当 $n=1$ 时命题显然成立（$N$ 作为 $R$-模同构于 $R$ 的某个理想，也同构于 $R$ 自己）. 下面假设 $n\ge 2$ 且命题对秩 $&lt;n$ 的自由模都成立.</p>
+<p>考虑 $R$ 的一些理想构成的集合 $\mathcal I=\{\varphi(N)\mid\varphi\in\mathsf{Hom}(M,R)\}$，显然其不为 $\{0\}$，且由 $R$ 的 Noether 性质和 Zorn 引理知 $\mathcal I$ 存在极大元. 令 $(a)$ 是其中一个，且 $\theta(N)=(a)$，所以可以不妨设 $y\in M$ 使得 $\theta(y)=a$.</p>
+<p>对任意的 $\varphi\in\mathsf{Hom}(M,R)$，考虑理想 $(a,\varphi(y))=(b)$，则存在 $r,s\in R$ 使得 $ra+s\varphi(y)=b$. 令 $\varphi'=r\theta+s\varphi$，则 $b=\varphi'(y)\in\varphi'(N)$，也就是 $(a)\subseteq(b)\subseteq\varphi'(N)\in\mathcal I$，由 $(a)$ 在 $\mathcal I$ 中的极大性知 $\varphi'(N)=(a)$，也就是 $(a,\varphi(y))=(a)$，$a\mid\varphi(y)$.</p>
+<p>任取 $M$ 的基 $\{v_1,\cdots,v_n\}$，令 $\varphi_i$ 为 $M$ 中向量在这组基下表示的第 $i$ 个分量，即 $\varphi_i(v_j)=\delta_{ij}$，则 $\varphi_i\in\mathsf{Hom}(M,R)$，从而由上面的讨论知 $a\mid\varphi_i(y)$. 令 $\varphi_i(y)=k_ia$，取 $x_1=\sum k_iv_i$，则 $ax_1=y$，而且从 $a=\theta(ax_1)=a\theta(x_1)$ 可以得到 $\theta(x_1)=1$. 此时：</p>
+<ol>
+<li>$Rx_1\cap\ker\theta=0$，因为如果 $\theta(rx_1)=0$ 则 $r\theta(x_1)=r=0$，也就是 $rx_1=0$.</li>
+<li>$M=Rx_1\oplus\ker\theta$，因为每个 $x\in M$ 都可以分解为 $\theta(x)x_1+(x-\theta(x)x_1)\in Rx_1+\ker\theta$.</li>
+<li>$N=Rax_1\oplus(\ker\theta\cap N)$，因为对每个 $x\in N$ 都存在 $k$ 使得 $\theta(x)=ka$，从而 $x$ 可以分解为 $kax_1+(x-kax_1)\in Rax_1+(\ker\theta\cap N)$.</li>
+</ol>
+<p>准备充分，我们先来对 $N$ 的秩 $m$ 归纳来证明 $N$ 是自由模. 当 $m=0$ 时命题显然成立，如果 $m\ge 1$ 且命题对于 $m-1$ 成立，则由 $N=Rax_1\oplus(\ker\theta\cap N)$ 知 $\mathrm{rank}(\ker\theta\cap N)=m-1$，由归纳假设 $\ker\theta\cap N$ 是秩为 $m-1$ 的自由模，从而由直和知 $N$ 也是自由模.</p>
+<p>现在由 $M=Rx_1\oplus\ker\theta$ 知 $\ker\theta$ 是秩为 $n-1$ 的自由模，由归纳假设，存在 $\ker\theta$ 的基 $\{x_2,\cdots,x_n\}$ 和 $a_2\mid\cdots\mid a_m$ 使得 $\{a_2x_2,\cdots,a_mx_m\}$ 是 $\ker\theta\cap N$ 的基，最后只需要证明 $a\mid a_2$，但只需要令 $\eta\in\mathsf{Hom}(M,R)$ 为取在基 $\{x_1,\cdots,x_n\}$ 下表示的前两个分量之和，即 $\eta(x_i)=[i\le 2]$. 注意到 $\eta(ax_1)=a\in\eta(N)$，故 $(a)\subseteq\eta(N)$，由 $(a)$ 的极大性知 $(a)=\eta(N)$，从而 $a_2=\eta(a_2x_2)$ 可以被 $a$ 整除. 至此命题证毕. $\Box$</p></blockquote>
+<h3 id="pid-上有限生成模的分类">PID 上有限生成模的分类</h3>
+<p>如果 $R$ 是 PID，$M$ 是有限生成 $R$-模，令 $\{v_1,\cdots,v_n\}$ 是其一组生成元，考虑秩为 $n$ 的自由模 $R^n$，令其一组基为 $\{y_1,\cdots,y_n\}$，则 $\varphi:x_i\mapsto v_i$ 是一个满的 $R$-模同态，由同态基本定理 $R^n/\ker\varphi\simeq M$. 对 $\ker\varphi$ 使用上面的定理得到：</p>
+<p><strong>Theorem [PID 上有限生成模的分类]</strong>. 如果 $R$ 是 PID，$M$ 是有限生成 $R$-模，则存在 $a_1\mid\cdots\mid a_m\in R$ 和正整数 $r$ 使得 $M\simeq R^r\oplus R/(a_1)\oplus\cdots\oplus R/(a_m)$.</p>
+<p>上述分解实际上可以继续加细……</p>
+<p>咕咕咕~</p>
 
         </div>
 
@@ -542,6 +635,12 @@ document.documentElement.setAttribute('data-theme', theme)
   
   
 
+  
+  
+
+  
+  
+
 
 <div class="row next-prev-navigator">
   
@@ -558,9 +657,9 @@ document.documentElement.setAttribute('data-theme', theme)
         
       
       <div class="col-md-6 next-article">
-        <a href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E7%81%8C%E6%B0%B4%E5%8C%BA/" title="灌水区" class="btn filled-button">
+        <a href="/posts/%E6%9D%82%E8%B0%88/%E6%97%A0%E7%A9%B7%E4%B8%AA-z-%E7%9A%84%E7%9B%B4%E7%A7%AF%E4%B8%8D%E8%87%AA%E7%94%B1/" title="无穷个 Z 的直积不自由" class="btn filled-button">
           <div>下一篇 <i class="fas fa-chevron-circle-right"></i></div>
-          <div class="next-prev-text">灌水区</div>
+          <div class="next-prev-text">无穷个 Z 的直积不自由</div>
         </a>
       </div>
     
@@ -616,7 +715,17 @@ document.documentElement.setAttribute('data-theme', theme)
       <h5 class="text-center ps-3">目录</h5>
       <hr>
       <div class="toc">
-        <nav id="TableOfContents"></nav>
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#基本定义">基本定义</a></li>
+        <li><a href="#pid-上有限生成自由模的子模">PID 上有限生成自由模的子模</a></li>
+        <li><a href="#pid-上有限生成模的分类">PID 上有限生成模的分类</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
       </div>
     </div>
     

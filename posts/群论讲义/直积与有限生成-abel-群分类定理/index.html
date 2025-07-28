@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<link rel="stylesheet" href="/application.103b0138609a1d9c6549dc5dd2b8464b0c88abc2712639983a7ce525afeb8d7b.css" integrity="sha256-EDsBOGCaHZxlSdxd0rhGSwyIq8JxJjmYOnzlJa/rjXs=" />
+<link rel="stylesheet" href="/application.d46d1447d659d5cf74c6089333d64d89fb665e5e7090e52a31e35700179ffb5e.css" integrity="sha256-1G0UR9ZZ1c90xgiTM9ZNiftmXl5wkOUqMeNXABef&#43;14=" />
 
 
 
@@ -308,6 +308,24 @@ document.documentElement.setAttribute('data-theme', theme)
     <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/" title="PID 上有限生成模的分类">PID 上有限生成模的分类</a></li>
   
 
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/%E6%97%A0%E7%A9%B7%E4%B8%AA-z-%E7%9A%84%E7%9B%B4%E7%A7%AF%E4%B8%8D%E8%87%AA%E7%94%B1/" title="无穷个 Z 的直积不自由">无穷个 Z 的直积不自由</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/" title="半单 Lie 代数和 Killing 型">半单 Lie 代数和 Killing 型</a></li>
+  
+
 
       </ul>
     </li>
@@ -454,7 +472,7 @@ document.documentElement.setAttribute('data-theme', theme)
       <div class="page-content">
         
         <div class="author-profile ms-auto align-self-lg-center">
-          <img class="rounded-circle" src='/images/author/diamond153_hu_a3fb78be2b903ba8.jpg' alt="Author Image">
+          <img class="rounded-circle" src='/images/author/diamond153_hu_2568bc747f23ddf8.jpg' alt="Author Image">
           <h5 class="author-name">Diamond_153</h5>
           <p class="text-muted">Tuesday, July 8, 2025</p>
         </div>
@@ -469,6 +487,9 @@ document.documentElement.setAttribute('data-theme', theme)
         
           <div class="tags">
   <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/%E7%BE%A4%E8%AE%BA/" class="btn btn-sm btn-info">群论</a></li>
     
   </ul>
 </div>
@@ -560,7 +581,7 @@ $$|G|=|G/H||H|=|K||H|=|K\cap H||KH|\le |G|$$
 <p><strong>Example [分类 144 阶 Abel 群]</strong>. $144$ 阶 Abel 群 $G$ 首先可以写成 $G_2$ 和 $G_3$ 的直积，然后我们来分别考虑它们的分解. 首先 $|G_2|=16$，所以 $G_2$ 共有 $5$ 种可能性：$\mathsf C_2^4,\mathsf C_4^2,\mathsf C_2\times\mathsf C_8,\mathsf C_2^2\times\mathsf C_4,\mathsf C_{16}$；然后 $|G_3|=9$，所以其共有 $2$ 种可能性：$\mathsf C_3^2,\mathsf C_9$. 总体有 $5\times 2=10$ 种同构类.</p>
 <p><strong>Definition [有限生成和最小生成元集]</strong>. 如果一个群 $G$ 可以被有限集 $X\subseteq G$ 生成，即 $G=\langle X\rangle$，则称 $G$ 是有限生成的. 如果 $G$ 有限生成，$X\subseteq G$ 生成 $G$ 且对任意可以生成 $G$ 的集合 $Y\subseteq G$ 都有 $|X|\le |Y|$，则称 $X$ 是 $G$ 的一个最小生成元集. 注意这样的集合不一定唯一.</p>
 <p>有限生成 Abel 群其实也有和有限 Abel 群类似的分解. 我们先来看一个引理：</p>
-<p><strong>Lemma [整数矩阵的扩充]</strong>. 如果 $A$ 和 $B$ 分别是 $r\times n$ 和 $n\times r$ 矩阵，其中 $r;e n$ 且 $AB=I_r$，则存在 $n\times n$ 整数矩阵 $A'$ 和 $B'$，使得 $A'$ 前 $r$ 行是 $A$，$B'$ 前 $r$ 列是 $B$ 且 $A'B'=I_n$.</p>
+<p><strong>Lemma [整数矩阵的扩充]</strong>. 如果 $A$ 和 $B$ 分别是 $r\times n$ 和 $n\times r$ 整数矩阵，其中 $r\le n$ 且 $AB=I_r$，则存在 $n\times n$ 整数矩阵 $A'$ 和 $B'$，使得 $A'$ 前 $r$ 行是 $A$，$B'$ 前 $r$ 列是 $B$ 且 $A'B'=I_n$.</p>
 <blockquote>
 <p><em>Proof</em>. 如果 $r=n$ 命题显然成立，我们对 $r$ 反向归纳. 假设命题对 $r+1$ 成立，令 $A$ 的行向量是 $a_1,\cdots,a_r$，$B$ 的列向量是 $b_1,\cdots,b_r$，则 $a_ib_j=\delta_{ij}$ 对任意 $i,j$ 成立. 我们取 $Ax=0$ 的一个非零有理数解 $x$（这样的解一定存在），并将其乘以一个有理数变成整数向量，且所有分量的最大公约数为 $1$. 把我们得到的向量设为 $b_{r+1}$，则由 Bézout 定理知存在整数行向量 $y$ 使得 $yb_{r+1}=1$，取 $a_{r+1}=y-\sum_{i=1}^r(yb_i)a_i$ 就有：
 $$a_ib_{r+1}=0,a_{r+1}b_i=0,a_{r+1}b_{r+1}=1\quad\forall i\le r$$
@@ -611,6 +632,12 @@ $$\prod_{j=1}^rw_j^{q_{ij}}=\prod_{j=1}^r\prod_{k=1}^rv_k^{q_{ij}p_{jk}}=\prod_{
 
 
 
+
+  
+  
+
+  
+  
 
   
   
