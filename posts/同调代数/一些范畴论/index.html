@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>一些范畴论</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.dcc8c2de2d2fb0835ad316fa9a355d6f1ab97ec05af367dbbb32f65667c29f45.css" integrity="sha256-3MjC3i0vsINa0xb6mjVdbxq5fsBa82fbuzL2VmfCn0U=" />
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/site/favicon_hu_c91f00547ea1a84d.png" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Diamond_153 的个人博客"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="/images/author/diamond153.jpg">
+<meta property="og:url" content="http://localhost:1313/">
+
+    
+<meta name="description" content="一些范畴论知识" />
+
+
+
+    
+
+    
+        
+            
+            
+                
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4LBG7NDFZ"></script>
+      <script>
+        var doNotTrack = false;
+        if ( null ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-H4LBG7NDFZ');
+        }
+      </script>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+
+            
+
+            
+        
+    
+
+
+
+
+
+    <script integrity="sha256-DO4ugzEwhTW1Id1UIWn0gUJWaebCYOypeTit6LW4QB4=">
+     let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
+if (theme === 'system') {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+  } else {
+    theme = 'light'
+  }
+}
+document.documentElement.setAttribute('data-theme', theme)
+
+    </script>
+    
+  </head>
+
+  <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      
+        <img src="/images/site/main-logo_hu_c91f00547ea1a84d.png" id="logo" alt="Logo">
+      Diamond_153 的个人博客</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">主页</a>
+        </li>
+        
+          
+          
+            
+            
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">我的文章</a>
+          </li>
+        
+        
+        
+        
+        
+          
+
+
+
+  
+  
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+  
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/site/main-logo_hu_c91f00547ea1a84d.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/site/inverted-logo_hu_c91f00547ea1a84d.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">我的文章</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/"> 杂谈</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/n-%E9%98%B6%E7%BE%A4%E5%8F%AA%E6%9C%89%E5%BE%AA%E7%8E%AF%E7%BE%A4%E7%9A%84%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6/" title="n 阶群只有循环群的充要条件">n 阶群只有循环群的充要条件</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/pid-%E4%B8%8A%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90%E6%A8%A1%E7%9A%84%E5%88%86%E7%B1%BB/" title="PID 上有限生成模的分类">PID 上有限生成模的分类</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E6%9D%82%E8%B0%88/%E6%97%A0%E7%A9%B7%E4%B8%AA-z-%E7%9A%84%E7%9B%B4%E7%A7%AF%E4%B8%8D%E8%87%AA%E7%94%B1/" title="无穷个 Z 的直积不自由">无穷个 Z 的直积不自由</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/lie-%E4%BB%A3%E6%95%B0/"> Lie 代数</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/lie-%E4%BB%A3%E6%95%B0/engel-%E5%AE%9A%E7%90%86%E5%92%8C-lie-%E5%AE%9A%E7%90%86/" title="Engel 定理和 Lie 定理">Engel 定理和 Lie 定理</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/lie-%E4%BB%A3%E6%95%B0/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/" title="半单 Lie 代数和 Killing 型">半单 Lie 代数和 Killing 型</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/lie-%E4%BB%A3%E6%95%B0/%E7%BA%A6%E5%8C%96-lie-%E4%BB%A3%E6%95%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%A7%E8%B4%A8/" title="约化 Lie 代数的一些性质">约化 Lie 代数的一些性质</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/posts/%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0/"> 同调代数</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/posts/%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0/%E4%B8%80%E4%BA%9B%E8%8C%83%E7%95%B4%E8%AE%BA/" title="一些范畴论">一些范畴论</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/"> 讨论区</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E7%81%8C%E6%B0%B4%E5%8C%BA/" title="灌水区">灌水区</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E5%BB%BA%E8%AE%AE%E5%8C%BA/" title="建议区">建议区</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E5%AD%A6%E6%9C%AF%E5%8C%BA/" title="学术区">学术区</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/"> 群论讲义</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%80%A7%E8%B4%A8/" title="群的定义和基本性质">群的定义和基本性质</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%AD%90%E7%BE%A4%E5%92%8C-lagrange-%E5%AE%9A%E7%90%86/" title="子群和 Lagrange 定理">子群和 Lagrange 定理</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%90%8C%E6%80%81%E5%92%8C%E6%AD%A3%E8%A7%84%E5%AD%90%E7%BE%A4/" title="同态和正规子群">同态和正规子群</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%BE%A4%E4%BD%9C%E7%94%A8%E5%9F%BA%E7%A1%80/" title="群作用基础">群作用基础</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E5%85%B1%E8%BD%AD%E4%B8%8E-sylow-%E5%AE%9A%E7%90%86/" title="共轭与 Sylow 定理">共轭与 Sylow 定理</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E7%BE%A4%E8%AE%BA%E8%AE%B2%E4%B9%89/%E7%9B%B4%E7%A7%AF%E4%B8%8E%E6%9C%89%E9%99%90%E7%94%9F%E6%88%90-abel-%E7%BE%A4%E5%88%86%E7%B1%BB%E5%AE%9A%E7%90%86/" title="直积与有限生成 Abel 群分类定理">直积与有限生成 Abel 群分类定理</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/img13.png);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/diamond153_hu_7195fd6e9a9e5df6.jpg' alt="Author Image">
+          <h5 class="author-name">Diamond_153</h5>
+          <p class="text-muted">Wednesday, August 6, 2025</p>
+        </div>
+        
+
+        <div class="title">
+          <h1>一些范畴论</h1>
+        </div>
+
+        
+
+        
+          <div class="tags">
+  <ul style="padding-left: 0;">
+    
+    
+    <li class="rounded"><a href="/tags/%E8%8C%83%E7%95%B4%E8%AE%BA/" class="btn btn-sm btn-info">范畴论</a></li>
+    
+    
+    <li class="rounded"><a href="/tags/%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0/" class="btn btn-sm btn-info">同调代数</a></li>
+    
+  </ul>
+</div>
+
+        
+        <div class="post-content" id="post-content">
+          <h3 id="范畴的基本性质">范畴的基本性质</h3>
+<p><strong>Definition [范畴]</strong>. 一个范畴 $\mathcal C$ 由其对象<strong>类</strong> $\mathsf{Ob}(\mathcal C)$ 和任意两个对象 $a,b\in\mathsf{Ob}(\mathcal C)$ 间的态射<strong>集合</strong> $\mathsf{Mor}_{\mathcal C}(a,b)$ 构成，且：对任意 $a,b,c\in\mathsf{Ob}(\mathcal C)$，以及态射 $f\in\mathsf{Mor}_{\mathcal C}(a,b)$ 和 $g\in\mathsf{Mor}_{\mathcal C}(b,c)$，它们之间有一个复合 $g\circ f\in\mathsf{Mor}_{\mathcal C}(a,c)$. 复合满足下面两个性质：</p>
+<ol>
+<li>对任意 $a\in\mathsf{Ob}(\mathcal C)$，存在态射 $\mathbf 1_a$，使得对任意 $b\in\mathsf{Ob}(\mathcal C)$，$f\in\mathsf{Mor}_{\mathcal C}(a,b)$ 和 $g\in\mathsf{Mor}_{\mathcal C}(b,a)$ 有 $\mathbf 1_a\circ g=g$ 且 $f\circ\mathbf 1_a=f$，这个 $\mathbf 1_a$ 被称为恒同态射.</li>
+<li>对任意 $a,b,c,d\in\mathsf{Ob}(\mathcal C)$ 和三个态射 $f\in\mathsf{Mor}_{\mathcal C}(a,b)$，$g\in\mathsf{Mor}_{\mathcal C}(b,c)$，$h\in\mathsf{Mor}_{\mathcal C}(c,d)$，有结合律 $(h\circ g)\circ f=h\circ(g\circ f)$.</li>
+</ol>
+<p><strong>Remark</strong>.</p>
+<ul>
+<li>对象是类而不一定是集合，而两个对象的态射集一定要是集合，对象类是集合的范畴叫做小范畴.</li>
+<li>一个对象的恒同态射一定是唯一的，否则如果有两个满足条件的恒同态射 $\mathbf 1_a,\mathbf 1_a'$，则 $\mathbf 1_a=\mathbf 1_a\circ\mathbf 1_a'=\mathbf 1_a'$.</li>
+<li>$a\in\mathsf{Ob}(\mathcal C)$ 可以简单记为 $a\in\mathcal C$；$\mathsf{Mor}_{\mathcal C}(a,b)$ 也可以记为 $\mathsf{Mor}_{\mathcal C}(a,b)$ 或者 $\mathcal C(a,b)$；$f\in\mathsf{Hom}_{\mathcal C}(a,b)$ 可以记为 $f:a\to b$ 或者 $a\xrightarrow{f}b$.</li>
+</ul>
+<p><strong>Examples [一些例子]</strong>. 我们在生活中遇到的很多东西都构成范畴.</p>
+<ul>
+<li>定义集合范畴 $\mathsf{Set}$ 的对象类为所有集合，两个对象 $a,b$ 之间的所有态射 $\mathsf{Mor}_{\mathsf{Set}}(a,b)$ 即为所有 $a$ 到 $b$ 的映射，态射的复合就是映射的复合，则这构成一个范畴.</li>
+<li>定义域 $k$ 上的线性空间范畴 $\mathsf{Vect}_k$ 的对象类为所有 $k$ 上的线性空间，两个线性空间 $V$ 和 $W$ 之间的所有态射 $\mathsf{Vect}_k(V,W)$ 为所有 $V$ 到 $W$ 的线性映射，则这构成一个范畴.</li>
+<li>定义群范畴 $\mathsf{Grp}$ 的对象类为所有群，两个群之间的态射为群同态，则这构成一个范畴.</li>
+<li>定义 Abel 群范畴 $\mathsf{Ab}$ 的对象类为所有 Abel 群，两个 Abel 群之间的态射为群同态，则这构成一个范畴.</li>
+<li>定义含幺交换环范畴 $\mathsf{Ring}$ 的对象类为所有含幺交换环（这里包括零环），态射为环同态，则这构成一个范畴. 交换环范畴为 $\mathsf{CRing}$，一般无幺环范畴为 $\mathsf{Rng}$.</li>
+<li>定义拓扑空间范畴 $\mathsf{Top}$ 的对象类为所有拓扑空间，态射为连续映射，则这构成一个范畴.</li>
+<li>对于偏序集 $(P,\leq)$，定义一个范畴的对象类为 $P$，两个对象 $x,y\in P$ 间的态射是单点集 $\{(x,y)\}$，否则为 $\varnothing$，态射的复合为 $(y,z)\circ(x,y)=(x,z)$，则其构成一个范畴，它也是一个小范畴.</li>
+</ul>
+<p>我们可以将集合的一些东西抽象，以定义态射的性质.</p>
+<p><strong>Definition [单态射、满态射、双态射和同构]</strong>. $\mathcal C$ 是范畴，对象 $a,b\in\mathcal C$，如果我们有态射 $f:a\to b$，则：</p>
+<ul>
+<li>如果对任意 $c\in\mathcal C$ 和 $g_1,g_2:c\to a$，$f\circ g_1=f\circ g_2$ 可以推出 $g_1=g_2$，则称 $f$ 是单态射；</li>
+<li>如果对任意 $c\in\mathcal C$ 和 $g_1,g_2:b\to c$，$g_1\circ f=g_2\circ f$ 可以推出 $g_1=g_2$，则称 $f$ 是满态射；</li>
+<li>如果 $f$ 又单又满，则称其为双态射；</li>
+<li>如果存在 $g:b\to a$ 使得 $g\circ f=\mathbf 1_a$ 且 $f\circ g=\mathbf 1_b$，则称 $f$ 为同构.</li>
+</ul>
+<p>可以验证在集合范畴上，单态射就是单射，满态射就是满射，如果你承认选择公理则双态射和同构等价. 在群、Abel 群、含幺交换环、线性空间范畴中，单态射和集合上的单射是等价的，不过在含幺交换环范畴上，满态射不一定是集合上的满射，反例如下：</p>
+<blockquote>
+<p>考虑显而易见的环嵌入 $f:\mathbb Z\to\mathbb Q$，则对任意环同态 $g_1,g_2:\mathbb Q\to R$，如果 $g_1\circ f=g_2\circ f$，则对任意 $0\ne q\in\mathbb Q$ 都有 $g_1(q)g_1(1/q)=g_2(q)g_2(1/q)=1$，两式相减得到 $(g_1(q)-g_2(q))g_1(1/q)=0$，乘以 $g_1(q)$ 就有 $g_1(q)-g_2(q)=0$，所以 $g_1=g_2$. 从而 $f$ 是一个满射. 更一般地，对于一个整环 $R$，它到自己的分式域的嵌入也是环范畴中的满态射.</p></blockquote>
+<p>范畴中的同构一定是双态射，不过反过来就不一定. 比如上面举的例子，它既是单态射又是满态射，但不是同构.</p>
+<h3 id="函子的定义">函子的定义</h3>
+<p><strong>Definition [函子]</strong>. 如果 $\mathcal C$ 和 $\mathcal D$ 是两个范畴，它们之间的（协变）函子 $F$ 由一个 $\mathsf{Ob}(\mathcal C)\to\mathsf{Ob}(\mathcal D)$ 的映射（$a\in\mathcal C$ 的像记作 $F(a)$），和任意两个对象 $a,b\in\mathcal C$，一个从 $\mathsf{Mor}_{\mathcal C}(a,b)$ 到 $\mathsf{Mor}_{\mathcal D}(F(a),F(b))$ 的映射（$f\in\mathcal C(a,b)$ 的像记作 $F(f)$）构成，满足以下两个条件：</p>
+<ol>
+<li>对任意 $a\in\mathcal C$，都有 $F(\mathbf 1_a)=\mathbf 1_{F(a)}$；</li>
+<li>对任意 $a,b,c\in\mathcal C$ 以及两个态射 $f\in\mathcal C(a,b)$ 和 $g\in\mathcal C(b,c)$ 都有 $F(g)\circ F(f)=F(g\circ f)$.</li>
+</ol>
+<p>逆变函子的定义为协变函子将 $\mathsf{Mor}_{\mathcal D}(F(a),F(b))$ 改为 $\mathsf{Mor}_{\mathcal D}(F(b),F(a))$，以及 $F(g)\circ F(f)=F(g\circ f)$ 改为 $F(f)\circ F(g)=F(g\circ f)$. 函子通常记作 $F:\mathcal C\to\mathcal D$.</p>
+<p><strong>Examples [一些例子]</strong>.</p>
+<ul>
+<li>遗忘函子：把某些条件或者结构忘掉，比如可以定义一个 $\mathsf{Ab}\to\mathsf{Grp}$ 的函子，就是把交换性忘记；甚至可以定义 $\mathsf{Vect}_k\to\mathsf{Set}$ 的遗忘函子，直接把线性空间的结构全部忘记，只看作一个集合.</li>
+<li>定义一个 $\mathsf{Set}$ 到 $\mathsf{Vect}_k$ 的函子 $F$ 在对象上的映射为 $X\mapsto k^X$（所有 $X\to k$ 的映射），在态射上的映射为 $F(f)(\sum_i k_ix_i)=\sum_i k_if(x_i)$，对任意的 $f\in\mathsf{Set}(X,Y)$ 和 $\sum_i k_ix_i\in F(X)$. 不难验证这是一个函子.</li>
+</ul>
+<p><strong>Definition [反范畴]</strong>. 对任意范畴 $\mathcal C$，定义 $\mathcal C$ 的反范畴 $\mathcal C^{\mathrm{op}}$，它的对象类就是 $\mathcal C$ 的对象类，但是 $\mathcal C^{\mathrm{op}}(a,b)=\mathcal C(b,a)$，且对 $f\in\mathcal C^{\mathrm{op}}(a,b)$ 和 $g\in\mathcal C^{\mathrm{op}}(b,c)$，其在 $\mathcal C^{\mathrm{op}}$ 中的复合 $g\circ f\in\mathcal C^{\mathrm{op}}(a,c)$ 定义为 $\mathcal C$ 中的反向复合 $f\circ g\in\mathcal C(c,a)$.</p>
+<p><strong>Proposition</strong>. $(\mathcal C^{\mathrm{op}})^{\mathrm{op}}=\mathcal C$，且 $\mathcal C\to\mathcal D$ 的反变函子等价于 $\mathcal C^{\mathrm{op}}\to\mathcal D$ 的协变函子.</p>
+<p><strong>Definition [推前映射与拉回映射]</strong>. 给定范畴 $\mathcal C$ 中的态射 $f\in\mathcal C(a,b)$，可以对任意 $c\in\mathcal C$ 定义一个映射 $f_*:\mathcal C(c,a)\to\mathcal C(c,b)$ 为 $g\mapsto f\circ g$，这称为 $f$ 诱导的推前映射；也可以定义映射 $f^*:\mathcal C(b,c)\to\mathcal C(a,c)$ 为 $g\mapsto g\circ f$，这称为 $f$ 诱导的拉回映射.</p>
+<p><strong>Definition [一种重要的函子]</strong>. 对于范畴 $\mathcal C$ 和其中的对象 $x\in\mathcal C$，定义一个协变函子 $h^x:\mathcal C\to\mathsf{Set}$，满足 $h^x(a)=\mathcal C(x,a)$，对任意 $f\in\mathcal C(a,b)$，令 $h^x(f)=f_*\in\mathsf{Set}(\mathcal C(x,a),\mathcal C(x,b))$；同时定义反变函子 $h_x:\mathcal C\to\mathsf{Set}$，满足 $h_x(a)=\mathcal C(a,x)$，对任意 $f\in\mathcal C(a,b)$，令 $h_x(f)=f^*\in\mathsf{Set}(\mathcal C(b,x),\mathcal C(a,x))$. 我们通常直观地记 $h^x=\mathcal C(x,-)$ 和 $h_x=\mathcal C(-,x)$.</p>
+<p><strong>Exercise</strong>. 验证 $\mathcal C(x,-)$ 和 $\mathcal C(-,x)$ 确实分别是协变函子和反变函子.</p>
+<h3 id="自然变换">自然变换</h3>
+<p><strong>Definition [自然变换]</strong>. 对于协变函子 $F,G:\mathcal C\to\mathcal D$，一个 $F$ 到 $G$ 的自然变换 $\alpha$ 为一些 $\mathcal D$ 中态射 $\alpha_a:F(a)\to G(a)$，其中 $a\in\mathcal C$ 是任意对象，满足：对任意 $x,y\in\mathcal C$ 和 $f\in\mathcal C(x,y)$，都有 $\alpha_y\circ F(f)=G(f)\circ\alpha_x$，也就是有交换图
+$$
+\begin{CD}
+F(x) @&gt;F(f)&gt;&gt; F(y) \\
+@V\alpha_xVV @VV\alpha_yV \\
+G(x) @&gt;G(f)&gt;&gt; G(y)
+\end{CD}
+$$
+一个 $F$ 到 $G$ 的自然变换 $\alpha$ 可以记作 $\alpha:F\Rightarrow G$.</p>
+<p><strong>Examples</strong>.</p>
+<ul>
+<li>
+<p>考虑交换化函子 $\mathrm{ab}:\mathsf{Grp}\to\mathsf{Grp}$ 为 $\mathrm{ab}(G)=G/G'$，而对于群同态 $\varphi:G\to H$ 我们注意到 $\varphi(G')\subseteq H'$，从而可以良好地定义一个 Abel 群之间的同态 $\mathrm{ab}(\varphi):\mathrm{ab}(G)\to\mathrm{ab}(H)$ 为 $\mathrm{ab}(\varphi)(gG')=\varphi(g)H'$. 对 $G\in\mathsf{Grp}$，令 $\pi_G$ 为 $G$ 到 $G/G'$ 的投影变换，则对任意 $G,H\in\mathsf{Grp}$ 和同态 $f:G\to H$ 有交换图：
+$$
+\begin{CD}
+G @&gt;\varphi&gt;&gt; H \\
+@V\pi_G VV @VV\pi_HV \\
+\mathrm{ab}(G) @&gt;\mathrm{ab}(\varphi)&gt;&gt; \mathrm{ab}(H)
+\end{CD}
+$$
+所以 $\pi$ 是恒等函子 $\mathrm{id}$ 到交换化函子 $\mathrm{ab}$ 的自然变换.</p>
+</li>
+<li>
+<p>考虑双对偶函子 $-^{\vee\vee}:\mathsf{Vect}_k\to\mathsf{Vect}_k$ 为 $V\mapsto V^{\vee\vee}$ 和 $f\mapsto f^{\vee\vee}$，其中 $-^\vee$ 是线性空间或者线性变换的对偶. 并对于 $V\in\mathsf{Vect}_k$，定义 $\Lambda_V:V\to V^{\vee\vee}$ 为 $\Lambda_V(v)(f)=f(v)$，对于任意的 $v\in V$ 和 $f\in V^\vee$. 任取线性空间 $V,W\in\mathsf{Vect}_k$ 和线性变换 $f:V\to W$，可以验证有交换图：
+$$
+\begin{CD}
+V @&gt;f&gt;&gt; W \\
+@V\Lambda_V VV @VV\Lambda_WV \\
+V^{\vee\vee} @&gt;f^{\vee\vee}&gt;&gt; W^{\vee\vee}
+\end{CD}
+$$
+从而 $\Lambda$ 是一个从恒等函子 $\mathrm{id}$ 到双对偶函子 $-^{\vee\vee}$ 的自然变换.</p>
+</li>
+</ul>
+<p><strong>Definition [纵合成]</strong>. 对于范畴 $\mathcal C$ 到 $\mathcal D$ 的三个函子 $F,G,H$，定义两个自然变换 $\alpha:F\Rightarrow G$ 和 $\beta:G\Rightarrow H$ 的纵合成 $\beta\circ\alpha:F\Rightarrow H$ 为 $(\beta\circ\alpha)_x=\beta_x\circ\alpha_x$</p>
+<p>从交换图：
+$$
+\begin{CD}
+F(x) @&gt;F(f)&gt;&gt; F(y) \\
+@V\alpha_xVV @VV\alpha_yV \\
+G(x) @&gt;G(f)&gt;&gt; G(y) \\
+@V\beta_xVV @VV\beta_yV \\
+H(x) @&gt;H(f)&gt;&gt; H(y)
+\end{CD}
+$$
+可以看出 $\beta\circ\alpha$ 是自然变换，因为左边一列两个态射的合成是 $(\beta\circ\alpha)_x$，右边一列两个态射的合成是 $(\beta\circ\alpha)_y$.</p>
+<p><strong>Definition [横合成]</strong>. 对于范畴 $\mathcal C,\mathcal D$ 和 $\mathcal E$，以及函子 $F_1,F_2:\mathcal C\to\mathcal D$ 和 $G_1,G_2:\mathcal D\to\mathcal E$，如果有自然变换 $\alpha:F_1\Rightarrow F_2$ 和 $\beta:G_1\Rightarrow G_2$，定义它们的横合成 $\beta\cdot\alpha:G_1\circ F_1\Rightarrow G_2\circ F_2$ 为 $(\beta\cdot\alpha)_x=G_2(\alpha_x)\circ\beta_{F_1(x)}=\beta_{F_2(x)}\circ G_1(\alpha_x)$.</p>
+<p>最后一个等号是因为 $\beta$ 是 $G_1\Rightarrow G_2$ 的自然变换，从而取态射 $F_1(x)\xrightarrow{\alpha_x}F_2(x)$，就有交换图：
+$$
+\begin{CD}
+G_1(F_1(x)) @&gt;G_1(\alpha_x)&gt;&gt; G_1(F_2(x)) \\
+@V\beta_{F_1(x)}VV @VV\beta_{F_2(x)}V \\
+G_2(F_1(x)) @&gt;G_2(\alpha_x)&gt;&gt; G_2(F_2(x))
+\end{CD}
+$$
+下面我们来证明 $\beta\cdot\alpha$ 是自然变换. 对任意 $f:x\to y$，我们有交换图：
+$$
+\begin{CD}
+G_1(F_1(x)) @&gt;G_1(\alpha_x)&gt;&gt; G_1(F_2(x)) \\
+@VG_1(F_1(f))VV @VVG_1(F_2(f))V \\
+G_1(F_1(y)) @&gt;G_1(\alpha_y)&gt;&gt; G_1(F_2(y))
+\end{CD}
+$$
+这是将自然变换 $\alpha:F_1\Rightarrow F_2$ 对应 $x\xrightarrow{f}y$ 的交换图同时作用 $G_1$ 得到的，还有：
+$$
+\begin{CD}
+G_1(F_2(x)) @&gt;\beta_{F_2(x)}&gt;&gt; G_2(F_2(x)) \\
+@VG_1(F_2(f))VV @VVG_2(F_2(f))V \\
+G_1(F_2(y)) @&gt;\beta_{F_2(y)}&gt;&gt; G_2(F_2(y))
+\end{CD}
+$$
+这是自然变换 $\beta:G_1\Rightarrow G_2$ 对应 $F_2(x)\xrightarrow{F_2(f)}F_2(y)$ 的交换图. 将这两个图拼在一起，就可以看出 $(\beta\cdot\alpha)_x=\beta_{F_2(x)}\circ G_1(\alpha_x)$ 的确是一个自然变换.</p>
+<p>对于自然变换的纵合成与横合成实际上有结合律，即 $(\gamma\circ\beta)\circ\alpha=\gamma\circ(\beta\circ\alpha)$ 和 $(\gamma\cdot\beta)\cdot\alpha=\gamma\cdot(\beta\cdot\alpha)$，其中 $\alpha,\beta,\gamma$ 的定义是自明的.</p>
+<p><strong>Remark</strong>. 对两个范畴 $\mathcal C$ 和 $\mathcal D$ 定义函子范畴 $\mathsf{Fun}(\mathcal C,\mathcal D)$，对象为所有函子，函子之间的态射为自然变换，复合为纵合成，则由上面的讨论可以轻松得知这构成一个范畴.</p>
+<p>除此以外，还有一个联系纵合成和横合成的恒等式：</p>
+<p><strong>Proposition [一个恒等式]</strong>. 如果有范畴 $\mathcal C,\mathcal D$ 和 $\mathcal E$，以及函子 $F_1,F_2,F_3:\mathcal C\to\mathcal D$ 和 $G_1,G_2,G_3:\mathcal D\to\mathcal E$，则对自然变换 $\alpha_1:F_1\Rightarrow F_2$，$\alpha_2:F_2\Rightarrow F_3$，$\beta_1:G_1\Rightarrow G_2$ 和 $\beta_2:G_2\Rightarrow G_3$，有 $(\beta_2\circ\beta_1)\cdot(\alpha_2\circ\alpha_1)=(\beta_1\cdot\alpha_1)\circ(\beta_2\cdot\alpha_2)$.</p>
+<blockquote>
+<p><em>Proof</em>. 验证即可. $\Box$</p></blockquote>
+<p><strong>Defintion [自然同构]</strong>. 如果函子 $F,G\in\mathsf{Fun}(\mathcal C,\mathcal D)$ 间的自然变换 $\alpha$ 满足对任意 $x$ 都有 $\alpha_x$ 是 $\mathcal D$ 中的同构，则称 $\alpha$ 是 $F$ 到 $G$ 的自然同构.</p>
+<p><strong>Example</strong>. 在上一个双对偶函子的例子中，改变范畴 $\mathsf{Vect}_k$ 为所有有限维线性空间的范畴 $\mathsf{FDVect}_k$，则 $\Lambda$ 成为自然同构，因为对无限维线性空间 $V$，$\Lambda_V$ 并不是满同态.</p>
+<h3 id="始对象终对象和零对象">始对象、终对象和零对象</h3>
+<p><strong>Definition [始对象、终对象和零对象]</strong>. 对于范畴 $\mathcal C$，若存在对象 $x\in\mathcal C$ 满足：</p>
+<ul>
+<li>对任意 $a\in\mathcal C$，有且仅有一个态射 $x\to a$，则称 $x$ 是 $\mathcal C$ 的始对象；</li>
+<li>对任意 $a\in\mathcal C$，有且仅有一个态射 $a\to x$，则称 $x$ 是 $\mathcal C$ 的终对象；</li>
+<li>如果 $x$ 既是始对象又是终对象，则称 $x$ 为零对象.</li>
+</ul>
+<p>注意上面的定义并没有保证存在性，不过如果始对象、终对象或零对象存在则其必定在同构意义下唯一（留作习题）.</p>
+<p>下面给出一些范畴的始对象和终对象：</p>
+<table>
+  <thead>
+      <tr>
+          <th>范畴</th>
+          <th>始对象</th>
+          <th>终对象</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\mathsf{Set}$ 和 $\mathsf{Top}$</td>
+          <td>空集或空空间 $\varnothing$</td>
+          <td>单点集或单点空间 $*$</td>
+      </tr>
+      <tr>
+          <td>$\mathsf{Grp}$ 和 $\mathsf{Ab}$</td>
+          <td>平凡群 $1$ 或 $0$</td>
+          <td>平凡群 $1$ 或 $0$</td>
+      </tr>
+      <tr>
+          <td>$\mathsf{Vect}_k$</td>
+          <td>零空间 $0$</td>
+          <td>零空间 $0$</td>
+      </tr>
+      <tr>
+          <td>偏序集 $(P,\leq)$ 诱导的范畴</td>
+          <td>$P$ 中最大元（如果存在）</td>
+          <td>$P$ 中最小元（如果存在）</td>
+      </tr>
+      <tr>
+          <td>$\mathsf{Ring}$</td>
+          <td>$\mathbb Z$（想想为什么）</td>
+          <td>零环 $0$</td>
+      </tr>
+  </tbody>
+</table>
+<br/>
+<p>所以可以看到，前三行给出的范畴存在零对象，而环范畴不存在.</p>
+<h3 id="极限和余极限">极限和余极限</h3>
+<p>如果我们有一个范畴 $\mathcal C$，和其中的一些对象 $\{x_i\}_{i\in I}$ 以及态射 $\{f_{ij}:x_i\to x_j\}_{(i,j)\in J\subseteq I\times I}$ 构成的交换图，我们定义：</p>
+<p><strong>Definition [极限和余极限]</strong>.</p>
+<ul>
+<li>$x\in\mathcal C$ 和一族态射 $\{p_i:x\to x_i\}_{i\in I}$ 被称为这个图表的极限，如果 $f_{ij}\circ p_i=p_j$ 对任意 $(i,j)\in J$ 成立，且对任意满足该条件的另一个对象 $x'$ 和一族态射 $\{p_i':x'\to x_i\}_{i\in I}$，都存在态射 $p:x'\to x$ 使得 $p_i'=p_i\circ p$ 对任意 $i\in I$ 成立；</li>
+<li>$x\in\mathcal C$ 和一族态射 $\{q_i:x_i\to x\}_{i\in I}$ 被称为这个图表的极限，如果 $q_j\circ f_{ij}=q_i$ 对任意 $(i,j)\in J$ 成立，且对任意满足该条件的另一个对象 $x'$ 和一族态射 $\{q_i':x_i\to x'\}_{i\in I}$，都存在态射 $q:x\to x'$ 使得 $q_i'=q\circ q_i$ 对任意 $i\in I$ 成立.</li>
+</ul>
+<p>极限和余极限都不一定存在，但存在的话就必定在同构意义下唯一.</p>
+<p><strong>Example</strong>.</p>
+<ul>
+<li>
+<p>在偏序集 $(\mathbb R,\leq)$ 生成的范畴中，对于一些对象 $S=\{x_i\}_{i\in I}\subseteq\mathbb R$，如果它们之间没有态射，则这个图表的极限是下确界 $\inf S$，余极限是上确界 $\sup S$.</p>
+</li>
+<li>
+<p>在线性空间范畴 $\mathsf{Vect}_k$ 中，考虑一些线性空间 $\{V_i\}_{i\in I}$，如果它们之间没有态射，则其极限为所有 $V_i$ 的直积 $\prod_{i\in I}V_i$，余极限为所有 $V_i$ 的直和 $\bigoplus_{i\in I}V_i$.（线性代数习题！）</p>
+</li>
+</ul>
+<p><strong>Remark</strong>. 直积中的元素为 $(v_i)_{i\in I}$，其中 $v_i\in V_i$，定义加法 $(v_i)+(w_i)=(v_i+w_i)$ 和数乘 $k(v_i)=(kv_i)$. 直和与直积的不同之处在于 $(v_i)_{i\in I}$ 只能有有限个分量不为 $0$，可以尝试从这一点去证明上面的例子. 而且我们还可以从极限和余极限出发定义一般范畴上的积（对应直积）和余积（对应直和）.</p>
+<p><em>To do list</em>. 正向极限、逆极限、Yoneda 引理.</p>
+<p>咕咕咕~</p>
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+        
+        
+        
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/lie-%E4%BB%A3%E6%95%B0/%E7%BA%A6%E5%8C%96-lie-%E4%BB%A3%E6%95%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%A7%E8%B4%A8/" title="约化 Lie 代数的一些性质" class="btn filled-button">
+        <div><i class="fas fa-chevron-circle-left"></i> 上一篇</div>
+        <div class="next-prev-text">约化 Lie 代数的一些性质</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/%E7%81%8C%E6%B0%B4%E5%8C%BA/" title="灌水区" class="btn filled-button">
+          <div>下一篇 <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">灌水区</div>
+        </a>
+      </div>
+    
+</div>
+
+      <br/>
+      <hr />
+
+      
+      
+        
+    
+<div id="vcomments"></div>
+<script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script type="text/javascript">
+  new Valine({
+    el: "#vcomments",
+    appId: "q0dUvrOifR4xCVw4rUVcV5bA-MdYXbMMI",
+    appKey: "bGYOqxmZXHRfGI6AyAlaQBeS",
+    avatar: "retro",
+    placeholder: "说说你的看法？这里支持匿名评论！",
+    visitor: "",
+    lang: "zh-cn",
+    recordIP: "true",
+    enableQQ: "true",
+    serverURLs: "https://q0duvroi.api.lncldglobal.com"
+  });
+</script>
+
+
+
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center ps-3">目录</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#范畴的基本性质">范畴的基本性质</a></li>
+        <li><a href="#函子的定义">函子的定义</a></li>
+        <li><a href="#自然变换">自然变换</a></li>
+        <li><a href="#始对象终对象和零对象">始对象、终对象和零对象</a></li>
+        <li><a href="#极限和余极限">极限和余极限</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>我的联系方式:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:amethyst153@outlook.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>amethyst153@outlook.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://user.qzone.qq.com/2874864660%25!%28EXTRA%20int&#61;2874864660%29 target="_blank" rel="noopener">
+                  <span><i class="fa-brands fa-qq"></i></span> <span>2874864660</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+  </footer>
+
+
+    <script src="/application.e31c3c1ca32e35b6d946333f1ebe2744573d7f04ce33bb5e6aee3eebddb0b00e.js" integrity="sha256-4xw8HKMuNbbZRjM/Hr4nRFc9fwTOM7teau4&#43;692wsA4=" defer></script>
+
+
+    
+     
+
+    
+    
+
+</body>
+</html>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lie 代数 on Diamond_153 的个人博客</title>
-    <link>https://hugo-toha.github.io/posts/lie-%E4%BB%A3%E6%95%B0/</link>
+    <link>http://localhost:1313/posts/lie-%E4%BB%A3%E6%95%B0/</link>
     <description>Recent content in Lie 代数 on Diamond_153 的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 28 Jul 2025 16:00:00 +0800</lastBuildDate><atom:link href="https://hugo-toha.github.io/posts/lie-%E4%BB%A3%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Mon, 28 Jul 2025 16:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/lie-%E4%BB%A3%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>约化 Lie 代数的一些性质</title>
-      <link>https://hugo-toha.github.io/posts/lie-%E4%BB%A3%E6%95%B0/%E7%BA%A6%E5%8C%96-lie-%E4%BB%A3%E6%95%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%A7%E8%B4%A8/</link>
+      <link>http://localhost:1313/posts/lie-%E4%BB%A3%E6%95%B0/%E7%BA%A6%E5%8C%96-lie-%E4%BB%A3%E6%95%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%A7%E8%B4%A8/</link>
       <pubDate>Mon, 28 Jul 2025 16:00:00 +0800</pubDate>
       
-      <guid>https://hugo-toha.github.io/posts/lie-%E4%BB%A3%E6%95%B0/%E7%BA%A6%E5%8C%96-lie-%E4%BB%A3%E6%95%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%A7%E8%B4%A8/</guid>
+      <guid>http://localhost:1313/posts/lie-%E4%BB%A3%E6%95%B0/%E7%BA%A6%E5%8C%96-lie-%E4%BB%A3%E6%95%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%A7%E8%B4%A8/</guid>
       <description>&lt;p&gt;免责声明：本文的讨论基于特征为 $0$ 的代数闭域.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Definition [约化 Lie 代数]&lt;/strong&gt;. 如果 Lie 代数 $\mathfrak g$ 满足 $\mathsf{Rad}\ \mathfrak g=\mathsf C(\mathfrak g)$，则称 $\mathfrak g$ 是约化的.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Proposition&lt;/strong&gt;. 如果 $\mathfrak g$ 是约化 Lie 代数，则 $[\mathfrak g,\mathfrak g]$ 半单且 $\mathfrak g=\mathsf C(\mathfrak g)\oplus[\mathfrak g,\mathfrak g]$.&lt;/p&gt;
@@ -22,10 +22,10 @@
     
     <item>
       <title>半单 Lie 代数和 Killing 型</title>
-      <link>https://hugo-toha.github.io/posts/lie-%E4%BB%A3%E6%95%B0/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/</link>
+      <link>http://localhost:1313/posts/lie-%E4%BB%A3%E6%95%B0/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/</link>
       <pubDate>Thu, 17 Jul 2025 16:00:00 +0800</pubDate>
       
-      <guid>https://hugo-toha.github.io/posts/lie-%E4%BB%A3%E6%95%B0/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/</guid>
+      <guid>http://localhost:1313/posts/lie-%E4%BB%A3%E6%95%B0/%E5%8D%8A%E5%8D%95-lie-%E4%BB%A3%E6%95%B0%E5%92%8C-killing-%E5%9E%8B/</guid>
       <description>&lt;p&gt;免责声明：本文的讨论基于特征为 $0$ 的代数闭域.&lt;/p&gt;
 &lt;h3 id=&#34;半单-lie-代数&#34;&gt;半单 Lie 代数&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Definition [半单 Lie 代数]&lt;/strong&gt;. 称 Lie 代数 $\mathfrak g$ 是半单的，如果 $\mathfrak g$ 没有非零的交换理想.&lt;/p&gt;
@@ -37,10 +37,10 @@
     
     <item>
       <title>Engel 定理和 Lie 定理</title>
-      <link>https://hugo-toha.github.io/posts/lie-%E4%BB%A3%E6%95%B0/engel-%E5%AE%9A%E7%90%86%E5%92%8C-lie-%E5%AE%9A%E7%90%86/</link>
+      <link>http://localhost:1313/posts/lie-%E4%BB%A3%E6%95%B0/engel-%E5%AE%9A%E7%90%86%E5%92%8C-lie-%E5%AE%9A%E7%90%86/</link>
       <pubDate>Sat, 12 Jul 2025 17:00:00 +0800</pubDate>
       
-      <guid>https://hugo-toha.github.io/posts/lie-%E4%BB%A3%E6%95%B0/engel-%E5%AE%9A%E7%90%86%E5%92%8C-lie-%E5%AE%9A%E7%90%86/</guid>
+      <guid>http://localhost:1313/posts/lie-%E4%BB%A3%E6%95%B0/engel-%E5%AE%9A%E7%90%86%E5%92%8C-lie-%E5%AE%9A%E7%90%86/</guid>
       <description>&lt;p&gt;免责声明：本文的讨论基于特征为 $0$ 的代数闭域.&lt;/p&gt;
 &lt;h3 id=&#34;幂零-lie-代数&#34;&gt;幂零 Lie 代数&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Definition [子代数的对易子]&lt;/strong&gt;. 对于 Lie 代数 $\mathfrak g$ 的子代数 $\mathfrak h,\mathfrak k$，定义 $[\mathfrak h,\mathfrak k]$ 为所有 $[h,k]$，其中 $h\in\mathfrak h,k\in\mathfrak k$ 张成的线性空间.&lt;/p&gt;

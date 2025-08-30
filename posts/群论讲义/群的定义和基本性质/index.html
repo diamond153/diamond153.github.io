@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>群的定义和基本性质</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<link rel="stylesheet" href="/application.d46d1447d659d5cf74c6089333d64d89fb665e5e7090e52a31e35700179ffb5e.css" integrity="sha256-1G0UR9ZZ1c90xgiTM9ZNiftmXl5wkOUqMeNXABef&#43;14=" />
+<link rel="stylesheet" href="/application.dcc8c2de2d2fb0835ad316fa9a355d6f1ab97ec05af367dbbb32f65667c29f45.css" integrity="sha256-3MjC3i0vsINa0xb6mjVdbxq5fsBa82fbuzL2VmfCn0U=" />
 
 
 
@@ -36,7 +36,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:description" content=""/>
 <meta property="og:image" content="/images/author/diamond153.jpg">
-<meta property="og:url" content="https://hugo-toha.github.io/">
+<meta property="og:url" content="http://localhost:1313/">
 
     
 <meta name="description" content="第一次讲义" />
@@ -363,6 +363,31 @@ document.documentElement.setAttribute('data-theme', theme)
   
     
     <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0/"> 同调代数</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0/%E4%B8%80%E4%BA%9B%E8%8C%83%E7%95%B4%E8%AE%BA/" title="一些范畴论">一些范畴论</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
       <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/%E8%AE%A8%E8%AE%BA%E5%8C%BA/"> 讨论区</a>
       
       <ul class="">
@@ -497,7 +522,7 @@ document.documentElement.setAttribute('data-theme', theme)
       <div class="page-content">
         
         <div class="author-profile ms-auto align-self-lg-center">
-          <img class="rounded-circle" src='/images/author/diamond153_hu_2568bc747f23ddf8.jpg' alt="Author Image">
+          <img class="rounded-circle" src='/images/author/diamond153_hu_7195fd6e9a9e5df6.jpg' alt="Author Image">
           <h5 class="author-name">Diamond_153</h5>
           <p class="text-muted">Sunday, July 6, 2025</p>
         </div>
@@ -526,20 +551,21 @@ document.documentElement.setAttribute('data-theme', theme)
 <ol>
 <li>$(a\cdot b)\cdot c=a\cdot(b\cdot c)$，即结合律；</li>
 <li>存在唯一的 $e\in G$ 满足对任意 $a\in G$ 都有 $e\cdot a=a\cdot e=a$，即存在单位元；</li>
-<li>对于任意的 $a\in G$，存在唯一的 $b\in G$ 满足 $a\cdot b=b\cdot a=e$，即存在逆元，我们记 $b=a^{-1}$.</li>
+<li>对于任意的 $a\in G$，存在唯一的 $b\in G$ 满足 $a\cdot b=b\cdot a=e$，即存在逆元. 我们通常将 $a$ 的逆元 $b$ 记为 $a^{-1}$.</li>
 </ol>
-<p>那么就称 $(G,\cdot)$ 是一个群. 有的时候我们把运算符省略，将 $a\cdot b$ 记为 $ab$，直接称 $G$ 是一个群.</p>
+<p>那么就称 $(G,\cdot)$ 是一个群. 有的时候我们把运算符省略，将 $a\cdot b$ 记为 $ab$，并直接称 $G$ 是一个群.</p>
 <p>如果在一个群 $(G,\cdot)$ 中还有第 4 条性质 $a\cdot b=b\cdot a$ 对任意 $a,b\in G$ 成立，则称 $G$ 是交换群或者 Abel 群.</p>
 <p>如果这个结构只满足 1 则称 $(G,\cdot)$ 是半群，满足 1, 2 则称 $(G,\cdot)$ 是幺半群.</p>
-<p><strong>Remark</strong>. 注意 “$G$ 上的二元运算” 蕴含了封闭律，即对于任意 $a,b\in G$ 都有 $a\cdot b\in G$. 群定义中的几条要求可以理解为数系运算的抽象. 比如整数集 $\mathbb Z$ 上的加法 $+$ 就满足定义中的三条性质以及附加的一条性质，所以当群运算符为加法时，我们习惯将 $a^{-1}$ 记为 $-a$.</p>
+<p><strong>Remark</strong>. 注意 “$G$ 上的二元运算” 蕴含了封闭律，即对于任意 $a,b\in G$ 都有 $a\cdot b\in G$. 群定义中的几条要求可以理解为数系运算的抽象. 比如整数集 $\mathbb Z$ 上的加法 $+$ 就满足定义中的三条性质以及附加的一条性质，所以当群运算符为加法时（也就是这个群是加法群），我们习惯将 $a^{-1}$ 记为 $-a$.</p>
+<p>乘法群的单位元也写作 $1$，加法群的单位元也写作 $0$.</p>
 <h3 id="一些例子">一些例子</h3>
 <p>下面给出了一些群的例子：</p>
 <ul>
 <li>所有的整数 $\mathbb Z$ 在加法运算下构成一个群，即 $(\mathbb Z,+)$ 是群.</li>
 <li>所有非零实数 $\mathbb R^{\times}=\mathbb R\setminus\{0\}$ 在乘法运算下也构成一个群，即 $(\mathbb R^{\times},\cdot)$ 是群.</li>
 <li>对于有限集 $X$，其到自身的所有<strong>双射</strong>在复合运算 $\circ$ 下构成一个群，我们将其称为 $X$ 的对称群，记作 $\mathsf{Sym}\ X$. 特别地，当 $X=\{1,2,\cdots,n\}$ 时我们记其对称群为 $\mathsf S_n$.</li>
-<li>对于模数 $n$，考虑其所有同余类，它们在加法下构成了一个群，记作 $\mathbb Z/n\mathbb Z$.</li>
-<li>对于模数 $n$，再考虑其所有与 $n$ 互素的数对应的同余类，它们在乘法下构成了一个群，记作 $(\mathbb Z/n\mathbb Z)^{\times}$.</li>
+<li>对于模数 $n$，考虑其所有同余类，它们在加法下构成了一个群，记作 $\mathbb Z/n\mathbb Z$. 如果记号不冲突，可以将其记为 $\mathbb Z_n$.</li>
+<li>对于模数 $n$，再考虑其所有与 $n$ 互素的数对应的同余类，它们在乘法下构成了一个群，记作 $(\mathbb Z/n\mathbb Z)^{\times}$. 如果记号不冲突，可以将其记为 $\mathbb Z_n^\times$.</li>
 <li>对于一个几何物体，所有能使其与原先重合的空间变换构成了一个群，称为这个几何体的对称群. 比如正三角形有 $3$ 种不同的旋转和 $3$ 种不同的对称，共六种空间变换可以使其与原先重合. 记正 $n$ 边形的对称群为 $\mathsf D_n$，它共有 $2n$ 个元素.</li>
 <li>所有 $n$ 阶可逆实矩阵在乘法运算下构成一个群，记作 $\mathsf{GL}_n(\mathbb R)$.</li>
 <li>如果 $(G,\cdot)$ 和 $(H,\circ)$ 是两个群，在 Descartes 积 $G\times H$ 上定义运算 $(g_1,h_1)*(g_2,h_2)=(g_1\cdot g_2,h_1\circ h_2)$，则 $G\times H$ 在运算 $*$ 下构成了一个群，这个群称为 $G$ 与 $H$ 的直积群.</li>
@@ -548,10 +574,11 @@ document.documentElement.setAttribute('data-theme', theme)
 <ul>
 <li>所有的自然数 $\mathbb N$ 在加法运算下不构成一个群，因为不存在 $a\in\mathbb N$ 使 $1+a=0$，也就是有元素没有逆元，其实 $(\mathbb N,+)$ 构成幺半群.</li>
 <li>所有的实数在乘法运算下不构成一个群，因为不存在 $a\in\mathbb R$ 使 $0\cdot a=1$.</li>
-<li>考虑集合 $T_n=\{1,2,\cdots,n\}$，那么 $T_n$ 到自己所有的映射在复合运算下不构成一个群，因为映射不一定可逆.</li>
+<li>如果集合 $X$ 有至少两个元素，则 $X$ 到自己所有的映射在复合运算下不构成一个群，因为映射不一定可逆.</li>
 <li>对于模数 $n\ge 2$ 考虑其完全剩余系，它们在模 $n$ 乘法下不构成一个群，因为 $0$ 没有逆元.</li>
-<li>所有 $n$ 阶实矩阵在乘法运算下不构成一个群，因为零矩阵不可逆.</li>
+<li>所有 $n$ 阶实矩阵在乘法运算下不构成一个群，因为非满秩矩阵不可逆.</li>
 </ul>
+<p>可以尝试逐个验证上面所给的例子.</p>
 <h3 id="群的基本性质">群的基本性质</h3>
 <p><strong>Proposition [群中运算的基本性质]</strong>.</p>
 <ul>
@@ -569,6 +596,7 @@ document.documentElement.setAttribute('data-theme', theme)
 <li>直接相乘验证即可.</li>
 <li>先对 $n,m\in\mathbb N_+$ 作归纳证明，然后推广到 $\mathbb Z$. $\Box$</li>
 </ol></blockquote>
+<p><strong>Remark</strong>. 对于一般的群，不一定有 $(ab)^n=a^nb^n$，因为乘法不一定交换. 加法群的“指数运算”其实是一个整数对一个元素的乘法，写作 $na$，从而对不交换的加法群也不会有 $n(a+b)=na+nb$.</p>
 <h3 id="群的等价定义">群的等价定义</h3>
 <p><strong>Proposition [群的单边定义]</strong>. 如果半群 $G$ 满足：</p>
 <ul>
@@ -623,6 +651,9 @@ document.documentElement.setAttribute('data-theme', theme)
 
 
 
+
+  
+  
 
   
   
@@ -854,7 +885,7 @@ document.documentElement.setAttribute('data-theme', theme)
   </footer>
 
 
-    <script src="/application.7d1dfe92d8f2bbfcf113b1a58b1076e351518b968299a7e1d57cc58347da2422.js" integrity="sha256-fR3&#43;ktjyu/zxE7GlixB241FRi5aCmafh1XzFg0faJCI=" defer></script>
+    <script src="/application.e31c3c1ca32e35b6d946333f1ebe2744573d7f04ce33bb5e6aee3eebddb0b00e.js" integrity="sha256-4xw8HKMuNbbZRjM/Hr4nRFc9fwTOM7teau4&#43;692wsA4=" defer></script>
 
 
     

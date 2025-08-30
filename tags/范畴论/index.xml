@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>范畴论 on Diamond_153 的个人博客</title>
+    <link>http://localhost:1313/tags/%E8%8C%83%E7%95%B4%E8%AE%BA/</link>
+    <description>Recent content in 范畴论 on Diamond_153 的个人博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 06 Aug 2025 19:30:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E8%8C%83%E7%95%B4%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>一些范畴论</title>
+      <link>http://localhost:1313/posts/%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0/%E4%B8%80%E4%BA%9B%E8%8C%83%E7%95%B4%E8%AE%BA/</link>
+      <pubDate>Wed, 06 Aug 2025 19:30:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0/%E4%B8%80%E4%BA%9B%E8%8C%83%E7%95%B4%E8%AE%BA/</guid>
+      <description>&lt;h3 id=&#34;范畴的基本性质&#34;&gt;范畴的基本性质&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Definition [范畴]&lt;/strong&gt;. 一个范畴 $\mathcal C$ 由其对象&lt;strong&gt;类&lt;/strong&gt; $\mathsf{Ob}(\mathcal C)$ 和任意两个对象 $a,b\in\mathsf{Ob}(\mathcal C)$ 间的态射&lt;strong&gt;集合&lt;/strong&gt; $\mathsf{Mor}_{\mathcal C}(a,b)$ 构成，且：对任意 $a,b,c\in\mathsf{Ob}(\mathcal C)$，以及态射 $f\in\mathsf{Mor}_{\mathcal C}(a,b)$ 和 $g\in\mathsf{Mor}_{\mathcal C}(b,c)$，它们之间有一个复合 $g\circ f\in\mathsf{Mor}_{\mathcal C}(a,c)$. 复合满足下面两个性质：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;对任意 $a\in\mathsf{Ob}(\mathcal C)$，存在态射 $\mathbf 1_a$，使得对任意 $b\in\mathsf{Ob}(\mathcal C)$，$f\in\mathsf{Mor}_{\mathcal C}(a,b)$ 和 $g\in\mathsf{Mor}_{\mathcal C}(b,a)$ 有 $\mathbf 1_a\circ g=g$ 且 $f\circ\mathbf 1_a=f$，这个 $\mathbf 1_a$ 被称为恒同态射.&lt;/li&gt;
+&lt;li&gt;对任意 $a,b,c,d\in\mathsf{Ob}(\mathcal C)$ 和三个态射 $f\in\mathsf{Mor}_{\mathcal C}(a,b)$，$g\in\mathsf{Mor}_{\mathcal C}(b,c)$，$h\in\mathsf{Mor}_{\mathcal C}(c,d)$，有结合律 $(h\circ g)\circ f=h\circ(g\circ f)$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Remark&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对象是类而不一定是集合，而两个对象的态射集一定要是集合，对象类是集合的范畴叫做小范畴.&lt;/li&gt;
+&lt;li&gt;一个对象的恒同态射一定是唯一的，否则如果有两个满足条件的恒同态射 $\mathbf 1_a,\mathbf 1_a&#39;$，则 $\mathbf 1_a=\mathbf 1_a\circ\mathbf 1_a&#39;=\mathbf 1_a&#39;$.&lt;/li&gt;
+&lt;li&gt;$a\in\mathsf{Ob}(\mathcal C)$ 可以简单记为 $a\in\mathcal C$；$\mathsf{Mor}_{\mathcal C}(a,b)$ 也可以记为 $\mathsf{Mor}_{\mathcal C}(a,b)$ 或者 $\mathcal C(a,b)$；$f\in\mathsf{Hom}_{\mathcal C}(a,b)$ 可以记为 $f:a\to b$ 或者 $a\xrightarrow{f}b$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Examples [一些例子]&lt;/strong&gt;. 我们在生活中遇到的很多东西都构成范畴.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>
